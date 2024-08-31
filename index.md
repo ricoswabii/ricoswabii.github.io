@@ -49,14 +49,13 @@ end
 2.  This is an ordered list following a header.
 3.  This is an ordered list following a header.
 
-###### Header 6
+## Educational Background
 
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
+| School        | Location          | Year Graduated |
+|:---------------------------------|:--------------------|:------|
+| Eastern Visayas State University | Tacloban City       | 2022  |
+| Alangalang National High School  | Alangalang, Leyte   | 2018  |
+| Alangalang I Central School      | Alangalang, Leyte   | 2012  |
 
 ### There's a horizontal rule below this.
 
