@@ -8,16 +8,21 @@
   {% include head-custom.html %}
   {% seo %}
    <style>
-    #social a {
-      text-decoration: none; /* Removes underline from links */
-      margin-right: 2px;    /* Adds space between the badges */
-    }
-    
-    #social img {
-      vertical-align: middle; /* Ensures badges are aligned properly */
-       border-radius: 8px; /* Adds rounded corners */
-    }
-  </style>
+      .social-badges {
+        display: flex;
+        justify-content: center; /* Centers badges horizontally */
+        align-items: center; /* Aligns badges vertically */
+        gap: 10px; /* Adjust the gap as needed */
+        flex-wrap: wrap; /* Allows wrapping on smaller screens */
+      }
+
+      .social-badges img {
+        border: 2px solid white; /* Adds a white border */
+        border-radius: 8px; /* Rounded corners */
+        height: 32px; /* Adjust as needed */
+        width: auto; /* Maintain aspect ratio */
+      }
+    </style>
 </head>
 
 <body>
@@ -29,7 +34,7 @@
       </a>
       <h2>{{ site.description | default: site.github.project_tagline }}</h2>
 
-      <section id="social">
+      <section id="social" class="social-badges">
         {% if site.social.linkedin %}
           <a href="{{ site.social.linkedin }}" target="_blank">
             <img src="https://img.shields.io/badge/-LinkedIn-0072b1?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
