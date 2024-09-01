@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     {% include head-custom.html %}
-
-{% seo %}
+    {% seo %}
   </head>
 
   <body>
@@ -28,24 +27,24 @@
         </section>
       
         <section id="social">
-       % if site.social.linkedin %}
-        <a href="{{ site.social.linkedin }}" class="btn btn-linkedin" target="_blank">
-          <span class="icon">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo_2019.png" alt="LinkedIn" style="width: 32px; height: 32px;">
-          </span>
-          LinkedIn
-        </a>
-      {% endif %}
-      {% if site.social.instagram %}
-        <a href="{{ site.social.instagram }}" class="btn btn-instagram" target="_blank">
-          <span class="icon">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 32px; height: 32px;">
-          </span>
-          Instagram
-        </a>
-      {% endif %}
-      </section>
-     </div>
+          {% if site.social.linkedin %}
+            <a href="{{ site.social.linkedin }}" class="btn btn-linkedin" target="_blank">
+              <span class="icon">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo_2019.png" alt="LinkedIn" style="width: 32px; height: 32px;">
+              </span>
+              LinkedIn
+            </a>
+          {% endif %}
+          {% if site.social.instagram %}
+            <a href="{{ site.social.instagram }}" class="btn btn-instagram" target="_blank">
+              <span class="icon">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 32px; height: 32px;">
+              </span>
+              Instagram
+            </a>
+          {% endif %}
+        </section>
+      </div>
     </header>
 
     <div class="container">
