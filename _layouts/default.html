@@ -7,6 +7,16 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   {% include head-custom.html %}
   {% seo %}
+   <style>
+    #social a {
+      text-decoration: none; /* Removes underline from links */
+      margin-right: 10px;    /* Adds space between the badges */
+    }
+    
+    #social img {
+      vertical-align: middle; /* Ensures badges are aligned properly */
+    }
+  </style>
 </head>
 
 <body>
