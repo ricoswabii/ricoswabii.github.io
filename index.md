@@ -41,7 +41,10 @@ end
 
 *   <img src="https://img.shields.io/badge/-Microsoft_Sentinel-0078D4?&style=for-the-badge&logo=Microsoft&logoColor=white" />
 *   <img src="https://img.shields.io/badge/-Splunk-000000?&style=for-the-badge&logo=Splunk&logoColor=white" />
-*   <img src="https://img.shields.io/badge/-Elastic-005571?&style=for-the-badge&logo=Elastic&logoColor=white" />
+*   <p>
+  <img src="https://img.shields.io/badge/-Elastic-005571?&style=for-the-badge&logo=Elastic&logoColor=white" alt="Elastic" style="border-radius: 8px;" />
+  A powerful search engine tool used for handling and analyzing large datasets.
+</p>
 
 ##### Header 5
 
