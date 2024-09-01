@@ -3,9 +3,8 @@ description: a cybersecurity enthusiast.
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-hacker
-
 social:
-  LinkedIn: "https://www.linkedin.com/in/yourprofile"
-  Instagram: "https://www.instagram.com/yourprofile"
+  linkedin: "https://www.linkedin.com/in/yourprofile"
+  instagram: "https://www.instagram.com/yourprofile"
   
 
