@@ -39,9 +39,9 @@ end
 
 #### Header 4
 
-*   <img src="https://img.shields.io/badge/-Microsoft_Sentinel-0078D4?&style=for-the-badge&logo=Microsoft&logoColor=white" />
-*   <img src="https://img.shields.io/badge/-Splunk-000000?&style=for-the-badge&logo=Splunk&logoColor=white" />
-*   <p style="display: flex; align-items: center;">
+* <img src="https://img.shields.io/badge/-Microsoft_Sentinel-0078D4?&style=for-the-badge&logo=Microsoft&logoColor=white" />
+* <img src="https://img.shields.io/badge/-Splunk-000000?&style=for-the-badge&logo=Splunk&logoColor=white" />
+* <p style="display: flex; align-items: center;">
   <img src="https://img.shields.io/badge/-Elastic-005571?&style=for-the-badge&logo=Elastic&logoColor=white" alt="Elastic" style="border-radius: 8px; vertical-align: middle;" />
   <span style="margin-left: 10px;">A powerful search engine tool used for handling and analyzing large datasets.</span> 
 
@@ -117,7 +117,9 @@ end
 <div>
     <img src="https://img.shields.io/badge/-Microsoft_Sentinel-0078D4?&style=for-the-badge&logo=Microsoft&logoColor=white" />
     <img src="https://img.shields.io/badge/-Splunk-000000?&style=for-the-badge&logo=Splunk&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Elastic-005571?&style=for-the-badge&logo=Elastic&logoColor=white" />
+    <p style="display: flex; align-items: center;">
+  <img src="https://img.shields.io/badge/-Elastic-005571?&style=for-the-badge&logo=Elastic&logoColor=white" alt="Elastic" style="border-radius: 8px; vertical-align: middle;" />
+  <span style="margin-left: 10px;">A powerful search engine tool used for handling and analyzing large datasets.</span></p>
 </div>
 
 ```
