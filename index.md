@@ -16,9 +16,10 @@ This is a normal paragraph following a header. GitHub is a code hosting platform
 
 ## *~whoami*
 
-> <>I’m a cybersecurity enthusiast eager to learn and adapt. Passionate about tech and always up for new challenges. 
->I thrive on solving complex problems and continuously growing my skills.
-> </>.
+> < > 
+>I’m a cybersecurity enthusiast eager to learn and adapt. Passionate about tech and always up for new challenges. 
+> I thrive on solving complex problems and continuously growing my skills.
+> </>
 
 ### Header 3
 
