@@ -29,13 +29,6 @@
       </a>
       <h2>{{ site.description | default: site.github.project_tagline }}</h2>
 
-      <section id="downloads">
-        {% if site.show_downloads %}
-          <a href="{{ site.github.zip_url }}" class="btn">Download as .zip</a>
-        {% endif %}
-        <a href="{{ site.github.repository_url }}" class="btn btn-github"><span class="icon"></span>GitHub</a>
-      </section>
-
       <section id="social">
         {% if site.social.linkedin %}
           <a href="{{ site.social.linkedin }}" target="_blank">
@@ -45,6 +38,11 @@
         {% if site.social.instagram %}
           <a href="{{ site.social.instagram }}" target="_blank">
             <img src="https://img.shields.io/badge/-Instagram-E4405F?&style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
+          </a>
+        {% endif %}
+        {% if site.social.github %}
+          <a href="{{ site.social.github }}" target="_blank">
+            <img src="https://img.shields.io/badge/-GitHub-181717?&style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
           </a>
         {% endif %}
       </section>
