@@ -4,7 +4,6 @@ show_downloads: true
 social:
   linkedin: "https://www.linkedin.com/in/yourprofile"
   instagram: "https://www.instagram.com/yourprofile"
-  github: "https://github.com/yourprofile"
 google_analytics:
 theme: jekyll-theme-hacker
 
