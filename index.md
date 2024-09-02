@@ -58,7 +58,7 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 <br>
 ## **./Work Experience[~]** {#work}
 
-### **Technical Support Specialist** at [Wingo](https://wingo.com)
+### **IT Specialist** at [Wingo](https://wingo.com)
 *Dates: August 2023 – Present*
 
 - Provide technical support and troubleshooting for online casino game users.
@@ -66,13 +66,13 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 - Collaborate with development teams to address and rectify software bugs.
 
 ### **Freelance IT Technician**
-*Dates: [Month/Year] – Present*
+*Dates: August 2022 – Present*
 
 - Offer IT support and solutions for various clients, including hardware repairs, software installations, and network configuration.
 - Assist in setting up and maintaining cybersecurity measures for small businesses and individual clients.
 
 ### **Social Media Manager**
-*Dates: [Month/Year] – Present*
+*Dates: December 2022 – February 2023*
 
 - Manage social media profiles and create engaging content to increase brand visibility.
 - Analyze social media metrics to optimize campaigns and improve user engagement.
@@ -83,8 +83,8 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 <dl>
 <dt><a href="https://github.com/ricoswabii/cybersec-lab" target="_blank">Cybersec Lab</a></dt>
 <dd>Developed a comprehensive home lab using VirtualBox with VMs running Parrot OS, Kali Linux, Windows, and Metasploitable. Implemented a SIEM system for network monitoring.</dd>
-<dt>**CTF Competitions**</dt>
-<dd>ngaged in Capture The Flag (CTF) challenges to enhance practical cybersecurity skills.</dd>
+<dt><a href="https://www.eccouncil.org/cybersecurity-exchange/ethical-hacking/capture-the-flag-ctf-cybersecurity/#:~:text=In%20cyber%20security%2C%20capture%20the,somewhere%20in%20the%20target%20environment." target="_blank">CTF Competitions</a></dt>
+<dd>Engaged in Capture The Flag (CTF) challenges to enhance practical cybersecurity skills.</dd>
 </dl>
 
 * * *
