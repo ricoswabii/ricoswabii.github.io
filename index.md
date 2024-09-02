@@ -58,7 +58,8 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 </p>
 
 * * *
-## **./Work Experience[~]** 
+<br>
+## **./Work Experience[~]** <!-- Section ID: work -->
 
 ### **Technical Support Specialist** at [Wingo](https://wingo.com)
 *Dates: August 2023 – Present*
