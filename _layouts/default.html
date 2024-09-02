@@ -12,6 +12,26 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <title>{{ site.title | default: Rico Fornes }}</title>
    <style> 
+     
+     .typing-effect {
+      display: inline;
+      font-family: 'Courier New', Courier, monospace;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: .15em solid orange;
+      animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+      }
+  
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+  
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: orange }
+      }
+
       header {
         display: flex;
         flex-direction: column;
@@ -73,7 +93,7 @@
   <header>
     <div class="container">
         <a id="a-title" href="{{ '/' | relative_url }}">
-          <h1>{{ site.title | default: site.github.repository_name }}</h1>
+          <h1 class="typing-effect">{{ site.title | default: site.github.repository_name }}</h1>
         </a>
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
 
