@@ -1,8 +1,7 @@
 ---
 layout: default
 ---
-<p></p>
-## **./Whoami[~]**<!-- Section ID: whoami -->
+## **./Whoami[~]**
 
 >   I’m a cybersecurity enthusiast eager to `learn` and `adapt`. Passionate about tech and always up for new challenges.
 >  
@@ -59,7 +58,7 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 
 * * *
 <br>
-## **./Work Experience[~]** <!-- Section ID: work -->
+## **./Work Experience[~]** {#work}
 
 ### **Technical Support Specialist** at [Wingo](https://wingo.com)
 *Dates: August 2023 – Present*
@@ -87,13 +86,6 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 + **CTF Competitions**: Engaged in Capture The Flag (CTF) challenges to enhance practical cybersecurity skills.
 
 * * *
-## **Certifications[~]**
-
-- [Certified Ethical Hacker (CEH)](https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/) - EC-Council
-- [CompTIA Security+](https://www.comptia.org/certifications/security) - CompTIA
-- [Certified Information Systems Security Professional (CISSP)](https://www.isc2.org/Certifications/CISSP) - (ISC)²
-
-* * *
 ## **./Education[~]** 
 
 ### Eastern Visayas State University
@@ -104,6 +96,12 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 ### Alangalang National High School
 + **Location**: Alangalang, Leyte
 + **Year Graduated**: 2018
+* * *
+## **Certifications[~]**
+
+- [Certified Ethical Hacker (CEH)](https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/) - EC-Council
+- [CompTIA Security+](https://www.comptia.org/certifications/security) - CompTIA
+- [Certified Information Systems Security Professional (CISSP)](https://www.isc2.org/Certifications/CISSP) - (ISC)²
 
 * * *
 ## **Contact Me** 
@@ -114,4 +112,3 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
   <a href="https://github.com" target="_blank">GitHub</a> |
   <a href="mailto:your.email@example.com">Email</a>
 </p>
-
