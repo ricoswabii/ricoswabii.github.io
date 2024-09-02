@@ -35,10 +35,10 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 ### **Cybersecurity Tools**
 
 <p style="display: flex; flex-wrap: wrap; gap: 10px;">
-  <img src="https://img.shields.io/badge/-Metasploit-000000?&style=for-the-badge&logo=Metasploit&logoColor=white" alt="Metasploit" />
-  <img src="https://img.shields.io/badge/-Burp_Suite-FE8D00?&style=for-the-badge&logo=BurpSuite&logoColor=white" alt="Burp Suite" />
-  <img src="https://img.shields.io/badge/-Nmap-000000?&style=for-the-badge&logo=Nmap&logoColor=white" alt="Nmap" />
-  <img src="https://img.shields.io/badge/-Wireshark-1679A7?&style=for-the-badge&logo=Wireshark&logoColor=white" alt="Wireshark" />
+  <img src="https://img.shields.io/badge/-Metasploit-000000?&style=for-the-badge&logo=Metasploit&logoColor=white" alt="Metasploit" style="border-radius: 8px;" />
+  <img src="https://img.shields.io/badge/-Burp_Suite-FE8D00?&style=for-the-badge&logo=BurpSuite&logoColor=white" alt="Burp Suite" style="border-radius: 8px;" />
+  <img src="https://img.shields.io/badge/-Nmap-000000?&style=for-the-badge&logo=Nmap&logoColor=white" alt="Nmap" style="border-radius: 8px;" />
+  <img src="https://img.shields.io/badge/-Wireshark-1679A7?&style=for-the-badge&logo=Wireshark&logoColor=white" alt="Wireshark" style="border-radius: 8px;" />
 </p>
 
 ### **Networking Tools**
@@ -52,9 +52,8 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 ### **SIEM Tools**
 
 <p style="display: flex; flex-wrap: wrap; gap: 10px;">
-  <img src="https://img.shields.io/badge/-Splunk-000000?&style=for-the-badge&logo=Splunk&logoColor=white" alt="Splunk" />
-  <img src="https://img.shields.io/badge/-Elastic_Stack-005571?&style=for-the-badge&logo=Elastic&logoColor=white" alt="Elastic Stack" />
-  <img src="https://img.shields.io/badge/-Microsoft_Sentinel-0078D4?&style=for-the-badge&logo=Microsoft&logoColor=white" alt="Microsoft Sentinel" />
+  <img src="https://img.shields.io/badge/-Splunk-000000?&style=for-the-badge&logo=Splunk&logoColor=white" alt="Splunk" style="border-radius: 8px;" />
+</p>
 </p>
 
 * * *
