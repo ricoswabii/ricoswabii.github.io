@@ -12,6 +12,15 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <title>{{ site.title | default: Rico Fornes }}</title>
    <style>
+     
+    .title-description {
+      display: inline-block; /* Make title-description block align to center */
+      text-align: center; /* Center align text within title-description */
+    }
+
+    .title-description h1, .title-description h2 {
+      margin: 10px 0; /* Space above and below headers */
+    }
       .header {
         margin-bottom: 0; /* Adjust or set to zero to reduce space */
         padding-bottom: 20px; /* Add some padding below header for visual separation */
@@ -53,10 +62,12 @@
 
   <header>
     <div class="container">
-      <a id="a-title" href="{{ '/' | relative_url }}">
-        <h1>{{ site.title | default: site.github.repository_name }}</h1>
-      </a>
-      <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+      <div class="title-description">
+        <a id="a-title" href="{{ '/' | relative_url }}">
+          <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        </a>
+        <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+      </div>
 
       <section id="social" class="social-badges">
         {% if site.social.linkedin %}
