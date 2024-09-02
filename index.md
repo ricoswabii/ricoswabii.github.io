@@ -1,15 +1,16 @@
 ---
 layout: default
 ---
-
-## **./Whoami[~]** 
+<p></p>
+## **./Whoami[~]**<!-- Section ID: whoami -->
 
 >   I’m a cybersecurity enthusiast eager to `learn` and `adapt`. Passionate about tech and always up for new challenges.
 >  
 > I thrive on solving complex problems and continuously growing my `skills`.
 
 * * * * *
-## **./Objective[~]**
+<p></p>
+## **./Objective[~]**<!-- Section ID: objective -->
 
 As a dedicated cybersecurity professional, my objective is to leverage my skills in **penetration testing**, **network security**, and **incident response** to contribute to a `dynamic security team`. 
 
