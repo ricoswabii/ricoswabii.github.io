@@ -39,14 +39,13 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
   <img src="https://img.shields.io/badge/-Burp_Suite-FE8D00?&style=for-the-badge&logo=BurpSuite&logoColor=white" alt="Burp Suite" style="border-radius: 8px;" />
   <img src="https://img.shields.io/badge/-Nmap-000000?&style=for-the-badge&logo=Nmap&logoColor=white" alt="Nmap" style="border-radius: 8px;" />
   <img src="https://img.shields.io/badge/-Wireshark-1679A7?&style=for-the-badge&logo=Wireshark&logoColor=white" alt="Wireshark" style="border-radius: 8px;" />
+  <img src="https://img.shields.io/badge/-Wireshark-1679A7?&style=flat-square&logo=Wireshark&logoColor=white" alt="Wireshark" style="border-radius: 8px;" />
 </p>
 
 ### **Networking Tools**
 
 <p style="display: flex; flex-wrap: wrap; gap: 10px;">
   <img src="https://img.shields.io/badge/-Cisco_Packet_Tracer-0072C6?&style=for-the-badge&logo=Cisco&logoColor=white" alt="Cisco Packet Tracer" style="border-radius: 8px;" />
-  <img src="https://img.shields.io/badge/-GNS3-000000?&style=for-the-badge&logo=GNS3&logoColor=white" alt="GNS3" style="border-radius: 8px;" />
-  <img src="https://img.shields.io/badge/-Netcat-000000?&style=for-the-badge&logo=Netcat&logoColor=white" alt="Netcat" style="border-radius: 8px;" />
 </p>
 
 ### **SIEM Tools**
