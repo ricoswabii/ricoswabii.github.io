@@ -2,14 +2,13 @@
 layout: default
 ---
 
-## **./Whoami[~]** <section id="whoami">
+## **./Whoami[~]** 
 
 >   I’m a cybersecurity enthusiast eager to `learn` and `adapt`. Passionate about tech and always up for new challenges.
 >  
 > I thrive on solving complex problems and continuously growing my `skills`.
 
 * * * * *
-<section id="objective">
 ## **./Objective[~]**
 
 As a dedicated cybersecurity professional, my objective is to leverage my skills in **penetration testing**, **network security**, and **incident response** to contribute to a `dynamic security team`. 
@@ -17,7 +16,6 @@ As a dedicated cybersecurity professional, my objective is to leverage my skills
 I aim to continuously advance my knowledge and expertise through hands-on experience and ongoing education.
 
 * * *
-<section id="skills">
 ## **./Skills[~]**
 
 <dl>
@@ -32,7 +30,6 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 </dl>
 
 * * *
-<section id="tools">
 ## **./Tools[~]**
 
 ### **Cybersecurity Tools**
@@ -61,7 +58,6 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 </p>
 
 * * *
-<section id="work">
 ## **./Work Experience[~]** 
 
 ### **Technical Support Specialist** at [Wingo](https://wingo.com)
@@ -84,14 +80,12 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 - Analyze social media metrics to optimize campaigns and improve user engagement.
 
 * * *
-<section id="projects">
 ## **Projects[~]** 
 
 + **Home Cybersecurity Lab**: Developed a comprehensive home lab using VirtualBox with VMs running Parrot OS, Kali Linux, Windows, and Metasploitable. Implemented a SIEM system for network monitoring.
 + **CTF Competitions**: Engaged in Capture The Flag (CTF) challenges to enhance practical cybersecurity skills.
 
 * * *
-<section id="certifications">
 ## **Certifications[~]**
 
 - [Certified Ethical Hacker (CEH)](https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/) - EC-Council
@@ -99,7 +93,6 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 - [Certified Information Systems Security Professional (CISSP)](https://www.isc2.org/Certifications/CISSP) - (ISC)²
 
 * * *
-<section id="education">
 ## **./Education[~]** 
 
 ### Eastern Visayas State University
@@ -112,7 +105,6 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 + **Year Graduated**: 2018
 
 * * *
-<section id="contact">
 ## **Contact Me** 
 
 <p>
