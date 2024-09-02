@@ -9,7 +9,7 @@ layout: default
 > I thrive on solving complex problems and continuously growing my `skills`.
 
 * * * * *
-## **./Objective[~]**<!-- Section ID: objective -->
+## **./Objective[~]**<!-- Section ID: whoami -->
 
 As a dedicated cybersecurity professional, my objective is to leverage my skills in **penetration testing**, **network security**, and **incident response** to contribute to a `dynamic security team`. 
 
