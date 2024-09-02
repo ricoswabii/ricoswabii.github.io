@@ -81,8 +81,7 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 ## **./Projects[~]** 
 
 <dl>
-<dt>[Cybersecurity Lab](https://github.com/ricoswabii/cybersec-lab)
-: </dt>
+<dt><a href="https://github.com/ricoswabii/cybersec-lab" target="_blank">Cybersec Lab</a></dt>
 <dd>Developed a comprehensive home lab using VirtualBox with VMs running Parrot OS, Kali Linux, Windows, and Metasploitable. Implemented a SIEM system for network monitoring.</dd>
 <dt>**CTF Competitions**</dt>
 <dd>ngaged in Capture The Flag (CTF) challenges to enhance practical cybersecurity skills.</dd>
