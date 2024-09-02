@@ -54,7 +54,6 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 <p style="display: flex; flex-wrap: wrap; gap: 10px;">
   <img src="https://img.shields.io/badge/-Splunk-000000?&style=for-the-badge&logo=Splunk&logoColor=white" alt="Splunk" style="border-radius: 8px;" />
 </p>
-</p>
 
 * * *
 <br>
