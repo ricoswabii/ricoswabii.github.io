@@ -40,7 +40,7 @@
       justify-content: center; /* Center nav items horizontally */
       gap: 30px; /* Space between nav items */
       background-color: rgba(51, 51, 51, 0.5); /* Background color of the navbar */
-      padding: 5px 0; /* Padding above and below the nav items */
+      padding: 10px 0; /* Padding above and below the nav items */
       border-radius: 5px; /* Rounded corners */
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for better visibility */
       position: fixed; /* Initially fixed but hidden */
@@ -64,23 +64,6 @@
     .navbar a:hover {
       color: #ddd; /* Change text color on hover */
       transform: scale(1.05); /* Slightly enlarge the link on hover */
-    }
-     .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    .container p {
-      margin: 0;
-    }
-    .container h1, .container h2, .container h3, .container h4 {
-      margin: 20px 0;
-    }
-    .container hr {
-      border: none;
-      border-top: 2px solid #ccc;
-      margin: 20px 0;
     }
     </style>
 </head>
@@ -115,14 +98,15 @@
     </div>
   </header>
   <nav class="navbar">
-    <a href="#whoami" title="Whoami"><i class="fa-solid fa-user-graduate"></i></a>
-    <a href="#projects" title="Projects"><i class="fa-solid fa-laptop-code"></i></a>
-    <a href="#skills" title="Skills"><i class="fas fa-cogs"></i></a>
-    <a href="#work" title="Work"><i class="fas fa-briefcase"></i></a>
-    <a href="#certifications" title="Certifications"><i class="fa-solid fa-award"></i></a>
-    <a href="#education" title="Education"><i class="fa-solid fa-graduation-cap"></i></a>
-    <a href="#contact" title="Contact"><i class="fa-solid fa-envelope"></i></a>
-  </nav>
+    <a href="#whoami" title="Whoami"><i class="fa-solid fa-user"></i> Whoami</a>
+    <a href="#objective" title="Objective"> <i class="fa-solid fa-bullseye"></i> Objective</a>
+    <a href="#skills" title="Skills"><i class="fa-solid fa-cogs"></i> Skills</a>
+    <a href="#work" title="Work"><i class="fa-solid fa-briefcase"></i> Work </a>
+    <a href="#projects" title="Projects"> <i class="fa-solid fa-laptop-code"></i> Projects</a>
+    <a href="#certifications" title="Certifications"> <i class="fa-solid fa-award"></i> Certifications</a>
+    <a href="#education" title="Education"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+    <a href="#contact" title="Contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+</nav>
   <div class="container">
     <section id="main_content">
       {{ content }}
