@@ -9,6 +9,7 @@
   {% seo %}
   <link rel="icon" href="{{ '/assets/images/favicon.ico' | relative_url }}" type="image/x-icon">
   <link rel="shortcut icon" href="{{ '/assets/images/favicon.ico' | relative_url }}" type="image/x-icon">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <title>{{ site.title | default: Rico Fornes }}</title>
    <style>
       .header {
@@ -74,11 +75,11 @@
         {% endif %}
       </section>
       <nav class="navbar">
-        <a href="#whoami">W</a>
-        <a href="#projects">P</a>
-        <a href="#skills">S</a>
-        <a href="#work">W</a>
-        <a href="#certification">C</a>
+        <a href="#whoami" title="Whoami"><i class="fas fa-user"></i></a>
+        <a href="#projects" title="Projects"><i class="fas fa-briefcase"></i></a>
+        <a href="#skills" title="Skills"><i class="fas fa-cogs"></i></a>
+        <a href="#work" title="Work"><i class="fas fa-work"></i></a>
+        <a href="#certification" title="Certifications"><i class="fas fa-certificate"></i></a>
       </nav>
     </div>
   </header>
