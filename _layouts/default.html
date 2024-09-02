@@ -136,6 +136,21 @@
         navbar.classList.remove('visible');
       }
     });
+     
+     document.querySelectorAll('.navbar a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        var targetId = this.getAttribute('href').substring(1);
+        var targetElement = document.getElementById(targetId);
+        var navbarHeight = document.querySelector('.navbar').offsetHeight;
+
+        window.scrollTo({
+          top: targetElement.offsetTop - navbarHeight,
+          behavior: 'smooth'
+        });
+      });
+    });
   </script>
 </body>
 </html>
