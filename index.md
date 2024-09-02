@@ -9,7 +9,10 @@ layout: default
 > I thrive on solving complex problems and continuously growing my `skills`.
 >
 > 
+
 * * *
+
+
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
 
 [Link to another page](./another-page.html).
