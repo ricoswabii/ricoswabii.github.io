@@ -44,9 +44,9 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 ### **Networking Tools**
 
 <p style="display: flex; flex-wrap: wrap; gap: 10px;">
-  <img src="https://img.shields.io/badge/-Cisco_Packet_Tracer-0072C6?&style=for-the-badge&logo=Cisco&logoColor=white" alt="Cisco Packet Tracer" />
-  <img src="https://img.shields.io/badge/-GNS3-000000?&style=for-the-badge&logo=GNS3&logoColor=white" alt="GNS3" />
-  <img src="https://img.shields.io/badge/-Netcat-000000?&style=for-the-badge&logo=Netcat&logoColor=white" alt="Netcat" />
+  <img src="https://img.shields.io/badge/-Cisco_Packet_Tracer-0072C6?&style=for-the-badge&logo=Cisco&logoColor=white" alt="Cisco Packet Tracer" style="border-radius: 8px;" />
+  <img src="https://img.shields.io/badge/-GNS3-000000?&style=for-the-badge&logo=GNS3&logoColor=white" alt="GNS3" style="border-radius: 8px;" />
+  <img src="https://img.shields.io/badge/-Netcat-000000?&style=for-the-badge&logo=Netcat&logoColor=white" alt="Netcat" style="border-radius: 8px;" />
 </p>
 
 ### **SIEM Tools**
@@ -81,24 +81,26 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 - Analyze social media metrics to optimize campaigns and improve user engagement.
 
 * * *
-## **Projects[~]** 
+## **./Projects[~]** 
 
-+ **Home Cybersecurity Lab**: Developed a comprehensive home lab using VirtualBox with VMs running Parrot OS, Kali Linux, Windows, and Metasploitable. Implemented a SIEM system for network monitoring.
-+ **CTF Competitions**: Engaged in Capture The Flag (CTF) challenges to enhance practical cybersecurity skills.
+<dl>
+<dt>[Cybersecurity Lab](https://github.com/ricoswabii/cybersec-lab)
+: </dt>
+<dd>Developed a comprehensive home lab using VirtualBox with VMs running Parrot OS, Kali Linux, Windows, and Metasploitable. Implemented a SIEM system for network monitoring.</dd>
+<dt>**CTF Competitions**</dt>
+<dd>ngaged in Capture The Flag (CTF) challenges to enhance practical cybersecurity skills.</dd>
+</dl>
 
 * * *
 ## **./Education[~]** 
 
 ### Eastern Visayas State University
 + **Degree**: _Bachelor of Science in Information Technology_
-+ **Location**: Tacloban City
-+ **Year Graduated**: 2022
++ **Location**: _Tacloban City_
++ **Year Graduated**: _2022_
 
-### Alangalang National High School
-+ **Location**: Alangalang, Leyte
-+ **Year Graduated**: 2018
 * * *
-## **Certifications[~]**
+## **./Certifications[~]**
 
 - [Certified Ethical Hacker (CEH)](https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/) - EC-Council
 - [CompTIA Security+](https://www.comptia.org/certifications/security) - CompTIA
@@ -109,7 +111,5 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 
 <p>
   Connect with me on:
-  <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> |
-  <a href="https://github.com" target="_blank">GitHub</a> |
   <a href="mailto:your.email@example.com">Email</a>
 </p>
