@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<p></p>
 ## **./Whoami[~]**
 
 >   I’m a cybersecurity enthusiast eager to `learn` and `adapt`. Passionate about tech and always up for new challenges.
@@ -104,7 +105,7 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 - [Certified Information Systems Security Professional (CISSP)](https://www.isc2.org/Certifications/CISSP) - (ISC)²
 
 * * *
-## **Contact Me** 
+## **Contact Me** {#contact}
 
 <p>
   Connect with me on:
