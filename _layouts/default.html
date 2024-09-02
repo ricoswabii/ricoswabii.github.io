@@ -11,17 +11,38 @@
   <link rel="shortcut icon" href="{{ '/assets/images/favicon.ico' | relative_url }}" type="image/x-icon">
   <title>{{ site.title | default: Rico Fornes }}</title>
    <style>
+      .header {
+        margin-bottom: 0; /* Adjust or set to zero to reduce space */
+        padding-bottom: 20px; /* Add some padding below header for visual separation */
+      }
+      #main_content {
+        margin-top: 0; /* Adjust or set to zero to reduce space */
+      }
       .social-badges {
         display: flex;
         gap: 10px; /* Adjust the gap as needed */
         flex-wrap: wrap; /* Allows wrapping on smaller screens */
+        justify-content: center; /* Center badges horizontally */
       }
-
       .social-badges img {
         border: 1px solid white; /* Adds a white border */
         border-radius: 8px; /* Rounded corners */
         height: 24px; /* Adjust as needed */
         width: auto; /* Maintain aspect ratio */
+      }
+      .navbar {
+        display: flex;
+        justify-content: center; /* Center nav items horizontally */
+        gap: 20px; /* Space between nav items */
+        margin-top: 10px; /* Space above the nav bar */
+      }
+      .navbar a {
+        text-decoration: none; /* Remove underline from links */
+        color: white; /* Text color */
+        font-weight: bold; /* Make text bold */
+      }
+      .navbar a:hover {
+        color: #ddd; /* Change text color on hover */
       }
     </style>
 </head>
@@ -52,6 +73,13 @@
           </a>
         {% endif %}
       </section>
+      <nav class="navbar">
+        <a href="#whoami">Whoami</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#work">Work</a>
+        <a href="#certification">Certifications</a>
+      </nav>
     </div>
   </header>
 
