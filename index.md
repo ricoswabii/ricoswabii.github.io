@@ -10,7 +10,9 @@ layout: default
 
 * * *
 <br>
-## **Skills** <!-- Section ID: skills -->
+
+
+## **Skills[~]** <!-- Section ID: skills -->
 <dl>
 <dt>**Penetration Testing**</dt>
 <dd>Skilled in identifying vulnerabilities using industry-standard tools and methodologies</dd>
@@ -24,7 +26,7 @@ layout: default
 
 * * *
 <br>
-## **Tools** <!-- Section ID: tools -->
+## **Tools[~]** <!-- Section ID: tools -->
 
 ### **Cybersecurity Tools**
 
@@ -35,7 +37,7 @@ layout: default
   <img src="https://img.shields.io/badge/-Wireshark-1679A7?&style=for-the-badge&logo=Wireshark&logoColor=white" alt="Wireshark" />
 </p>
 
-### **Networking Tools**
+### **Networking Tools[~]**
 
 <p style="display: flex; flex-wrap: wrap; gap: 10px;">
   <img src="https://img.shields.io/badge/-Cisco_Packet_Tracer-0072C6?&style=for-the-badge&logo=Cisco&logoColor=white" alt="Cisco Packet Tracer" />
@@ -43,7 +45,7 @@ layout: default
   <img src="https://img.shields.io/badge/-Netcat-000000?&style=for-the-badge&logo=Netcat&logoColor=white" alt="Netcat" />
 </p>
 
-### **SIEM Tools**
+### **SIEM Tools[~]**
 
 <p style="display: flex; flex-wrap: wrap; gap: 10px;">
   <img src="https://img.shields.io/badge/-Splunk-000000?&style=for-the-badge&logo=Splunk&logoColor=white" alt="Splunk" />
@@ -55,8 +57,8 @@ layout: default
 
 ## **Projects** <!-- Section ID: projects -->
 
-- **Home Cybersecurity Lab**: Developed a comprehensive home lab using VirtualBox with VMs running Parrot OS, Kali Linux, Windows, and Metasploitable. Implemented a SIEM system for network monitoring.
-- **CTF Competitions**: Engaged in Capture The Flag (CTF) challenges to enhance practical cybersecurity skills.
++ **Home Cybersecurity Lab**: Developed a comprehensive home lab using VirtualBox with VMs running Parrot OS, Kali Linux, Windows, and Metasploitable. Implemented a SIEM system for network monitoring.
++ **CTF Competitions**: Engaged in Capture The Flag (CTF) challenges to enhance practical cybersecurity skills.
 
 * * *
 
@@ -70,27 +72,15 @@ layout: default
 
 ## **Educational Background** <!-- Section ID: education -->
 
-### Degrees
-
 #### Eastern Visayas State University
-- **Degree**: [Your Degree Here]
-- **Location**: Tacloban City
-- **Year Graduated**: 2022
++ **Degree**: Bachelor of Science in Information Technology
++ **Location**: Tacloban City
++ **Year Graduated**: 2022
 
 #### Alangalang National High School
-- **Location**: Alangalang, Leyte
-- **Year Graduated**: 2018
-
-### Relevant Coursework
-
-- **Cybersecurity Fundamentals**: Studied principles of network security, threat analysis, and risk management.
-- **Information Systems Security**: Gained knowledge in protecting information systems and understanding regulatory requirements.
-- **Programming for Security**: Learned programming skills with a focus on creating security tools and scripts.
-
-### Achievements
-
-- **[Honor/Award Name]**: Brief description of any special awards or honors received during your studies.
-
++ **Location**: Alangalang, Leyte
++ **Year Graduated**: 2018
+  
 * * *
 
 ## **Contact Me** <!-- Section ID: contact -->
@@ -225,5 +215,5 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 ```
 
 ```
-The final element.
+All reserved 2024.
 ```
