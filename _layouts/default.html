@@ -105,5 +105,17 @@
       {{ content }}
     </section>
   </div>
+   <script>
+    document.addEventListener('scroll', function() {
+      var headerHeight = document.querySelector('header').offsetHeight;
+      var navbar = document.querySelector('.navbar');
+
+      if (window.scrollY > headerHeight) {
+        navbar.classList.add('visible');
+      } else {
+        navbar.classList.remove('visible');
+      }
+    });
+  </script>
 </body>
 </html>
