@@ -14,12 +14,12 @@
    <style> 
      
      .typing-effect {
-      display: inline;
-      font-family: 'Courier New', Courier, monospace;
-      white-space: nowrap;
+      display: inline-block;
       overflow: hidden;
-      border-right: .15em solid orange;
-      animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+      white-space: nowrap;
+      border-right: 2px solid orange;
+      animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
+      font-family: 'Courier New', Courier, monospace;
       }
   
       @keyframes typing {
