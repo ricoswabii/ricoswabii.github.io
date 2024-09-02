@@ -17,16 +17,9 @@
       margin: 0 auto; /* Center horizontally */
       padding: 0 15px; /* Add padding to the sides for smaller screens */
       box-sizing: border-box; /* Include padding in element's total width and height */
+      text-align: center;
       }
      
-     .title-description {
-      display: inline-block; /* Ensure that the title-description block aligns to center */
-      text-align: center; /* Center align text within title-description */
-    }
-
-    .title-description h1, .title-description h2 {
-      margin: 10px 0; /* Space above and below headers */
-    }     
       .header {
         margin-bottom: 0; /* Adjust or set to zero to reduce space */
         padding-bottom: 20px; /* Add some padding below header for visual separation */
@@ -68,12 +61,10 @@
 
   <header>
     <div class="container">
-         <div class="title-description">
         <a id="a-title" href="{{ '/' | relative_url }}">
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
         </a>
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
-      </div>
 
       <section id="social" class="social-badges">
         {% if site.social.linkedin %}
