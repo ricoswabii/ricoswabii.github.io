@@ -1,23 +1,24 @@
 ---
 layout: default
 ---
-<p></p>
-## **./Whoami[~]**<!-- Section ID: whoami -->
+<section id="whoami">
+## **./Whoami[~]**
 
 >   I’m a cybersecurity enthusiast eager to `learn` and `adapt`. Passionate about tech and always up for new challenges.
 >  
 > I thrive on solving complex problems and continuously growing my `skills`.
 
 * * * * *
-## **./Objective[~]**<!-- Section ID: whoami -->
+<section id="objective">
+## **./Objective[~]**
 
 As a dedicated cybersecurity professional, my objective is to leverage my skills in **penetration testing**, **network security**, and **incident response** to contribute to a `dynamic security team`. 
 
 I aim to continuously advance my knowledge and expertise through hands-on experience and ongoing education.
 
 * * *
-
-## **./Skills[~]** <!-- Section ID: skills -->
+<section id="skills">
+## **./Skills[~]**
 
 <dl>
 <dt>Penetration Testing</dt>
@@ -31,8 +32,8 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 </dl>
 
 * * *
-
-## **./Tools[~]** <!-- Section ID: tools -->
+<section id="tools">
+## **./Tools[~]**
 
 ### **Cybersecurity Tools**
 
@@ -60,8 +61,8 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 </p>
 
 * * *
-
-## **./Work Experience[~]** <!-- Section ID: work -->
+<section id="work">
+## **./Work Experience[~]** 
 
 ### **Technical Support Specialist** at [Wingo](https://wingo.com)
 *Dates: August 2023 – Present*
@@ -83,36 +84,36 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 - Analyze social media metrics to optimize campaigns and improve user engagement.
 
 * * *
-
-## **Projects[~]** <!-- Section ID: projects -->
+<section id="projects">
+## **Projects[~]** 
 
 + **Home Cybersecurity Lab**: Developed a comprehensive home lab using VirtualBox with VMs running Parrot OS, Kali Linux, Windows, and Metasploitable. Implemented a SIEM system for network monitoring.
 + **CTF Competitions**: Engaged in Capture The Flag (CTF) challenges to enhance practical cybersecurity skills.
 
 * * *
-
-## **Certifications[~]** <!-- Section ID: certifications -->
+<section id="certifications">
+## **Certifications[~]**
 
 - [Certified Ethical Hacker (CEH)](https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/) - EC-Council
 - [CompTIA Security+](https://www.comptia.org/certifications/security) - CompTIA
 - [Certified Information Systems Security Professional (CISSP)](https://www.isc2.org/Certifications/CISSP) - (ISC)²
 
 * * *
+<section id="education">
+## **./Education[~]** 
 
-## **./Education[~]** <!-- Section ID: education -->
-
-#### Eastern Visayas State University
-+ **Degree**: Bachelor of Science in Information Technology
+### Eastern Visayas State University
++ **Degree**: _Bachelor of Science in Information Technology_
 + **Location**: Tacloban City
 + **Year Graduated**: 2022
 
-#### Alangalang National High School
+### Alangalang National High School
 + **Location**: Alangalang, Leyte
 + **Year Graduated**: 2018
 
 * * *
-
-## **Contact Me** <!-- Section ID: contact -->
+<section id="contact">
+## **Contact Me** 
 
 <p>
   Connect with me on:
@@ -120,128 +121,4 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
   <a href="https://github.com" target="_blank">GitHub</a> |
   <a href="mailto:your.email@example.com">Email</a>
 </p>
-<br>
-Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
 
-[Link to another page](./another-page.html).
-
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
-# **whoami**
-
-I’m a cybersecurity enthusiast eager to `learn` and `adapt`. Passionate about tech and always up for new challenges. 
-I thrive on solving complex problems and continuously growing my `skills`.
-
-
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-* <img src="https://img.shields.io/badge/-Microsoft_Sentinel-0078D4?&style=for-the-badge&logo=Microsoft&logoColor=white" />
-* <img src="https://img.shields.io/badge/-Splunk-000000?&style=for-the-badge&logo=Splunk&logoColor=white" />
-* <p style="display: flex; align-items: center;">
-  <img src="https://img.shields.io/badge/-Elastic-005571?&style=for-the-badge&logo=Elastic&logoColor=white" alt="Elastic" style="border-radius: 8px; vertical-align: middle;" />
-  <span style="margin-left: 10px;">A powerful search engine tool used for handling and analyzing large datasets.</span> 
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-## Educational Background
-
-| School        | Location          | Year Graduated |
-|:---------------------------------|:--------------------|:------|
-| Eastern Visayas State University | Tacloban City       | 2022  |
-| Alangalang National High School  | Alangalang, Leyte   | 2018  |
-|:---------------------------------|:--------------------|:------|
-
-## Sample
-
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-<div>
-    <img src="https://img.shields.io/badge/-Microsoft_Sentinel-0078D4?&style=for-the-badge&logo=Microsoft&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Splunk-000000?&style=for-the-badge&logo=Splunk&logoColor=white" />
-    <p style="display: flex; align-items: center;">
-  <img src="https://img.shields.io/badge/-Elastic-005571?&style=for-the-badge&logo=Elastic&logoColor=white" alt="Elastic" style="border-radius: 8px; vertical-align: middle;" />
-  <span style="margin-left: 10px;">A powerful search engine tool used for handling and analyzing large datasets.</span></p>
-</div>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-All reserved 2024.
-```
