@@ -9,11 +9,11 @@
   {% seo %}
   <link rel="icon" href="{{ '/assets/images/favicon.ico' | relative_url }}" type="image/x-icon">
   <link rel="shortcut icon" href="{{ '/assets/images/favicon.ico' | relative_url }}" type="image/x-icon">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <title>{{ site.title | default: Rico Fornes }}</title>
-   <style>
-     #particles-js {
+  <style>
+    #particles-js {
       position: fixed;
       top: 0;
       left: 0;
@@ -21,43 +21,41 @@
       height: 100%;
       z-index: -1; /* Ensure it's behind the content */
     }
-     
-     .typing-effect {
+    .typing-effect {
       display: inline-block;
       overflow: hidden;
       white-space: nowrap;
       animation: typing 4s steps(12, end), blink-caret 0.75s step-end 4s;
       font-family: 'Courier New', Courier, monospace;
-      }
-  
-      @keyframes typing {
-        from { width: 0 }
-        to { width: 100% }
-      }
-      header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 1.5rem;
-      }
-      #main_content {
-        margin-top: 0px; /* Adjust or set to zero to reduce space */
-      }
-      .social-badges {
-        display: flex;
-        gap: 10px; /* Adjust the gap as needed */
-        justify-content: center; /* Center nav items horizontally */
-        flex-wrap: wrap; /* Allows wrapping on smaller screens */
-      }
-      .social-badges img {
-        border: 1px solid white; /* Adds a white border */
-        border-radius: 8px; /* Rounded corners */
-        height: 24px; /* Adjust as needed */
-        width: auto; /* Maintain aspect ratio */
-      }
-        .navbar {
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 1.5rem;
+    }
+    #main_content {
+      margin-top: 0px; /* Adjust or set to zero to reduce space */
+    }
+    .social-badges {
+      display: flex;
+      gap: 10px; /* Adjust the gap as needed */
+      justify-content: center; /* Center nav items horizontally */
+      flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    }
+    .social-badges img {
+      border: 1px solid white; /* Adds a white border */
+      border-radius: 8px; /* Rounded corners */
+      height: 24px; /* Adjust as needed */
+      width: auto; /* Maintain aspect ratio */
+    }
+    .navbar {
       display: flex;
       justify-content: center; /* Center nav items horizontally */
       gap: 30px; /* Space between nav items */
@@ -71,35 +69,29 @@
       transition: top 0.3s; /* Smooth transition for appearing */
       z-index: 1000; /* Ensure it is above other content */
     }
-
     .navbar.visible {
       top: 0; /* Show navbar when scrolled past header */
     }
-
     .navbar a {
       text-decoration: none; /* Remove underline from links */
       color: white; /* Text color */
       font-weight: bold; /* Make text bold */
       transition: color 0.3s, transform 0.3s; /* Smooth transition for color and transform */
     }
-
     .navbar a:hover {
       color: #ddd; /* Change text color on hover */
       transform: scale(1.05); /* Slightly enlarge the link on hover */
     }
-    
-    </style>
+  </style>
 </head>
-
 <body>
- <div id="particles-js"></div>
+  <div id="particles-js"></div>
   <header>
     <div class="container">
-        <a id="a-title" href="{{ '/' | relative_url }}">
-          <h1 class="typing-effect">{{ site.title | default: site.github.repository_name }}</h1>
-        </a>
-        <h2>{{ site.description | default: site.github.project_tagline }}</h2>
-
+      <a id="a-title" href="{{ '/' | relative_url }}">
+        <h1 class="typing-effect">{{ site.title | default: site.github.repository_name }}</h1>
+      </a>
+      <h2>{{ site.description | default: site.github.project_tagline }}</h2>
       <section id="social" class="social-badges">
         {% if site.social.linkedin %}
           <a href="{{ site.social.linkedin }}" target="_blank">
@@ -117,7 +109,6 @@
           </a>
         {% endif %}
       </section>
-     
     </div>
   </header>
   <nav class="navbar">
@@ -128,14 +119,13 @@
     <a href="#projects" title="Projects"><i class="fa-solid fa-laptop-code"></i></a>
     <a href="#education" title="Education"><i class="fa-solid fa-graduation-cap"></i></a>
     <a href="#contact" title="Contact"><i class="fa-solid fa-envelope"></i></a>
-</nav>
+  </nav>
   <div class="container">
     <section id="main_content">
       {{ content }}
     </section>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-   <script>
+  <script>
     document.addEventListener('scroll', function() {
       var headerHeight = document.querySelector('header').offsetHeight;
       var navbar = document.querySelector('.navbar');
@@ -147,7 +137,7 @@
       }
     });
      
-     document.querySelectorAll('.navbar a').forEach(anchor => {
+    document.querySelectorAll('.navbar a').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
         e.preventDefault();
 
@@ -161,7 +151,8 @@
         });
       });
     });
-     <script>
+
+    // Initialize particles.js
     particlesJS('particles-js', {
       "particles": {
         "number": {
