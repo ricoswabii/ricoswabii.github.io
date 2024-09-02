@@ -35,19 +35,27 @@
         height: 24px; /* Adjust as needed */
         width: auto; /* Maintain aspect ratio */
       }
-      .navbar {
+        .navbar {
         display: flex;
         justify-content: center; /* Center nav items horizontally */
         gap: 30px; /* Space between nav items */
         margin-top: 10px; /* Space above the nav bar */
+        background-color: #333; /* Background color of the navbar */
+        padding: 10px 0; /* Padding above and below the nav items */
+        border-radius: 5px; /* Rounded corners */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for better visibility */
       }
+      
       .navbar a {
         text-decoration: none; /* Remove underline from links */
         color: white; /* Text color */
         font-weight: bold; /* Make text bold */
+        transition: color 0.3s, transform 0.3s; /* Smooth transition for color and transform */
       }
+      
       .navbar a:hover {
         color: #ddd; /* Change text color on hover */
+        transform: scale(1.05); /* Slightly enlarge the link on hover */
       }
     </style>
 </head>
