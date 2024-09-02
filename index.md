@@ -63,7 +63,11 @@ end
 | Alangalang National High School  | Alangalang, Leyte   | 2018  |
 | Alangalang I Central School      | Alangalang, Leyte   | 2012  |
 
-### There's a horizontal rule below this.
+## Educational Background
+| School                           | Course                                                | Location      | Year      |
+|:---------------------------------|:-----------------------------------------------------:|--------------:|:----------|
+| **Eastern Visayas State University** | **Bachelor of Science in Information Technology** |  [**Tacloban City**](https://www.google.com/maps?q=Tacloban+City+Philippines)  | 2018-2022 |
+
 
 * * *
 
