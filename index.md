@@ -9,20 +9,21 @@ layout: default
 > I thrive on solving complex problems and continuously growing my `skills`.
 
 * * *
+<br>
 ## **Skills** <!-- Section ID: skills -->
 <dl>
 <dt>**Penetration Testing**</dt>
 <dd>Skilled in identifying vulnerabilities using industry-standard tools and methodologies</dd>
-<dt>**Network Security**/dt>
+<dt>**Network Security**</dt>
 <dd>Experienced in securing and monitoring network infrastructure to detect and mitigate threats.</dd>
 <dt>**Incident Response**</dt>
 <dd>Adept at managing and responding to security incidents with a focus on minimizing impact.</dd>
-<dt>C**Programming**</dt>
+<dt>**Programming**</dt>
 <dd>Proficient in Python & bash scripting</dd>
 </dl>
 
 * * *
-
+<br>
 ## **Tools** <!-- Section ID: tools -->
 
 ### **Cybersecurity Tools**
