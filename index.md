@@ -10,11 +10,16 @@ layout: default
 
 * * *
 ## **Skills** <!-- Section ID: skills -->
-
-- **Penetration Testing**: Skilled in identifying vulnerabilities using industry-standard tools and methodologies.
-- **Network Security**: Experienced in securing and monitoring network infrastructure to detect and mitigate threats.
-- **Incident Response**: Adept at managing and responding to security incidents with a focus on minimizing impact.
-- **Programming**: Proficient in Python, JavaScript, and other scripting languages for automating tasks and analyzing data.
+<dl>
+<dt>**Penetration Testing**</dt>
+<dd>Skilled in identifying vulnerabilities using industry-standard tools and methodologies</dd>
+<dt>**Network Security**/dt>
+<dd>Experienced in securing and monitoring network infrastructure to detect and mitigate threats.</dd>
+<dt>**Incident Response**</dt>
+<dd>Adept at managing and responding to security incidents with a focus on minimizing impact.</dd>
+<dt>C**Programming**</dt>
+<dd>Proficient in Python & bash scripting</dd>
+</dl>
 
 * * *
 
