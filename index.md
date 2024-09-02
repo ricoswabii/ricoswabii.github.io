@@ -61,12 +61,9 @@ end
 |:---------------------------------|:--------------------|:------|
 | Eastern Visayas State University | Tacloban City       | 2022  |
 | Alangalang National High School  | Alangalang, Leyte   | 2018  |
-| Alangalang I Central School      | Alangalang, Leyte   | 2012  |
+|:---------------------------------|:--------------------|:------|
 
-## Educational Background
-| School                           | Course                                                | Location      | Year      |
-|:---------------------------------|:-----------------------------------------------------:|--------------:|:----------|
-| **Eastern Visayas State University** | **Bachelor of Science in Information Technology** |  [**Tacloban City**](https://www.google.com/maps?q=Tacloban+City+Philippines)  | 2018-2022 |
+## Sample
 
 
 * * *
