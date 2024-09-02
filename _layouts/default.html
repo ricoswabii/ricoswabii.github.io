@@ -21,7 +21,7 @@
         padding: 1.5rem;
       }
       #main_content {
-        margin-top: 0; /* Adjust or set to zero to reduce space */
+        margin-top: 70px; /* Adjust or set to zero to reduce space */
       }
       .social-badges {
         display: flex;
@@ -36,14 +36,18 @@
         width: auto; /* Maintain aspect ratio */
       }
         .navbar {
+        position: fixed; /* Fixes the navbar at the top of the viewport */
+        top: 0; /* Aligns the navbar at the very top */
+        left: 0; /* Aligns the navbar to the left edge */
+        width: 100%; /* Makes the navbar full-width */
         display: flex;
         justify-content: center; /* Center nav items horizontally */
         gap: 30px; /* Space between nav items */
-        margin-top: 10px; /* Space above the nav bar */
         background-color: #333; /* Background color of the navbar */
         padding: 10px 0; /* Padding above and below the nav items */
         border-radius: 5px; /* Rounded corners */
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for better visibility */
+        z-index: 1000; /* Ensure it stays above other content */
       }
       
       .navbar a {
