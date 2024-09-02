@@ -36,31 +36,35 @@
         width: auto; /* Maintain aspect ratio */
       }
         .navbar {
-        position: fixed; /* Fixes the navbar at the top of the viewport */
-        top: 0; /* Aligns the navbar at the very top */
-        left: 0; /* Aligns the navbar to the left edge */
-        width: 100%; /* Makes the navbar full-width */
-        display: flex;
-        justify-content: center; /* Center nav items horizontally */
-        gap: 30px; /* Space between nav items */
-        background-color: #333; /* Background color of the navbar */
-        padding: 10px 0; /* Padding above and below the nav items */
-        border-radius: 5px; /* Rounded corners */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for better visibility */
-        z-index: 1000; /* Ensure it stays above other content */
-      }
-      
-      .navbar a {
-        text-decoration: none; /* Remove underline from links */
-        color: white; /* Text color */
-        font-weight: bold; /* Make text bold */
-        transition: color 0.3s, transform 0.3s; /* Smooth transition for color and transform */
-      }
-      
-      .navbar a:hover {
-        color: #ddd; /* Change text color on hover */
-        transform: scale(1.05); /* Slightly enlarge the link on hover */
-      }
+      display: flex;
+      justify-content: center; /* Center nav items horizontally */
+      gap: 30px; /* Space between nav items */
+      background-color: #333; /* Background color of the navbar */
+      padding: 10px 0; /* Padding above and below the nav items */
+      border-radius: 5px; /* Rounded corners */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for better visibility */
+      position: fixed; /* Initially fixed but hidden */
+      top: -60px; /* Hide the navbar initially */
+      width: 100%; /* Full width */
+      transition: top 0.3s; /* Smooth transition for appearing */
+      z-index: 1000; /* Ensure it is above other content */
+    }
+
+    .navbar.visible {
+      top: 0; /* Show navbar when scrolled past header */
+    }
+
+    .navbar a {
+      text-decoration: none; /* Remove underline from links */
+      color: white; /* Text color */
+      font-weight: bold; /* Make text bold */
+      transition: color 0.3s, transform 0.3s; /* Smooth transition for color and transform */
+    }
+
+    .navbar a:hover {
+      color: #ddd; /* Change text color on hover */
+      transform: scale(1.05); /* Slightly enlarge the link on hover */
+    }
     </style>
 </head>
 
