@@ -65,6 +65,23 @@
       color: #ddd; /* Change text color on hover */
       transform: scale(1.05); /* Slightly enlarge the link on hover */
     }
+     .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .container p {
+      margin: 0;
+    }
+    .container h1, .container h2, .container h3, .container h4 {
+      margin: 20px 0;
+    }
+    .container hr {
+      border: none;
+      border-top: 2px solid #ccc;
+      margin: 20px 0;
+    }
     </style>
 </head>
 
@@ -97,13 +114,15 @@
      
     </div>
   </header>
- <nav class="navbar">
-        <a href="#whoami" title="Whoami"><i class="fa-solid fa-user-graduate"></i></a>
-        <a href="#projects" title="Projects"><i class="fa-solid fa-laptop-code"></i></a>
-        <a href="#skills" title="Skills"><i class="fas fa-cogs"></i></a>
-        <a href="#work" title="Work"><i class="fas fa-briefcase"></i></a>
-        <a href="#certification" title="Certifications"><i class="fa-solid fa-award"></i></a>
-      </nav>
+  <nav class="navbar">
+    <a href="#whoami" title="Whoami"><i class="fa-solid fa-user-graduate"></i></a>
+    <a href="#projects" title="Projects"><i class="fa-solid fa-laptop-code"></i></a>
+    <a href="#skills" title="Skills"><i class="fas fa-cogs"></i></a>
+    <a href="#work" title="Work"><i class="fas fa-briefcase"></i></a>
+    <a href="#certifications" title="Certifications"><i class="fa-solid fa-award"></i></a>
+    <a href="#education" title="Education"><i class="fa-solid fa-graduation-cap"></i></a>
+    <a href="#contact" title="Contact"><i class="fa-solid fa-envelope"></i></a>
+  </nav>
   <div class="container">
     <section id="main_content">
       {{ content }}
