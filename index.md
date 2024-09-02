@@ -2,20 +2,22 @@
 layout: default
 ---
 <p></p>
-## **whoami[~]**<!-- Section ID: whoami -->
+## **./Whoami[~]**<!-- Section ID: whoami -->
 
 >   I’m a cybersecurity enthusiast eager to `learn` and `adapt`. Passionate about tech and always up for new challenges.
 >  
 > I thrive on solving complex problems and continuously growing my `skills`.
 
+* * * * *
+## **./Objective[~]**<!-- Section ID: objective -->
+
+As a dedicated cybersecurity professional, my objective is to leverage my skills in **penetration testing**, **network security**, and **incident response** to contribute to a `dynamic security team`. 
+
+I aim to continuously advance my knowledge and expertise through hands-on experience and ongoing education.
+
 * * *
-## `Objective[~]`<!-- Section ID: objective -->
 
-As a dedicated cybersecurity professional, my objective is to leverage my skills in **penetration testing**, **network security**, and **incident response** to contribute to a `dynamic security team`. I aim to continuously advance my knowledge and expertise through hands-on experience and ongoing education, ultimately securing and protecting digital assets against evolving threats.
-
-* * *
-
-## **Skills[~]** <!-- Section ID: skills -->
+## **./Skills[~]** <!-- Section ID: skills -->
 
 <dl>
 <dt>Penetration Testing</dt>
@@ -30,7 +32,7 @@ As a dedicated cybersecurity professional, my objective is to leverage my skills
 
 * * *
 
-## **Tools[~]** <!-- Section ID: tools -->
+## **./Tools[~]** <!-- Section ID: tools -->
 
 ### **Cybersecurity Tools**
 
@@ -59,7 +61,7 @@ As a dedicated cybersecurity professional, my objective is to leverage my skills
 
 * * *
 
-## **Work Experience[~]** <!-- Section ID: work -->
+## **./Work Experience[~]** <!-- Section ID: work -->
 
 ### **Technical Support Specialist** at [Wingo](https://wingo.com)
 *Dates: August 2023 – Present*
@@ -97,7 +99,7 @@ As a dedicated cybersecurity professional, my objective is to leverage my skills
 
 * * *
 
-## **Educational Background[~]** <!-- Section ID: education -->
+## **./Education[~]** <!-- Section ID: education -->
 
 #### Eastern Visayas State University
 + **Degree**: Bachelor of Science in Information Technology
