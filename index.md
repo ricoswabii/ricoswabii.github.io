@@ -8,7 +8,8 @@ layout: default
 >  
 > I thrive on solving complex problems and continuously growing my `skills`.
 
-* * * * *
+* * * 
+* * * 
 ## **./Objective[~]**
 
 As a dedicated cybersecurity professional, my objective is to leverage my skills in **penetration testing**, **network security**, and **incident response** to contribute to a `dynamic security team`. 
@@ -16,6 +17,7 @@ As a dedicated cybersecurity professional, my objective is to leverage my skills
 I aim to continuously advance my knowledge and expertise through hands-on experience and ongoing education.
 
 * * *
+* * * 
 ## **./Skills[~]**
 
 <dl>
@@ -30,6 +32,7 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 </dl>
 
 * * *
+* * * 
 ## **./Tools[~]**
 
 ### **Cybersecurity Tools**
@@ -55,6 +58,7 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 </p>
 
 * * *
+* * * 
 <br>
 ## **./Work Experience[~]** {#work}
 
