@@ -62,21 +62,29 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 <br>
 ## **./Work Experience[~]** {#work}
 
-### **IT Specialist** at [Wingo](https://wingo.com)
+### **Junior Cybersecurity Analyst**
 *Dates: August 2023 – Present*
 
-- Provide technical support and troubleshooting for online casino game users.
-- Analyze and resolve technical issues related to game performance and user experience.
+- Assist in developing and implementing security protocols and procedures.
+- Monitor security systems and respond to potential threats and vulnerabilities.
+- Conduct regular security assessments and audits to ensure compliance with best practices.
+- Collaborate with development teams to address and rectify software bugs.
+
+### **IT Specialist**
+*Dates:*
+
+- Provide technical support and troubleshooting.
+- Analyze and resolve technical issues related to performance and user experience.
 - Collaborate with development teams to address and rectify software bugs.
 
 ### **Freelance IT Technician**
-*Dates: August 2022 – Present*
+*Dates:*
 
 - Offer IT support and solutions for various clients, including hardware repairs, software installations, and network configuration.
 - Assist in setting up and maintaining cybersecurity measures for small businesses and individual clients.
 
 ### **Social Media Manager**
-*Dates: December 2022 – February 2023*
+*Dates:*
 
 - Manage social media profiles and create engaging content to increase brand visibility.
 - Analyze social media metrics to optimize campaigns and improve user engagement.
@@ -89,6 +97,8 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 <dd>Developed a comprehensive home lab using VirtualBox with VMs running Parrot OS, Kali Linux, Windows, and Metasploitable. Implemented a SIEM system for network monitoring.</dd>
 <dt><a href="https://www.eccouncil.org/cybersecurity-exchange/ethical-hacking/capture-the-flag-ctf-cybersecurity/#:~:text=In%20cyber%20security%2C%20capture%20the,somewhere%20in%20the%20target%20environment." target="_blank">CTF Competitions</a></dt>
 <dd>Engaged in Capture The Flag (CTF) challenges to enhance practical cybersecurity skills.</dd>
+<dt><a href="https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna.html" target="_blank">Cisco Certified Network Associate (CCNA)</a></dt>
+<dd>Studying for the CCNA certification to enhance knowledge and skills in networking fundamentals, security, and automation.</dd>
 </dl>
 
 * * *
@@ -111,5 +121,5 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 
 <p>
   Connect with me on:
-  <a href="mailto:your.email@example.com">Email</a>
+  <a href="mailto:fornes.rico77@gmail.com">Email</a>
 </p>
