@@ -2,7 +2,7 @@
 layout: default
 ---
 <div>
-## **./Whoami[~]**
+  <h2>./Whoami[~]</h2>
 </div>
 
 >   I’m a cybersecurity enthusiast eager to `learn` and `adapt`. Passionate about tech and always up for new challenges.
