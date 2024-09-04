@@ -93,12 +93,17 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 ## **./Projects[~]** 
 
 <dl>
-<dt><a href="https://github.com/ricoswabii/cybersec-lab" target="_blank">Cybersec Lab</a></dt>
-<dd>Developed a comprehensive home lab using VirtualBox with VMs running Parrot OS, Kali Linux, Windows, and Metasploitable. Implemented a SIEM system for network monitoring.</dd>
-<dt><a href="https://www.eccouncil.org/cybersecurity-exchange/ethical-hacking/capture-the-flag-ctf-cybersecurity/#:~:text=In%20cyber%20security%2C%20capture%20the,somewhere%20in%20the%20target%20environment." target="_blank">CTF Competitions</a></dt>
+<dt><a href="https://github.com/ricoswabii/cybersec-lab" target="_blank">Home Cybersecurity Lab:</a></dt>
+<dd>Developed a comprehensive home lab using VirtualBox with VMs running Parrot OS, Kali Linux, Windows, and Metasploitable.</dd>
+
+<dt><a href="https://github.com/ricoswabii/Detection_Lab" target="_blank">Elastic Stack SIEM Configuration and Management</a></dt>
+<dd>Successfully established and configured an Elastic Stack SIEM within a home lab environment. Showcased skills in deploying a Parrot OS VM, setting up Elastic Agents for log collection, and effectively forwarding data to the SIEM for comprehensive security event monitoring.</dd>
+
+<dt><a href="https://github.com/ricoswabii/Detection_Lab" target="_blank">Security Event Simulation and Analysis</a></dt>
+<dd>Acquired hands-on experience in generating and analyzing security events using Nmap on Parrot OS. Proficient in querying Elastic SIEM to identify and investigate security incidents, enhancing skills in network security monitoring and threat detection.</dd>
+
+<dt>CTF Competitions</dt>
 <dd>Engaged in Capture The Flag (CTF) challenges to enhance practical cybersecurity skills.</dd>
-<dt><a href="https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna.html" target="_blank">Cisco Certified Network Associate (CCNA)</a></dt>
-<dd>Studying for the CCNA certification to enhance knowledge and skills in networking fundamentals, security, and automation.</dd>
 </dl>
 
 * * *
