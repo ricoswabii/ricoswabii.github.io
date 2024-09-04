@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div>
+<div id="whoami">
   <h2>./Whoami[~]</h2>
 </div>
 
