@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
- 
+---
 ## **./Whoami[~]**
 
 >   I’m a cybersecurity enthusiast eager to `learn` and `adapt`. Passionate about tech and always up for new challenges.
