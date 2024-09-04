@@ -1,14 +1,13 @@
 ---
 layout: default
 ---
-<p></p>
+ 
 ## **./Whoami[~]**
 
 >   I’m a cybersecurity enthusiast eager to `learn` and `adapt`. Passionate about tech and always up for new challenges.
 >  
 > I thrive on solving complex problems and continuously growing my `skills`.
 
-* * * 
 * * * 
 ## **./Objective[~]**
 
@@ -17,7 +16,6 @@ As a dedicated cybersecurity professional, my objective is to leverage my skills
 I aim to continuously advance my knowledge and expertise through hands-on experience and ongoing education.
 
 * * *
-* * * 
 ## **./Skills[~]**
 
 <dl>
@@ -32,7 +30,6 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 </dl>
 
 * * *
-* * * 
 ## **./Tools[~]**
 
 ### **Cybersecurity Tools**
@@ -42,7 +39,6 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
   <img src="https://img.shields.io/badge/-Burp_Suite-FE8D00?&style=for-the-badge&logo=BurpSuite&logoColor=white" alt="Burp Suite" style="border-radius: 8px;" />
   <img src="https://img.shields.io/badge/-Nmap-000000?&style=for-the-badge&logo=Nmap&logoColor=white" alt="Nmap" style="border-radius: 8px;" />
   <img src="https://img.shields.io/badge/-Wireshark-1679A7?&style=for-the-badge&logo=Wireshark&logoColor=white" alt="Wireshark" style="border-radius: 8px;" />
-  <img src="https://img.shields.io/badge/-Wireshark-1679A7?&style=flat-square&logo=Wireshark&logoColor=white" alt="Wireshark" style="border-radius: 8px;" />
 </p>
 
 ### **Networking Tools**
@@ -54,16 +50,14 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 ### **SIEM Tools**
 
 <p style="display: flex; flex-wrap: wrap; gap: 10px;">
-  <img src="https://img.shields.io/badge/-Splunk-000000?&style=for-the-badge&logo=Splunk&logoColor=white" alt="Splunk" style="border-radius: 8px;" />
+<img src="https://img.shields.io/badge/-Elastic-005571?&style=for-the-badge&logo=Elastic&logoColor=white" alt="Elastic" style="border-radius: 8px;" />
 </p>
 
 * * *
-* * * 
-<br>
 ## **./Work Experience[~]** {#work}
 
 ### **Junior Cybersecurity Analyst**
-*Dates: August 2023 – Present*
+*Dates:* _August 2023 – Present_
 
 - Assist in developing and implementing security protocols and procedures.
 - Monitor security systems and respond to potential threats and vulnerabilities.
@@ -76,12 +70,7 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 - Provide technical support and troubleshooting.
 - Analyze and resolve technical issues related to performance and user experience.
 - Collaborate with development teams to address and rectify software bugs.
-
-### **Freelance IT Technician**
-*Dates:*
-
 - Offer IT support and solutions for various clients, including hardware repairs, software installations, and network configuration.
-- Assist in setting up and maintaining cybersecurity measures for small businesses and individual clients.
 
 ### **Social Media Manager**
 *Dates:*
@@ -102,24 +91,26 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 <dt><a href="https://github.com/ricoswabii/Detection_Lab" target="_blank">Security Event Simulation and Analysis</a></dt>
 <dd>Acquired hands-on experience in generating and analyzing security events using Nmap on Parrot OS. Proficient in querying Elastic SIEM to identify and investigate security incidents, enhancing skills in network security monitoring and threat detection.</dd>
 
-<dt>CTF Competitions</dt>
+<dt><a href="https://en.wikipedia.org/wiki/Capture_the_flag_(cybersecurity)" target="_blank">Capture The Flag (CTF) Challenges</a></dt>
 <dd>Engaged in Capture The Flag (CTF) challenges to enhance practical cybersecurity skills.</dd>
 </dl>
 
 * * *
 ## **./Education[~]** 
 
-### Eastern Visayas State University
-+ **Degree**: _Bachelor of Science in Information Technology_
-+ **Location**: _Tacloban City_
-+ **Year Graduated**: _2022_
+### _Eastern Visayas State University_
++ **Degree:** `Bachelor of Science in Information Technology`
++ **Location:** `Tacloban City`
++ **Year Graduated:** `2022`
+  
+### _Certifications_
 
-* * *
-## **./Certifications[~]**
+- **[Cisco Certified Network Associate (CCNA)](https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/ccna.html)** - Cisco
+- **[Certified Information Systems Security Professional (CISSP)](https://www.isc2.org/Certifications/CISSP)** - (ISC)²
+- **[Social Media Manager - Dict Philippines](https://dict.gov.ph)** - Department of Information and Communications Technology (DICT), Philippines
+- **[Certified Ethical Hacker (CEH) - TCM Academy](https://academy.tcm-sec.com/)** - TCM Academy
 
-- [Certified Ethical Hacker (CEH)](https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/) - EC-Council
-- [CompTIA Security+](https://www.comptia.org/certifications/security) - CompTIA
-- [Certified Information Systems Security Professional (CISSP)](https://www.isc2.org/Certifications/CISSP) - (ISC)²
+
 
 * * *
 ## **Contact Me** {#contact}
