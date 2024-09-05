@@ -108,11 +108,11 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 
 - **[Cisco Certified Network Associate (CCNA)](https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/ccna.html)** - Cisco
 - **[Certified Information Systems Security Professional (CISSP)](https://www.isc2.org/Certifications/CISSP)** - (ISC)²
-- **[Social Media Manager - Dict Philippines](https://dict.gov.ph)** - Department of Information and Communications Technology (DICT), Philippines
+- **[Social Media Manager - Dict Philippines](https://dict.gov.ph)** - (DICT), Philippines
 - **[Certified Ethical Hacker (CEH) - TCM Academy](https://academy.tcm-sec.com/)** - TCM Academy
 
 
-
+---
 * * *
 ## **Contact Me** {#contact}
 
