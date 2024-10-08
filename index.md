@@ -48,7 +48,7 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
   <img src="https://img.shields.io/badge/-Cisco_Packet_Tracer-0072C6?&style=for-the-badge&logo=Cisco&logoColor=white" alt="Cisco Packet Tracer" style="border-radius: 8px;" />
 </p>
 
-### **SIEM Tools**
+### **SIEM Tool**
 
 <p style="display: flex; flex-wrap: wrap; gap: 10px;">
 <img src="https://img.shields.io/badge/-Elastic-005571?&style=for-the-badge&logo=Elastic&logoColor=white" alt="Elastic" style="border-radius: 8px;" />
