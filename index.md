@@ -82,8 +82,8 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 - Collaborate with development teams to address and rectify software bugs.
 
 ### **IT Specialist**
-### <a>Wingo Inc</a> 
-<a>_Sep 2023 - Jul 2024_</a>
+### <a>_Wingo Inc_</a> 
+<a>Sep</a> 2023 - <a>Jul</a> 2024
 
 - Provide technical support and troubleshooting.
 - Analyze and resolve technical issues related to performance and user experience.
