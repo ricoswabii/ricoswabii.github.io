@@ -25,8 +25,9 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 <dd>Skilled in identifying vulnerabilities using industry-standard tools and methodologies.</dd>
 <img src="https://img.shields.io/badge/-Network%20Security-1679A7?&style=for-the-badge&logo=cisco&logoColor=white" alt="Network Security" style="border-radius: 8px;" />
 
-<dd>Experienced in securing and monitoring network infrastructure to detect and mitigate threats.</dd>
-<img src="https://img.shields.io/badge/-Incident%20Response-1679A7?&style=for-the-badge&logo=security&logoColor=white" alt="Incident Response" style="border-radius: 8px;" />
+<dd>Experienced in securing and monitoring network infrastructure to detect and mitigate threats.</dd
+                                                                                                   
+<img src="https://img.shields.io/badge/-Incident%20Response-1679A7?&style=for-the-badge&logo=thehive-project&logoColor=white" alt="Incident Response" style="border-radius: 8px;" />
 <dd>Adept at managing and responding to security incidents with a focus on minimizing impact.</dd>
 
 <img src="https://img.shields.io/badge/-Programming-1679A7?&style=for-the-badge&logo=python&logoColor=white" alt="Programming" style="border-radius: 8px;" />
