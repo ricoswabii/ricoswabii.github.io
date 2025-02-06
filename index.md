@@ -136,6 +136,7 @@ Dec 2022 - Jun 2023
 ## **Contact Me** {#contact}
 
 <p>
-  Connect with me on:
+  Connect me on:
   <a href="mailto:fornes.rico77@gmail.com">Email</a>
+  Phone: +639164616036
 </p>
