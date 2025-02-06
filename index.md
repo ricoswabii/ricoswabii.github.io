@@ -90,7 +90,7 @@ Sep 2023 - Jul 2024
 - Collaborate with development teams to address and rectify software bugs.
 - Offer IT support and solutions for various clients, including hardware repairs, software installations, and network configuration.
 
-### **Social Media Manager**
+### <a>Social Media Management</a>
 ### _Echonnect Digitals || Zubko's_
 Dec 2022 - Jun 2023
 
@@ -141,5 +141,5 @@ Dec 2022 - Jun 2023
 <p>
   Connect me on:
   <a href="mailto:fornes.rico77@gmail.com">Email</a>
-  Phone: +639164616036
 </p>
+ Phone: +639164616036
