@@ -74,7 +74,7 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 
 ### **Cybersecurity Analyst**
 ### <a h1>_Bunkerweb_</a>
-<a>_Aug 2023 – Present_</a>
+<a>Aug 2023</a> – Present
 
 - Test beta versions of an open-source WAF to ensure security before release.
 - Assist in developing and implementing security protocols and procedures.
@@ -83,7 +83,7 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 
 ### **IT Specialist**
 ### <a>_Wingo Inc_</a> 
-<a>Sep</a> 2023 - <a>Jul</a> 2024
+<a>Sep 2023</a> - Jul 2024
 
 - Provide technical support and troubleshooting.
 - Analyze and resolve technical issues related to performance and user experience.
@@ -92,7 +92,7 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 
 ### **Social Media Manager**
 ### <a>_Echonnect Digitals || Zubko's_</a>
-<a>_Dec 2022 - Jun 2023_</a>
+<a>Dec 2022</a>- Jun 2023
 
 - Manage social media profiles and create engaging content to increase brand visibility.
 - Analyze social media metrics to optimize campaigns and improve user engagement.
