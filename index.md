@@ -92,7 +92,7 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 
 ### **Social Media Manager**
 ### <a>_Echonnect Digitals || Zubko's_</a>
-<a>Dec 2022</a>- Jun 2023
+<a>Dec 2022</a> - Jun 2023
 
 - Manage social media profiles and create engaging content to increase brand visibility.
 - Analyze social media metrics to optimize campaigns and improve user engagement.
