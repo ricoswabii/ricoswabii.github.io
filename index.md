@@ -73,7 +73,7 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 ## **./Work Experience[~]** {#work}
 
 ### **Junior Cybersecurity Analyst**
-#### Bunkerweb
+### _Bunkerweb_
  _Aug 2023 – Present_
 
 - Test beta versions of an open-source WAF to ensure security before release.
@@ -82,7 +82,7 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 - Collaborate with development teams to address and rectify software bugs.
 
 ### **IT Specialist**
-#### Wingo Inc 
+### _Wingo Inc_ 
 _Sep 2023 - Jul 2024_
 
 - Provide technical support and troubleshooting.
@@ -91,7 +91,7 @@ _Sep 2023 - Jul 2024_
 - Offer IT support and solutions for various clients, including hardware repairs, software installations, and network configuration.
 
 ### **Social Media Manager**
-#### Echonnect Digitals || Zubko's
+### _Echonnect Digitals || Zubko's_
  _Dec 2022 - Jun 2023_
 
 - Manage social media profiles and create engaging content to increase brand visibility.
