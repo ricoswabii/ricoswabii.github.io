@@ -20,21 +20,33 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 ## **./Skills[~]**
 
 <dl>
-<img src="https://img.shields.io/badge/-Penetration%20Tester-1679A7?&style=for-the-badge&logo=metasploit&logoColor=white" alt="Penetration Testing" style="border-radius: 8px;" />
+
+<img src="https://img.shields.io/badge/-Remote%20Support-1679A7?&style=for-the-badge&logo=teamviewer&logoColor=white" alt="Remote Support" style="border-radius: 8px;" />
+
+<dd>Proficient in troubleshooting, resolving technical issues, and providing remote support to ensure smooth IT operations.</dd>
+  
+<img src="https://img.shields.io/badge/-Penetration%20Testing-1679A7?&style=for-the-badge&logo=metasploit&logoColor=white" alt="Penetration Testing" style="border-radius: 8px;" />
+
 
 <dd>Skilled in identifying vulnerabilities using industry-standard tools and methodologies.</dd>
 <img src="https://img.shields.io/badge/-Network%20Security-1679A7?&style=for-the-badge&logo=cisco&logoColor=white" alt="Network Security" style="border-radius: 8px;" />
 
-<dd>Experienced in securing and monitoring network infrastructure to detect and mitigate threats.</dd
-                                                                                                   
-<img src="https://img.shields.io/badge/-Incident%20Response-1679A7?&style=for-the-badge&logo=thehive-project&logoColor=white" alt="Incident Response" style="border-radius: 8px;" />
+<dd>Experienced in securing and monitoring network infrastructure to detect and mitigate threats.</dd>
+<img src="https://img.shields.io/badge/-Incident%20Response-1679A7?&style=for-the-badge&logo=elastic&logoColor=white" alt="Incident Response" style="border-radius: 8px;" />
+
 <dd>Adept at managing and responding to security incidents with a focus on minimizing impact.</dd>
 
 <img src="https://img.shields.io/badge/-Programming-1679A7?&style=for-the-badge&logo=python&logoColor=white" alt="Programming" style="border-radius: 8px;" />
 <dd>Proficient in Python & bash scripting.</dd>
+
+<img src="https://img.shields.io/badge/-Social%20Media%20Management-1679A7?&style=for-the-badge&logo=facebook&logoColor=white" alt="Social Media Management" style="border-radius: 8px;" />
+
+<dd>Skilled in managing social media accounts, creating content, and driving engagement to enhance brand presence.</dd>
+
 </dl>
 
 * * *
+<!--
 ## **./Tools[~]**
 
 ### **Cybersecurity Tools**
@@ -57,8 +69,7 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 <p style="display: flex; flex-wrap: wrap; gap: 10px;">
 <img src="https://img.shields.io/badge/-Elastic-005571?&style=for-the-badge&logo=Elastic&logoColor=white" alt="Elastic" style="border-radius: 8px;" />
 </p>
-
-* * *
+-->
 ## **./Work Experience[~]** {#work}
 
 ### **Junior Cybersecurity Analyst**
