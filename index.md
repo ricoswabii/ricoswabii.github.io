@@ -107,6 +107,7 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 ### _Certifications_
 
 - **[Cisco Certified Network Associate (CCNA)](https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/ccna.html)** - Cisco
+- **[Google IT Support ](https://www.coursera.org/professional-certificates/google-it-support)** - IT Support
 - **[Certified Information Systems Security Professional (CISSP)](https://www.isc2.org/Certifications/CISSP)** - (ISC)²
 - **[Social Media Manager - Dict Philippines](https://dict.gov.ph)** - (DICT), Philippines
 - **[Certified Ethical Hacker (CEH) - TCM Academy](https://academy.tcm-sec.com/)** - TCM Academy
