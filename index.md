@@ -70,7 +70,7 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 <img src="https://img.shields.io/badge/-Elastic-005571?&style=for-the-badge&logo=Elastic&logoColor=white" alt="Elastic" style="border-radius: 8px;" />
 </p>
 -->
-## **./Work Experience[~]** {#work}
+## **./Experience[~]** {#work}
 
 ### **Junior Cybersecurity Analyst**
 ### _Bunkerweb_
