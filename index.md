@@ -20,7 +20,8 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 ## **./Skills[~]**
 
 <dl>
-<dt>Penetration Testing</dt>
+<dt>Penetration Testing</dt><img src="https://img.shields.io/badge/-Penetration%20Tester-1679A7?&style=for-the-badge&logo=metasploit&logoColor=white" alt="Penetration Tester" style="border-radius: 8px;" />
+
 <dd>Skilled in identifying vulnerabilities using industry-standard tools and methodologies.</dd>
 <dt>Network Security</dt>
 <dd>Experienced in securing and monitoring network infrastructure to detect and mitigate threats.</dd>
