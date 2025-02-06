@@ -118,10 +118,13 @@ Dec 2022 - Jun 2023
 ## **./Education[~]** 
 
 ### _Eastern Visayas State University_
-+ **Degree:** `Bachelor of Science in Information Technology`
-+ **Location:** `Tacloban City`
-+ **Year Graduated:** `2022`
-  
+> **Degree:** `Bachelor of Science in Information Technology`
+> 
+> **Location:** `Tacloban City`
+> 
+> **Year Graduated:** `2022`
+
+
 ### _Certifications_
 
 - **[Cisco Certified Network Associate ](https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/ccna.html)** - Cisco
