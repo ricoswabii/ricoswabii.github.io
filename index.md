@@ -74,7 +74,7 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 
 ### **Junior Cybersecurity Analyst**
 ### <a>_Bunkerweb_</a>
-_Aug 2023 – Present_
+<a>_Aug 2023 – Present_</a>
 
 - Test beta versions of an open-source WAF to ensure security before release.
 - Assist in developing and implementing security protocols and procedures.
@@ -83,7 +83,7 @@ _Aug 2023 – Present_
 
 ### **IT Specialist**
 ### <a>_Wingo Inc_</a> 
-_Sep 2023 - Jul 2024_
+<a>_Sep 2023 - Jul 2024_</a>
 
 - Provide technical support and troubleshooting.
 - Analyze and resolve technical issues related to performance and user experience.
@@ -92,7 +92,7 @@ _Sep 2023 - Jul 2024_
 
 ### **Social Media Manager**
 ### <a>_Echonnect Digitals || Zubko's_</a>
-_Dec 2022 - Jun 2023_
+<a>_Dec 2022 - Jun 2023_</a>
 
 - Manage social media profiles and create engaging content to increase brand visibility.
 - Analyze social media metrics to optimize campaigns and improve user engagement.
