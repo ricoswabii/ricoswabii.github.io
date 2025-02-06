@@ -72,8 +72,8 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 -->
 ## **./Experience[~]** {#work}
 
-### **Junior Cybersecurity Analyst**
-### <a>_Bunkerweb_</a>
+### **Cybersecurity Analyst**
+### <a h1>_Bunkerweb_</a>
 <a>_Aug 2023 – Present_</a>
 
 - Test beta versions of an open-source WAF to ensure security before release.
