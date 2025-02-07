@@ -96,6 +96,9 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 
 - Manage social media profiles and create engaging content to increase brand visibility.
 - Analyze social media metrics to optimize campaigns and improve user engagement.
+- Developed and executed social media campaigns, tracked performance, and collaborated with teams to enhance brand presence online.
+- Managed daily social media activities, provided insights to drive growth and increase community interaction.
+
 
 * * *
 ## **./Projects[~]** 
