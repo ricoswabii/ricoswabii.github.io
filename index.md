@@ -134,9 +134,6 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 - **[IT Support Professional Certificate ](https://www.coursera.org/professional-certificates/google-it-support)** - Google
 - **[Cybersecurity Associate Certificate](https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/ccna.html)** - Cisco
 - **[Social Media Manager - Dict Philippines](https://dict.gov.ph)** - Department of Information and Communications Technology, Philippines
-<!--
-- **[Certified Ethical Hacker (CEH)](https://www.eccouncil.org/train-certify/certified-ethical-hacker-ceh/)** - EC-Council-->
-
 
 ---
 * * *
