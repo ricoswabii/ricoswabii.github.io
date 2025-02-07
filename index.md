@@ -74,7 +74,7 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 
 ### **Cybersecurity Analyst**
 ### <a h1>_Bunkerweb_</a>
-<a>Aug 2023</a> – Present
+<a>_Aug 2023_</a> – _Present_
 
 - Test beta versions of an open-source WAF to ensure security before release.
 - Assist in developing and implementing security protocols and procedures.
@@ -83,7 +83,7 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 
 ### **IT Specialist**
 ### <a>_Wingo Inc_</a> 
-<a>Sep 2023</a> - Jul 2024
+<a>_Sep 2023_</a> - _Jul 2024_
 
 - Provide technical support and troubleshooting.
 - Analyze and resolve technical issues related to performance and user experience.
@@ -92,7 +92,7 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 
 ### **Social Media Manager**
 ### <a>_Echonnect Digitals || Zubko's_</a>
-<a>Dec 2022</a> - Jun 2023
+<a>_Dec 2022_</a> - _Jun 2023_
 
 - Manage social media profiles and create engaging content to increase brand visibility.
 - Analyze social media metrics to optimize campaigns and improve user engagement.
@@ -142,4 +142,4 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
   Connect me on:
   <a href="mailto:fornes.rico77@gmail.com">Email</a>
 </p>
- Phone: +639164616036
+ Phone: +639154616036
