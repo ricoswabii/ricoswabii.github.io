@@ -96,7 +96,7 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 - Offer IT support and solutions for various clients, including hardware repairs, software installations, and network configuration.
 
 ### **Social Media Manager**
-### <a>_Echonnect Digitals || Zubko's_</a>
+### <a>_Echonnect Digitals | Zubko's_</a>
 <a>_Dec 2022_</a> - _Jun 2023_
 
 - Manage social media profiles and create engaging content to increase brand visibility.
@@ -109,17 +109,17 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 ## **./Projects[~]** 
 
 <dl>
-<dt><a href="https://github.com/ricoswabii/cybersec-lab" target="_blank">Home Cybersecurity Lab:</a></dt>
-<dd>Developed a comprehensive home lab using VirtualBox with VMs running Parrot OS, Kali Linux, Windows, and Metasploitable.</dd>
+<dt><a href="https://github.com/ricoswabii/cybersec-lab" target="_blank">Personal Cybersecurity Operations Lab</a></dt>
+<dd>Built and managed a personal cybersecurity lab for hands-on research in security operations, gaining practical experience in both offensive and defensive security methodologies.</dd>
 
-<dt><a href="https://github.com/ricoswabii/Detection_Lab" target="_blank">Elastic Stack SIEM Configuration and Management</a></dt>
-<dd>Successfully established and configured an Elastic Stack SIEM within a home lab environment. Showcased skills in deploying a Parrot OS VM, setting up Elastic Agents for log collection, and effectively forwarding data to the SIEM for comprehensive security event monitoring.</dd>
-
-<dt><a href="https://github.com/ricoswabii/Detection_Lab" target="_blank">Security Event Simulation and Analysis</a></dt>
+<dt><a href="https://github.com/ricoswabii/Detection_Lab" target="_blank">Security Event Simulation and Analysis lab</a></dt>
 <dd>Acquired hands-on experience in generating and analyzing security events using Nmap on Parrot OS. Proficient in querying Elastic SIEM to identify and investigate security incidents, enhancing skills in network security monitoring and threat detection.</dd>
 
+<dt><a href="https://github.com/ricoswabii/Detection_Lab" target="_blank">Elastic Stack SIEM Configuration and Management</a></dt>
+<dd>Configured and managed a personalized Elastic Stack SIEM to collect, analyze, and monitor security logs, enhancing threat detection and incident response capabilities.</dd>
+
 <dt><a href="https://en.wikipedia.org/wiki/Capture_the_flag_(cybersecurity)" target="_blank">Capture The Flag (CTF) Challenges</a></dt>
-<dd>Engaged in Capture The Flag (CTF) challenges to enhance practical cybersecurity skills.</dd>
+<dd>Participated in Capture The Flag (CTF) challenges to strengthen hands-on cybersecurity skills in various domains.</dd>
 </dl>
 
 * * *
@@ -135,9 +135,9 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 
 ### _Certifications_
 
-- **[Cisco Certified Network Associate ](https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/ccna.html)** - Cisco
-- **[IT Support Professional Certificate ](https://www.coursera.org/professional-certificates/google-it-support)** - Google
-- **[Cybersecurity Associate Certificate](https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/ccna.html)** - Cisco
+- **[Cisco Certified Network Associate ](https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/ccna.html)** - NetAcad | Cisco 
+- **[IT Support Professional Certificate ](https://www.coursera.org/professional-certificates/google-it-support)** - Coursera | Google
+- **[Cybersecurity Associate Certificate](https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/ccna.html)** - NetAcad | Cisco
 - **[Social Media Manager - Dict Philippines](https://dict.gov.ph)** - Department of Information and Communications Technology, Philippines
 
 ---
