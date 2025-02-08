@@ -25,6 +25,14 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 ## **./Skills[~]**
 
 <dl>
+<img src="https://img.shields.io/badge/-Communication-1679A7?&style=for-the-badge&logo=wechat&logoColor=white" alt="Communication" style="border-radius: 8px;" />
+
+<dd>Effectively conveys ideas, information, and solutions within an organization to enhance collaboration and productivity.</dd>
+
+<img src="https://img.shields.io/badge/-Adaptability-1679A7?&style=for-the-badge&logo=react&logoColor=white" alt="Adaptability" style="border-radius: 8px;" />
+
+<dd>Quickly learns and adapts to new technologies, environments, and challenges to maintain efficiency in dynamic operations.</dd>
+
 
 <img src="https://img.shields.io/badge/-Remote%20Support-1679A7?&style=for-the-badge&logo=teamviewer&logoColor=white" alt="Remote Support" style="border-radius: 8px;" />
 
