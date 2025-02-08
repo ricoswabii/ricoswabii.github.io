@@ -12,8 +12,13 @@ layout: default
 * * * 
 ## **./Objective[~]**
 
+<!--
 As a dedicated cybersecurity professional, my objective is to leverage my skills in **penetration testing**, **network security**, and **incident response** to contribute to a `dynamic security team`. 
+-->
+Driven by a passion for `technology`, I seek to apply my skills in any **IT role** where I can contribute to the **organization’s success**. 
 
+I am looking for an `opportunity` to leverage my expertise, grow within the company, and continually refine my skills while adapting to new challenges.
+ 
 I aim to continuously advance my knowledge and expertise through hands-on experience and ongoing education.
 
 * * *
