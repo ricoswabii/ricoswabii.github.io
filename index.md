@@ -146,7 +146,7 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 - **[Cisco Certified Network Associate ](https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/ccna.html)**  | NetAcad  Cisco 
 - **[IT Support Professional Certificate ](https://www.coursera.org/professional-certificates/google-it-support)**  | Coursera  Google
 - **[Cybersecurity Associate Certificate](https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/ccna.html)**  | NetAcad  Cisco
-- **[Social Media Management](https://dict.gov.ph)** | | | DICT PH
+- **[Social Media Management](https://dict.gov.ph)** | |  DICT PH
 
 ---
 * * *
