@@ -27,12 +27,11 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 <dl>
 <img src="https://img.shields.io/badge/-Communication-1679A7?&style=for-the-badge&logo=wechat&logoColor=white" alt="Communication" style="border-radius: 8px;" />
 
-<dd>Effectively conveys ideas, information, and solutions within an organization to enhance collaboration and productivity.</dd>
+<dd>A strong communicator with the ability to convey ideas effectively and collaborate within teams.</dd>
 
 <img src="https://img.shields.io/badge/-Adaptability-1679A7?&style=for-the-badge&logo=react&logoColor=white" alt="Adaptability" style="border-radius: 8px;" />
 
-<dd>Quickly learns and adapts to new technologies, environments, and challenges to maintain efficiency in dynamic operations.</dd>
-
+<dd>Able to learn quickly and adapt to new challenges and changing environments.</dd>
 
 <img src="https://img.shields.io/badge/-Remote%20Support-1679A7?&style=for-the-badge&logo=teamviewer&logoColor=white" alt="Remote Support" style="border-radius: 8px;" />
 
