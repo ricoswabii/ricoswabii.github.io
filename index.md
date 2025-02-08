@@ -120,7 +120,7 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 <dt><a href="https://github.com/ricoswabii/cybersec-lab" target="_blank">Personal Cybersecurity Operations Lab</a></dt>
 <dd>Built and managed a personal cybersecurity lab for hands-on research in security operations, gaining practical experience in both offensive and defensive security methodologies.</dd>
 
-<dt><a href="https://github.com/ricoswabii/Detection_Lab" target="_blank">Security Event Simulation and Analysis lab</a></dt>
+<dt><a href="https://github.com/ricoswabii/Detection_Lab" target="_blank">Security Event Simulation and Analysis Lab</a></dt>
 <dd>Acquired hands-on experience in generating and analyzing security events using Nmap on Parrot OS. Proficient in querying Elastic SIEM to identify and investigate security incidents, enhancing skills in network security monitoring and threat detection.</dd>
 
 <dt><a href="https://github.com/ricoswabii/Detection_Lab" target="_blank">Elastic Stack SIEM Configuration and Management</a></dt>
@@ -146,7 +146,7 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 - **[Cisco Certified Network Associate ](https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/ccna.html)**  | NetAcad  Cisco 
 - **[IT Support Professional Certificate ](https://www.coursera.org/professional-certificates/google-it-support)**  | Coursera  Google
 - **[Cybersecurity Associate Certificate](https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/ccna.html)**  | NetAcad  Cisco
-- **[Social Media Management](https://dict.gov.ph)** | | DICT Philippines
+- **[Social Media Management](https://dict.gov.ph)** | | | DICT Philippines
 
 ---
 * * *
