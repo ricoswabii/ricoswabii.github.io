@@ -81,7 +81,7 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 -->
 ## **./Experience[~]** {#work}
 
-### **Cybersecurity Analyst | Freelance**
+### **Freelance | Cybersecurity Analyst**
 ### <a h1>_Bunkerweb_</a>
 <a>_Aug 2023_</a> – _Jan 2025_
 
