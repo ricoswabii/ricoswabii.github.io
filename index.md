@@ -5,10 +5,10 @@ layout: default
   <h2><strong>./Whoami[~]</strong></h2>
 </div>
 
->  Hello! I'm a `cybersecurity enthusiast` with a strong passion for tech. Always eager to **learn**, **adapt**, and take on **new challenges*.
+>  Hello! I'm a `cybersecurity enthusiast` with a strong passion for tech. Always eager to **learn**, **adapt**, and take on **new challenges**.
 > 
 > In addition to cybersecurity, I freelance as an **IT Support** and **Social Media Manager**, providing technical solutions and strengthening digital branding.
-> 
+>
 > In my free time, I upskill and engage in outdoor activities, constantly striving for growth.
 > 
 > Adaptable and resourceful,  I embrace every challenge as an opportunity to grow and thrive in the ever-evolving `tech field`.
