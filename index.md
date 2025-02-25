@@ -83,7 +83,7 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 
 ### **Cybersecurity Analyst | Freelance**
 ### <a h1>_Bunkerweb_</a>
-<a>_Aug 2023_</a> – _Present_
+<a>_Aug 2023_</a> – _Jan 2025_
 
 - Test beta versions of an open-source WAF to ensure security before release.
 - Assist in developing and implementing security protocols and procedures.
