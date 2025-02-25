@@ -5,22 +5,27 @@ layout: default
   <h2><strong>./Whoami[~]</strong></h2>
 </div>
 
->   I’m a cybersecurity enthusiast eager to `learn` and `adapt`. Passionate about tech and always up for new challenges.
+>  Hello! I'm a `cybersecurity enthusiast` with a strong passion for tech. Always eager to **learn**, **adapt**, and take on **new challenges*.
+> 
+> In addition to cybersecurity, I freelance as an **IT Support** and **Social Media Manager**, providing technical solutions and strengthening digital branding.
+> 
+> In my free time, I upskill and engage in outdoor activities, constantly striving for growth.
+> 
+> Adaptable and resourceful,  I embrace every challenge as an opportunity to grow and thrive in the ever-evolving `tech field`.
 >  
-> I thrive on solving complex problems and continuously growing my `skills`.
 
 * * * 
 ## **./Objective[~]**
 
+I seek to apply my skills in an `IT or cybersecurity` role where I can contribute meaningfully to an organization’s success.
+
+I am looking for an opportunity to leverage my expertise, collaborate with like-minded professionals, and grow within a `dynamic environment`. 
+
+Dedicated to continuous learning, I work to improve my skills, stay current with industry trends, and gain practical experience through ongoing education.
+
 <!--
 As a dedicated cybersecurity professional, my objective is to leverage my skills in **penetration testing**, **network security**, and **incident response** to contribute to a `dynamic security team`. 
 -->
-Driven by a passion for `technology`, I seek to apply my skills in any **IT role** where I can contribute to the **organization’s success**. 
-
-I am looking for an `opportunity` to leverage my expertise, grow within the company, and continually refine my skills while adapting to new challenges.
- 
-I aim to continuously advance my knowledge and expertise through hands-on experience and ongoing education.
-
 * * *
 ## **./Skills[~]**
 
