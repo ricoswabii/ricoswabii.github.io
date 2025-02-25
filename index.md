@@ -146,7 +146,7 @@ As a dedicated cybersecurity professional, my objective is to leverage my skills
 - **[Cisco Certified Network Associate ](https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/ccna.html)**  | NetAcad  Cisco 
 - **[IT Support Professional Certificate ](https://www.coursera.org/professional-certificates/google-it-support)**  | Coursera  Google
 - **[Cybersecurity Associate Certificate](https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/ccna.html)**  | NetAcad  Cisco
-- **[Social Media Management]** | DICT PH
+- **[Social Media Management](https:)** | DICT PH
 
 ---
 * * *
