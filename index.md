@@ -119,13 +119,9 @@ I aim to continuously advance my knowledge and expertise through hands-on experi
 
 <dt><a href="https://github.com/ricoswabii/Detection_Lab" target="_blank">Security Event Simulation and Analysis Lab</a></dt>
 <dd> </dd>
-<dd>Acquired hands-on experience in generating and analyzing security events using Nmap on Parrot OS. Proficient in querying Elastic SIEM to identify and investigate security incidents, enhancing skills in network security monitoring and threat detection.</dd>
+<dd>Gained practical experience in generating and analyzing security events through homelab practice in a controlled environment. Skilled in querying Elastic SIEM to detect and investigate security incidents, enhancing expertise in network security monitoring, threat detection, and incident response. Developed a strong understanding of log analysis and cybersecurity operations to improve threat-hunting capabilities.</dd>
 
-<dt><a href="https://github.com/ricoswabii/Detection_Lab" target="_blank">Elastic Stack SIEM Configuration and Management</a></dt>
-<dd> </dd>
-<dd>Configured and managed a personalized Elastic Stack SIEM to collect, analyze, and monitor security logs, enhancing threat detection and incident response capabilities.</dd>
-
-<dt><a href="https://en.wikipedia.org/wiki/Capture_the_flag_(cybersecurity)" target="_blank">Capture The Flag (CTF) Challenges</a></dt>
+<dt><a href="" target="_blank">Capture The Flag (CTF) Challenges</a></dt>
 <dd>Participated in Capture The Flag (CTF) challenges to strengthen hands-on cybersecurity skills in various domains.</dd>
 </dl>
 
