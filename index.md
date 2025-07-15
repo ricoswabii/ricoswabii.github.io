@@ -86,8 +86,8 @@ As a dedicated cybersecurity professional, my objective is to leverage my skills
 -->
 ## **./Experience[~]** {#work}
 
-### **Freelance | Cybersecurity Analyst**
-### <a h1>_Bunkerweb_</a>
+### **Freelance | Jr Cybersecurity Analyst**
+### <a h1>_Bunkerweb-Bunkerity_</a>
 <a>_Aug 2023_</a> – _Jan 2025_
 
 - Test beta versions of an open-source WAF to ensure security before release.
