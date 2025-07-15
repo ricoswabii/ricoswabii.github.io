@@ -86,8 +86,8 @@ As a dedicated cybersecurity professional, my objective is to leverage my skills
 -->
 ## **./Experience[~]** {#work}
 
-### **Freelance | Jr Cybersecurity Analyst**
-### <a h1>_Bunkerweb-Bunkerity_</a>
+### **Jr. Cybersecurity Analyst**
+### <a h1>_BunkerWeb Bunkerity_ | Freelance</a>
 <a>_Aug 2023_</a> – _Jan 2025_
 
 - Test beta versions of an open-source WAF to ensure security before release.
@@ -156,4 +156,4 @@ As a dedicated cybersecurity professional, my objective is to leverage my skills
   Connect me on:
   <a href="mailto:fornes.rico77@gmail.com">Email</a>
 </p>
- Phone: +639154616036
+ Phone: +639260649319 
