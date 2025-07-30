@@ -59,7 +59,7 @@ As a dedicated cybersecurity professional, my objective is to leverage my skills
 
 </dl>
 
-### **Tech Stack**
+### **Tech Stack:**
 
 ![Windows](https://img.shields.io/badge/Windows-%230078D6.svg?style=for-the-badge&logo=windows&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-%23FCC624.svg?style=for-the-badge&logo=linux&logoColor=black)
