@@ -80,7 +80,7 @@ As a dedicated cybersecurity professional, my objective is to leverage my skills
 ![Snort](https://img.shields.io/badge/Snort-%23F00000.svg?style=for-the-badge&logo=snort&logoColor=white)
 ![Splunk](https://img.shields.io/badge/splunk-%23000000.svg?style=for-the-badge&logo=splunk&logoColor=white)
 
-
+* * *
 <!--
 ## **./Tools[~]**
 
