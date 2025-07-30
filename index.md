@@ -60,6 +60,27 @@ As a dedicated cybersecurity professional, my objective is to leverage my skills
 </dl>
 
 * * *
+## **./Tools[~]**
+
+![Windows](https://img.shields.io/badge/Windows-%230078D6.svg?style=for-the-badge&logo=windows&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-%23FCC624.svg?style=for-the-badge&logo=linux&logoColor=black)
+![Active Directory](https://img.shields.io/badge/Active%20Directory-%230078D6.svg?style=for-the-badge&logo=microsoft&logoColor=white)
+![Microsoft 365](https://img.shields.io/badge/Microsoft%20365-%23D83B01.svg?style=for-the-badge&logo=microsoft&logoColor=white)
+![AnyDesk](https://img.shields.io/badge/AnyDesk-%23E20000.svg?style=for-the-badge&logo=anydesk&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
+![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Nmap](https://img.shields.io/badge/Nmap-005f87?style=for-the-badge&logo=gnu-privacy-guard&logoColor=white)
+![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
+![VirtualBox](https://img.shields.io/badge/VirtualBox-%23007ACC.svg?style=for-the-badge&logo=virtualbox&logoColor=white)
+![Cisco Packet Tracer](https://img.shields.io/badge/Cisco%20Packet%20Tracer-%23006494.svg?style=for-the-badge&logo=cisco&logoColor=white)
+![MITRE ATT&CK](https://img.shields.io/badge/MITRE%20ATT%26CK-Red?style=for-the-badge&logo=target&logoColor=white)
+![Wireshark](https://img.shields.io/badge/Wireshark-%231670A0.svg?style=for-the-badge&logo=wireshark&logoColor=white)
+![Elasticsearch](https://img.shields.io/badge/elasticsearch-%230377CC.svg?style=for-the-badge&logo=elasticsearch&logoColor=white)
+![Snort](https://img.shields.io/badge/Snort-%23F00000.svg?style=for-the-badge&logo=snort&logoColor=white)
+![Splunk](https://img.shields.io/badge/splunk-%23000000.svg?style=for-the-badge&logo=splunk&logoColor=white)
+
+
 <!--
 ## **./Tools[~]**
 
