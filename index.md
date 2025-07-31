@@ -178,7 +178,7 @@ As a dedicated cybersecurity professional, my objective is to leverage my skills
 ## **Contact Me** {#contact}
 
 <p>
-  Connect me on:
+ Message me on:
   <a href="mailto:fornes.rico77@gmail.com">Email</a>
 </p>
  Phone: +639260649319 
