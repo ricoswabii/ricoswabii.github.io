@@ -128,7 +128,7 @@ layout: default
 
 ### **IT Specialist**
 ### <a>_Wingo Inc_</a> 
-[ _Sep 2023_ ] - [ _Jul 2024_ ]
+[_Sep 2023_] - [_Jul 2024_]
 
 - Provide technical support and troubleshooting remotely.
 - Analyze and resolve technical issues related to performance and user experience.
@@ -137,7 +137,7 @@ layout: default
 
 ### **Social Media Manager**
 ### <a>_Echonnect Digitals_</a>
-[ _Dec 2022_ ] - [ _Jun 2023_ ]
+[_Dec 2022_] - [_Jun 2023_]
 
 - Manage social media profiles and create engaging content to increase brand visibility.
 - Analyze social media metrics to optimize campaigns and improve user engagement.
