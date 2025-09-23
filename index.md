@@ -11,23 +11,38 @@ layout: default
 >
 > I see every challenge as a chance to`upgrade skills` and every project as a `deployment for growth`.
 >
-> ./whoami --verbose
 >
->[+] System Scan Initiated...  
->[+] Identity Fingerprint Acquired  
+>**User:**         `RicoFornes`
 >
->User_ID     : RicoFornes  
->Role        : Cybersecurity Enthusiast | IT & Digital Ops  
->Clearance   : Tier-1 Analyst (Red/Blue hybrid)  
->OS          : Human v25.0 (Adaptive Kernel)  
->Location    : APAC / PH  
+>**Role:**         `Cybersecurity Enthusiast | IT Specialist | SMM`
+> 
+>**Location:**     `Leyte, Philippines [PH]`
+> 
+>**Status:**       `Active / Learning Mode [ON]`
+> 
+
 >
+>
+> **User:**  `Cybersecurity Enthusiast | IT Specialist | SMM`
+> 
+> └─> `RicoFornes`
+>
+> 
+>**Role:**
+>
+> └─> `Cybersecurity Enthusiast | IT Specialist | SMM`
+>  
+>**Location:**
+>
+> └─> `Philippines [PH]`
+> 
+>**Status:**
+> 
+> └─> `Active / Learning Mode [ON]` 
+>
+> 
 >:: Profile Summary ::  
->└─> Passion-driven operator in cybersecurity and technology  
->└─> Focused on vulnerability analysis, IT support, and digital branding  
->└─> Thrives on challenges, adapts to evolving environments, and  
->    treats learning as a permanent background process.  
->
+
 * * * 
 ## **./Objective[~]**
 
@@ -169,7 +184,7 @@ Dedicated to continuous learning, I work to improve my skills, stay current with
 * * *
 ## **./Education[~]** 
 
-### _Eastern Visayas State University_
+### 🎓 _Eastern Visayas State University_
 > **Degree:** `Bachelor of Science in Information Technology`
 > 
 > **Location:** `Tacloban City`
@@ -194,4 +209,4 @@ Dedicated to continuous learning, I work to improve my skills, stay current with
  Message me on:
   <a href="mailto:fornes.rico77@gmail.com">Email</a>
 </p>
- Phone: +639260649319 
+ Phone: +63 926 064 9319
