@@ -8,10 +8,26 @@ layout: default
 >  Hello! I'm a `cybersecurity enthusiast` with a strong passion for tech. Always eager to **learn**, **adapt**, and take on **new challenges**.
 > 
 > In addition to cybersecurity, I freelance as an **IT Support** and **Social Media Manager**, providing technical solutions and strengthening digital branding.
-> 
->  I embrace every challenge as an opportunity to grow and thrive in the ever-evolving `tech field`.
->  
-
+>
+> I see every challenge as a chance to`upgrade skills` and every project as a `deployment for growth`.
+>
+> ./whoami --verbose
+>
+>[+] System Scan Initiated...  
+>[+] Identity Fingerprint Acquired  
+>
+>User_ID     : RicoFornes  
+>Role        : Cybersecurity Enthusiast | IT & Digital Ops  
+>Clearance   : Tier-1 Analyst (Red/Blue hybrid)  
+>OS          : Human v25.0 (Adaptive Kernel)  
+>Location    : APAC / PH  
+>
+>:: Profile Summary ::  
+>└─> Passion-driven operator in cybersecurity and technology  
+>└─> Focused on vulnerability analysis, IT support, and digital branding  
+>└─> Thrives on challenges, adapts to evolving environments, and  
+>    treats learning as a permanent background process.  
+>
 * * * 
 ## **./Objective[~]**
 
@@ -21,9 +37,6 @@ I am looking for an opportunity to leverage my expertise, collaborate with like-
 
 Dedicated to continuous learning, I work to improve my skills, stay current with industry trends, and gain practical experience through ongoing education.
 
-<!--
-As a dedicated cybersecurity professional, my objective is to leverage my skills in **penetration testing**, **network security**, and **incident response** to contribute to a `dynamic security team`. 
--->
 * * *
 ## **./Skills[~]**
 
@@ -106,7 +119,7 @@ As a dedicated cybersecurity professional, my objective is to leverage my skills
 
 ### **Jr. Cybersecurity Analyst**
 ### <a h1>_BunkerWeb Bunkerity_ | Freelance</a>
-<a>_Aug 2023_</a> – _Jan 2025_
+[_Aug 2023_] – [_Jan 2025_]
 
 - Test beta versions of an open-source WAF to ensure security before release.
 - Assist in developing and implementing security protocols and procedures.
@@ -115,7 +128,7 @@ As a dedicated cybersecurity professional, my objective is to leverage my skills
 
 ### **IT Specialist**
 ### <a>_Wingo Inc_</a> 
-<a>_Sep 2023_</a> - _Jul 2024_
+[ _Sep 2023_ ] - [ _Jul 2024_ ]
 
 - Provide technical support and troubleshooting.
 - Analyze and resolve technical issues related to performance and user experience.
@@ -124,7 +137,7 @@ As a dedicated cybersecurity professional, my objective is to leverage my skills
 
 ### **Social Media Manager**
 ### <a>_Echonnect Digitals_</a>
-<a>_Dec 2022_</a> - _Jun 2023_
+[ _Dec 2022_ ] - [ _Jun 2023_ ]
 
 - Manage social media profiles and create engaging content to increase brand visibility.
 - Analyze social media metrics to optimize campaigns and improve user engagement.
