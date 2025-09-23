@@ -7,7 +7,7 @@ layout: default
 
 > └─> Hello! I'm a `cybersecurity enthusiast` and `IT Specialist` with a strong passion for tech. Always eager to **learn**, **adapt**, and take on **new challenges**.
 >
-> I see every challenge as a chance to `upgrade skills` and every project as a `deployment for growth`.
+> I see every challenge as a chance to upgrade skills and every project as a deployment for growth.
 >
 
 >
@@ -15,8 +15,8 @@ layout: default
 >_Rico Fornes_
 >
 >**Role:**
-> _Cybersecurity Enthusiast
->/ IT Specialist
+> _Cybersecurity
+>/ IT 
 >/ SMM_
 > 
 >**Location:**
@@ -25,28 +25,6 @@ layout: default
 >**Status:**
 >_Active / Freelance_
 >  
-
-<!--
-> **User:**  `Cybersecurity Enthusiast | IT Specialist | SMM`
-> 
-> └─> `RicoFornes`
->
-> 
->**Role:**
->
-> └─> `Cybersecurity Enthusiast | IT Specialist | SMM`
->  
->**Location:**
->
-> └─> `Philippines [PH]`
-> 
->**Status:**
-> 
-> └─> `Active / Learning Mode [ON]` 
->
-> 
->:: Profile Summary ::  
--->
 * * * 
 ## **./Objective[~]**
 
@@ -198,4 +176,6 @@ layout: default
 </p>
  Phone: +63 926 064 9319
 
- > _Always open to collaboration, opportunities, and tech conversations_. 
+>
+>
+> _Always open to collaboration, opportunities, and tech conversations_. 
