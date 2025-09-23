@@ -5,24 +5,24 @@ layout: default
   <h2><strong>./Whoami[~]</strong></h2>
 </div>
 
->  Hello! I'm a `cybersecurity enthusiast` with a strong passion for tech. Always eager to **learn**, **adapt**, and take on **new challenges**.
+> └─> Hello! I'm a `cybersecurity enthusiast` and `IT Specialist` with a strong passion for tech. Always eager to **learn**, **adapt**, and take on **new challenges**.
 > 
-> In addition to cybersecurity, I freelance as an **IT Support** and **Social Media Manager**, providing technical solutions and strengthening digital branding.
+> In addition to cybersecurity and IT, I freelance as a **Digital Marketing Specialist**, providing technical solutions and strengthening digital branding.
 >
 > I see every challenge as a chance to`upgrade skills` and every project as a `deployment for growth`.
->
->
->**User:**         `RicoFornes`
->
->**Role:**         `Cybersecurity Enthusiast | IT Specialist | SMM`
-> 
->**Location:**     `Leyte, Philippines [PH]`
-> 
->**Status:**       `Active / Learning Mode [ON]`
-> 
 
 >
+>**User**          `:` RicoFornes
 >
+>**Role**         ` :` Cybersecurity Enthusiast | IT Specialist | SMM
+> 
+>**Location**     ` :` Leyte, Philippines [PH]
+>
+>**Status**        `:` Active / Learning Mode [ON
+>  
+
+>
+<!--
 > **User:**  `Cybersecurity Enthusiast | IT Specialist | SMM`
 > 
 > └─> `RicoFornes`
@@ -42,7 +42,7 @@ layout: default
 >
 > 
 >:: Profile Summary ::  
-
+-->
 * * * 
 ## **./Objective[~]**
 
