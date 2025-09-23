@@ -11,13 +11,19 @@ layout: default
 >
 
 >
->**User:**            _RicoFornes_
+>**User:**
+>_RicoFornes_
 >
->**Role:**            _Cybersecurity Enthusiast | IT Specialist | Digital Marketing Specialist_
+>**Role:**
+> _Cybersecurity Enthusiast
+>IT Specialist
+>/SMM_
 > 
->**Location:**        _Leyte, Philippines_ [PH]
+>**Location:**
+>_Leyte, Philippines_ [PH]
 >
->**Status:**          _Active / Freelance_
+>**Status:**
+>_Active / Freelance_
 >  
 
 <!--
