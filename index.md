@@ -6,22 +6,20 @@ layout: default
 </div>
 
 > └─> Hello! I'm a `cybersecurity enthusiast` and `IT Specialist` with a strong passion for tech. Always eager to **learn**, **adapt**, and take on **new challenges**.
-> 
-> In addition to cybersecurity and IT, I freelance as a **Digital Marketing Specialist**, providing technical solutions and strengthening digital branding.
 >
-> I see every challenge as a chance to`upgrade skills` and every project as a `deployment for growth`.
+> I see every challenge as a chance to `upgrade skills` and every project as a `deployment for growth`.
+>
 
 >
->**User**          `:` RicoFornes
+>**User:**            _RicoFornes_
 >
->**Role**         ` :` Cybersecurity Enthusiast | IT Specialist | SMM
+>**Role:**            _Cybersecurity Enthusiast | IT Specialist | Digital Marketing Specialist_
 > 
->**Location**     ` :` Leyte, Philippines [PH]
+>**Location:**        _Leyte, Philippines_ [PH]
 >
->**Status**        `:` Active / Learning Mode [ON
+>**Status:**          _Active / Freelance_
 >  
 
->
 <!--
 > **User:**  `Cybersecurity Enthusiast | IT Specialist | SMM`
 > 
@@ -46,42 +44,39 @@ layout: default
 * * * 
 ## **./Objective[~]**
 
-I seek to apply my skills in an `IT or cybersecurity` role where I can contribute meaningfully to an organization’s success.
+└─>Seeking an **IT** or **Cybersecurity role** where I can apply my skills, contribute to organizational success, and leverage my expertise while collaborating with like minded professionals and growing within a dynamic environment.
 
-I am looking for an opportunity to leverage my expertise, collaborate with like-minded professionals, and grow within a `dynamic environment`. 
-
-Dedicated to continuous learning, I work to improve my skills, stay current with industry trends, and gain practical experience through ongoing education.
 
 * * *
 ## **./Skills[~]**
 
 <dl>
 <img src="https://img.shields.io/badge/-Communication-1679A7?&style=for-the-badge&logo=wechat&logoColor=white" alt="Communication" style="border-radius: 8px;" />
-<dd>A strong communicator with the ability to convey ideas effectively and collaborate within teams.</dd>
+<dd>→ A strong communicator with the ability to convey ideas effectively and collaborate within teams and non tech person.</dd>
 
 <img src="https://img.shields.io/badge/-Adaptability-1679A7?&style=for-the-badge&logo=react&logoColor=white" alt="Adaptability" style="border-radius: 8px;" />
-<dd>Able to learn quickly and adapt to new challenges and changing environments.</dd>
+<dd>→ Able to learn quickly and adapt to new challenges and changing environments.</dd>
 
 <img src="https://img.shields.io/badge/-Technical%20Support-1679A7?&style=for-the-badge&logo=opensourcehardware&logoColor=white" alt="Technical Support" style="border-radius: 8px;" />
-<dd>Experienced in hardware and software installation, maintenance, troubleshooting, and repair to ensure optimal system performance.</dd>
+<dd>→ Experienced in hardware and software installation, maintenance, troubleshooting, and repair to ensure optimal system performance.</dd>
 
 <img src="https://img.shields.io/badge/-Remote%20Support-1679A7?&style=for-the-badge&logo=teamviewer&logoColor=white" alt="Remote Support" style="border-radius: 8px;" />
-<dd>Proficient in troubleshooting, resolving technical issues, and providing remote support to ensure smooth IT operations. (AnyDesk,Livechat,TeamViewer & etc.)</dd>
+<dd>→ Proficient in troubleshooting, resolving technical issues, and providing remote support to ensure smooth IT operations. (AnyDesk,Livechat,TeamViewer & etc.)</dd>
   
 <img src="https://img.shields.io/badge/-Penetration%20Testing-1679A7?&style=for-the-badge&logo=metasploit&logoColor=white" alt="Penetration Testing" style="border-radius: 8px;" />
-<dd>Basic proficiency in detecting vulnerabilities through industry-standard tools and methodologies.</dd>
+<dd>→ Basic proficiency in detecting vulnerabilities through industry-standard tools and methodologies.</dd>
 
 <img src="https://img.shields.io/badge/-Network%20Security-1679A7?&style=for-the-badge&logo=cisco&logoColor=white" alt="Network Security" style="border-radius: 8px;" />
 <dd>Gained hands-on experience in securing and monitoring network infrastructure through my homelab, identifying and mitigating threats effectively.</dd>
 
 <img src="https://img.shields.io/badge/-Incident%20Response-1679A7?&style=for-the-badge&logo=elastic&logoColor=white" alt="Incident Response" style="border-radius: 8px;" />
-<dd>Adept at managing and responding to security incidents with a focus on minimizing impact.</dd>
+<dd> Adept at managing and responding to security incidents with a focus on minimizing impact.</dd>
 
 <img src="https://img.shields.io/badge/-Programming-1679A7?&style=for-the-badge&logo=python&logoColor=white" alt="Programming" style="border-radius: 8px;" />
-<dd>Enry-level Python & bash scripting.</dd>
+<dd>→ Enry-level Python & bash scripting.</dd>
 
 <img src="https://img.shields.io/badge/-Social%20Media%20Management-1679A7?&style=for-the-badge&logo=facebook&logoColor=white" alt="Social Media Management" style="border-radius: 8px;" />
-<dd>Skilled in managing social media accounts, creating content, and driving engagement to enhance brand presence.</dd>
+<dd>→ Skilled in managing social media accounts, creating content, and driving engagement to enhance brand presence.</dd>
 
 </dl>
 
@@ -90,8 +85,10 @@ Dedicated to continuous learning, I work to improve my skills, stay current with
 ![Windows](https://img.shields.io/badge/Windows-%230078D6.svg?style=for-the-badge&logo=windows&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-%23FCC624.svg?style=for-the-badge&logo=linux&logoColor=black)
 ![Active Directory](https://img.shields.io/badge/Active%20Directory-%230078D6.svg?style=for-the-badge&logo=microsoft&logoColor=white)
+![pfSense](https://img.shields.io/badge/pfSense-0B3D91?style=for-the-badge)
 ![Microsoft 365](https://img.shields.io/badge/Microsoft%20365-%23D83B01.svg?style=for-the-badge&logo=microsoft&logoColor=white)
 ![AnyDesk](https://img.shields.io/badge/AnyDesk-%23E20000.svg?style=for-the-badge&logo=anydesk&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
 ![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
@@ -104,48 +101,30 @@ Dedicated to continuous learning, I work to improve my skills, stay current with
 ![Elasticsearch](https://img.shields.io/badge/elasticsearch-%230377CC.svg?style=for-the-badge&logo=elasticsearch&logoColor=white)
 ![Snort](https://img.shields.io/badge/Snort-%23F00000.svg?style=for-the-badge&logo=snort&logoColor=white)
 ![Splunk](https://img.shields.io/badge/splunk-%23000000.svg?style=for-the-badge&logo=splunk&logoColor=white)
+![WordPress](https://img.shields.io/badge/WordPress-21759B?style=for-the-badge&logo=wordpress&logoColor=white)
+![Canva](https://img.shields.io/badge/Canva-00C4CC?style=for-the-badge&logo=canva&logoColor=white)
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
+![Google Analytics](https://img.shields.io/badge/Google_Analytics-F29100?style=for-the-badge&logo=google-analytics&logoColor=white)
+![SEO Tools](https://img.shields.io/badge/SEO-0A74DA?style=for-the-badge)
 
 * * *
-<!--
-## **./Tools[~]**
 
-### **Cybersecurity Tools**
-
-<p style="display: flex; flex-wrap: wrap; gap: 10px;">
-  <img src="https://img.shields.io/badge/-Metasploit-000000?&style=for-the-badge&logo=Metasploit&logoColor=white" alt="Metasploit" style="border-radius: 8px;" />
-  <img src="https://img.shields.io/badge/-Burp_Suite-FE8D00?&style=for-the-badge&logo=BurpSuite&logoColor=white" alt="Burp Suite" style="border-radius: 8px;" />
-  <img src="https://img.shields.io/badge/-Nmap-000000?&style=for-the-badge&logo=Nmap&logoColor=white" alt="Nmap" style="border-radius: 8px;" />
-  <img src="https://img.shields.io/badge/-Wireshark-1679A7?&style=for-the-badge&logo=Wireshark&logoColor=white" alt="Wireshark" style="border-radius: 8px;" />
-</p>
-
-### **Networking Tools**
-
-<p style="display: flex; flex-wrap: wrap; gap: 10px;">
-  <img src="https://img.shields.io/badge/-Cisco_Packet_Tracer-0072C6?&style=for-the-badge&logo=Cisco&logoColor=white" alt="Cisco Packet Tracer" style="border-radius: 8px;" />
-</p>
-
-### **SIEM Tool**
-
-<p style="display: flex; flex-wrap: wrap; gap: 10px;">
-<img src="https://img.shields.io/badge/-Elastic-005571?&style=for-the-badge&logo=Elastic&logoColor=white" alt="Elastic" style="border-radius: 8px;" />
-</p>
--->
 ## **./Experience[~]** {#work}
 
 ### **Jr. Cybersecurity Analyst**
-### <a h1>_BunkerWeb Bunkerity_ | Freelance</a>
+### <a h1>_BunkerWeb Bunkerity_ </a>
 [_Aug 2023_] – [_Jan 2025_]
 
 - Test beta versions of an open-source WAF to ensure security before release.
 - Assist in developing and implementing security protocols and procedures.
 - Monitor security systems and respond to potential threats and vulnerabilities.
-- Collaborate with development teams to address and rectify software bugs.
+- Collaborate with developer teams to address and rectify software bugs.
 
 ### **IT Specialist**
 ### <a>_Wingo Inc_</a> 
 [ _Sep 2023_ ] - [ _Jul 2024_ ]
 
-- Provide technical support and troubleshooting.
+- Provide technical support and troubleshooting remotely.
 - Analyze and resolve technical issues related to performance and user experience.
 - Collaborate with development teams to address and rectify software bugs.
 - Offer IT support and solutions for various clients, including hardware repairs, software installations, and network configuration.
@@ -166,19 +145,21 @@ Dedicated to continuous learning, I work to improve my skills, stay current with
 <dl>
 <dt><a href="https://github.com/ricoswabii/do_it_app" target="_blank">Do it App</a></dt>
 <dd></dd>
-<dd>A simple Python command-line to-do list app where you can add, view, and remove tasks. Great for practicing basic file handling, user input, and program logic in Python.</dd>
+<dd>└─>A simple Python command-line to-do list app where you can add, view, and remove tasks. Great for practicing basic file handling, user input, and program logic in Python.</dd>
 
-<dt><a href="https://github.com/ricoswabii/cybersec-lab" target="_blank">Personal Cybersecurity Operations Lab</a></dt>
+<dt><a href="https://github.com/ricoswabii/cybersec-lab" target="_blank">Personal CybersOps Lab</a></dt>
 <dd> </dd>
-<dd>Built and managed a personal cybersecurity lab for hands-on research in security operations, gaining practical experience in both offensive and defensive security methodologies.</dd>
+<dd>└─>Built and managed a personal cybersecurity lab for hands-on research in security operations, gaining practical experience in both offensive and defensive security methodologies.</dd>
 
 <dt><a href="https://github.com/ricoswabii/Detection_Lab" target="_blank">Security Event Simulation and Analysis Lab</a></dt>
 <dd> </dd>
-<dd>Conducted hands-on security event simulation and analysis in a controlled environment. Utilized Elastic SIEM for querying and investigating security incidents, enhancing skills in network security monitoring, threat detection, and incident response.</dd>
+<dd>└─>Conducted hands-on security event simulation and analysis in a controlled environment. Utilized Elastic SIEM for querying and investigating security incidents, enhancing skills in network security monitoring, threat detection, and incident response.</dd>
 
+<dt><a href="https://ricoswabii.github.io/" target="_blank">Network Segmentation & Firewall Lab</a></dt>
+<dd>└─>Configured segmented lab networks with VLANs, firewall rules, and traffic monitoring to enhance security posture. Tech used: pfSense, Cisco Packet Tracer, VirtualBox, Wireshark.</dd>
 
 <dt><a href="" target="_blank">Capture The Flag (CTF) Challenges</a></dt>
-<dd>Participated in Capture The Flag (CTF) challenges to strengthen hands-on cybersecurity skills in various domains.</dd>
+<dd>└─>Participated in Capture The Flag (CTF) challenges to strengthen hands-on cybersecurity skills in various domains.</dd>
 </dl>
 
 * * *
@@ -187,7 +168,7 @@ Dedicated to continuous learning, I work to improve my skills, stay current with
 ### 🎓 _Eastern Visayas State University_
 > **Degree:** `Bachelor of Science in Information Technology`
 > 
-> **Location:** `Tacloban City`
+> **Location:** `Tacloban City [PH]`
 > 
 > **Year Graduated:** `2022`
 
@@ -195,7 +176,7 @@ Dedicated to continuous learning, I work to improve my skills, stay current with
 ### _Certifications_
 
 - **[Cisco Certified Network Associate ](https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/ccna.html)**  | NetAcad  Cisco
-- **[Practical Ethical Hacking - The Complete Course](https://academy.tcm-sec.com/courses/1152300/certificate)** | TCM Security 
+- **[Practical Ethical Hacking](https://academy.tcm-sec.com/courses/1152300/certificate)** | TCM Security 
 - **[IT Support Professional Certificate ](https://www.coursera.org/professional-certificates/google-it-support)**  | Coursera  Google
 - **[Linux 100: Fundamentals](https://academy.tcm-sec.com/courses/2631779/certificate)** | TCM Security  
 - **[Cybersecurity Associate Certificate](https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/ccna.html)**  | NetAcad  Cisco
@@ -210,3 +191,5 @@ Dedicated to continuous learning, I work to improve my skills, stay current with
   <a href="mailto:fornes.rico77@gmail.com">Email</a>
 </p>
  Phone: +63 926 064 9319
+
+ > _Always open to collaboration, opportunities, and tech conversations_. 
