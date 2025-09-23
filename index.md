@@ -12,12 +12,12 @@ layout: default
 
 >
 >**User:**
->_RicoFornes_
+>_Rico Fornes_
 >
 >**Role:**
 > _Cybersecurity Enthusiast
->IT Specialist
->/SMM_
+>/ IT Specialist
+>/ SMM_
 > 
 >**Location:**
 >_Leyte, Philippines_ [PH]
