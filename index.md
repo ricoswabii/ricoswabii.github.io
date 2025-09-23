@@ -73,10 +73,10 @@ layout: default
 <dd>→ Basic proficiency in detecting vulnerabilities through industry-standard tools and methodologies.</dd>
 
 <img src="https://img.shields.io/badge/-Network%20Security-1679A7?&style=for-the-badge&logo=cisco&logoColor=white" alt="Network Security" style="border-radius: 8px;" />
-<dd>Gained hands-on experience in securing and monitoring network infrastructure through my homelab, identifying and mitigating threats effectively.</dd>
+<dd>→ Gained hands-on experience in securing and monitoring network infrastructure through my homelab, identifying and mitigating threats effectively.</dd>
 
 <img src="https://img.shields.io/badge/-Incident%20Response-1679A7?&style=for-the-badge&logo=elastic&logoColor=white" alt="Incident Response" style="border-radius: 8px;" />
-<dd> Adept at managing and responding to security incidents with a focus on minimizing impact.</dd>
+<dd>→ Adept at managing and responding to security incidents with a focus on minimizing impact.</dd>
 
 <img src="https://img.shields.io/badge/-Programming-1679A7?&style=for-the-badge&logo=python&logoColor=white" alt="Programming" style="border-radius: 8px;" />
 <dd>→ Enry-level Python & bash scripting.</dd>
