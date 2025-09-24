@@ -24,7 +24,7 @@ layout: default
 >
 >**Status:**
 >_Active / Freelance_
->  
+
 * * * 
 ## **./Objective[~]**
 
@@ -94,6 +94,15 @@ layout: default
 * * *
 
 ## **./Experience[~]** {#work}
+
+### **Freelance Tech Professional**  
+### <a h1>_Self-Employed_ </a>  
+[_Feb 2025_] – [_Present_]  
+
+- Active freelancer across remote platforms, providing IT support, bug bounty testing, and social media management services. 
+- Perform hands-on cybersecurity practices through homelab projects and freelance tasks.  
+- Manage digital presence for small businesses through social media and branding strategies.  
+- Deliver end-to-end technical solutions combining IT, cybersecurity, and digital marketing expertise.  
 
 ### **Jr. Cybersecurity Analyst**
 ### <a h1>_BunkerWeb Bunkerity_ </a>
