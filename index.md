@@ -99,10 +99,10 @@ layout: default
 ### <a h1>_Self-Employed_ </a>  
 [_Feb 2025_] – [_Present_]  
 
-- Active freelancer across remote platforms, providing IT support, bug bounty testing, and social media management services. 
-- Perform hands-on cybersecurity practices through homelab projects and freelance tasks.  
-- Manage digital presence for small businesses through social media and branding strategies.  
-- Deliver end-to-end technical solutions combining IT, cybersecurity, and digital marketing expertise.  
+- Active freelancer on remote platforms, providing IT support, bug bounty testing, and social media management.
+- Apply hands-on cybersecurity skills via homelab projects and client tasks.   
+- Manage digital presence for small businesses through social media strategy and branding.   
+- Deliver end-to-end solutions across IT, cybersecurity, and digital marketing.  
 
 ### **Jr. Cybersecurity Analyst**
 ### <a h1>_BunkerWeb Bunkerity_ </a>
