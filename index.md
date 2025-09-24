@@ -11,18 +11,18 @@ layout: default
 >
 
 >
->**User:**
+>`User:`
 >_Rico Fornes_
 >
->**Role:**
+>`Role:`
 > _Cybersecurity
 >/ IT 
 >/ SMM_
 > 
->**Location:**
+>`Location:`
 >_Leyte, Philippines_ [PH]
 >
->**Status:**
+>`Status:`
 >_Active / Freelance_
 
 * * * 
