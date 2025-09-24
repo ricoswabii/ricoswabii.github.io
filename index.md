@@ -168,9 +168,9 @@ layout: default
 ### _Certifications_
 
 - **[Cisco Certified Network Associate ](https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/ccna.html)**  | NetAcad  Cisco
-- **[Practical Ethical Hacking](https://academy.tcm-sec.com)** | TCM Security 
+- **[Practical Ethical Hacking](https://tcm-sec.com)** | TCM Security 
 - **[IT Support Professional Certificate ](https://www.coursera.org/professional-certificates/google-it-support)**  | Coursera  Google
-- **[Linux 100: Fundamentals](https://)** | TCM Security  
+- **[Linux 100: Fundamentals](https://tcm-sec.com/)** | TCM Security  
 - **[Cybersecurity Associate Certificate](https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/ccna.html)**  | NetAcad  Cisco
 - **[Social Media Management](https:)** | DICT PH
 
