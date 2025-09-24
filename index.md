@@ -100,8 +100,7 @@ layout: default
 [_Feb 2025_] – [_Present_]  
 
 - Active freelancer on remote platforms, providing IT support, bug bounty testing, and social media management.
-- Apply hands-on cybersecurity skills via homelab projects and client tasks.   
-- Manage digital presence for small businesses through social media strategy and branding.   
+- Manage digital presence for businesses through social media strategy and branding.   
 - Deliver end-to-end solutions across IT, cybersecurity, and digital marketing.  
 
 ### **Jr. Cybersecurity Analyst**
