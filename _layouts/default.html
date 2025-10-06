@@ -152,6 +152,33 @@
   </style>
 </head>
 <body>
+   <header>
+    <div class="container">
+      <a id="a-title" href="{{ '/' | relative_url }}">
+        <h1 class="typing-effect">{{ site.title | default: site.github.repository_name }}</h1>
+      </a>
+      <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+      <section id="social" class="social-badges">
+        {% if site.social.linkedin %}
+          <a href="{{ site.social.linkedin }}" target="_blank">
+            <img src="https://img.shields.io/badge/-LinkedIn-0072b1?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+          </a>
+        {% endif %}
+        <!--
+        {% if site.social.instagram %}
+          <a href="{{ site.social.instagram }}" target="_blank">
+            <img src="https://img.shields.io/badge/-Instagram-E4405F?&style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
+          </a>
+        {% endif %}
+         -->
+        {% if site.social.github %}
+          <a href="{{ site.social.github }}" target="_blank">
+            <img src="https://img.shields.io/badge/-GitHub-181717?&style=for-the-badge&logo=github&logoColor=white&labelColor=181717" alt="GitHub" style="border: 1px solid white; border-radius: 8px;" />
+          </a>
+        {% endif %}
+      </section>
+    </div>
+  </header>
   <div id="particles-js"></div>
   
   <nav class="navbar">
