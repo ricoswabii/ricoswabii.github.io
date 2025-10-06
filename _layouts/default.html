@@ -89,8 +89,102 @@
             opacity: 80;
             transform: translateY(30px);
      }
+    .terminal {
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid #333;
+            border-radius: 8px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+            opacity: 0;
+            transform: translateY(30px);
+        }
 
+        .terminal-header {
+            background: #222;
+            padding: 10px 15px;
+            border-bottom: 1px solid #333;
+            border-radius: 8px 8px 0 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .terminal-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #666;
+        }
+
+        .terminal-dot:nth-child(1) { background: #ff5f56; }
+        .terminal-dot:nth-child(2) { background: #ffbd2e; }
+        .terminal-dot:nth-child(3) { background: #27ca3f; }
+
+        .terminal-body {
+            padding: 20px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .command-line {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .prompt {
+            color: #00ff00;
+            margin-right: 10px;
+        }
+
+        .command {
+            color: #ffffff;
+        }
+
+        .output {
+            color: #cccccc;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
   </style>
+      <div class="terminal">
+                <div class="terminal-header">
+                    <div class="terminal-dot"></div>
+                    <div class="terminal-dot"></div>
+                    <div class="terminal-dot"></div>
+                </div>
+                <div class="terminal-body">
+                    <div class="command-line">
+                        <span class="prompt">user@1ypi:~$</span>
+                        <span class="command">whoami</span>
+                    </div>
+                    <div class="output">Cybersecurity enthusiast specializing in penetration testing and digital forensics</div>
+
+                    <div class="command-line">
+                        <span class="prompt">user@1ypi:~$</span>
+                        <span class="command">cat skills.txt</span>
+                    </div>
+                    <div class="output">
+                        • Network Security &amp; Penetration Testing<br>
+                        • Digital Forensics &amp; Incident Response<br>
+                        • Vulnerability Assessment<br>
+                        • Malware Analysis<br>
+                        • Cryptography &amp; Privacy Tools
+                    </div>
+
+                    <div class="command-line">
+                        <span class="prompt">user@1ypi:~$</span>
+                        <span class="command">ls -la current_projects/</span>
+                    </div>
+                    <div class="output">
+                        drwxr-xr-x  2 1ypi 1ypi 4096 Aug 10 2025 security_toolkit/<br>
+                        drwxr-xr-x  2 1ypi 1ypi 4096 Aug 10 2025 forensics_scripts/<br>
+                        drwxr-xr-x  2 1ypi 1ypi 4096 Aug 10 2025 vulnerability_scanner/<br>
+                        -rw-r--r--  1 1ypi 1ypi 2048 Aug 10 2025 README.md
+                    </div>
+                </div>
+            </div>
 </head>
 <body>
   <div id="particles-js"></div>
