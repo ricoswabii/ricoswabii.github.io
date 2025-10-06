@@ -38,7 +38,6 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      flex-wrap: wrap; 
     }
     #main_content {
       margin-top: 0px; /* Adjust or set to zero to reduce space */
@@ -89,7 +88,6 @@
             margin-top: 60px;
             opacity: 80;
             transform: translateY(30px);
-            flex-wrap: wrap; 
      }
     .terminal {
             background: rgba(0, 0, 0, 0.8);
@@ -97,7 +95,7 @@
             border-radius: 8px;
             margin: 40px 0;
             box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
-            opacity: 0.9;
+            opacity: 0.8;
             transform: translateY(30px);
         }
 
@@ -190,33 +188,6 @@
     <a href="#education" title="Education"><i class="fa-solid fa-graduation-cap"></i></a>
     <a href="#contact" title="Contact"><i class="fa-solid fa-envelope"></i></a>
   </nav>
-
-   <header>
-    <div class="container">
-      <a id="a-title" href="{{ '/' | relative_url }}">
-        <h1 class="typing-effect">{{ site.title | default: site.github.repository_name }}</h1>
-      </a>
-      <h2>{{ site.description | default: site.github.project_tagline }}</h2>
-      <section id="social" class="social-badges">
-        {% if site.social.linkedin %}
-          <a href="{{ site.social.linkedin }}" target="_blank">
-            <img src="https://img.shields.io/badge/-LinkedIn-0072b1?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-          </a>
-        {% endif %}
-        <!--
-        {% if site.social.instagram %}
-          <a href="{{ site.social.instagram }}" target="_blank">
-            <img src="https://img.shields.io/badge/-Instagram-E4405F?&style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
-          </a>
-        {% endif %}
-         -->
-        {% if site.social.github %}
-          <a href="{{ site.social.github }}" target="_blank">
-            <img src="https://img.shields.io/badge/-GitHub-181717?&style=for-the-badge&logo=github&logoColor=white&labelColor=181717" alt="GitHub" style="border: 1px solid white; border-radius: 8px;" />
-          </a>
-        {% endif %}
-      </section>
-    </div>
   </header>
    
     <section id="main_content">
