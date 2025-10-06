@@ -189,5 +189,5 @@ layout: default
 >
 > _Always open to collaboration, opportunities, and tech conversations_.
 <div class="footer">
-                <p>© 2025 ricoswabii • Cybersecurity Student • Always Learning</p>
+                <p>© 2025 ricoswabii • Cybersecurity Enthusiast • Always Learning</p>
             </div>
