@@ -185,9 +185,6 @@ layout: default
 </p>
  Phone: +63 926 064 9319
 
->
->
-> _Always open to collaboration, opportunities, and tech conversations_.
 <div class="footer">
                 <p>© 2025 ricoswabii • Cybersecurity Enthusiast • Always Learning</p>
-            </div>
+</div>
