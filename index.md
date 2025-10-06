@@ -181,9 +181,13 @@ layout: default
 <p>
  Message me on:
   <a href="mailto:fornes.rico77@gmail.com">Email</a>
+
 </p>
  Phone: +63 926 064 9319
 
 >
 >
-> _Always open to collaboration, opportunities, and tech conversations_. 
+> _Always open to collaboration, opportunities, and tech conversations_.
+<div class="footer">
+                <p>© 2025 1ypi • Cybersecurity Student • Always Learning</p>
+            </div>
