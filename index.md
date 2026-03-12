@@ -97,7 +97,7 @@ layout: default
 
 ### **Freelance Tech Professional**  
 ### <a h1>_Self-Employed_ </a>  
-[_Feb 2025_] – [_Present_]  
+[_June 2025_] – [_Present_]  
 
 - Active freelancer on remote platforms, providing IT support, bug bounty testing, and social media management.
 - Manage digital presence for businesses through social media strategy and branding.   
@@ -105,7 +105,7 @@ layout: default
 
 ### **Jr. Cybersecurity Analyst**
 ### <a h1>_BunkerWeb Bunkerity_ </a>
-[_Aug 2023_] – [_Jan 2025_]
+[_Aug 2023_] – [_April 2025_]
 
 - Test beta versions of an open-source WAF to ensure security before release.
 - Assist in developing and implementing security protocols and procedures.
