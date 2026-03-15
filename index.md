@@ -168,6 +168,7 @@ layout: default
 ### _Certifications_
 
 - **[Cisco Certified Network Associate ](https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/ccna.html)**  | NetAcad  Cisco
+- **[Blue Team Junior Analyst (BTJA)](https://elearning.securityblue.team/home/certificate/480854607)** | Security Blue Team
 - **[Practical Ethical Hacking](https://tcm-sec.com)** | TCM Security 
 - **[IT Support Professional Certificate ](https://www.coursera.org/professional-certificates/google-it-support)**  | Coursera  Google
 - **[Linux 100: Fundamentals](https://tcm-sec.com/)** | TCM Security  
