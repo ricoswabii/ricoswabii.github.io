@@ -7,8 +7,6 @@ layout: default
 
 > └─> Hello! I'm a `cybersecurity enthusiast` and `IT Specialist` with a strong passion for tech. Always eager to **learn**, **adapt**, and take on **new challenges**.
 >
-> I see every challenge as a chance to upgrade skills and every project as a deployment for growth.
->
 
 >
 >`User:`
