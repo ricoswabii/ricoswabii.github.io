@@ -2,61 +2,33 @@
 <style>
 @media (max-width: 768px) {
 
-  /* 🔥 HERO: FULL MOBILE LAYOUT SHIFT */
+  /* HERO becomes single column */
   .hero{
-    grid-template-columns: 1fr;
-    text-align: center;
-    padding: 18px 14px;
+    grid-template-columns: 1fr !important;
   }
 
-  .hero-name{
-    font-size: 30px;
-  }
-
-  .hero-bio{
-    max-width: 100%;
-    font-size: 13px;
-  }
-
-  .info-row{
-    justify-content: center;
-  }
-
-  /* 🔥 SKILLS: 2 COLUMN INSTEAD OF MANY */
+  /* SKILLS → 1 COLUMN STACK */
   .skills-grid{
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr !important;
   }
 
-  /* 🔥 PROJECTS: FULL STACK CARDS */
+  /* PROJECTS → FORCE SINGLE COLUMN (IMPORTANT FOR YOUR CASE) */
   .proj-grid{
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
 
-  .pj-card{
-    padding: 14px;
-  }
-
-  /* 🔥 TIMELINE: SIMPLIFY LAYOUT */
-  .tl-item{
-    grid-template-columns: 70px 20px 1fr;
-  }
-
-  .tl-date{
-    font-size: 9px;
-  }
-
-  /* 🔥 PAGE SPACING */
-  .page{
-    padding: 14px 10px 60px;
-  }
-
-  /* 🔥 CONTACT: STACK */
+  /* CONTACT → STACK ITEMS */
   .contact-wrap{
-    flex-direction: column;
+    flex-direction: column !important;
   }
 
   .citem{
     width: 100%;
+  }
+
+  /* TIMELINE → SIMPLIFY LAYOUT */
+  .tl-item{
+    grid-template-columns: 60px 18px 1fr;
   }
 }
  
