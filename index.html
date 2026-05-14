@@ -211,6 +211,157 @@ a.pill-btn:hover{opacity:.8;transform:translateY(-1px);}
 
 /* inline date: hidden by default, visible only on mobile */
 .tl-date-m{display:none;font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--muted);margin-bottom:5px;}
+
+/* ══ RESEARCH LOGS ══ */
+.st-log{background:#22d3ee20;color:var(--cyn);border:1px solid #22d3ee33;}
+.rl-header{margin-bottom:14px;}
+.rl-subtitle{font-size:12px;color:var(--muted);font-family:'JetBrains Mono',monospace;letter-spacing:.5px;margin-top:4px;}
+.rl-meta-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;margin-bottom:16px;}
+
+.carousel-wrap{position:relative;}
+.carousel-track-outer{overflow:hidden;border-radius:18px;}
+.carousel-track{display:flex;gap:14px;transition:transform .42s cubic-bezier(.4,0,.2,1);will-change:transform;}
+.rl-card{
+  flex:0 0 calc(50% - 7px);min-width:280px;
+  background:rgba(14,15,26,.75);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border:1px solid rgba(255,255,255,.09);border-radius:18px;
+  padding:20px 20px 18px;position:relative;overflow:hidden;
+  cursor:pointer;text-decoration:none;color:inherit;
+  display:block;
+  transition:border-color .22s,transform .22s,box-shadow .22s;
+}
+.rl-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.13),transparent);}
+.rl-card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.35);}
+.rl-card:hover .rl-arrow{opacity:1;transform:translateX(3px);}
+
+.rl-card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:12px;}
+.rl-ico{width:38px;height:38px;border-radius:11px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.rl-ico i{font-size:18px;}
+.rl-badge-row{display:flex;gap:6px;flex-wrap:wrap;align-items:center;}
+.rl-badge{font-size:9px;font-family:'JetBrains Mono',monospace;padding:2px 8px;border-radius:5px;font-weight:600;letter-spacing:.5px;}
+.rl-log-id{font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--muted);letter-spacing:2px;margin-bottom:6px;}
+.rl-title{font-size:13px;font-weight:700;color:var(--txt);line-height:1.35;margin-bottom:8px;}
+.rl-writeup{font-size:11.5px;color:var(--muted2);line-height:1.75;margin-bottom:12px;}
+.rl-discoveries{list-style:none;margin-bottom:14px;}
+.rl-discoveries li{font-size:11px;color:var(--muted);padding-left:16px;position:relative;line-height:1.7;margin-bottom:2px;}
+.rl-discoveries li::before{content:'›';position:absolute;left:0;color:var(--cyn);font-size:13px;line-height:1.4;}
+.rl-footer{display:flex;align-items:center;justify-content:space-between;padding-top:10px;border-top:1px solid rgba(255,255,255,.06);}
+.rl-date{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--muted);}
+.rl-read{font-size:11px;color:var(--cyn);font-weight:600;display:flex;align-items:center;gap:4px;}
+.rl-arrow{font-size:14px;transition:opacity .2s,transform .2s;opacity:.6;}
+
+/* color accent borders per log */
+.rl-c-red{border-left:2px solid #f8717155;}
+.rl-c-ylw{border-left:2px solid #fbbf2455;}
+.rl-c-cyn{border-left:2px solid #22d3ee55;}
+.rl-c-grn{border-left:2px solid #4ade8055;}
+.rl-c-pur{border-left:2px solid #a78bfa55;}
+
+.carousel-nav{display:flex;align-items:center;justify-content:space-between;margin-top:14px;}
+.carousel-dots{display:flex;gap:6px;align-items:center;}
+.c-dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.18);transition:background .22s,transform .22s;cursor:pointer;}
+.c-dot.active{background:var(--cyn);transform:scale(1.35);}
+.carousel-btns{display:flex;gap:8px;}
+.c-btn{width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);color:var(--muted2);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .18s,color .18s,border-color .18s;}
+.c-btn:hover{background:rgba(34,211,238,.12);border-color:#22d3ee44;color:var(--cyn);}
+.c-btn:disabled{opacity:.3;cursor:default;pointer-events:none;}
+.c-btn i{font-size:15px;}
+
+@media(max-width:600px){
+  .rl-card{flex:0 0 calc(100% - 0px) !important;min-width:0 !important;}
+}
+@media(min-width:601px) and (max-width:768px){
+  .rl-card{flex:0 0 calc(100% - 0px) !important;min-width:0 !important;}
+}
+
+/* ══ AVAILABILITY BANNER ══ */
+.avail-banner{
+  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;
+  padding:14px 20px;margin-bottom:16px;
+  background:linear-gradient(135deg,rgba(74,222,128,.07) 0%,rgba(34,211,238,.05) 100%);
+  border:1px solid rgba(74,222,128,.22);border-radius:14px;
+  position:relative;overflow:hidden;
+}
+.avail-banner::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(74,222,128,.04),transparent);pointer-events:none;}
+.avail-left{display:flex;align-items:center;gap:12px;}
+.avail-pulse{width:10px;height:10px;border-radius:50%;background:var(--grn);position:relative;flex-shrink:0;}
+.avail-pulse::after{content:'';position:absolute;inset:-4px;border-radius:50%;background:var(--grn);opacity:.25;animation:ping 1.8s ease-out infinite;}
+@keyframes ping{0%{transform:scale(1);opacity:.25}100%{transform:scale(2.2);opacity:0}}
+.avail-text strong{font-size:12px;font-weight:700;color:var(--grn);}
+.avail-text span{font-size:11px;color:var(--muted);display:block;font-family:'JetBrains Mono',monospace;letter-spacing:.3px;}
+.hire-btn{
+  display:inline-flex;align-items:center;gap:7px;
+  padding:8px 18px;border-radius:100px;
+  background:linear-gradient(135deg,#4ade8022,#22d3ee18);
+  border:1px solid rgba(74,222,128,.35);
+  color:var(--grn);font-size:11px;font-weight:700;
+  font-family:'JetBrains Mono',monospace;letter-spacing:.5px;
+  text-decoration:none;cursor:pointer;
+  transition:background .2s,border-color .2s,transform .15s,box-shadow .2s;
+}
+.hire-btn:hover{background:linear-gradient(135deg,#4ade8035,#22d3ee28);border-color:rgba(74,222,128,.6);transform:translateY(-1px);box-shadow:0 6px 20px rgba(74,222,128,.18);}
+.hire-btn i{font-size:13px;}
+
+/* ══ TOOLS & STACK ══ */
+.st-tool{background:#f472b620;color:var(--pnk);border:1px solid #f472b633;}
+.tools-wrap{display:flex;flex-direction:column;gap:14px;}
+.tool-group{background:rgba(14,15,26,.65);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:14px 16px;}
+.tool-group-label{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:3px;color:var(--muted);text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;gap:7px;}
+.tool-group-label::after{content:'';flex:1;height:1px;background:rgba(255,255,255,.06);}
+.tool-chips{display:flex;flex-wrap:wrap;gap:7px;}
+.tc{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:5px 11px;border-radius:8px;
+  font-size:11px;font-family:'JetBrains Mono',monospace;font-weight:500;
+  border:1px solid;
+  transition:transform .15s,opacity .15s;
+}
+.tc:hover{transform:translateY(-2px);opacity:.85;}
+.tc i{font-size:13px;}
+.tc-red{background:#f8717112;border-color:#f8717130;color:var(--red);}
+.tc-ylw{background:#fbbf2412;border-color:#fbbf2430;color:var(--ylw);}
+.tc-grn{background:#4ade8012;border-color:#4ade8030;color:var(--grn);}
+.tc-blu{background:#60a5fa12;border-color:#60a5fa30;color:var(--blu);}
+.tc-pur{background:#a78bfa12;border-color:#a78bfa30;color:var(--pur);}
+.tc-cyn{background:#22d3ee12;border-color:#22d3ee30;color:var(--cyn);}
+.tc-pnk{background:#f472b612;border-color:#f472b630;color:var(--pnk);}
+.tc-wht{background:#ffffff08;border-color:#ffffff20;color:#d1d5db;}
+
+/* ══ STUDYING BANNER ══ */
+.studying-bar{
+  display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+  padding:11px 16px;margin-top:12px;
+  background:rgba(167,139,250,.07);border:1px solid rgba(167,139,250,.18);border-radius:11px;
+}
+.studying-label{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:2px;color:var(--pur);flex-shrink:0;}
+.studying-items{display:flex;gap:7px;flex-wrap:wrap;}
+
+/* ══ CV DOWNLOAD ══ */
+.cv-btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:9px 20px;border-radius:100px;
+  background:linear-gradient(135deg,rgba(96,165,250,.12),rgba(167,139,250,.1));
+  border:1px solid rgba(96,165,250,.3);
+  color:var(--blu);font-size:11px;font-weight:700;
+  font-family:'JetBrains Mono',monospace;letter-spacing:.5px;
+  text-decoration:none;cursor:pointer;
+  transition:background .2s,border-color .2s,transform .15s,box-shadow .2s;
+}
+.cv-btn:hover{background:linear-gradient(135deg,rgba(96,165,250,.22),rgba(167,139,250,.18));border-color:rgba(96,165,250,.55);transform:translateY(-1px);box-shadow:0 6px 20px rgba(96,165,250,.18);}
+.cv-btn i{font-size:14px;}
+
+/* ══ LANGUAGES ══ */
+.lang-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;}
+.lang-chip{display:flex;align-items:center;gap:8px;padding:9px 14px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:11px;flex:1;min-width:140px;}
+.lang-flag{font-size:18px;line-height:1;}
+.lang-name{font-size:12px;font-weight:600;color:var(--txt);}
+.lang-level{font-size:10px;color:var(--muted);font-family:'JetBrains Mono',monospace;}
+.lang-bar{height:3px;border-radius:2px;margin-top:4px;}
+
+@media(max-width:600px){
+  .avail-banner{flex-direction:column;align-items:flex-start;}
+  .tool-chips{gap:5px;}
+}
 </style>
 
 <div class="bg-canvas">
@@ -412,8 +563,230 @@ a.pill-btn:hover{opacity:.8;transform:translateY(-1px);}
 
 
 
+<!-- ══ RESEARCH LOGS ══ -->
 <div class="section">
-  <div class="sec-bar"><span class="sec-tag st-grn">Contact</span><div class="sec-line"></div><span class="sec-count">06</span></div>
+  <div class="sec-bar"><span class="sec-tag st-log">Research Logs</span><div class="sec-line"></div><span class="sec-count">06</span></div>
+  <div class="rl-header">
+    <div class="rl-subtitle">// WRITEUPS · DISCOVERIES · SECURITY RESEARCH</div>
+    <div class="rl-meta-row">
+      <span class="pill-btn pb-cyn" style="font-size:9px;padding:2px 10px 2px 7px;"><span class="dot" style="width:6px;height:6px;animation:pulse 2s ease-in-out infinite;"></span>Active Research</span>
+      <span class="pill-btn pb-red" style="font-size:9px;padding:2px 10px 2px 7px;"><span class="dot" style="width:6px;height:6px;"></span>Bug Bounty</span>
+      <span class="pill-btn pb-ylw" style="font-size:9px;padding:2px 10px 2px 7px;"><span class="dot" style="width:6px;height:6px;"></span>Threat Intel</span>
+      <span class="pill-btn pb-pur" style="font-size:9px;padding:2px 10px 2px 7px;"><span class="dot" style="width:6px;height:6px;"></span>Lab Notes</span>
+    </div>
+  </div>
+
+  <div class="carousel-wrap" id="rl-carousel">
+    <div class="carousel-track-outer">
+      <div class="carousel-track" id="rl-track">
+
+        <!-- LOG-001 -->
+        <a class="rl-card rl-c-red" href="https://github.com/ricoswabii" target="_blank" rel="noopener">
+          <div class="rl-card-top">
+            <div class="rl-ico ico-red"><i class="ti ti-bug" aria-hidden="true"></i></div>
+            <div class="rl-badge-row">
+              <span class="rl-badge" style="background:#f8717118;color:var(--red);border:1px solid #f8717133;">WAF</span>
+              <span class="rl-badge" style="background:#f8717118;color:var(--red);border:1px solid #f8717133;">BunkerWeb</span>
+            </div>
+          </div>
+          <div class="rl-log-id">LOG-001 · 2024</div>
+          <div class="rl-title">WAF Bypass Techniques in Open-Source Environments</div>
+          <div class="rl-writeup">Documented findings from internal security testing of BunkerWeb — an open-source WAF — during beta testing cycles. Identified edge cases in rule parsing and evasion patterns that bypassed core protections under specific HTTP configurations.</div>
+          <ul class="rl-discoveries">
+            <li>Header injection bypassing input sanitization rules</li>
+            <li>Chunked encoding edge cases escaping body inspection</li>
+            <li>False-negative patterns in custom ModSecurity ruleset</li>
+            <li>Contributed fixes merged into upstream release</li>
+          </ul>
+          <div class="rl-footer">
+            <span class="rl-date">Aug 2023 – Apr 2025</span>
+            <span class="rl-read">View Docs <i class="ti ti-arrow-right rl-arrow" aria-hidden="true"></i></span>
+          </div>
+        </a>
+
+        <!-- LOG-002 -->
+        <a class="rl-card rl-c-ylw" href="https://github.com/ricoswabii" target="_blank" rel="noopener">
+          <div class="rl-card-top">
+            <div class="rl-ico ico-ylw"><i class="ti ti-activity" aria-hidden="true"></i></div>
+            <div class="rl-badge-row">
+              <span class="rl-badge" style="background:#fbbf2418;color:var(--ylw);border:1px solid #fbbf2433;">SIEM</span>
+              <span class="rl-badge" style="background:#fbbf2418;color:var(--ylw);border:1px solid #fbbf2433;">Elastic</span>
+            </div>
+          </div>
+          <div class="rl-log-id">LOG-002 · 2024</div>
+          <div class="rl-title">Threat Detection Patterns with Elastic SIEM</div>
+          <div class="rl-writeup">Homelab research using Elastic Stack to simulate and detect real-world attack patterns. Designed custom detection rules, dashboards, and alert pipelines to surface IOCs from Windows and Linux event logs.</div>
+          <ul class="rl-discoveries">
+            <li>Brute-force SSH pattern detection via Winlogbeat</li>
+            <li>Lateral movement signatures in internal network traffic</li>
+            <li>Custom KQL queries for Sysmon event correlation</li>
+            <li>Alert tuning to reduce false positives by ~60%</li>
+          </ul>
+          <div class="rl-footer">
+            <span class="rl-date">2024 · Homelab</span>
+            <span class="rl-read">View Docs <i class="ti ti-arrow-right rl-arrow" aria-hidden="true"></i></span>
+          </div>
+        </a>
+
+        <!-- LOG-003 -->
+        <a class="rl-card rl-c-cyn" href="https://github.com/ricoswabii" target="_blank" rel="noopener">
+          <div class="rl-card-top">
+            <div class="rl-ico ico-cyn"><i class="ti ti-router" aria-hidden="true"></i></div>
+            <div class="rl-badge-row">
+              <span class="rl-badge" style="background:#22d3ee18;color:var(--cyn);border:1px solid #22d3ee33;">Network</span>
+              <span class="rl-badge" style="background:#22d3ee18;color:var(--cyn);border:1px solid #22d3ee33;">pfSense</span>
+            </div>
+          </div>
+          <div class="rl-log-id">LOG-003 · 2024</div>
+          <div class="rl-title">VLAN Segmentation & Firewall Rule Hardening</div>
+          <div class="rl-writeup">Lab exercise modeling enterprise network segmentation using pfSense. Focused on isolating traffic between trusted, DMZ, and untrusted zones, with Wireshark packet captures validating rule enforcement across segments.</div>
+          <ul class="rl-discoveries">
+            <li>VLAN hopping mitigated via strict trunk port policy</li>
+            <li>DNS-based exfiltration attempts captured and blocked</li>
+            <li>Firewall state table analysis under simulated DDoS load</li>
+            <li>Inter-VLAN routing locked down with ACL precision</li>
+          </ul>
+          <div class="rl-footer">
+            <span class="rl-date">2024 · Lab Research</span>
+            <span class="rl-read">View Docs <i class="ti ti-arrow-right rl-arrow" aria-hidden="true"></i></span>
+          </div>
+        </a>
+
+        <!-- LOG-004 -->
+        <a class="rl-card rl-c-grn" href="https://github.com/ricoswabii" target="_blank" rel="noopener">
+          <div class="rl-card-top">
+            <div class="rl-ico ico-grn"><i class="ti ti-flag" aria-hidden="true"></i></div>
+            <div class="rl-badge-row">
+              <span class="rl-badge" style="background:#4ade8018;color:var(--grn);border:1px solid #4ade8033;">CTF</span>
+              <span class="rl-badge" style="background:#4ade8018;color:var(--grn);border:1px solid #4ade8033;">Forensics</span>
+            </div>
+          </div>
+          <div class="rl-log-id">LOG-004 · 2023–2025</div>
+          <div class="rl-title">CTF Challenge Writeups — Forensics & Web Exploit</div>
+          <div class="rl-writeup">Collection of documented solutions from Capture the Flag competitions. Covers digital forensics (memory dumps, steganography, file carving) and web exploitation (SQLi, XSS, IDOR, SSRF) across multiple platforms.</div>
+          <ul class="rl-discoveries">
+            <li>Volatile memory analysis using Volatility framework</li>
+            <li>Hidden flag extraction via LSB steganography</li>
+            <li>Blind SQLi exploitation with time-based techniques</li>
+            <li>Solved IDOR chain leading to account takeover</li>
+          </ul>
+          <div class="rl-footer">
+            <span class="rl-date">2023 – 2025 · Multi-platform</span>
+            <span class="rl-read">View Docs <i class="ti ti-arrow-right rl-arrow" aria-hidden="true"></i></span>
+          </div>
+        </a>
+
+        <!-- LOG-005 -->
+        <a class="rl-card rl-c-pur" href="https://github.com/ricoswabii" target="_blank" rel="noopener">
+          <div class="rl-card-top">
+            <div class="rl-ico ico-pur"><i class="ti ti-radar-2" aria-hidden="true"></i></div>
+            <div class="rl-badge-row">
+              <span class="rl-badge" style="background:#a78bfa18;color:var(--pur);border:1px solid #a78bfa33;">Python</span>
+              <span class="rl-badge" style="background:#a78bfa18;color:var(--pur);border:1px solid #a78bfa33;">Recon</span>
+            </div>
+          </div>
+          <div class="rl-log-id">LOG-005 · 2023</div>
+          <div class="rl-title">Building 4SCAN — TCP Port Scanner from Scratch</div>
+          <div class="rl-writeup">Dev log for 4SCAN, a custom Python TCP port scanner. Documented the architecture decisions, threading model, timeout handling, and socket programming concepts that went into building a reliable scanning tool from the ground up.</div>
+          <ul class="rl-discoveries">
+            <li>Socket-level TCP handshake analysis and banner grabbing</li>
+            <li>Thread pool tuning for optimal speed vs accuracy</li>
+            <li>Timeout edge cases causing false closed-port reads</li>
+            <li>CIDR range parsing added in v1.2 iteration</li>
+          </ul>
+          <div class="rl-footer">
+            <span class="rl-date">2023 · Python Dev</span>
+            <span class="rl-read">View Docs <i class="ti ti-arrow-right rl-arrow" aria-hidden="true"></i></span>
+          </div>
+        </a>
+
+      </div><!-- /track -->
+    </div><!-- /outer -->
+
+    <div class="carousel-nav">
+      <div class="carousel-dots" id="rl-dots"></div>
+      <div class="carousel-btns">
+        <button class="c-btn" id="rl-prev" aria-label="Previous"><i class="ti ti-chevron-left"></i></button>
+        <button class="c-btn" id="rl-next" aria-label="Next"><i class="ti ti-chevron-right"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  const track = document.getElementById('rl-track');
+  const dotsEl = document.getElementById('rl-dots');
+  const prevBtn = document.getElementById('rl-prev');
+  const nextBtn = document.getElementById('rl-next');
+  const cards = Array.from(track.querySelectorAll('.rl-card'));
+  let current = 0;
+
+  function visibleCount(){
+    return window.innerWidth <= 768 ? 1 : 2;
+  }
+
+  function maxIndex(){
+    return Math.max(0, cards.length - visibleCount());
+  }
+
+  function buildDots(){
+    dotsEl.innerHTML = '';
+    const total = maxIndex() + 1;
+    for(let i=0;i<total;i++){
+      const d = document.createElement('span');
+      d.className = 'c-dot' + (i===current?' active':'');
+      d.addEventListener('click',()=>goTo(i));
+      dotsEl.appendChild(d);
+    }
+  }
+
+  function updateButtons(){
+    prevBtn.disabled = current === 0;
+    nextBtn.disabled = current >= maxIndex();
+  }
+
+  function getCardWidth(){
+    const card = cards[0];
+    const style = getComputedStyle(track);
+    const gap = parseFloat(style.gap) || 14;
+    return card.offsetWidth + gap;
+  }
+
+  function goTo(n){
+    current = Math.max(0, Math.min(n, maxIndex()));
+    track.style.transform = `translateX(-${current * getCardWidth()}px)`;
+    Array.from(dotsEl.children).forEach((d,i)=>d.classList.toggle('active',i===current));
+    updateButtons();
+  }
+
+  prevBtn.addEventListener('click',()=>goTo(current-1));
+  nextBtn.addEventListener('click',()=>goTo(current+1));
+
+  let startX=0,isDragging=false;
+  track.addEventListener('mousedown',e=>{startX=e.clientX;isDragging=true;});
+  track.addEventListener('mousemove',e=>{if(!isDragging)return;});
+  track.addEventListener('mouseup',e=>{
+    if(!isDragging)return;isDragging=false;
+    const dx=e.clientX-startX;
+    if(dx<-40)goTo(current+1);
+    else if(dx>40)goTo(current-1);
+  });
+  track.addEventListener('touchstart',e=>{startX=e.touches[0].clientX;},{passive:true});
+  track.addEventListener('touchend',e=>{
+    const dx=e.changedTouches[0].clientX-startX;
+    if(dx<-40)goTo(current+1);
+    else if(dx>40)goTo(current-1);
+  });
+
+  window.addEventListener('resize',()=>{goTo(Math.min(current,maxIndex()));buildDots();});
+  buildDots();
+  updateButtons();
+})();
+</script>
+
+<div class="section">
+  <div class="sec-bar"><span class="sec-tag st-grn">Contact</span><div class="sec-line"></div><span class="sec-count">07</span></div>
   <div class="contact-wrap">
     <div class="citem"><i class="ti ti-mail" style="color:var(--blu)" aria-hidden="true"></i><div><div class="clbl">Email</div><div class="cval">fornes.rico77@gmail.com</div></div></div>
     <div class="citem"><i class="ti ti-phone" style="color:var(--grn)" aria-hidden="true"></i><div><div class="clbl">Phone</div><div class="cval">+63 926 064 9319</div></div></div>
