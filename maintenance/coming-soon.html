@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Access Restricted</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+:root{
+  --bg:#07080f;
+  --card:#0e0f1a;
+  --txt:#f0f0ff;
+  --muted:#6b7280;
+
+  --red:#f87171;
+  --pur:#a78bfa;
+  --cyn:#22d3ee;
+}
+
+body{
+  background:var(--bg);
+  color:var(--txt);
+  font-family:'Space Grotesk',sans-serif;
+  min-height:100vh;
+  overflow:hidden;
+  position:relative;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* Grid */
+
+.grid{
+  position:absolute;
+  inset:0;
+
+  background-image:
+  linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+  linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+
+  background-size:50px 50px;
+}
+
+/* Glow */
+
+.glow{
+  position:absolute;
+  border-radius:50%;
+  filter:blur(120px);
+  opacity:.15;
+}
+
+.g1{
+  width:420px;
+  height:420px;
+  background:var(--pur);
+  top:-100px;
+  left:-100px;
+}
+
+.g2{
+  width:350px;
+  height:350px;
+  background:var(--cyn);
+  bottom:-80px;
+  right:-80px;
+}
+
+/* Main */
+
+.panel{
+  width:min(92%,760px);
+
+  background:rgba(14,15,26,.72);
+
+  border:1px solid rgba(255,255,255,.08);
+
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+
+  border-radius:30px;
+
+  padding:42px;
+
+  position:relative;
+  overflow:hidden;
+
+  z-index:2;
+}
+
+.panel::before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:1px;
+
+  background:linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,.18),
+    transparent
+  );
+}
+
+/* Top Bar */
+
+.topbar{
+  display:flex;
+  align-items:center;
+  gap:8px;
+
+  margin-bottom:34px;
+}
+
+.dot{
+  width:10px;
+  height:10px;
+  border-radius:50%;
+}
+
+.d-red{background:var(--red);}
+.d-pur{background:var(--pur);}
+.d-cyn{background:var(--cyn);}
+
+/* Terminal */
+
+.term{
+  font-family:'JetBrains Mono',monospace;
+  font-size:12px;
+  color:var(--muted);
+
+  margin-bottom:20px;
+}
+
+.term span{
+  color:var(--cyn);
+}
+
+/* Title */
+
+.title{
+  font-size:clamp(36px,6vw,64px);
+  line-height:1;
+  font-weight:700;
+
+  margin-bottom:18px;
+}
+
+.title .accent{
+  color:var(--pur);
+}
+
+/* Desc */
+
+.desc{
+  max-width:560px;
+
+  color:#9ca3af;
+
+  font-size:14px;
+  line-height:1.9;
+
+  margin-bottom:34px;
+}
+
+/* Status Box */
+
+.status-box{
+  display:flex;
+  align-items:center;
+  gap:14px;
+
+  padding:16px 18px;
+
+  border-radius:18px;
+
+  background:rgba(255,255,255,.03);
+
+  border:1px solid rgba(255,255,255,.06);
+
+  margin-bottom:26px;
+}
+
+.status-icon{
+  width:42px;
+  height:42px;
+
+  border-radius:12px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  background:rgba(167,139,250,.12);
+}
+
+.status-icon i{
+  color:var(--pur);
+  font-size:22px;
+}
+
+.status-text{
+  flex:1;
+}
+
+.status-name{
+  font-size:13px;
+  font-weight:600;
+  margin-bottom:2px;
+}
+
+.status-sub{
+  font-size:11px;
+  color:var(--muted);
+  font-family:'JetBrains Mono',monospace;
+}
+
+/* Button */
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+
+  text-decoration:none;
+
+  padding:13px 20px;
+
+  border-radius:14px;
+
+  background:rgba(167,139,250,.12);
+
+  border:1px solid rgba(167,139,250,.22);
+
+  color:white;
+
+  font-size:13px;
+  font-weight:600;
+
+  transition:.25s;
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+  border-color:rgba(167,139,250,.45);
+}
+
+.btn i{
+  font-size:17px;
+}
+
+/* Footer */
+
+.footer{
+  margin-top:30px;
+
+  font-size:10px;
+  letter-spacing:2px;
+
+  color:#6b7280;
+
+  font-family:'JetBrains Mono',monospace;
+}
+
+</style>
+</head>
+<body>
+
+<div class="grid"></div>
+
+<div class="glow g1"></div>
+<div class="glow g2"></div>
+
+<div class="panel">
+
+  <div class="topbar">
+    <div class="dot d-red"></div>
+    <div class="dot d-pur"></div>
+    <div class="dot d-cyn"></div>
+  </div>
+
+  <div class="term">
+    <span>rico@portfolio</span>:~$ access projects
+  </div>
+
+  <h1 class="title">
+    Section <span class="accent">Offline</span>
+  </h1>
+
+  <p class="desc">
+    The requested page is currently unavailable while development and content deployment are in progress.
+    Additional projects, writeups, and technical documentation will be uploaded soon.
+  </p>
+
+  <div class="status-box">
+
+    <div class="status-icon">
+      <i class="ti ti-server-off"></i>
+    </div>
+
+    <div class="status-text">
+      <div class="status-name">
+        Deployment In Progress
+      </div>
+
+      <div class="status-sub">
+        STATUS // BUILDING_CONTENT_MODULES
+      </div>
+    </div>
+
+  </div>
+
+  <a href="../index.html" class="btn">
+    <i class="ti ti-arrow-left"></i>
+    Return to Portfolio
+  </a>
+
+  <div class="footer">
+    RICO FORNES // CYBERSECURITY · IT SPECIALIST
+  </div>
+
+</div>
+
+</body>
+</html>
