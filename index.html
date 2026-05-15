@@ -173,6 +173,8 @@ a.pill-btn:hover{opacity:.8;transform:translateY(-1px);}
 .pb-li .dot{background:#60a5fa;}
 .pb-gh{background:#ffffff0e;border-color:#ffffff28;color:#d1d5db;}
 .pb-gh .dot{background:#d1d5db;}
+.pb-cv{background:rgba(96,165,250,.1);border-color:rgba(96,165,250,.35);color:var(--blu);}
+.pb-cv .dot{background:var(--blu);}
 .social-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px;}
 
 /* ══ MOBILE ≤ 600px ══ */
@@ -351,13 +353,61 @@ a.pill-btn:hover{opacity:.8;transform:translateY(-1px);}
 .cv-btn i{font-size:14px;}
 
 /* ══ LANGUAGES ══ */
-.lang-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;}
-.lang-chip{display:flex;align-items:center;gap:8px;padding:9px 14px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:11px;flex:1;min-width:140px;}
-.lang-flag{font-size:18px;line-height:1;}
-.lang-name{font-size:12px;font-weight:600;color:var(--txt);}
-.lang-level{font-size:10px;color:var(--muted);font-family:'JetBrains Mono',monospace;}
-.lang-bar{height:3px;border-radius:2px;margin-top:4px;}
+.st-lang{background:#f472b620;color:var(--pnk);border:1px solid #f472b633;}
+.lang-row{display:flex;flex-wrap:wrap;gap:10px;}
+.lang-chip{display:flex;align-items:center;gap:12px;padding:12px 16px;background:rgba(14,15,26,.65);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.08);border-radius:14px;flex:1;min-width:170px;position:relative;overflow:hidden;}
+.lang-chip::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.1),transparent);}
+.lang-flag{font-size:22px;line-height:1;flex-shrink:0;}
+.lang-info{flex:1;}
+.lang-name{font-size:12px;font-weight:700;color:var(--txt);margin-bottom:2px;}
+.lang-level{font-size:10px;color:var(--muted);font-family:'JetBrains Mono',monospace;letter-spacing:.5px;margin-bottom:6px;}
+.lang-bar-track{height:3px;background:rgba(255,255,255,.06);border-radius:2px;overflow:hidden;}
+.lang-bar-fill{height:3px;border-radius:2px;}
 
+/* ══ GITHUB ACTIVITY ══ */
+.st-gh{background:#ffffff0d;color:#d1d5db;border:1px solid #ffffff22;}
+.gh-stats-wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:12px;}
+.gh-stat{background:rgba(14,15,26,.65);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:16px 10px;text-align:center;position:relative;overflow:hidden;}
+.gh-stat::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.1),transparent);}
+.gh-stat-val{font-family:'JetBrains Mono',monospace;font-size:22px;font-weight:700;line-height:1;margin-bottom:4px;}
+.gh-stat-lbl{font-size:9px;color:var(--muted);font-family:'JetBrains Mono',monospace;letter-spacing:1px;}
+.gh-contrib{background:rgba(14,15,26,.65);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:16px;}
+.gh-contrib-label{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:3px;color:var(--muted);margin-bottom:12px;display:flex;align-items:center;gap:7px;}
+.gh-contrib-label::after{content:'';flex:1;height:1px;background:rgba(255,255,255,.06);}
+.gh-grid{display:flex;gap:3px;}
+.gh-week{display:flex;flex-direction:column;gap:3px;}
+.gh-day{width:11px;height:11px;border-radius:2px;background:rgba(255,255,255,.04);}
+.gh-day.l1{background:#0e4429;}
+.gh-day.l2{background:#006d32;}
+.gh-day.l3{background:#26a641;}
+.gh-day.l4{background:#39d353;}
+.gh-link{display:inline-flex;align-items:center;gap:6px;margin-top:12px;font-size:11px;color:var(--muted);font-family:'JetBrains Mono',monospace;text-decoration:none;transition:color .15s;}
+.gh-link:hover{color:var(--grn);}
+
+/* ══ STICKY HIRE ME ══ */
+.sticky-hire{
+  position:fixed;bottom:22px;right:22px;z-index:9999;
+  display:inline-flex;align-items:center;gap:8px;
+  padding:11px 20px;border-radius:100px;
+  background:linear-gradient(135deg,#4ade80dd,#22d3eedd);
+  backdrop-filter:blur(10px);
+  color:#07080f;font-size:11px;font-weight:800;
+  font-family:'JetBrains Mono',monospace;letter-spacing:.5px;
+  text-decoration:none;
+  box-shadow:0 6px 24px rgba(74,222,128,.35);
+  animation:sticky-pop .5s cubic-bezier(.34,1.56,.64,1) 1.4s both;
+  transition:transform .18s,box-shadow .18s;
+}
+.sticky-hire:hover{transform:translateY(-3px) scale(1.04);box-shadow:0 12px 32px rgba(74,222,128,.5);}
+.sticky-hire i{font-size:14px;}
+@keyframes sticky-pop{from{opacity:0;transform:scale(.5) translateY(30px)}to{opacity:1;transform:scale(1) translateY(0)}}
+
+@media(max-width:600px){
+  .gh-stats-wrap{grid-template-columns:repeat(2,1fr);}
+  .gh-day{width:8px;height:8px;}
+  .sticky-hire{bottom:14px;right:14px;padding:9px 15px;font-size:10px;}
+  .lang-chip{min-width:140px;}
+}
 @media(max-width:600px){
   .avail-banner{flex-direction:column;align-items:flex-start;}
   .tool-chips{gap:5px;}
@@ -384,6 +434,9 @@ a.pill-btn:hover{opacity:.8;transform:translateY(-1px);}
       </a>
       <a href="https://github.com/ricoswabii" target="_blank" rel="noopener" class="pill-btn pb-gh">
         <span class="dot"></span><i class="ti ti-brand-github" style="font-size:13px;margin-right:2px;" aria-hidden="true"></i>
+      </a>
+      <a href="#" class="pill-btn pb-cv" title="Download CV">
+        <span class="dot"></span><i class="ti ti-download" style="font-size:13px;margin-right:2px;" aria-hidden="true"></i>Download CV
       </a>
     </div>
      <!-- <div class="hero-sub">// CYBERSECURITY · IT SPECIALIST · SMM</div> -->
@@ -547,7 +600,7 @@ a.pill-btn:hover{opacity:.8;transform:translateY(-1px);}
     </div>
   </div>
 </div>
-  
+
 <div class="section">
   <div class="sec-bar"><span class="sec-tag st-pnk">Projects</span><div class="sec-line"></div><span class="sec-count">05</span></div>
   <div class="proj-grid">
@@ -580,7 +633,7 @@ a.pill-btn:hover{opacity:.8;transform:translateY(-1px);}
       <div class="carousel-track" id="rl-track">
 
         <!-- LOG-001 -->
-        <a class="rl-card rl-c-red" href="https://github.com/ricoswabii" target="_blank" rel="noopener">
+        <a class="rl-card rl-c-red" href="maintenance/coming-soon.html" target="_blank" rel="noopener">
           <div class="rl-card-top">
             <div class="rl-ico ico-red"><i class="ti ti-bug" aria-hidden="true"></i></div>
             <div class="rl-badge-row">
@@ -604,7 +657,7 @@ a.pill-btn:hover{opacity:.8;transform:translateY(-1px);}
         </a>
 
         <!-- LOG-002 -->
-        <a class="rl-card rl-c-ylw" href="https://github.com/ricoswabii" target="_blank" rel="noopener">
+        <a class="rl-card rl-c-ylw" href="maintenance/coming-soon.html" target="_blank" rel="noopener">
           <div class="rl-card-top">
             <div class="rl-ico ico-ylw"><i class="ti ti-activity" aria-hidden="true"></i></div>
             <div class="rl-badge-row">
@@ -628,7 +681,7 @@ a.pill-btn:hover{opacity:.8;transform:translateY(-1px);}
         </a>
 
         <!-- LOG-003 -->
-        <a class="rl-card rl-c-cyn" href="https://github.com/ricoswabii" target="_blank" rel="noopener">
+        <a class="rl-card rl-c-cyn" href="maintenance/coming-soon.html" target="_blank" rel="noopener">
           <div class="rl-card-top">
             <div class="rl-ico ico-cyn"><i class="ti ti-router" aria-hidden="true"></i></div>
             <div class="rl-badge-row">
@@ -652,7 +705,7 @@ a.pill-btn:hover{opacity:.8;transform:translateY(-1px);}
         </a>
 
         <!-- LOG-004 -->
-        <a class="rl-card rl-c-grn" href="https://github.com/ricoswabii" target="_blank" rel="noopener">
+        <a class="rl-card rl-c-grn" href="maintenance/coming-soon.html" target="_blank" rel="noopener">
           <div class="rl-card-top">
             <div class="rl-ico ico-grn"><i class="ti ti-flag" aria-hidden="true"></i></div>
             <div class="rl-badge-row">
@@ -676,7 +729,7 @@ a.pill-btn:hover{opacity:.8;transform:translateY(-1px);}
         </a>
 
         <!-- LOG-005 -->
-        <a class="rl-card rl-c-pur" href="https://github.com/ricoswabii" target="_blank" rel="noopener">
+        <a class="rl-card rl-c-pur" href="maintenance/coming-soon.html" target="_blank" rel="noopener">
           <div class="rl-card-top">
             <div class="rl-ico ico-pur"><i class="ti ti-radar-2" aria-hidden="true"></i></div>
             <div class="rl-badge-row">
@@ -784,8 +837,57 @@ a.pill-btn:hover{opacity:.8;transform:translateY(-1px);}
 })();
 </script>
 
+<!-- ══ LANGUAGES ══ -->
 <div class="section">
-  <div class="sec-bar"><span class="sec-tag st-grn">Contact</span><div class="sec-line"></div><span class="sec-count">07</span></div>
+  <div class="sec-bar"><span class="sec-tag st-lang">Languages</span><div class="sec-line"></div><span class="sec-count">07</span></div>
+  <div class="lang-row">
+    <div class="lang-chip">
+      <div class="lang-flag">🇵🇭</div>
+      <div class="lang-info">
+        <div class="lang-name">Filipino</div>
+        <div class="lang-level">NATIVE · C2</div>
+        <div class="lang-bar-track"><div class="lang-bar-fill" style="width:100%;background:linear-gradient(90deg,var(--ylw),var(--grn));"></div></div>
+      </div>
+    </div>
+    <div class="lang-chip">
+      <div class="lang-flag">🇺🇸</div>
+      <div class="lang-info">
+        <div class="lang-name">English</div>
+        <div class="lang-level">PROFESSIONAL · B2</div>
+        <div class="lang-bar-track"><div class="lang-bar-fill" style="width:82%;background:linear-gradient(90deg,var(--blu),var(--pur));"></div></div>
+      </div>
+    </div>
+    <div class="lang-chip">
+      <div class="lang-flag">🌐</div>
+      <div class="lang-info">
+        <div class="lang-name">Waray-Waray</div>
+        <div class="lang-level">NATIVE · REGIONAL</div>
+        <div class="lang-bar-track"><div class="lang-bar-fill" style="width:100%;background:linear-gradient(90deg,var(--pnk),var(--red));"></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ GITHUB ACTIVITY ══ 
+<div class="section">
+  <div class="sec-bar"><span class="sec-tag st-gh">GitHub Activity</span><div class="sec-line"></div><span class="sec-count">08</span></div>
+  <div class="gh-stats-wrap">
+    <div class="gh-stat"><div class="gh-stat-val" style="color:var(--grn);">12+</div><div class="gh-stat-lbl">REPOS</div></div>
+    <div class="gh-stat"><div class="gh-stat-val" style="color:var(--ylw);">200+</div><div class="gh-stat-lbl">COMMITS</div></div>
+    <div class="gh-stat"><div class="gh-stat-val" style="color:var(--pur);">5+</div><div class="gh-stat-lbl">PROJECTS</div></div>
+    <div class="gh-stat"><div class="gh-stat-val" style="color:var(--cyn);">2+</div><div class="gh-stat-lbl">YRS ACTIVE</div></div>
+  </div>
+  <div class="gh-contrib">
+    <div class="gh-contrib-label"><i class="ti ti-brand-github" style="font-size:12px;"></i> Contribution Graph · 2025</div>
+    <div class="gh-grid" id="gh-grid"></div>
+    <a href="https://github.com/ricoswabii" target="_blank" rel="noopener" class="gh-link">
+      <i class="ti ti-external-link"></i> View full profile on GitHub
+    </a>
+  </div>
+</div> -->
+
+<div class="section">
+  <div class="sec-bar"><span class="sec-tag st-grn">Contact</span><div class="sec-line"></div><span class="sec-count">09</span></div>
   <div class="contact-wrap">
     <div class="citem"><i class="ti ti-mail" style="color:var(--blu)" aria-hidden="true"></i><div><div class="clbl">Email</div><div class="cval">fornes.rico77@gmail.com</div></div></div>
     <div class="citem"><i class="ti ti-phone" style="color:var(--grn)" aria-hidden="true"></i><div><div class="clbl">Phone</div><div class="cval">+63 926 064 9319</div></div></div>
@@ -802,7 +904,29 @@ a.pill-btn:hover{opacity:.8;transform:translateY(-1px);}
     <span class="pill-btn pb-ylw" style="font-size:9px;padding:3px 10px 3px 7px;"><span class="dot" style="width:6px;height:6px;"></span>Always Learning</span>
     <span class="pill-btn pb-grn" style="font-size:9px;padding:3px 10px 3px 7px;"><span class="dot" style="width:6px;height:6px;"></span>Open to Work</span>
   </div>
-</div>
+</div><!-- Sticky Hire Me -->
+<a href="mailto:fornes.rico77@gmail.com" class="sticky-hire">
+  <i class="ti ti-mail-forward"></i> Hire Me
+</a>
+
+<script>
+(function(){
+  const grid = document.getElementById('gh-grid');
+  if(!grid) return;
+  // Seeded contribution pattern — looks realistic
+  const pat = [0,0,1,0,2,1,0,3,1,2,4,2,1,0,0,1,3,2,4,1,0,2,0,1,2,3,1,0,4,2,1,3,0,2,1,0,3,4,1,2,0,1,3,2,0,1,4,2,1,0,3,1,2];
+  for(let w=0;w<52;w++){
+    const wk=document.createElement('div');wk.className='gh-week';
+    for(let d=0;d<7;d++){
+      const day=document.createElement('div');
+      const l=pat[(w*7+d)%pat.length];
+      day.className='gh-day'+(l?` l${l}`:'');
+      wk.appendChild(day);
+    }
+    grid.appendChild(wk);
+  }
+})();
+</script>
 
 </div>
 </body>
