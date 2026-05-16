@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rico Fornes</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
-  <link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
@@ -20,6 +20,35 @@
 </div>
 
 <div class="page">
+
+<!-- ══ FLOATING SECTION NAV ══ -->
+<nav class="fnav" id="fnav" aria-label="Section navigation">
+  <a class="fnav-btn" href="#section-skills" data-section="section-skills">
+    <i class="ti ti-brain"></i><span>Skills</span>
+  </a>
+  <div class="fnav-divider"></div>
+  <a class="fnav-btn" href="#section-experience" data-section="section-experience">
+    <i class="ti ti-briefcase"></i><span>Experience</span>
+  </a>
+  <div class="fnav-divider"></div>
+  <a class="fnav-btn" href="#section-education" data-section="section-education">
+    <i class="ti ti-school"></i><span>Education</span>
+  </a>
+  <div class="fnav-divider"></div>
+  <a class="fnav-btn" href="#section-projects" data-section="section-projects">
+    <i class="ti ti-code"></i><span>Projects</span>
+  </a>
+  <div class="fnav-divider"></div>
+  <a class="fnav-btn" href="#section-research" data-section="section-research">
+    <i class="ti ti-microscope"></i><span>Research</span>
+  </a>
+  <div class="fnav-divider"></div>
+  <a class="fnav-btn" href="#section-contact" data-section="section-contact">
+    <i class="ti ti-mail"></i><span>Contact</span>
+  </a>
+</nav>
+
+<!-- ══ HERO ══ -->
 <div class="hero">
   <div>
     <div class="hero-name">Rico<br><span class="nm-">For</span><span class="nm-">nes</span></div>
@@ -29,36 +58,26 @@
       </a>
       <a href="https://github.com/ricoswabii" target="_blank" rel="noopener" class="pill-btn pb-gh">
         <span class="dot"></span><i class="ti ti-brand-github" style="font-size:13px;margin-right:2px;" aria-hidden="true"></i>
-      </a> <!--
+      </a>
+      <!--
       <a href="assets/RESUME-RTF-2026.pdf" class="pill-btn pb-cv" title="Download CV">
         <span class="dot"></span><i class="ti ti-download" style="font-size:13px;margin-right:2px;" aria-hidden="true"></i>Download CV
-      </a> -->
+      </a>
+      -->
     </div>
-     <!-- <div class="hero-sub">// CYBERSECURITY · IT SPECIALIST · SMM</div> -->
-     <div class="hero-tags">
+    <div class="hero-tags">
       <span class="pill-btn pb-red"><span class="dot"></span>Cybersecurity</span>
       <span class="pill-btn pb-ylw"><span class="dot"></span>IT Specialist</span>
       <span class="pill-btn pb-grn"><span class="dot"></span>SMM</span>
-      </div>
+    </div>
     <div class="hero-bio">Im a cybersecurity enthusiast and IT specialist with a strong passion for tech. Always eager to learn, adapt, and take on new challenges.</div>
-    <!-- <div class="hero-tags">
-      <span class="pill-btn pb-red"><span class="dot"></span>Cybersecurity</span>
-      <span class="pill-btn pb-ylw"><span class="dot"></span>IT Support</span>
-      <span class="pill-btn pb-grn"><span class="dot"></span>Open to Work</span>
-      <span class="pill-btn pb-blu"><span class="dot"></span>Ethical Hacking</span>
-      <span class="pill-btn pb-pur"><span class="dot"></span>Scripting</span>
-      <span class="pill-btn pb-pnk"><span class="dot"></span>SMM</span>
-    </div> -->
     <div class="info-row">
       <div class="info-chip"><i class="ti ti-map-pin" style="color:var(--red)" aria-hidden="true"></i>Alangalang, Leyte 🇵🇭</div>
-      
-      <!--<div class="info-chip"><i class="ti ti-user" style="color:var(--ylw)" aria-hidden="true"></i>ricoswabii</div>-->
       <div class="info-chip"><i class="ti ti-wifi" style="color:var(--grn)" aria-hidden="true"></i>Remote Ready</div>
       <div class="info-chip"><i class="ti ti-circle-check" style="color:var(--cyn)" aria-hidden="true"></i>Freelance Active</div>
     </div>
-    
   </div>
-  
+
   <div class="avatar-col">
     <div class="ava-ring">
       <div class="ava-ring2"></div>
@@ -116,7 +135,8 @@
   </div>
 </div>
 
-<div class="section">
+<!-- ══ SKILLS ══ -->
+<div class="section" id="section-skills">
   <div class="sec-bar"><span class="sec-tag st-cyn">Skills</span><div class="sec-line"></div><span class="sec-count">02</span></div>
   <div class="skills-grid">
     <div class="sk-card sk-c-red"><div class="sk-ico ico-red"><i class="ti ti-messages" aria-hidden="true"></i></div><div><div class="sk-name">Communication</div><div class="sk-desc">Conveys ideas clearly to technical and non-technical audiences.</div></div></div>
@@ -131,7 +151,8 @@
   </div>
 </div>
 
-<div class="section">
+<!-- ══ EXPERIENCE ══ -->
+<div class="section" id="section-experience">
   <div class="sec-bar"><span class="sec-tag st-ylw">Experience</span><div class="sec-line"></div><span class="sec-count">03</span></div>
   <div class="tl">
     <div class="tl-item" style="--c:var(--grn);">
@@ -151,7 +172,7 @@
         <div class="tl-date-m">Aug 2023 – Apr 2025</div>
         <div class="exp-role">Jr. Cybersecurity Analyst</div>
         <div class="exp-co-row"><span class="pill-btn pb-red" style="font-size:10px;padding:3px 10px 3px 7px;"><span class="dot" style="width:7px;height:7px;"></span>BunkerWeb · Bunkerity</span></div>
-        <ul class="exp-ul"><li>Reviewed logs and security events to analyze attack patterns and suspicious behavior.</li><li>Performed manual and automated vulnerability assessments.</li><li>Documented and validated T1 & T2 vulnerabilities while coordinating remediation efforts with devs</li></ul>
+        <ul class="exp-ul"><li>Reviewed logs and security events to analyze attack patterns and suspicious behavior.</li><li>Performed manual and automated vulnerability assessments.</li><li>Documented and validated T1 &amp; T2 vulnerabilities while coordinating remediation efforts with devs</li></ul>
       </div></div>
     </div>
     <div class="tl-item" style="--c:var(--blu);">
@@ -163,7 +184,7 @@
         <div class="exp-co-row"><span class="pill-btn pb-blu" style="font-size:10px;padding:3px 10px 3px 7px;"><span class="dot" style="width:7px;height:7px;"></span>Wingo Inc</span></div>
         <ul class="exp-ul"><li>Diagnosed and resolved hardware, software, printer, and network connectivity issues for users.</li><li>Assisted users through remote desktop support using AnyDesk and Remote Desktop Protocol (RDP).</li><li>Managed and resolved technical support tickets ensuring timely issue resolution and user support.</li></ul>
       </div></div>
-    </div> 
+    </div>
     <div class="tl-item" style="--c:var(--pnk);">
       <div class="tl-date">Jun 2023<br>Dec 2022</div>
       <div class="tl-spine"><div class="tl-dot" style="background:var(--pnk);color:var(--pnk);"></div><div style="flex:1;"></div></div>
@@ -177,7 +198,8 @@
   </div>
 </div>
 
-<div class="section">
+<!-- ══ EDUCATION ══ -->
+<div class="section" id="section-education">
   <div class="sec-bar"><span class="sec-tag st-pur">Education</span><div class="sec-line"></div><span class="sec-count">04</span></div>
   <div class="glass-card" style="padding:20px 22px;">
     <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px;">
@@ -189,7 +211,6 @@
       <div class="cert-row"><span class="pill-btn pb-cyn" style="font-size:9px;padding:2px 8px 2px 6px;flex-shrink:0;"><span class="dot" style="width:6px;height:6px;"></span>CCNA</span><div><div class="cert-name">Cisco Certified Network Associate</div><div class="cert-by">NetAcad · Cisco</div></div></div>
       <div class="cert-row"><span class="pill-btn pb-cyn" style="font-size:9px;padding:2px 8px 2px 6px;flex-shrink:0;"><span class="dot" style="width:6px;height:6px;"></span>CCCA</span><div><div class="cert-name">Cisco Certified CyberOps Associate</div><div class="cert-by">NetAcad · Cisco</div></div></div>
       <div class="cert-row"><span class="pill-btn pb-red" style="font-size:9px;padding:2px 8px 2px 6px;flex-shrink:0;"><span class="dot" style="width:6px;height:6px;"></span>BTJA</span><div><div class="cert-name">Blue Team Junior Analyst</div><div class="cert-by">Security Blue Team</div></div></div>
-      <!-- <div class="cert-row"><span class="pill-btn pb-ylw" style="font-size:9px;padding:2px 8px 2px 6px;flex-shrink:0;"><span class="dot" style="width:6px;height:6px;"></span>PEH</span><div><div class="cert-name">Practical Ethical Hacking</div><div class="cert-by">TCM Security</div></div></div>-->
       <div class="cert-row"><span class="pill-btn pb-blu" style="font-size:9px;padding:2px 8px 2px 6px;flex-shrink:0;"><span class="dot" style="width:6px;height:6px;"></span>ITS</span><div><div class="cert-name">IT Support Professional</div><div class="cert-by">Coursera · Google</div></div></div>
       <div class="cert-row"><span class="pill-btn pb-grn" style="font-size:9px;padding:2px 8px 2px 6px;flex-shrink:0;"><span class="dot" style="width:6px;height:6px;"></span>LNX</span><div><div class="cert-name">Linux 100: Fundamentals</div><div class="cert-by">TCM Security</div></div></div>
       <div class="cert-row"><span class="pill-btn pb-pnk" style="font-size:9px;padding:2px 8px 2px 6px;flex-shrink:0;"><span class="dot" style="width:6px;height:6px;"></span>SMM</span><div><div class="cert-name">Social Media Marketing</div><div class="cert-by">DICT PH</div></div></div>
@@ -197,8 +218,8 @@
   </div>
 </div>
 
-
-<div class="section">
+<!-- ══ PROJECTS ══ -->
+<div class="section" id="section-projects">
   <div class="sec-bar"><span class="sec-tag st-pnk">Projects</span><div class="sec-line"></div><span class="sec-count">05</span></div>
   <div class="proj-grid">
     <div class="pj-card"><div class="pj-top"><div class="pj-ico ico-cyn"><i class="ti ti-network" aria-hidden="true"></i></div><div class="pj-name">Network Troubleshoot Toolkit</div></div><div class="pj-desc">Windows bat.exe file toolkit that makes network troubleshooting easier with quick-access shortcuts for common diagnostics and repair commands.</div><div class="pj-tags"><span class="ptag" style="background:#22d3ee15;color:var(--cyn);border:1px solid #22d3ee25;">GUI/CLI</span><span class="ptag" style="background:#22d3ee15;color:var(--cyn);border:1px solid #22d3ee25;">Diagnose</span><span class="ptag" style="background:#22d3ee15;color:var(--cyn);border:1px solid #22d3ee25;">Networking</span></div></div>
@@ -210,19 +231,11 @@
   </div>
 </div>
 
-
-
 <!-- ══ RESEARCH LOGS ══ -->
-<div class="section">
+<div class="section" id="section-research">
   <div class="sec-bar"><span class="sec-tag st-log">Research Logs</span><div class="sec-line"></div><span class="sec-count">06</span></div>
   <div class="rl-header">
     <div class="rl-subtitle">// WRITEUPS · DISCOVERIES · SECURITY RESEARCH</div>
-    <!-- <div class="rl-meta-row">
-      <span class="pill-btn pb-cyn" style="font-size:9px;padding:2px 10px 2px 7px;"><span class="dot" style="width:6px;height:6px;animation:pulse 2s ease-in-out infinite;"></span>Active Research</span>
-      <span class="pill-btn pb-red" style="font-size:9px;padding:2px 10px 2px 7px;"><span class="dot" style="width:6px;height:6px;"></span>Bug Bounty</span>
-      <span class="pill-btn pb-ylw" style="font-size:9px;padding:2px 10px 2px 7px;"><span class="dot" style="width:6px;height:6px;"></span>Threat Intel</span>
-      <span class="pill-btn pb-pur" style="font-size:9px;padding:2px 10px 2px 7px;"><span class="dot" style="width:6px;height:6px;"></span>Lab Notes</span>
-    </div> -->
   </div>
 
   <div class="carousel-wrap" id="rl-carousel">
@@ -362,7 +375,6 @@
   </div>
 </div>
 
-
 <!-- ══ LANGUAGES ══ -->
 <div class="section">
   <div class="sec-bar"><span class="sec-tag st-lang">Languages</span><div class="sec-line"></div><span class="sec-count">07</span></div>
@@ -394,25 +406,8 @@
   </div>
 </div>
 
-<!-- ══ GITHUB ACTIVITY ══ 
-<div class="section">
-  <div class="sec-bar"><span class="sec-tag st-gh">GitHub Activity</span><div class="sec-line"></div><span class="sec-count">08</span></div>
-  <div class="gh-stats-wrap">
-    <div class="gh-stat"><div class="gh-stat-val" style="color:var(--grn);">12+</div><div class="gh-stat-lbl">REPOS</div></div>
-    <div class="gh-stat"><div class="gh-stat-val" style="color:var(--ylw);">200+</div><div class="gh-stat-lbl">COMMITS</div></div>
-    <div class="gh-stat"><div class="gh-stat-val" style="color:var(--pur);">5+</div><div class="gh-stat-lbl">PROJECTS</div></div>
-    <div class="gh-stat"><div class="gh-stat-val" style="color:var(--cyn);">2+</div><div class="gh-stat-lbl">YRS ACTIVE</div></div>
-  </div>
-  <div class="gh-contrib">
-    <div class="gh-contrib-label"><i class="ti ti-brand-github" style="font-size:12px;"></i> Contribution Graph · 2025</div>
-    <div class="gh-grid" id="gh-grid"></div>
-    <a href="https://github.com/ricoswabii" target="_blank" rel="noopener" class="gh-link">
-      <i class="ti ti-external-link"></i> View full profile on GitHub
-    </a>
-  </div>
-</div> -->
-
-<div class="section">
+<!-- ══ CONTACT ══ -->
+<div class="section" id="section-contact">
   <div class="sec-bar"><span class="sec-tag st-grn">Contact</span><div class="sec-line"></div><span class="sec-count">09</span></div>
   <div class="contact-wrap">
     <div class="citem"><i class="ti ti-mail" style="color:var(--blu)" aria-hidden="true"></i><div><div class="clbl">Email</div><div class="cval">fornes.rico77@gmail.com</div></div></div>
@@ -421,8 +416,6 @@
   </div>
 </div>
 
-
-
 <div class="ftr">
   <div class="ftr-txt">© 2026 </div>
   <div style="display:flex;gap:6px;flex-wrap:wrap;">
@@ -430,13 +423,14 @@
     <span class="pill-btn pb-ylw" style="font-size:9px;padding:3px 10px 3px 7px;"><span class="dot" style="width:6px;height:6px;"></span>Always Learning</span>
     <span class="pill-btn pb-grn" style="font-size:9px;padding:3px 10px 3px 7px;"><span class="dot" style="width:6px;height:6px;"></span>Open to Work</span>
   </div>
-</div><!-- Sticky Hire Me -->
+</div>
+
+<!-- Sticky Hire Me -->
 <a href="mailto:fornes.rico77@gmail.com" class="sticky-hire">
   <i class="ti ti-mail-forward"></i> Hire Me
 </a>
 
-
 </div>
-  <script src="assets/main.js"></script>
+<script src="assets/main.js"></script>
 </body>
 </html>

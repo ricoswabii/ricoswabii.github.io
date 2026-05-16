@@ -84,3 +84,49 @@
     grid.appendChild(wk);
   }
 })();
+/* ══ FLOATING SECTION NAV ══ */
+(function(){
+  const fnav = document.getElementById('fnav');
+  const skillsSection = document.getElementById('section-skills');
+  if(!fnav || !skillsSection) return;
+
+  const sectionIds = [
+    'section-skills','section-experience','section-education',
+    'section-projects','section-research','section-contact'
+  ];
+  const btns = fnav.querySelectorAll('.fnav-btn[data-section]');
+
+  function triggerY(){
+    // show after the bottom of the skills section passes viewport top
+    return skillsSection.getBoundingClientRect().bottom + window.scrollY - 80;
+  }
+
+  function updateNav(){
+    const sy = window.scrollY;
+    if(sy > triggerY()){
+      fnav.classList.add('visible');
+    } else {
+      fnav.classList.remove('visible');
+    }
+
+    // active section highlight
+    let active = null;
+    for(const id of sectionIds){
+      const el = document.getElementById(id);
+      if(el && el.getBoundingClientRect().top <= 130) active = id;
+    }
+    btns.forEach(b => b.classList.toggle('active', b.dataset.section === active));
+  }
+
+  // smooth scroll
+  btns.forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.preventDefault();
+      const t = document.getElementById(btn.dataset.section);
+      if(t) t.scrollIntoView({behavior:'smooth', block:'start'});
+    });
+  });
+
+  window.addEventListener('scroll', updateNav, {passive:true});
+  updateNav();
+})();
