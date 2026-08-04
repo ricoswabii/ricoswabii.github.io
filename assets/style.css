@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Press+Start+2P&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 *{box-sizing:border-box;margin:0;padding:0;}
 :root{
@@ -83,7 +84,17 @@ body{background:var(--bg);color:var(--txt);font-family:'Space Grotesk',sans-seri
 
 .section{margin-bottom:18px;}
 .sec-bar{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
-.sec-tag{font-size:9px;font-family:'JetBrains Mono',monospace;letter-spacing:3px;text-transform:uppercase;padding:4px 12px;border-radius:6px;font-weight:600;}
+/* .sec-tag{font-size:9px;font-family:'JetBrains Mono',monospace;letter-spacing:3px;text-transform:uppercase;padding:4px 12px;border-radius:6px;font-weight:600;} */
+.sec-tag{
+  font-family:"Press Start 2P", cursive;
+  font-size:8px;
+  letter-spacing:1px;
+  line-height:1.8;
+  text-transform:uppercase;
+  padding:6px 12px;
+  border-radius:6px;
+  font-weight:400;
+}
 .st-red{background:#f8717120;color:var(--red);border:1px solid #f8717133;}
 .st-ylw{background:#fbbf2420;color:var(--ylw);border:1px solid #fbbf2433;}
 .st-blu{background:#60a5fa20;color:var(--blu);border:1px solid #60a5fa33;}
