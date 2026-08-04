@@ -1,194 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Overheard at Breakfast | CTF Writeup</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+
+:root{
+
+--bg:#07080f;
+--card:#0e0f1a;
+--txt:#f0f0ff;
+--muted:#6b7280;
+
+--red:#f87171;
+--pur:#a78bfa;
+--cyn:#22d3ee;
+--green:#4ade80;
+
+}
+
+
+
+body{
+
+background:var(--bg);
+color:var(--txt);
+
+font-family:'Space Grotesk',sans-serif;
+
+min-height:100vh;
+
+position:relative;
+
+padding:50px 20px;
+
+}
+
+
+
+/* GRID */
+
+.grid{
+
+position:fixed;
+inset:0;
+
+background-image:
+linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),
+linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);
+
+background-size:50px 50px;
+
+z-index:-2;
+
+}
+
+
+
+/* GLOW */
+
+
+.glow{
+
+position:fixed;
+border-radius:50%;
+filter:blur(120px);
+opacity:.15;
+
+z-index:-1;
+
+}
+
+
+.g1{
+
+width:420px;
+height:420px;
+
+background:var(--pur);
+
+top:-100px;
+left:-100px;
+
+}
+
+
+.g2{
+
+width:350px;
+height:350px;
+
+background:var(--cyn);
+
+bottom:-80px;
+right:-80px;
+
+}
+
+
+
+/* PANEL */
+
+
+.panel{
+
+width:min(92%,850px);
+
+margin:auto;
+
+background:rgba(14,15,26,.72);
+
+border:1px solid rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+border-radius:30px;
+
+padding:42px;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+
+
+.panel:before{
+
+content:'';
+
+position:absolute;
+
+top:0;
+left:0;
+right:0;
+
+height:1px;
+
+background:linear-gradient(
+90deg,
+transparent,
+rgba(255,255,255,.2),
+transparent
+);
+
+}
+
+
+
+/* TOP */
+
+
+.topbar{
+
+display:flex;
+
+gap:8px;
+
+margin-bottom:30px;
+
+}
+
+
+.dot{
+
+width:10px;
+height:10px;
+
+border-radius:50%;
+
+}
+
+
+.red{
+background:var(--red);
+}
+
+
+.purple{
+background:var(--pur);
+}
+
+
+.cyan{
+background:var(--cyn);
+}
+
+
+
+/* TERMINAL */
+
+
+.term{
+
+font-family:'JetBrains Mono',monospace;
+
+font-size:12px;
+
+color:var(--muted);
+
+margin-bottom:20px;
+
+}
+
+
+.term span{
+
+color:var(--cyn);
+
+}
+
+
+
+/* TITLE */
+
+
+.title{
+
+font-size:clamp(36px,6vw,60px);
+
+line-height:1;
+
+margin-bottom:15px;
+
+}
+
+
+.title .accent{
+
+color:var(--pur);
+
+}
+
+
+
+/* DESCRIPTION */
+
+
+.desc{
+
+color:#9ca3af;
+
+font-size:14px;
+
+line-height:1.8;
+
+margin-bottom:30px;
+
+}
+
+
+
+/* STATUS */
+
+
+.status-box{
+
+display:flex;
+
+gap:15px;
+
+align-items:center;
+
+padding:16px;
+
+border-radius:18px;
+
+background:rgba(255,255,255,.03);
+
+border:1px solid rgba(255,255,255,.06);
+
+margin-bottom:35px;
+
+}
+
+
+.status-icon{
+
+width:45px;
+height:45px;
+
+border-radius:12px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+background:rgba(167,139,250,.15);
+
+}
+
+
+.status-icon i{
+
+font-size:22px;
+
+color:var(--pur);
+
+}
+
+
+
+.status-name{
+
+font-size:14px;
+
+font-weight:600;
+
+}
+
+
+.status-sub{
+
+font-family:'JetBrains Mono';
+
+font-size:11px;
+
+color:var(--muted);
+
+}
+
+
+
+/* WRITEUP */
+
+
+.section{
+
+margin-top:35px;
+
+}
+
+
+
+.section h2{
+
+font-size:18px;
+
+margin-bottom:15px;
+
+display:flex;
+
+gap:10px;
+
+align-items:center;
+
+}
+
+
+
+.section h2 i{
+
+color:var(--cyn);
+
+}
+
+
+
+.section p,
+.section li{
+
+color:#a1a1aa;
+
+font-size:14px;
+
+line-height:1.8;
+
+}
+
+
+
+.section ul{
+
+padding-left:20px;
+
+}
+
+
+
+/* TERMINAL BOX */
+
+
+.terminal-box{
+
+margin:20px 0;
+
+padding:18px;
+
+border-radius:15px;
+
+background:#05060b;
+
+border:1px solid rgba(255,255,255,.08);
+
+font-family:'JetBrains Mono';
+
+font-size:13px;
+
+color:#ddd;
+
+}
+
+
+
+.green{
+
+color:var(--green);
+
+}
+
+
+.cyan{
+
+color:var(--cyn);
+
+}
+
+
+.muted{
+
+color:var(--muted);
+
+}
+
+
+
+/* FLAG */
+
+
+.flag-box{
+
+margin-top:20px;
+
+padding:18px;
+
+border-radius:15px;
+
+background:rgba(34,211,238,.08);
+
+border:1px solid rgba(34,211,238,.25);
+
+font-family:'JetBrains Mono';
+
+color:var(--cyn);
+
+}
+
+
+
+/* FOOTER */
+
+
+.footer{
+
+margin-top:40px;
+
+font-family:'JetBrains Mono';
+
+font-size:10px;
+
+letter-spacing:2px;
+
+color:var(--muted);
+
+}
+
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="grid"></div>
+
+<div class="glow g1"></div>
+
+<div class="glow g2"></div>
+
+
+
 <div class="panel">
 
-  <div class="topbar">
-    <div class="dot d-red"></div>
-    <div class="dot d-pur"></div>
-    <div class="dot d-cyn"></div>
-  </div>
 
+<div class="topbar">
 
-  <div class="term">
-    <span>rico@ctf-writeups</span>:~$ cat overheard_at_breakfast.md
-  </div>
+<div class="dot red"></div>
+<div class="dot purple"></div>
+<div class="dot cyan"></div>
 
+</div>
 
-  <h1 class="title">
-    Overheard <span class="accent">at Breakfast</span>
-  </h1>
 
 
-  <p class="desc">
-    TryHackMe // Hacker Holidays Series<br>
-    OSINT investigation focused on extracting identity clues,
-    discovering hidden profiles, and recovering the flag.
-  </p>
+<div class="term">
 
+<span>rico@ctf-lab</span>:~$ cat overheard_at_breakfast.md
 
-  <!-- Challenge Info -->
+</div>
 
-  <div class="status-box">
 
-    <div class="status-icon">
-      <i class="ti ti-flag"></i>
-    </div>
 
-    <div class="status-text">
+<h1 class="title">
 
-      <div class="status-name">
-        Challenge Completed
-      </div>
+Overheard <span class="accent">at Breakfast</span>
 
-      <div class="status-sub">
-        EASY // OSINT // 60 POINTS
-      </div>
+</h1>
 
-    </div>
 
-  </div>
 
+<p class="desc">
 
+TryHackMe // Hacker Holidays Series<br>
 
-  <!-- Writeup -->
+OSINT challenge focused on analyzing conversations,
+finding hidden identities, and recovering the flag.
 
-  <div class="log-section">
+</p>
 
 
-    <h2>
-      <i class="ti ti-terminal-2"></i>
-      Initial Analysis
-    </h2>
 
+<div class="status-box">
 
-    <p>
-      The challenge provided a conversation screenshot between Ponzi
-      and Lambo. Instead of searching for complicated exploits,
-      I focused on the information already provided.
-    </p>
 
+<div class="status-icon">
 
+<i class="ti ti-flag"></i>
 
-    <div class="terminal-box">
+</div>
 
-      <span class="green">
-      $
-      </span>
 
-      exiftool conversation.png
+<div>
 
-      <br>
+<div class="status-name">
 
-      <span class="muted">
-      No useful metadata found.
-      </span>
+Challenge Completed
 
-    </div>
+</div>
 
 
+<div class="status-sub">
 
-    <h2>
-      <i class="ti ti-search"></i>
-      Investigation
-    </h2>
+EASY // OSINT // 60 POINTS
 
-
-    <p>
-      While analyzing the conversation, I discovered two important clues:
-    </p>
-
-
-    <ul>
-
-      <li>
-        Email address:
-        <code>
-        lambobytelotushotel@gmail.com
-        </code>
-      </li>
-
-
-      <li>
-        A profile platform beginning with "G"
-      </li>
-
-    </ul>
-
-
-
-    <h2>
-      <i class="ti ti-user-search"></i>
-      Account Discovery
-    </h2>
-
-
-    <p>
-      The platform clue pointed me toward Gravatar.
-      Using the email identifier, I located the hidden profile.
-    </p>
-
-
-
-    <div class="terminal-box">
-
-      <span class="green">$</span>
-
-      gravatar lookup user@email.com
-
-      <br>
-
-      <span class="cyan">
-      [+] Profile found
-      </span>
-
-    </div>
-
-
-
-
-    <h2>
-      <i class="ti ti-lock-open"></i>
-      Flag Recovery
-    </h2>
-
-
-    <p>
-      The profile contained a Base64 encoded string.
-      After decoding it, the hidden flag was revealed.
-    </p>
-
-
-
-    <div class="flag-box">
-
-      <i class="ti ti-key"></i>
-
-      THM{REDACTED}
-
-    </div>
-
-
-
-    <h2>
-      <i class="ti ti-bulb"></i>
-      Lessons Learned
-    </h2>
-
-
-    <p>
-      Sometimes not overthinking is the best approach.
-      Not every clue is hidden behind advanced techniques.
-      Sometimes the answer is already inside the message,
-      and the real challenge is simply paying attention.
-    </p>
-
-
-  </div>
-
-
-  <div class="footer">
-
-    RICO FORNES // SECURITY RESEARCH LOGS
-
-  </div>
+</div>
 
 
 </div>
+
+
+</div>
+
+
+
+
+<div class="section">
+
+
+<h2>
+
+<i class="ti ti-search"></i>
+
+Initial Analysis
+
+</h2>
+
+
+<p>
+
+The room provided a screenshot containing a conversation between Ponzi and Lambo.
+My first step was to carefully analyze the information instead of immediately searching for complicated techniques.
+
+</p>
+
+
+
+<div class="terminal-box">
+
+<span class="green">$</span>
+
+exiftool conversation.png
+
+<br>
+
+<span class="muted">
+
+No useful metadata discovered.
+
+</span>
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="section">
+
+
+<h2>
+
+<i class="ti ti-brain"></i>
+
+Finding The Clues
+
+</h2>
+
+
+<p>
+
+The conversation contained two important pieces of information:
+
+</p>
+
+
+<ul>
+
+<li>Email address: lambobytelotushotel@gmail.com</li>
+
+<li>A profile platform beginning with "G"</li>
+
+</ul>
+
+
+
+</div>
+
+
+
+
+
+<div class="section">
+
+
+<h2>
+
+<i class="ti ti-user-search"></i>
+
+Account Discovery
+
+</h2>
+
+
+
+<p>
+
+The platform clue pointed me toward Gravatar.
+Using the email identifier, I discovered the hidden profile.
+
+</p>
+
+
+
+<div class="terminal-box">
+
+<span class="green">$</span>
+
+gravatar lookup
+
+<br>
+
+<span class="cyan">
+
+[+] Profile Found
+
+</span>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<div class="section">
+
+
+<h2>
+
+<i class="ti ti-lock-open"></i>
+
+Flag Recovery
+
+</h2>
+
+
+
+<p>
+
+The profile contained a Base64 encoded string.
+After decoding it, the hidden TryHackMe flag was revealed.
+
+</p>
+
+
+
+<div class="flag-box">
+
+<i class="ti ti-key"></i>
+
+THM{REDACTED}
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="section">
+
+
+<h2>
+
+<i class="ti ti-bulb"></i>
+
+Lessons Learned
+
+</h2>
+
+
+<p>
+
+Sometimes not overthinking is the best approach.
+Not every clue is hidden behind advanced techniques.
+Sometimes the answer is already inside the message — you just need to read carefully.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="footer">
+
+RICO FORNES // CYBERSECURITY · IT SPECIALIST
+
+</div>
+
+
+
+</div>
+
+
+</body>
+</html>
