@@ -50,7 +50,18 @@ body{background:var(--bg);color:var(--txt);font-family:'Space Grotesk',sans-seri
 
 .hero{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:start;padding:32px 30px;background:rgba(14,15,26,.75);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.1);border-radius:24px;margin-bottom:16px;position:relative;overflow:hidden;}
 .hero::before{content:'';position:absolute;inset:0;border-radius:24px;background:linear-gradient(135deg,rgba(167,139,250,.06) 0%,rgba(34,211,238,.04) 50%,rgba(244,114,182,.04) 100%);pointer-events:none;}
-.hero-name{font-size:clamp(28px,4.5vw,46px);font-weight:700;letter-spacing:-1.5px;line-height:1.0;margin-bottom:8px; font-family:"Bungee", sans-serif;}
+/* .hero-name{font-size:clamp(28px,4.5vw,46px);font-weight:700;letter-spacing:-1.5px;line-height:1.0;margin-bottom:8px; font-family:"Bungee", sans-serif;} */
+.hero-name{
+  font-family:"Bungee", sans-serif;
+  font-size:clamp(28px,4.5vw,46px);
+  font-weight:400;
+  letter-spacing:1px;
+  line-height:1.15;
+  margin-bottom:12px;
+  text-transform:uppercase;
+  text-shadow:
+    3px 3px 0 rgba(0,0,0,.45);
+}
 .nm-r{color:var(--red);}
 .nm-g{color:var(--grn);}
 .hero-sub{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted);letter-spacing:2px;margin-bottom:16px;}
