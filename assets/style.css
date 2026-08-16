@@ -37,6 +37,8 @@ html[data-theme="light"]{
   --shadow-op:.06;
   color-scheme: light;
 }
+
+
 html[data-theme="light"] .pj-card-3d,
 html[data-theme="light"] .proj-card-3d{background:#e4e6ee;}
 html[data-theme="light"] .sticky-hire,
