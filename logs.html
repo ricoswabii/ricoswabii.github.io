@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research Logs | Rico Fornes</title>
+<script>(function(){try{if(localStorage.getItem('theme')==='light'){document.documentElement.setAttribute('data-theme','light');}}catch(e){}})();</script>
+<link rel="icon" type="image/png" href="assets/img/logo.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="topnav">
+  <div class="topnav-inner">
+    <a href="index.html" class="topnav-logo">R<span class="tn-accent">F</span></a>
+    <nav class="topnav-links">
+      <a href="index.html">Home</a>
+      <a href="experience.html">Experience</a>
+      <a href="projects.html">Projects</a>
+      <a href="logs.html" class="active">Logs</a>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark theme"><i class="ti ti-moon" id="theme-icon"></i></button>
+  </div>
+</header>
+
+<div class="bg-canvas">
+  <div class="grid-bg"></div>
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="orb orb3"></div>
+  <div class="orb orb4"></div>
+</div>
+
+<div class="page">
+
+<div class="page-head">
+  <div class="page-head-tag">// WRITEUPS · DISCOVERIES · SECURITY RESEARCH</div>
+  <h1>Research Logs</h1>
+  <p>Field notes from homelab research, CTF challenges, and real-world security testing — findings, tools, and takeaways from each case.</p>
+</div>
+
+<div class="section">
+
+  <!-- CASE 1 -->
+  <div class="log-full rl-c-red" id="case-1">
+    <div class="rl-card-top">
+      <div class="rl-ico ico-red"><i class="ti ti-bug" aria-hidden="true"></i></div>
+      <div class="rl-badge-row">
+        <span class="rl-badge" style="background:#f8717118;color:var(--red);border:1px solid #f8717133;">WAF</span>
+        <span class="rl-badge" style="background:#f8717118;color:var(--red);border:1px solid #f8717133;">BunkerWeb</span>
+      </div>
+    </div>
+    <div class="rl-log-id">LOG-001 · 2024</div>
+    <div class="rl-title">WAF Bypass Techniques in Open-Source Environments</div>
+    <div class="rl-writeup">Documented findings from internal security testing of BunkerWeb — an open-source WAF — during beta testing cycles. Identified edge cases in rule parsing and evasion patterns that bypassed core protections under specific HTTP configurations.</div>
+
+    <div class="detail-block">
+      <h2><i class="ti ti-tool"></i>Tools &amp; Techniques</h2>
+      <div class="tool-chips">
+        <span class="tc tc-red">ModSecurity</span>
+        <span class="tc tc-red">Burp Suite</span>
+        <span class="tc tc-red">cURL</span>
+        <span class="tc tc-red">Manual HTTP Fuzzing</span>
+      </div>
+    </div>
+
+    <div class="detail-block">
+      <h2><i class="ti ti-search"></i>Findings</h2>
+      <ul class="rl-discoveries">
+        <li>Header injection bypassing input sanitization rules</li>
+        <li>Chunked encoding edge cases escaping body inspection</li>
+        <li>False-negative patterns in custom ModSecurity ruleset</li>
+        <li>Contributed fixes merged into upstream release</li>
+      </ul>
+    </div>
+
+    <div class="detail-block">
+      <h2><i class="ti ti-checklist"></i>Recommendations</h2>
+      <ul class="log-recs">
+        <li>Normalize HTTP transfer-encoding before rule inspection to close chunked-encoding gaps.</li>
+        <li>Add regression tests for header-injection payloads in the WAF's CI pipeline.</li>
+        <li>Periodically re-run fuzz testing after ruleset updates to catch newly introduced blind spots.</li>
+      </ul>
+    </div>
+
+      <a class="log-cta" href="maintenance/coming-soon.html" target="_blank" rel="noopener">Read case study<i class="ti ti-arrow-up-right"></i></a>
+
+
+    <div class="rl-footer" style="margin-top:18px;">
+      <span class="rl-date">Aug 2023 – Apr 2025</span>
+    </div>
+  </div>
+
+  <!-- CASE 2 -->
+  <div class="log-full rl-c-ylw" id="case-2">
+    <div class="rl-card-top">
+      <div class="rl-ico ico-ylw"><i class="ti ti-activity" aria-hidden="true"></i></div>
+      <div class="rl-badge-row">
+        <span class="rl-badge" style="background:#fbbf2418;color:var(--ylw);border:1px solid #fbbf2433;">SIEM</span>
+        <span class="rl-badge" style="background:#fbbf2418;color:var(--ylw);border:1px solid #fbbf2433;">Elastic</span>
+      </div>
+    </div>
+    <div class="rl-log-id">LOG-002 · 2024</div>
+    <div class="rl-title">Threat Detection Patterns with Elastic SIEM</div>
+    <div class="rl-writeup">Homelab research using Elastic Stack to simulate and detect real-world attack patterns. Designed custom detection rules, dashboards, and alert pipelines to surface IOCs from Windows and Linux event logs.</div>
+
+    <div class="detail-block">
+      <h2><i class="ti ti-tool"></i>Tools &amp; Techniques</h2>
+      <div class="tool-chips">
+        <span class="tc tc-ylw">Elastic Stack</span>
+        <span class="tc tc-ylw">Winlogbeat</span>
+        <span class="tc tc-ylw">Sysmon</span>
+        <span class="tc tc-ylw">KQL</span>
+      </div>
+    </div>
+
+    <div class="detail-block">
+      <h2><i class="ti ti-search"></i>Findings</h2>
+      <ul class="rl-discoveries">
+        <li>Brute-force SSH pattern detection via Winlogbeat</li>
+        <li>Lateral movement signatures in internal network traffic</li>
+        <li>Custom KQL queries for Sysmon event correlation</li>
+        <li>Alert tuning to reduce false positives by ~60%</li>
+      </ul>
+    </div>
+
+    <div class="detail-block">
+      <h2><i class="ti ti-checklist"></i>Recommendations</h2>
+      <ul class="log-recs">
+        <li>Baseline "normal" login and process behavior before tuning alert thresholds.</li>
+        <li>Correlate Sysmon process-creation events with network telemetry to catch lateral movement earlier.</li>
+        <li>Review and prune noisy detection rules on a recurring schedule to keep signal-to-noise high.</li>
+      </ul>
+    </div>
+
+
+     <a class="log-cta" href="maintenance/coming-soon.html" target="_blank" rel="noopener">Read case study<i class="ti ti-arrow-up-right"></i></a>
+
+
+
+    <div class="rl-footer" style="margin-top:18px;">
+      <span class="rl-date">2024 · Homelab</span>
+    </div>
+  </div>
+
+  <!-- CASE 3 -->
+  <div class="log-full rl-c-cyn" id="case-3">
+    <div class="rl-card-top">
+      <div class="rl-ico ico-cyn"><i class="ti ti-router" aria-hidden="true"></i></div>
+      <div class="rl-badge-row">
+        <span class="rl-badge" style="background:#22d3ee18;color:var(--cyn);border:1px solid #22d3ee33;">Network</span>
+        <span class="rl-badge" style="background:#22d3ee18;color:var(--cyn);border:1px solid #22d3ee33;">pfSense</span>
+      </div>
+    </div>
+    <div class="rl-log-id">LOG-003 · 2024</div>
+    <div class="rl-title">VLAN Segmentation &amp; Firewall Rule Hardening</div>
+    <div class="rl-writeup">Lab exercise modeling enterprise network segmentation using pfSense. Focused on isolating traffic between trusted, DMZ, and untrusted zones, with Wireshark packet captures validating rule enforcement across segments.</div>
+
+    <div class="detail-block">
+      <h2><i class="ti ti-tool"></i>Tools &amp; Techniques</h2>
+      <div class="tool-chips">
+        <span class="tc tc-cyn">pfSense</span>
+        <span class="tc tc-cyn">Wireshark</span>
+        <span class="tc tc-cyn">Nmap</span>
+        <span class="tc tc-cyn">VLAN Trunking</span>
+      </div>
+    </div>
+
+    <div class="detail-block">
+      <h2><i class="ti ti-search"></i>Findings</h2>
+      <ul class="rl-discoveries">
+        <li>VLAN hopping mitigated via strict trunk port policy</li>
+        <li>DNS-based exfiltration attempts captured and blocked</li>
+        <li>Firewall state table analysis under simulated DDoS load</li>
+        <li>Inter-VLAN routing locked down with ACL precision</li>
+      </ul>
+    </div>
+
+    <div class="detail-block">
+      <h2><i class="ti ti-checklist"></i>Recommendations</h2>
+      <ul class="log-recs">
+        <li>Disable native VLAN usage on trunk ports and force explicit tagging.</li>
+        <li>Log and alert on outbound DNS queries that deviate from expected resolver traffic.</li>
+        <li>Set firewall state-table limits per zone to reduce blast radius during flood conditions.</li>
+      </ul>
+    </div>
+
+     <a class="log-cta" href="maintenance/coming-soon.html" target="_blank" rel="noopener">Explore my lab<i class="ti ti-arrow-up-right"></i></a>
+
+
+    <div class="rl-footer" style="margin-top:18px;">
+      <span class="rl-date">2024 · Lab Research</span>
+    </div>
+  </div>
+
+  <!-- CASE 4 -->
+  <div class="log-full rl-c-grn" id="case-4">
+    <div class="rl-card-top">
+      <div class="rl-ico ico-grn"><i class="ti ti-flag" aria-hidden="true"></i></div>
+      <div class="rl-badge-row">
+        <span class="rl-badge" style="background:#4ade8018;color:var(--grn);border:1px solid #4ade8033;">CTF</span>
+        <span class="rl-badge" style="background:#4ade8018;color:var(--grn);border:1px solid #4ade8033;">Forensics</span>
+      </div>
+    </div>
+    <div class="rl-log-id">LOG-004 · 2023–2025</div>
+    <div class="rl-title">CTF Challenge Writeups</div>
+    <div class="rl-writeup">Collection of documented solutions from Capture the Flag competitions. Covers digital forensics (memory dumps, steganography, file carving) and web exploitation (SQLi, XSS, IDOR, SSRF) across multiple platforms.</div>
+
+    <div class="detail-block">
+      <h2><i class="ti ti-tool"></i>Tools &amp; Techniques</h2>
+      <div class="tool-chips">
+        <span class="tc tc-grn">Volatility</span>
+        <span class="tc tc-grn">Burp Suite</span>
+        <span class="tc tc-grn">Steghide / zsteg</span>
+        <span class="tc tc-grn">Binwalk</span>
+      </div>
+    </div>
+
+    <div class="detail-block">
+      <h2><i class="ti ti-search"></i>Findings</h2>
+      <ul class="rl-discoveries">
+        <li>Volatile memory analysis using Volatility framework</li>
+        <li>Hidden flag extraction via LSB steganography</li>
+        <li>Blind SQLi exploitation with time-based techniques</li>
+        <li>Solved IDOR chain leading to account takeover</li>
+      </ul>
+    </div>
+
+    <div class="detail-block">
+      <h2><i class="ti ti-checklist"></i>Recommendations</h2>
+      <ul class="log-recs">
+        <li>Approach each challenge by exhausting simple analysis (metadata, plain sight) before advanced tooling.</li>
+        <li>Keep a personal cheat-sheet of common stego/forensics one-liners to speed up future rounds.</li>
+        <li>Document failed attempts too — they often reveal the working technique faster on the next challenge.</li>
+      </ul>
+    </div>
+
+    <a class="log-cta" href="maintenance/coming-soon.html" target="_blank" rel="noopener">Read a full CTF writeup <i class="ti ti-arrow-up-right"></i></a>
+
+    <div class="rl-footer" style="margin-top:18px;">
+      <span class="rl-date">2023 – 2025 · Multi-platform</span>
+    </div>
+  </div>
+
+  <!-- CASE 5 -->
+  <div class="log-full rl-c-pur" id="case-5">
+    <div class="rl-card-top">
+      <div class="rl-ico ico-pur"><i class="ti ti-radar-2" aria-hidden="true"></i></div>
+      <div class="rl-badge-row">
+        <span class="rl-badge" style="background:#a78bfa18;color:var(--pur);border:1px solid #a78bfa33;">Python</span>
+        <span class="rl-badge" style="background:#a78bfa18;color:var(--pur);border:1px solid #a78bfa33;">Recon</span>
+      </div>
+    </div>
+    <div class="rl-log-id">LOG-005 · 2023</div>
+    <div class="rl-title">Building 4SCAN — TCP Port Scanner from Scratch</div>
+    <div class="rl-writeup">Dev log for 4SCAN, a custom Python TCP port scanner. Documented the architecture decisions, threading model, timeout handling, and socket programming concepts that went into building a reliable scanning tool from the ground up.</div>
+
+    <div class="detail-block">
+      <h2><i class="ti ti-tool"></i>Tools &amp; Techniques</h2>
+      <div class="tool-chips">
+        <span class="tc tc-pur">Python Sockets</span>
+        <span class="tc tc-pur">ThreadPoolExecutor</span>
+        <span class="tc tc-pur">CIDR Parsing</span>
+      </div>
+    </div>
+
+    <div class="detail-block">
+      <h2><i class="ti ti-search"></i>Findings</h2>
+      <ul class="rl-discoveries">
+        <li>Socket-level TCP handshake analysis and banner grabbing</li>
+        <li>Thread pool tuning for optimal speed vs accuracy</li>
+        <li>Timeout edge cases causing false closed-port reads</li>
+        <li>CIDR range parsing added in v1.2 iteration</li>
+      </ul>
+    </div>
+
+    <div class="detail-block">
+      <h2><i class="ti ti-checklist"></i>Recommendations</h2>
+      <ul class="log-recs">
+        <li>Use adaptive timeouts based on observed round-trip latency instead of a fixed value.</li>
+        <li>Cap concurrent threads relative to target host count to avoid self-inflicted false negatives.</li>
+        <li>Add retry-on-timeout logic before marking a port closed to cut down false negatives further.</li>
+      </ul>
+    </div>
+
+    <a class="log-cta" href="maintenance/coming-soon.html" target="_blank" rel="noopener">View configuration<i class="ti ti-arrow-up-right"></i></a>
+
+    <div class="rl-footer" style="margin-top:18px;">
+      <span class="rl-date">2023 · Python Dev</span>
+    </div>
+  </div>
+
+</div>
+
+<a href="index.html" class="back-home"><i class="ti ti-arrow-left"></i> Back to Home</a>
+
+</div>
+
+<a href="mailto:fornes.rico77@gmail.com" class="sticky-hire">
+  <i class="ti ti-mail-forward"></i> Hire Me
+</a>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
