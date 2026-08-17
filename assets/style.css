@@ -3663,6 +3663,7 @@ html[data-theme="light"] .archive-item:hover .archive-item-icon {
 }
 
 /* ── Shimmer Effect ── */
+/* ── Shimmer Effect - Dark Theme Only ── */
 .ava-shimmer {
     position: absolute;
     inset: 0;
@@ -3676,6 +3677,16 @@ html[data-theme="light"] .archive-item:hover .archive-item-icon {
     background-size: 200% 100%;
     animation: shimmer 3s ease-in-out infinite;
     pointer-events: none;
+}
+
+@keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
+/* Disable shimmer in light theme */
+html[data-theme="light"] .ava-shimmer {
+    display: none !important;
 }
 
 @keyframes shimmer {
