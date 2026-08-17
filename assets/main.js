@@ -980,8 +980,7 @@ const projects = [
         tags: ['Python', 'Networking', 'Security'],
         images: [
             'assets/img/4scan.jpg',
-            'assets/img/4scan_2.jpg',
-            'assets/img/4scan_3.jpg'
+    
         ],
         liveLink: '#',
         codeLink: '#'
@@ -1005,8 +1004,7 @@ const projects = [
         tags: ['Security Ops', 'Homelab', 'Research'],
         images: [
             'assets/img/cyberops.png',
-            'assets/img/cyberops1.jpg',
-            'assets/img/'
+           
         ],
         liveLink: '#',
         codeLink: '#'
