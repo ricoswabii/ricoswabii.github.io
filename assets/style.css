@@ -62,17 +62,80 @@ body{background:var(--bg);color:var(--txt);font-family:'Space Grotesk',sans-seri
 @media (max-width:480px){.term-box{font-size:12px;}}
 @media (prefers-reduced-motion:reduce){.term-cursor{animation:none;opacity:1;}}
 
-.bg-canvas{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;overflow:hidden;}
-.orb{position:absolute;border-radius:50%;filter:blur(80px);opacity:var(--orb-op);}
+/* ============================================================
+   BACKGROUND - bg.png + ORBS + DOTS OVERLAY
+   ============================================================ */
+
+.bg-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+/* Your background image */
+.bg-canvas .bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('assets/img/bg.png') no-repeat center center fixed;
+    background-size: cover;
+    z-index: 0;
+}
+
+/* Orbs - behind the image overlay, but above the image */
+.orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: var(--orb-op);
+    z-index: 1;
+}
 .orb1{width:500px;height:500px;background:#a78bfa;top:-120px;left:-100px;animation:drift1 14s ease-in-out infinite alternate;}
 .orb2{width:400px;height:400px;background:#22d3ee;top:200px;right:-80px;animation:drift2 16s ease-in-out infinite alternate;}
 .orb3{width:350px;height:350px;background:#f472b6;top:700px;left:30%;animation:drift3 18s ease-in-out infinite alternate;}
 .orb4{width:300px;height:300px;background:#4ade80;top:1400px;right:10%;animation:drift1 12s ease-in-out infinite alternate;}
 .orb5{width:420px;height:420px;background:#60a5fa;top:2000px;left:-60px;animation:drift2 20s ease-in-out infinite alternate;}
 .orb6{width:280px;height:280px;background:#fbbf24;top:2700px;right:5%;animation:drift3 15s ease-in-out infinite alternate;}
+
 @keyframes drift1{from{transform:translate(0,0) scale(1)}to{transform:translate(40px,30px) scale(1.1)}}
 @keyframes drift2{from{transform:translate(0,0) scale(1)}to{transform:translate(-30px,40px) scale(1.08)}}
 @keyframes drift3{from{transform:translate(0,0) scale(1)}to{transform:translate(20px,-30px) scale(1.12)}}
+
+/* Dark overlay for readability - above image and orbs */
+.bg-canvas::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background: rgba(7, 8, 15, 0.45);
+    transition: background 0.4s ease;
+}
+
+/* Light theme overlay */
+html[data-theme="light"] .bg-canvas::after {
+    background: rgba(240, 238, 228, 0.40);
+}
+
+/* Dots on top of everything */
+.dots-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    pointer-events: none;
+    background-image: radial-gradient(circle, var(--dot-color) 1.5px, transparent 1.5px);
+    background-size: 32px 32px;
+    opacity: var(--dot-opacity);
+}
 
 .grid-bg{position:absolute;top:0;left:0;width:100%;height:100%;background-image:linear-gradient(rgba(var(--overlay-rgb),.025) 1px,transparent 1px),linear-gradient(90deg,rgba(var(--overlay-rgb),.025) 1px,transparent 1px);background-size:48px 48px;z-index:0;}
 
@@ -2625,4 +2688,44 @@ section {
 
 .pj-card:hover .pj-banner-img {
     transform: scale(1.05);
+}
+
+
+/* ============================================================
+   DOTS BACKGROUND
+   ============================================================ */
+
+.dots-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    background-image: radial-gradient(circle, var(--dot-color) 1.5px, transparent 1.5px);
+    background-size: 32px 32px;
+    opacity: var(--dot-opacity);
+}
+
+:root {
+    --dot-color: rgba(255, 255, 255, 0.11);
+    --dot-opacity: 1;
+}
+
+html[data-theme="light"] {
+    --dot-color: rgba(0, 0, 0, 0.4);
+    --dot-opacity: 1;
+}
+
+
+
+@keyframes dotPulse {
+    0%, 100% { opacity: var(--dot-opacity); }
+    50% { opacity: calc(var(--dot-opacity) * 0.6); }
+}
+
+.dots-bg {
+    /* ... existing styles ... */
+    animation: dotPulse 4s ease-in-out infinite;
 }
