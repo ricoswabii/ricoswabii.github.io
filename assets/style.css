@@ -2751,3 +2751,34 @@ html[data-theme="light"] {
 @keyframes drift1{from{transform:translate(0,0) scale(1)}to{transform:translate(40px,30px) scale(1.1)}}
 @keyframes drift2{from{transform:translate(0,0) scale(1)}to{transform:translate(-30px,40px) scale(1.08)}}
 @keyframes drift3{from{transform:translate(0,0) scale(1)}to{transform:translate(20px,-30px) scale(1.12)}}
+
+
+
+
+/* ============================================================
+   MOBILE FIX - Orbs visible on mobile
+   ============================================================ */
+
+@media (max-width: 768px) {
+    .bg-canvas {
+        overflow: visible !important;
+    }
+    
+    .orb {
+        opacity: 0.25 !important;
+        filter: blur(60px) !important; /* Less blur on mobile */
+    }
+    
+    /* Smaller orbs for mobile */
+    .orb1 { width: 300px; height: 300px; top: -60px; left: -50px; }
+    .orb2 { width: 250px; height: 250px; top: 100px; right: -40px; }
+    .orb3 { width: 200px; height: 200px; top: 400px; left: 20%; }
+    .orb4 { width: 180px; height: 180px; top: 700px; right: 10%; }
+    .orb5 { width: 220px; height: 220px; top: 1000px; left: -30px; }
+    .orb6 { width: 160px; height: 160px; top: 1300px; right: 5%; }
+    
+    .dots-bg {
+        background-size: 24px 24px !important;
+        opacity: 0.5 !important;
+    }
+}
