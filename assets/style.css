@@ -2729,3 +2729,25 @@ html[data-theme="light"] {
     /* ... existing styles ... */
     animation: dotPulse 4s ease-in-out infinite;
 }
+
+
+/* Orbs */
+
+.orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.15; /* Lower opacity so they don't overpower */
+    z-index: 0;
+    pointer-events: none;
+}
+.orb1{width:500px;height:500px;background:#a78bfa;top:-120px;left:-100px;animation:drift1 14s ease-in-out infinite alternate;}
+.orb2{width:400px;height:400px;background:#22d3ee;top:200px;right:-80px;animation:drift2 16s ease-in-out infinite alternate;}
+.orb3{width:350px;height:350px;background:#f472b6;top:700px;left:30%;animation:drift3 18s ease-in-out infinite alternate;}
+.orb4{width:300px;height:300px;background:#4ade80;top:1400px;right:10%;animation:drift1 12s ease-in-out infinite alternate;}
+.orb5{width:420px;height:420px;background:#60a5fa;top:2000px;left:-60px;animation:drift2 20s ease-in-out infinite alternate;}
+.orb6{width:280px;height:280px;background:#fbbf24;top:2700px;right:5%;animation:drift3 15s ease-in-out infinite alternate;}
+
+@keyframes drift1{from{transform:translate(0,0) scale(1)}to{transform:translate(40px,30px) scale(1.1)}}
+@keyframes drift2{from{transform:translate(0,0) scale(1)}to{transform:translate(-30px,40px) scale(1.08)}}
+@keyframes drift3{from{transform:translate(0,0) scale(1)}to{transform:translate(20px,-30px) scale(1.12)}}
