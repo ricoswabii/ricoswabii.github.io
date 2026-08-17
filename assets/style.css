@@ -3121,7 +3121,7 @@ html[data-theme="light"] {
     line-height: 1.5;
     margin: 0 0 0.4rem 0;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -3262,7 +3262,7 @@ html[data-theme="light"] .archive-item:hover .archive-item-icon {
 
     .archive-item-excerpt {
         font-size: 0.75rem;
-        -webkit-line-clamp: 1;
+        line-clamp: 1;
     }
 
     .archive-item-link {
@@ -3336,7 +3336,7 @@ html[data-theme="light"] .archive-item:hover .archive-item-icon {
 
     .archive-item-excerpt {
         font-size: 0.6rem;
-        -webkit-line-clamp: 1;
+        line-clamp: 1;
     }
 
     .archive-tag {
@@ -3416,7 +3416,7 @@ html[data-theme="light"] .archive-item:hover .archive-item-icon {
             line-height: 1.5;
             margin: 0 0 0.4rem 0;
             display: -webkit-box;
-            -webkit-line-clamp: 2;
+            line-clamp: 2;
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
@@ -3531,7 +3531,7 @@ html[data-theme="light"] .archive-item:hover .archive-item-icon {
 
     .archive-item-excerpt {
         font-size: 0.6rem;
-        -webkit-line-clamp: 1;
+        line-clamp: 1;
     }
 
     .archive-tag {
