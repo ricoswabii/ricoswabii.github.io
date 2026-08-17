@@ -1200,3 +1200,35 @@ const projects = [
     window.openProjectModal = openModal;
     window.closeProjectModal = closeModal;
 })();
+
+// ============================================================
+// SCROLL PROGRESS BAR
+// ============================================================
+
+(function() {
+    const progress = document.getElementById('scrollProgress');
+    if (!progress) {
+        console.warn('Scroll progress element not found!');
+        return;
+    }
+    
+    function updateProgress() {
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const percent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+        progress.style.width = Math.min(percent, 100) + '%';
+    }
+    
+    // Update on scroll
+    window.addEventListener('scroll', updateProgress, { passive: true });
+    
+    // Update on resize (in case content height changes)
+    window.addEventListener('resize', updateProgress, { passive: true });
+    
+    // Initial update
+    updateProgress();
+    
+    console.log('Scroll progress bar initialized!');
+})();
+
+

@@ -469,7 +469,6 @@
 </div>
 <br>
 
-
 <div class="section" id="section-logs">
     <div class="sec-bar">
         <span class="sec-tag st-cyn">Research Logs</span>
@@ -478,87 +477,110 @@
     </div>
 
     <div class="rl-header">
-    <div class="rl-subtitle">// WRITEUPS · DISCOVERIES · SECURITY RESEARCH</div>
-  </div>
-        <div class="exp-header-row">
-        <h3 class="exp-header-title" style="color: var(--text-primary);">
-            <i class="ti ti-archive" style="color: var(--cyn);"></i>
-            Research Archives
-        </h3>
-        <a href="logs.html" class="view-details-link" style="color: var(--cyn);">
+        <div class="rl-subtitle">// WRITEUPS · DISCOVERIES · SECURITY RESEARCH</div>
+    </div>
+
+
+    <!-- ============================================================
+         ARCHIVE CONTAINER WITH GRADIENT
+         ============================================================ -->
+    <div class="archive-container">
+
+        <!-- Archive Header / Index -->
+        <div class="archive-index">
+        <span class="archive-index-label">📁 RESEARCH ARCHIVES</span>
+        <a href="logs.html" class="archive-index-link">
             View full details <i class="ti ti-arrow-right"></i>
         </a>
     </div>
 
-    <!-- Glass Card Container -->
-    <div class="glass-card">
         <!-- Archive List -->
         <div class="archive-list">
-            <!-- Log Entry 1 -->
-            <a href="logs.html#case-1" class="archive-item">
-                <div class="archive-icon">
-                    <i class="ti ti-file-text" aria-hidden="true"></i>
-                </div>
-                <div class="archive-content">
-                    <div class="archive-header">
-                        <span class="archive-category">#WRITEUP</span>
+
+            <!-- Log Entry 1 - WRITEUP -->
+            <div class="archive-item" data-category="writeup">
+                <div class="archive-item-header">
+                    <div class="archive-item-id">#001</div>
+                    <div class="archive-item-category">
+                        <span class="archive-badge badge-writeup">WRITEUP</span>
                         <span class="archive-date">March 2025</span>
                     </div>
-                    <div class="archive-title">Network Vulnerability Analysis</div>
-                    <div class="archive-excerpt">A deep dive into common network misconfigurations found in small to medium business environments...</div>
-                    <div class="archive-tags">
-                        <span class="archive-tag">Network Security</span>
-                        <span class="archive-tag">Vulnerability Assessment</span>
+                </div>
+                <div class="archive-item-body">
+                    <div class="archive-item-icon">
+                        <i class="ti ti-file-text" aria-hidden="true"></i>
                     </div>
+                    <div class="archive-item-content">
+                        <h4 class="archive-item-title">Network Vulnerability Analysis</h4>
+                        <p class="archive-item-excerpt">A deep dive into common network misconfigurations found in small to medium business environments...</p>
+                        <div class="archive-item-tags">
+                            <span class="archive-tag">Network Security</span>
+                            <span class="archive-tag">Vulnerability Assessment</span>
+                        </div>
+                    </div>
+                    <a href="logs.html#case-1" class="archive-item-link">
+                        <span class="archive-link-text">View Case</span>
+                        <i class="ti ti-arrow-right" aria-hidden="true"></i>
+                    </a>
                 </div>
-                <div class="archive-arrow">
-                    <i class="ti ti-arrow-right" aria-hidden="true"></i>
-                </div>
-            </a>
+            </div>
 
-            <!-- Log Entry 2 -->
-            <a href="logs.html#case-4" class="archive-item">
-                <div class="archive-icon">
-                    <i class="ti ti-file-text" aria-hidden="true"></i>
-                </div>
-                <div class="archive-content">
-                    <div class="archive-header">
-                        <span class="archive-category">#DISCOVERY</span>
+            <!-- Log Entry 2 - DISCOVERY -->
+            <div class="archive-item" data-category="discovery">
+                <div class="archive-item-header">
+                    <div class="archive-item-id">#002</div>
+                    <div class="archive-item-category">
+                        <span class="archive-badge badge-discovery">DISCOVERY</span>
                         <span class="archive-date">February 2025</span>
                     </div>
-                    <div class="archive-title">SQL Injection Discovery</div>
-                    <div class="archive-excerpt">Uncovering a blind SQL injection vulnerability in a legacy internal application...</div>
-                    <div class="archive-tags">
-                        <span class="archive-tag">Web Security</span>
-                        <span class="archive-tag">SQL Injection</span>
+                </div>
+                <div class="archive-item-body">
+                    <div class="archive-item-icon">
+                        <i class="ti ti-file-text" aria-hidden="true"></i>
                     </div>
+                    <div class="archive-item-content">
+                        <h4 class="archive-item-title">SQL Injection Discovery</h4>
+                        <p class="archive-item-excerpt">Uncovering a blind SQL injection vulnerability in a legacy internal application...</p>
+                        <div class="archive-item-tags">
+                            <span class="archive-tag">Web Security</span>
+                            <span class="archive-tag">SQL Injection</span>
+                        </div>
+                    </div>
+                    <a href="logs.html#case-4" class="archive-item-link">
+                        <span class="archive-link-text">View Case</span>
+                        <i class="ti ti-arrow-right" aria-hidden="true"></i>
+                    </a>
                 </div>
-                <div class="archive-arrow">
-                    <i class="ti ti-arrow-right" aria-hidden="true"></i>
-                </div>
-            </a>
+            </div>
 
-            <!-- Log Entry 3 -->
-            <a href="logs.html#case-2" class="archive-item">
-                <div class="archive-icon">
-                    <i class="ti ti-file-text" aria-hidden="true"></i>
-                </div>
-                <div class="archive-content">
-                    <div class="archive-header">
-                        <span class="archive-category">#SECURITY RESEARCH</span>
+            <!-- Log Entry 3 - SECURITY RESEARCH -->
+            <div class="archive-item" data-category="research">
+                <div class="archive-item-header">
+                    <div class="archive-item-id">#003</div>
+                    <div class="archive-item-category">
+                        <span class="archive-badge badge-research">RESEARCH</span>
                         <span class="archive-date">January 2025</span>
                     </div>
-                    <div class="archive-title">Phishing Campaign Analysis</div>
-                    <div class="archive-excerpt">Analyzing a targeted phishing campaign against a mid-sized company...</div>
-                    <div class="archive-tags">
-                        <span class="archive-tag">Phishing</span>
-                        <span class="archive-tag">Incident Response</span>
+                </div>
+                <div class="archive-item-body">
+                    <div class="archive-item-icon">
+                        <i class="ti ti-file-text" aria-hidden="true"></i>
                     </div>
+                    <div class="archive-item-content">
+                        <h4 class="archive-item-title">Phishing Campaign Analysis</h4>
+                        <p class="archive-item-excerpt">Conducting an in-depth analysis of a targeted phishing campaign against a mid-sized organization, examining attacker techniques....</p>
+                        <div class="archive-item-tags">
+                            <span class="archive-tag">Phishing</span>
+                            <span class="archive-tag">Incident Response</span>
+                        </div>
+                    </div>
+                    <a href="logs.html#case-2" class="archive-item-link">
+                        <span class="archive-link-text">View Case</span>
+                        <i class="ti ti-arrow-right" aria-hidden="true"></i>
+                    </a>
                 </div>
-                <div class="archive-arrow">
-                    <i class="ti ti-arrow-right" aria-hidden="true"></i>
-                </div>
-            </a>
+            </div>
+
         </div>
     </div>
 </div>
