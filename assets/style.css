@@ -3617,8 +3617,8 @@ html[data-theme="light"] .archive-item:hover .archive-item-icon {
     background: var(--bg-card);
     color: var(--cyn);
     font-family: 'Press Start 2P', cursive;
-    font-size: 7px;
-    padding: 2px 12px;
+    font-size: 8px;
+    padding: 3px 14px;
     border-radius: 20px;
     border: 1px solid var(--border-color);
     letter-spacing: 1px;
@@ -3788,9 +3788,9 @@ html[data-theme="light"] .ava-shimmer {
     }
     
     .ava-frame-enhanced .ava-frame-tag {
-        font-size: 5px;
-        padding: 2px 8px;
-        top: -8px;
+        font-size: 8px;
+        padding: 2px 10px;
+        top: -10px;
     }
     
     .ava-stats {
@@ -3834,7 +3834,7 @@ html[data-theme="light"] .ava-shimmer {
     }
     
     .ava-frame-enhanced .ava-frame-tag {
-        font-size: 5px;
+        font-size: 4px;
         padding: 2px 6px;
         top: -6px;
     }
