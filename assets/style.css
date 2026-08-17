@@ -3561,3 +3561,331 @@ html[data-theme="light"] .archive-item:hover .archive-item-icon {
         font-size: 0.45rem;
     }
 }
+
+/* ============================================================
+   ENHANCED AVATAR FRAME
+   ============================================================ */
+
+.ava-frame-enhanced {
+    position: relative;
+    width: 160px;
+    padding: 12px;
+    background: var(--bg-card);
+    border-radius: 18px;
+    border: 2px solid var(--border-color);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+}
+
+.ava-frame-enhanced:hover {
+    transform: translateY(-4px);
+    border-color: var(--cyn);
+    box-shadow: 0 12px 40px rgba(34, 211, 238, 0.15);
+}
+
+/* ── Glow Ring ── */
+.ava-frame-enhanced::before {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    border-radius: 20px;
+    padding: 2px;
+    background: conic-gradient(from 0deg, var(--cyn), var(--pur), var(--pnk), var(--cyn));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    animation: spinGlow 4s linear infinite;
+}
+
+.ava-frame-enhanced:hover::before {
+    opacity: 0.6;
+}
+
+@keyframes spinGlow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* ── Frame Tag ── */
+.ava-frame-enhanced .ava-frame-tag {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--bg-card);
+    color: var(--cyn);
+    font-family: 'Press Start 2P', cursive;
+    font-size: 7px;
+    padding: 2px 12px;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    letter-spacing: 1px;
+    white-space: nowrap;
+    z-index: 10;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.ava-frame-enhanced:hover .ava-frame-tag {
+    border-color: var(--cyn);
+    box-shadow: 0 2px 20px rgba(34, 211, 238, 0.2);
+}
+
+/* ── Photo Wrapper ── */
+.ava-photo-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid var(--border-color);
+    background: var(--card2);
+    transition: all 0.3s ease;
+}
+
+.ava-frame-enhanced:hover .ava-photo-wrap {
+    border-color: var(--cyn);
+}
+
+.ava-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.ava-frame-enhanced:hover .ava-photo {
+    transform: scale(1.04);
+}
+
+/* ── Shimmer Effect ── */
+.ava-shimmer {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(105deg, 
+        transparent 30%, 
+        rgba(255, 255, 255, 0.03) 45%, 
+        rgba(255, 255, 255, 0.08) 50%, 
+        rgba(255, 255, 255, 0.03) 55%, 
+        transparent 70%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 3s ease-in-out infinite;
+    pointer-events: none;
+}
+
+@keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
+/* ── Overlay Status Badge ── */
+.ava-overlay-status {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    z-index: 2;
+}
+
+.status-badge {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    color: var(--grn);
+    font-size: 7px;
+    font-family: 'JetBrains Mono', monospace;
+    padding: 2px 8px;
+    border-radius: 20px;
+    border: 1px solid rgba(74, 222, 128, 0.2);
+    letter-spacing: 0.5px;
+}
+
+/* ── HP Bar ── */
+.ava-hp {
+    margin-top: 10px;
+    height: 4px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    overflow: hidden;
+}
+
+.ava-hp-fill {
+    width: 92%;
+    height: 100%;
+    background: linear-gradient(90deg, var(--cyn), var(--pur));
+    border-radius: 20px;
+    animation: hpPulse 3s ease-in-out infinite;
+    box-shadow: 0 0 12px rgba(34, 211, 238, 0.2);
+}
+
+@keyframes hpPulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}
+
+/* ── Stats ── */
+.ava-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid var(--border-color);
+}
+
+.ava-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-number {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.stat-label {
+    font-size: 7px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.ava-stat-divider {
+    width: 1px;
+    height: 16px;
+    background: var(--border-color);
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 600px) {
+    .ava-frame-enhanced {
+        width: 120px;
+        padding: 8px;
+        border-radius: 14px;
+    }
+    
+    .ava-frame-enhanced .ava-frame-tag {
+        font-size: 5px;
+        padding: 2px 8px;
+        top: -8px;
+    }
+    
+    .ava-stats {
+        gap: 4px;
+        padding-top: 6px;
+    }
+    
+    .stat-number {
+        font-size: 9px;
+    }
+    
+    .stat-label {
+        font-size: 6px;
+    }
+    
+    .ava-stat-divider {
+        height: 12px;
+    }
+    
+    .ava-hp {
+        height: 3px;
+        margin-top: 8px;
+    }
+    
+    .ava-overlay-status {
+        bottom: 4px;
+        right: 4px;
+    }
+    
+    .status-badge {
+        font-size: 6px;
+        padding: 1px 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ava-frame-enhanced {
+        width: 100px;
+        padding: 6px;
+        border-radius: 12px;
+    }
+    
+    .ava-frame-enhanced .ava-frame-tag {
+        font-size: 4px;
+        padding: 2px 6px;
+        top: -6px;
+    }
+    
+    .ava-photo-wrap {
+        border-radius: 8px;
+    }
+    
+    .stat-number {
+        font-size: 8px;
+    }
+    
+    .stat-label {
+        font-size: 5px;
+    }
+}
+
+/* ============================================================
+   LIGHT THEME
+   ============================================================ */
+
+html[data-theme="light"] .ava-frame-enhanced {
+    background: var(--card);
+    border-color: rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+}
+
+html[data-theme="light"] .ava-frame-enhanced:hover {
+    border-color: var(--cyn);
+    box-shadow: 0 12px 40px rgba(34, 211, 238, 0.1);
+}
+
+html[data-theme="light"] .ava-frame-enhanced .ava-frame-tag {
+    background: var(--card);
+    border-color: rgba(0, 0, 0, 0.08);
+}
+
+html[data-theme="light"] .ava-photo-wrap {
+    border-color: rgba(0, 0, 0, 0.08);
+}
+
+html[data-theme="light"] .ava-hp {
+    background: rgba(0, 0, 0, 0.04);
+    border-color: rgba(0, 0, 0, 0.06);
+}
+
+html[data-theme="light"] .ava-shimmer {
+    background: linear-gradient(105deg, 
+        transparent 30%, 
+        rgba(255, 255, 255, 0.5) 45%, 
+        rgba(255, 255, 255, 0.8) 50%, 
+        rgba(255, 255, 255, 0.5) 55%, 
+        transparent 70%
+    );
+}
+
+html[data-theme="light"] .status-badge {
+    background: rgba(255, 255, 255, 0.8);
+    color: var(--grn);
+    border-color: rgba(74, 222, 128, 0.3);
+}
+
+html[data-theme="light"] .ava-stat-divider {
+    background: rgba(0, 0, 0, 0.08);
+}
