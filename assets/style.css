@@ -6101,7 +6101,7 @@ html[data-theme="light"] .hero .nm-c {
         flex-direction: column !important;
         align-items: flex-end !important;
         justify-content: flex-start !important;
-        gap: 4px !important;
+        gap: 2px !important;
         padding-top: 0 !important;
         margin-top: 0 !important;
         align-self: start !important;
@@ -6109,51 +6109,37 @@ html[data-theme="light"] .hero .nm-c {
 
     /* Smaller Avatar Frame */
     .ava-frame-enhanced {
-        width: 85px !important;
-        padding: 5px !important;
+        width: 75px !important;
+        padding: 4px !important;
         border-radius: 10px !important;
+        border: 1.5px solid var(--border-color) !important;
     }
 
     .ava-frame-enhanced .ava-frame-tag {
-        font-size: 4.5px !important;
-        padding: 2px 6px !important;
-        top: -6px !important;
-        letter-spacing: 0.5px !important;
+        font-size: 4px !important;
+        padding: 1px 5px !important;
+        top: -5px !important;
+        letter-spacing: 0.3px !important;
+        border-width: 1px !important;
     }
 
     .ava-photo-wrap {
         border-radius: 6px !important;
+        border-width: 1px !important;
+    }
+
+    /* HIDE the stats section completely on mobile */
+    .ava-stats {
+        display: none !important;
+    }
+
+    .ava-hp {
+        display: none !important;
     }
 
     /* Hide shimmer on mobile */
     .ava-shimmer {
         display: none !important;
-    }
-
-    /* HP Bar smaller */
-    .ava-hp {
-        height: 2px !important;
-        margin-top: 4px !important;
-    }
-
-    /* Stats smaller */
-    .ava-stats {
-        gap: 3px !important;
-        padding-top: 3px !important;
-        margin-top: 3px !important;
-    }
-
-    .stat-number {
-        font-size: 7px !important;
-    }
-
-    .stat-label {
-        font-size: 4.5px !important;
-        letter-spacing: 0.2px !important;
-    }
-
-    .ava-stat-divider {
-        height: 8px !important;
     }
 
     /* Status badge smaller */
@@ -6163,7 +6149,7 @@ html[data-theme="light"] .hero .nm-c {
     }
 
     .status-badge {
-        font-size: 4.5px !important;
+        font-size: 4px !important;
         padding: 1px 4px !important;
     }
 
@@ -6172,14 +6158,14 @@ html[data-theme="light"] .hero .nm-c {
         display: none !important;
     }
 
-    /* Hero Name smaller */
+    /* Hero Name */
     .hero-name {
         font-size: clamp(24px, 7vw, 32px) !important;
         line-height: 1.1 !important;
         margin-bottom: 0 !important;
     }
 
-    /* Social row compact */
+    /* Social row */
     .social-row {
         gap: 4px !important;
         margin-bottom: 2px !important;
@@ -6191,7 +6177,7 @@ html[data-theme="light"] .hero .nm-c {
         font-size: 0.9rem !important;
     }
 
-    /* Tags compact */
+    /* Tags */
     .hero-tags {
         gap: 4px !important;
         margin-bottom: 4px !important;
@@ -6209,23 +6195,25 @@ html[data-theme="light"] .hero .nm-c {
         height: 5px !important;
     }
 
-    /* Bio text compact */
+    /* Bio text - full width, not compact */
     .hero-bio {
-        font-size: 11px !important;
-        line-height: 1.5 !important;
+        font-size: 11.5px !important;
+        line-height: 1.6 !important;
         max-width: 100% !important;
         margin-bottom: 2px !important;
+        padding-right: 0 !important;
+        width: 100% !important;
     }
 
     .hero-bio p {
-        margin-bottom: 3px !important;
+        margin-bottom: 4px !important;
     }
 
     .hero-bio br {
         display: none !important;
     }
 
-    /* Info row compact */
+    /* Info row */
     .info-row {
         gap: 4px !important;
         margin-top: 2px !important;
