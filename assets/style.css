@@ -6069,3 +6069,176 @@ html[data-theme="light"] .hero .nm-c {
   text-shadow: none !important;
   -webkit-text-stroke: 0.3px rgba(0,0,0,0.04) !important;
 }
+
+
+
+@media (max-width: 600px) {
+    /* Hero - Keep avatar on right, aligned with top */
+    .hero {
+        display: grid !important;
+        grid-template-columns: 1fr auto !important;
+        grid-template-rows: auto 1fr !important;
+        padding: 16px 14px !important;
+        gap: 8px 12px !important;
+        align-items: start !important;
+    }
+
+    /* Left column - all text content */
+    .hero > div:first-child {
+        grid-column: 1 !important;
+        grid-row: 1 / span 2 !important;
+        display: flex;
+        flex-direction: column;
+        gap: 4px !important;
+        min-width: 0 !important;
+    }
+
+    /* Avatar column - right side, aligned to top */
+    .avatar-col {
+        grid-column: 2 !important;
+        grid-row: 1 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-end !important;
+        justify-content: flex-start !important;
+        gap: 4px !important;
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+        align-self: start !important;
+    }
+
+    /* Smaller Avatar Frame */
+    .ava-frame-enhanced {
+        width: 85px !important;
+        padding: 5px !important;
+        border-radius: 10px !important;
+    }
+
+    .ava-frame-enhanced .ava-frame-tag {
+        font-size: 4.5px !important;
+        padding: 2px 6px !important;
+        top: -6px !important;
+        letter-spacing: 0.5px !important;
+    }
+
+    .ava-photo-wrap {
+        border-radius: 6px !important;
+    }
+
+    /* Hide shimmer on mobile */
+    .ava-shimmer {
+        display: none !important;
+    }
+
+    /* HP Bar smaller */
+    .ava-hp {
+        height: 2px !important;
+        margin-top: 4px !important;
+    }
+
+    /* Stats smaller */
+    .ava-stats {
+        gap: 3px !important;
+        padding-top: 3px !important;
+        margin-top: 3px !important;
+    }
+
+    .stat-number {
+        font-size: 7px !important;
+    }
+
+    .stat-label {
+        font-size: 4.5px !important;
+        letter-spacing: 0.2px !important;
+    }
+
+    .ava-stat-divider {
+        height: 8px !important;
+    }
+
+    /* Status badge smaller */
+    .ava-overlay-status {
+        bottom: 2px !important;
+        right: 2px !important;
+    }
+
+    .status-badge {
+        font-size: 4.5px !important;
+        padding: 1px 4px !important;
+    }
+
+    /* Remove the "Online" pill below avatar */
+    .avatar-col .pill-btn {
+        display: none !important;
+    }
+
+    /* Hero Name smaller */
+    .hero-name {
+        font-size: clamp(24px, 7vw, 32px) !important;
+        line-height: 1.1 !important;
+        margin-bottom: 0 !important;
+    }
+
+    /* Social row compact */
+    .social-row {
+        gap: 4px !important;
+        margin-bottom: 2px !important;
+    }
+
+    .social-icon {
+        width: 28px !important;
+        height: 28px !important;
+        font-size: 0.9rem !important;
+    }
+
+    /* Tags compact */
+    .hero-tags {
+        gap: 4px !important;
+        margin-bottom: 4px !important;
+        flex-wrap: wrap !important;
+    }
+
+    .hero-tags .pill-btn {
+        font-size: 7px !important;
+        padding: 2px 8px 2px 5px !important;
+        gap: 4px !important;
+    }
+
+    .hero-tags .pill-btn .dot {
+        width: 5px !important;
+        height: 5px !important;
+    }
+
+    /* Bio text compact */
+    .hero-bio {
+        font-size: 11px !important;
+        line-height: 1.5 !important;
+        max-width: 100% !important;
+        margin-bottom: 2px !important;
+    }
+
+    .hero-bio p {
+        margin-bottom: 3px !important;
+    }
+
+    .hero-bio br {
+        display: none !important;
+    }
+
+    /* Info row compact */
+    .info-row {
+        gap: 4px !important;
+        margin-top: 2px !important;
+        flex-wrap: wrap !important;
+    }
+
+    .info-chip {
+        font-size: 8px !important;
+        padding: 2px 8px !important;
+        gap: 3px !important;
+    }
+
+    .info-chip i {
+        font-size: 9px !important;
+    }
+}
