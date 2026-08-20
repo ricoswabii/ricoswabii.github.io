@@ -61,9 +61,251 @@ html[data-theme="light"] {
   color-scheme: light;
 }
 
+/* Improve contrast for light theme hero/card elements */
+html[data-theme="light"] .hero {
+  background: linear-gradient(135deg, rgba(167,139,250,0.02), rgba(34,211,238,0.01)), rgba(var(--card-rgb), 0.92);
+  border: 1px solid rgba(var(--overlay-rgb), 0.12);
+}
+html[data-theme="light"] .hero-name {
+  text-shadow: none;
+  color: var(--txt);
+}
+html[data-theme="light"] .hero-bio,
+html[data-theme="light"] .hero-tags,
+html[data-theme="light"] .info-chip {
+  color: var(--muted);
+  background: rgba(var(--overlay-rgb), 0.06);
+  border-color: rgba(var(--overlay-rgb), 0.08);
+}
+
+html[data-theme="light"] .ava-frame {
+  background: rgba(var(--card2-rgb), 0.9);
+  border-color: rgba(var(--overlay-rgb), 0.08);
+}
+
+/* Global light-theme adjustments for more uniform colors */
+html[data-theme="light"] body,
+html[data-theme="light"] .page {
+  background: var(--bg);
+  color: var(--txt);
+}
+
+html[data-theme="light"] .topnav,
+html[data-theme="light"] .topnav-inner,
+html[data-theme="light"] .topnav-logo {
+  color: var(--txt);
+}
+
+html[data-theme="light"] .topnav-links a {
+  color: var(--muted);
+}
+
+html[data-theme="light"] .pill-btn {
+  background: rgba(var(--overlay-rgb), 0.06);
+  border-color: rgba(var(--overlay-rgb), 0.08);
+  color: var(--txt);
+}
+
+html[data-theme="light"] .social-icon i {
+  color: var(--txt);
+  opacity: 0.95;
+}
+
+html[data-theme="light"] .info-chip {
+  background: rgba(var(--overlay-rgb), 0.04);
+  color: var(--muted);
+  border-color: rgba(var(--overlay-rgb), 0.08);
+}
+
+html[data-theme="light"] .hero-name {
+  color: var(--txt);
+}
+
+html[data-theme="light"] .hero-bio {
+  color: var(--muted);
+}
+
+html[data-theme="light"] .ava-frame-tag {
+  /* keep accent but reduce glow for light backgrounds */
+  box-shadow: 0 2px 6px rgba(34, 34, 34, 0.06);
+  color: var(--card);
+}
+
+/* Ensure hero name accents keep their colors in light theme */
+html[data-theme="light"] .nm-p {
+  color: var(--pur) !important;
+}
+html[data-theme="light"] .nm-c {
+  color: var(--cyn) !important;
+}
+
+/* Make accent spans pop on light background to match dark-theme appearance */
+html[data-theme="light"] .nm-p,
+html[data-theme="light"] .nm-c {
+  font-weight: 600 !important;
+  /* tiny dark hairline to increase perceived contrast */
+  text-shadow: 0 1px 0 rgba(0,0,0,0.06) !important;
+  -webkit-text-stroke: 0.3px rgba(0,0,0,0.04) !important;
+}
+
+/* Make hero pill tags and body copy blend into light theme (less background bleed) */
+html[data-theme="light"] .hero-tags .pill-btn,
+html[data-theme="light"] .hero-tags .pill-btn .dot {
+  background: rgba(var(--card-rgb), 0.98);
+  border-color: rgba(var(--overlay-rgb), 0.08);
+  color: var(--txt);
+  box-shadow: none;
+}
+
+html[data-theme="light"] .hero-bio,
+html[data-theme="light"] .hero-bio p {
+  color: var(--muted);
+  text-shadow: none;
+}
+
+/* Ensure info chips are solid on light background */
+html[data-theme="light"] .info-chip {
+  background: rgba(var(--card-rgb), 0.96);
+  border-color: rgba(var(--overlay-rgb), 0.08);
+  color: var(--muted);
+}
+
+/* Ensure icons and small controls are readable */
+html[data-theme="light"] .ti {
+  color: var(--txt);
+}
+
+/* Specific override for any inline icon color fallbacks */
+html[data-theme="light"] [style*="color: var(--red)"] {
+  color: var(--red);
+}
 
 html[data-theme="light"] .pj-card-3d,
-html[data-theme="light"] .proj-card-3d{background:#e4e6ee;}
+html[data-theme="light"] .proj-card-3d {
+  background: #e4e6ee;
+}
+/* Remove strong drop-shadows in light theme so sections blend with white */
+html[data-theme="light"] .hero,
+html[data-theme="light"] .glass-card,
+html[data-theme="light"] .sk-card,
+html[data-theme="light"] .pj-card,
+html[data-theme="light"] .exp-card,
+html[data-theme="light"] .rl-card {
+  box-shadow: none !important;
+}
+
+/* Soften avatar/frame shadow in light mode to a very subtle inset */
+html[data-theme="light"] .ava-frame {
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.02);
+}
+/* Unified light-theme styling for page sections, cards, and footer */
+html[data-theme="light"] .glass-card,
+html[data-theme="light"] .sk-card,
+html[data-theme="light"] .pj-card,
+html[data-theme="light"] .exp-card,
+html[data-theme="light"] .rl-card,
+html[data-theme="light"] .cert-row,
+html[data-theme="light"] .citem,
+html[data-theme="light"] .proj-timeline {
+  background: rgba(var(--card-rgb), 0.92);
+  color: var(--txt);
+  border: 1px solid rgba(var(--overlay-rgb), 0.08);
+}
+
+html[data-theme="light"] .sec-bar {
+  color: var(--muted);
+}
+
+/* Make the divider line visible in light theme */
+html[data-theme="light"] .sec-line {
+  background: rgba(var(--overlay-rgb), 0.06);
+}
+
+html[data-theme="light"] .sec-tag {
+  background: rgba(var(--overlay-rgb), 0.06);
+  color: var(--txt);
+  border-color: rgba(var(--overlay-rgb), 0.08);
+}
+
+html[data-theme="light"] .topnav {
+  background: transparent;
+  border-bottom: 1px solid rgba(var(--overlay-rgb), 0.04);
+}
+html[data-theme="light"] .topnav-links a {
+  color: var(--muted);
+}
+html[data-theme="light"] .topnav-links a.active,
+html[data-theme="light"] .topnav-links a:hover {
+  color: var(--txt);
+}
+
+html[data-theme="light"] .ftr,
+html[data-theme="light"] .rl-footer,
+html[data-theme="light"] .ftr-txt {
+  background: transparent;
+  color: var(--muted);
+  border-top: 1px solid rgba(var(--overlay-rgb), 0.04);
+}
+
+/* Make sure small UI bits remain visible */
+html[data-theme="light"] .pill-btn,
+html[data-theme="light"] .info-chip,
+html[data-theme="light"] .lang-chip {
+  background: rgba(var(--overlay-rgb), 0.04);
+  color: var(--txt);
+  border-color: rgba(var(--overlay-rgb), 0.07);
+}
+
+/* Links */
+html[data-theme="light"] a {
+  color: var(--blu);
+}
+
+/* Ensure CTA primary buttons keep white text in light theme */
+html[data-theme="light"] .cta-btn-primary,
+html[data-theme="light"] a.cta-btn.cta-btn-primary {
+  color: #fff !important;
+}
+
+/* Light-theme: make contact/Get in touch card feel translucent like dark theme */
+html[data-theme="light"] .contact-box {
+  background: transparent !important;
+  border: 1px solid rgba(var(--overlay-rgb), 0.04) !important;
+  box-shadow: none !important;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+/* Make the divider text appear floating (less solid pill) */
+html[data-theme="light"] .cta-divider-text {
+  background: rgba(var(--card-rgb), 0.02) !important;
+  color: var(--txt);
+}
+
+/* Slightly soften inner contact item backgrounds on light theme */
+html[data-theme="light"] .citem {
+  background: transparent;
+  border: 1px solid rgba(var(--overlay-rgb), 0.03);
+}
+
+/* Make the whole contact section transparent so page/grid shows through */
+html[data-theme="light"] #section-contact,
+html[data-theme="light"] #section-contact .section {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+html[data-theme="light"] .cta-divider-text {
+  background: transparent !important;
+  color: var(--txt);
+}
+
+/* Buttons and interactive elements */
+html[data-theme="light"] button,
+html[data-theme="light"] .pill-btn {
+  color: var(--txt);
+}
 html[data-theme="light"] .sticky-hire,
 html[data-theme="light"] .ava-frame-tag {
   color: #07080f;
@@ -414,19 +656,51 @@ html[data-theme="light"] .bg-canvas::after {
   background: var(--pnk);
 }
 
-.hero{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:start;padding:32px 30px;background:rgba(var(--card-rgb),.75);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid rgba(var(--overlay-rgb),.1);border-radius:24px;margin-bottom:16px;position:relative;overflow:hidden;}
-.hero::before{content:'';position:absolute;inset:0;border-radius:24px;background:linear-gradient(135deg,rgba(167,139,250,.06) 0%,rgba(34,211,238,.04) 50%,rgba(244,114,182,.04) 100%);pointer-events:none;}
+.hero {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 20px;
+  align-items: center;
+  padding: 32px 30px;
+  /* Increased transparency so background blends more */
+  background: linear-gradient(135deg, rgba(167,139,250,0.02), rgba(34,211,238,0.02)), rgba(var(--bg-rgb), 0.015);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(var(--overlay-rgb), 0.04);
+  border-radius: 24px;
+  margin-bottom: 16px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 24px;
+  /* Even subtler overlay so colors blend without making the card feel solid */
+  background: linear-gradient(
+    135deg,
+    rgba(167, 139, 250, 0.02) 0%,
+    rgba(34, 211, 238, 0.02) 50%,
+    rgba(244, 114, 182, 0.02) 100%
+  );
+  pointer-events: none;
+  mix-blend-mode: normal;
+
+  /* A very subtle inner glow to separate content while keeping transparency */
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.01);
+}
 /* .hero-name{font-size:clamp(28px,4.5vw,46px);font-weight:700;letter-spacing:-1.5px;line-height:1.0;margin-bottom:8px; font-family:"Bungee", sans-serif;} */
-.hero-name{
-  font-family:"Bungee", sans-serif;
-  font-size:clamp(28px,4.5vw,46px);
-  font-weight:400;
-  letter-spacing:1px;
-  line-height:1.15;
-  margin-bottom:12px;
-  text-transform:uppercase;
-  text-shadow:
-    3px 3px 0 rgba(0,0,0,.45);
+.hero-name {
+  font-family: "Bungee", sans-serif;
+  font-size: clamp(28px, 4.5vw, 46px);
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.15;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  /* Subtle, theme-aware shadow that blends with light/dark modes */
+  text-shadow: 0 1px 0 rgba(0, 0, 0, var(--shadow-op));
 }
 .nm-p {
   color: var(--pur);
@@ -1197,41 +1471,148 @@ html[data-theme="light"] .bg-canvas::after {
 }
 
 /* ── LinkedIn / GitHub badge styles ── */
-a.pill-btn{text-decoration:none;cursor:pointer;transition:opacity .15s,transform .15s;}
-a.pill-btn:hover{opacity:.8;transform:translateY(-1px);}
-.pb-li{background:#0a66c218;border-color:#0a66c255;color:#60a5fa;}
-.pb-li .dot{background:#60a5fa;}
-.pb-gh{background:#ffffff0e;border-color:#ffffff28;color:#d1d5db;}
-.pb-gh .dot{background:#d1d5db;}
-.pb-cv{background:rgba(96,165,250,.1);border-color:rgba(96,165,250,.35);color:var(--blu);}
-.pb-cv .dot{background:var(--blu);}
-.social-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px;}
+a.pill-btn {
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    opacity 0.15s,
+    transform 0.15s;
+}
+a.pill-btn:hover {
+  opacity: 0.8;
+  transform: translateY(-1px);
+}
+.pb-li {
+  background: #0a66c218;
+  border-color: #0a66c255;
+  color: #60a5fa;
+}
+.pb-li .dot {
+  background: #60a5fa;
+}
+.pb-gh {
+  background: #ffffff0e;
+  border-color: #ffffff28;
+  color: #d1d5db;
+}
+.pb-gh .dot {
+  background: #d1d5db;
+}
+.pb-cv {
+  background: rgba(96, 165, 250, 0.1);
+  border-color: rgba(96, 165, 250, 0.35);
+  color: var(--blu);
+}
+.pb-cv .dot {
+  background: var(--blu);
+}
+.social-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
 
 /* ══ MOBILE ≤ 600px ══ */
-@media(max-width:600px){
-  .page{padding:14px 12px 52px;}
-  .hero{grid-template-columns:1fr !important;padding:18px 16px !important;gap:0 !important;}
-  .avatar-col{flex-direction:row !important;align-items:center !important;justify-content:flex-start !important;gap:14px !important;order:-1;margin-bottom:18px;padding-top:0 !important;}
-  .ava-ring{width:82px !important;height:82px !important;flex-shrink:0;}
-  .ava-ring svg{width:72px !important;height:72px !important;}
-  .ava-ring2{inset:-5px !important;}
-  .ava-ring3{inset:-10px !important;}
-  .ava-label{display:none !important;}
-  .hero-name{font-size:clamp(28px,9vw,38px) !important;}
-  .hero-bio{font-size:12px !important;}
-  .skills-grid{grid-template-columns:1fr !important;}
-  .proj-grid{grid-template-columns:1fr !important;}
-  .pj-banner{height:130px !important;}
-  .cert-grid{grid-template-columns:1fr !important;}
-  .tl-item{display:block !important;position:relative !important;padding-left:22px !important;border-left:2px solid rgba(var(--overlay-rgb),.1) !important;margin-left:6px !important;}
-  .tl-date{display:none !important;}
-  .tl-spine{display:none !important;}
-  .tl-body{padding:0 0 20px 0 !important;}
-  .tl-item::before{content:'';position:absolute;left:-7px;top:5px;width:12px;height:12px;border-radius:50%;background:var(--c,#fff);border:2px solid var(--bg);}
-  .tl-date-m{display:block !important;}
-  .contact-wrap{flex-direction:column !important;}
-  .citem{width:100% !important;}
-  .ftr{flex-direction:column !important;align-items:flex-start !important;gap:10px !important;}
+@media (max-width: 600px) {
+  .page {
+    padding: 14px 12px 52px;
+  }
+  /* Keep the avatar to the right of the name on small screens
+     by maintaining a two-column layout but tightening spacing. */
+  .hero {
+    grid-template-columns: 1fr auto !important;
+    padding: 18px 16px !important;
+    gap: 12px !important;
+    align-items: start !important;
+  }
+  .avatar-col {
+    flex-direction: column !important;
+    align-items: flex-end !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    order: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    align-self: start !important;
+  }
+  .ava-ring {
+    width: 82px !important;
+    height: 82px !important;
+    flex-shrink: 0;
+  }
+  .ava-ring svg {
+    width: 72px !important;
+    height: 72px !important;
+  }
+  .ava-ring2 {
+    inset: -5px !important;
+  }
+  .ava-ring3 {
+    inset: -10px !important;
+  }
+  .ava-label {
+    display: none !important;
+  }
+  .hero-name {
+    font-size: clamp(28px, 9vw, 38px) !important;
+  }
+  .hero-bio {
+    font-size: 12px !important;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .proj-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .pj-banner {
+    height: 130px !important;
+  }
+  .cert-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .tl-item {
+    display: block !important;
+    position: relative !important;
+    padding-left: 22px !important;
+    border-left: 2px solid rgba(var(--overlay-rgb), 0.1) !important;
+    margin-left: 6px !important;
+  }
+  .tl-date {
+    display: none !important;
+  }
+  .tl-spine {
+    display: none !important;
+  }
+  .tl-body {
+    padding: 0 0 20px 0 !important;
+  }
+  .tl-item::before {
+    content: "";
+    position: absolute;
+    left: -7px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--c, #fff);
+    border: 2px solid var(--bg);
+  }
+  .tl-date-m {
+    display: block !important;
+  }
+  .contact-wrap {
+    flex-direction: column !important;
+  }
+  .citem {
+    width: 100% !important;
+  }
+  .ftr {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 10px !important;
+  }
 }
 
 /* ══ TABLET 601–768px ══ */
@@ -3641,9 +4022,98 @@ section {
 }
 
 .tech-chip i {
-    font-size: 2rem;
-    color: var(--cyn);
+  font-size: 2rem;
+  /* allow icons to use their own brand colors */
+  color: inherit;
 }
+
+/* Brand colors for tech icons (common set used in the carousel) */
+.ti-brand-python { color: #3776AB !important; }
+.ti-brand-php { color: #777BB4 !important; }
+.ti-brand-html5 { color: #E34F26 !important; }
+.ti-brand-css3 { color: #1572B6 !important; }
+.ti-brand-javascript { color: #F7DF1E !important; }
+.ti-brand-react { color: #61DAFB !important; }
+.ti-brand-mongodb { color: #47A248 !important; }
+.ti-brand-vscode { color: #007ACC !important; }
+.ti-brand-windows { color: #0078D6 !important; }
+.ti-brand-linux { color: #FCC624 !important; }
+
+/* Explicit per-icon color fallbacks (works in all browsers) */
+.tech-chip i.ti-brand-github { color: #181717 !important; }
+.tech-chip i.ti-brand-git { color: #F05032 !important; }
+.tech-chip i.ti-brand-python { color: #3776AB !important; }
+.tech-chip i.ti-brand-php { color: #777BB4 !important; }
+.tech-chip i.ti-brand-html5 { color: #E34F26 !important; }
+.tech-chip i.ti-brand-css3 { color: #1572B6 !important; }
+.tech-chip i.ti-brand-javascript { color: #F7DF1E !important; }
+.tech-chip i.ti-brand-react { color: #61DAFB !important; }
+.tech-chip i.ti-brand-mongodb { color: #47A248 !important; }
+.tech-chip i.ti-brand-vscode { color: #007ACC !important; }
+.tech-chip i.ti-brand-windows { color: #0078D6 !important; }
+.tech-chip i.ti-brand-linux { color: #FCC624 !important; }
+.tech-chip i.ti-brand-figma { color: #F24E1E !important; }
+.tech-chip i.ti-brand-wordpress { color: #21759B !important; }
+.tech-chip i.ti-brand-photoshop { color: #31A8FF !important; }
+
+
+/* Color the tech chip (label + icon) based on the icon inside it so
+  the whole chip looks branded instead of just the icon. Uses :has()
+  — supported in modern browsers. */
+.tech-chip:has(.ti-brand-python) i { color: #3776AB; }
+.tech-chip:has(.ti-brand-php) i { color: #777BB4; }
+.tech-chip:has(.ti-brand-html5) i { color: #E34F26; }
+.tech-chip:has(.ti-brand-css3) i { color: #1572B6; }
+.tech-chip:has(.ti-brand-javascript) i { color: #F7DF1E; }
+.tech-chip:has(.ti-brand-react) i { color: #61DAFB; }
+.tech-chip:has(.ti-brand-mongodb) i { color: #47A248; }
+.tech-chip:has(.ti-brand-vscode) i { color: #007ACC; }
+.tech-chip:has(.ti-brand-windows) i { color: #0078D6; }
+.tech-chip:has(.ti-brand-linux) i { color: #FCC624; }
+.tech-chip:has(.ti-brand-github) i { color: #181717; }
+.tech-chip:has(.ti-brand-git) i { color: #F05032; }
+.tech-chip:has(.ti-brand-figma) i { color: #F24E1E; }
+.tech-chip:has(.ti-brand-wordpress) i { color: #21759B; }
+.tech-chip:has(.ti-brand-photoshop) i { color: #31A8FF; }
+.tech-chip:has(.ti-brand-mongodb) i { color: #47A248; }
+
+/* Icons only: label text remains default; icons get brand colors above. */
+
+/* Chip-level color rules (tint icon + label) */
+.tech-chip.tech-github i { color: #181717 !important; }
+.tech-chip.tech-git i { color: #F05032 !important; }
+.tech-chip.tech-python i { color: #3776AB !important; }
+.tech-chip.tech-php i { color: #777BB4 !important; }
+.tech-chip.tech-html5 i { color: #E34F26 !important; }
+.tech-chip.tech-css3 i { color: #1572B6 !important; }
+.tech-chip.tech-javascript i { color: #F7DF1E !important; }
+.tech-chip.tech-react i { color: #61DAFB !important; }
+.tech-chip.tech-mongodb i { color: #47A248 !important; }
+.tech-chip.tech-vscode i { color: #007ACC !important; }
+.tech-chip.tech-windows i { color: #0078D6 !important; }
+.tech-chip.tech-linux i { color: #FCC624 !important; }
+.tech-chip.tech-figma i { color: #F24E1E !important; }
+.tech-chip.tech-wordpress i { color: #21759B !important; }
+.tech-chip.tech-photoshop i { color: #31A8FF !important; }
+
+/* Non-brand/common tools */
+.tech-chip.tech-bash i { color: #6b7280 !important; }
+.tech-chip.tech-terminal i { color: #6b7280 !important; }
+.tech-chip.tech-terminal-2 i { color: #0078D6 !important; } /* PowerShell */
+.tech-chip.tech-virtualbox i { color: #6b7280 !important; }
+.tech-chip.tech-cisco i { color: #0ea5a4 !important; }
+.tech-chip.tech-wireshark i { color: #60a5fa !important; }
+.tech-chip.tech-elasticsearch i { color: #005571 !important; }
+.tech-chip.tech-snort i { color: #f97316 !important; }
+.tech-chip.tech-splunk i { color: #ff6600 !important; }
+.tech-chip.tech-wazuh i { color: #f97316 !important; }
+.tech-chip.tech-nmap i { color: #f59e0b !important; }
+.tech-chip.tech-virustotal i { color: #16a34a !important; }
+.tech-chip.tech-user-search i { color: #06b6d4 !important; }
+.tech-chip.tech-mitre i { color: #06b6d4 !important; }
+.tech-chip.tech-active-directory i { color: #0078D6 !important; }
+.tech-chip.tech-canva i { color: #f59e0b !important; }
+.tech-chip.tech-matrix i { color: #06b6d4 !important; }
 
 /* Scroll Animation */
 @keyframes techScroll {
@@ -5175,18 +5645,26 @@ html[data-theme="light"] .archive-item:hover .archive-item-icon {
 
 /* ── Glow Ring ── */
 .ava-frame-enhanced::before {
-    content: '';
-    position: absolute;
-    inset: -3px;
-    border-radius: 20px;
-    padding: 2px;
-    background: conic-gradient(from 0deg, var(--cyn), var(--pur), var(--pnk), var(--cyn));
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    opacity: 0;
-    transition: opacity 0.6s ease;
-    animation: spinGlow 4s linear infinite;
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: 20px;
+  padding: 2px;
+  background: conic-gradient(
+    from 0deg,
+    var(--cyn),
+    var(--pur),
+    var(--pnk),
+    var(--cyn)
+  );
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  animation: spinGlow 4s linear infinite;
 }
 
 .ava-frame-enhanced:hover::before {
@@ -5253,7 +5731,9 @@ html[data-theme="light"] .archive-item:hover .archive-item-icon {
 }
 
 .ava-frame-enhanced:hover .ava-photo {
-    transform: scale(1.04);
+  transform: scale(1.04);
+  filter: none;
+    -webkit-filter: none;
 }
 
 /* ── Shimmer Effect ── */
@@ -5508,4 +5988,245 @@ html[data-theme="light"] .status-badge {
 
 html[data-theme="light"] .ava-stat-divider {
   background: rgba(0, 0, 0, 0.08);
+}
+
+/* FORCE OPAQUE SURFACES IN LIGHT THEME (prevent background image bleed) */
+html[data-theme="light"] .hero,
+html[data-theme="light"] .hero *:not(img):not(svg),
+html[data-theme="light"] .glass-card,
+html[data-theme="light"] .sk-card,
+html[data-theme="light"] .pj-card,
+html[data-theme="light"] .exp-card,
+html[data-theme="light"] .rl-card,
+html[data-theme="light"] .info-chip,
+html[data-theme="light"] .pill-btn,
+html[data-theme="light"] .hero-tags .pill-btn,
+html[data-theme="light"] .ava-frame,
+html[data-theme="light"] .ava-frame-enhanced {
+  background: var(--card) !important;
+  background-color: var(--card) !important;
+  color: var(--txt) !important;
+  border-color: rgba(var(--overlay-rgb), 0.08) !important;
+  box-shadow: none !important;
+}
+
+/* Allow specific sections to remain transparent so the grid background shows through */
+/* Make only the contact section transparent and render dots behind it */
+html[data-theme="light"] #section-contact,
+html[data-theme="light"] #section-contact .contact-box,
+html[data-theme="light"] #section-contact .section {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  position: relative;
+  overflow: visible;
+}
+
+html[data-theme="light"] #section-contact::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle, var(--dot-color) 1.5px, transparent 1.5px);
+  background-size: 32px 32px;
+  opacity: var(--dot-opacity);
+}
+
+html[data-theme="light"] #section-contact .contact-box {
+  position: relative;
+  z-index: 1;
+  background: transparent !important;
+}
+
+/* Remove the hero overlay and any translucent overlays that let the page bg show */
+html[data-theme="light"] .hero::before,
+html[data-theme="light"] .bg-canvas::after {
+  display: none !important;
+}
+
+/* Ensure paragraph and tag text use solid colors */
+html[data-theme="light"] .hero-bio,
+html[data-theme="light"] .hero-bio p,
+html[data-theme="light"] .hero-tags .pill-btn,
+html[data-theme="light"] .info-chip {
+  background: var(--card) !important;
+  color: var(--muted) !important;
+}
+
+/* Final override: ensure hero name accent spans keep their intended colors
+   even after broad ".hero *" !important rules earlier in the file. */
+html[data-theme="light"] .hero .nm-p {
+  color: var(--pur) !important;
+  font-weight: 700 !important;
+  text-shadow: none !important;
+  -webkit-text-stroke: 0.3px rgba(0,0,0,0.04) !important;
+}
+html[data-theme="light"] .hero .nm-c {
+  color: var(--cyn) !important;
+  font-weight: 700 !important;
+  text-shadow: none !important;
+  -webkit-text-stroke: 0.3px rgba(0,0,0,0.04) !important;
+}
+
+
+
+@media (max-width: 600px) {
+    /* Hero - Keep avatar on right, aligned with top */
+    .hero {
+        display: grid !important;
+        grid-template-columns: 1fr auto !important;
+        grid-template-rows: auto 1fr !important;
+        padding: 16px 14px !important;
+        gap: 8px 12px !important;
+        align-items: start !important;
+    }
+
+    /* Left column - all text content */
+    .hero > div:first-child {
+        grid-column: 1 !important;
+        grid-row: 1 / span 2 !important;
+        display: flex;
+        flex-direction: column;
+        gap: 4px !important;
+        min-width: 0 !important;
+    }
+
+    /* Avatar column - right side, aligned to top */
+    .avatar-col {
+        grid-column: 2 !important;
+        grid-row: 1 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-end !important;
+        justify-content: flex-start !important;
+        gap: 2px !important;
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+        align-self: start !important;
+    }
+
+    /* Smaller Avatar Frame */
+    .ava-frame-enhanced {
+        width: 75px !important;
+        padding: 4px !important;
+        border-radius: 10px !important;
+        border: 1.5px solid var(--border-color) !important;
+    }
+
+    .ava-frame-enhanced .ava-frame-tag {
+        font-size: 4px !important;
+        padding: 1px 5px !important;
+        top: -5px !important;
+        letter-spacing: 0.3px !important;
+        border-width: 1px !important;
+    }
+
+    .ava-photo-wrap {
+        border-radius: 6px !important;
+        border-width: 1px !important;
+    }
+
+    /* HIDE the stats section completely on mobile */
+    .ava-stats {
+        display: none !important;
+    }
+
+    .ava-hp {
+        display: none !important;
+    }
+
+    /* Hide shimmer on mobile */
+    .ava-shimmer {
+        display: none !important;
+    }
+
+    /* Status badge smaller */
+    .ava-overlay-status {
+        bottom: 2px !important;
+        right: 2px !important;
+    }
+
+    .status-badge {
+        font-size: 4px !important;
+        padding: 1px 4px !important;
+    }
+
+    /* Remove the "Online" pill below avatar */
+    .avatar-col .pill-btn {
+        display: none !important;
+    }
+
+    /* Hero Name */
+    .hero-name {
+        font-size: clamp(24px, 7vw, 32px) !important;
+        line-height: 1.1 !important;
+        margin-bottom: 0 !important;
+    }
+
+    /* Social row */
+    .social-row {
+        gap: 4px !important;
+        margin-bottom: 2px !important;
+    }
+
+    .social-icon {
+        width: 28px !important;
+        height: 28px !important;
+        font-size: 0.9rem !important;
+    }
+
+    /* Tags */
+    .hero-tags {
+        gap: 4px !important;
+        margin-bottom: 4px !important;
+        flex-wrap: wrap !important;
+    }
+
+    .hero-tags .pill-btn {
+        font-size: 7px !important;
+        padding: 2px 8px 2px 5px !important;
+        gap: 4px !important;
+    }
+
+    .hero-tags .pill-btn .dot {
+        width: 5px !important;
+        height: 5px !important;
+    }
+
+    /* Bio text - full width, not compact */
+    .hero-bio {
+        font-size: 11.5px !important;
+        line-height: 1.6 !important;
+        max-width: 100% !important;
+        margin-bottom: 2px !important;
+        padding-right: 0 !important;
+        width: 100% !important;
+    }
+
+    .hero-bio p {
+        margin-bottom: 4px !important;
+    }
+
+    .hero-bio br {
+        display: none !important;
+    }
+
+    /* Info row */
+    .info-row {
+        gap: 4px !important;
+        margin-top: 2px !important;
+        flex-wrap: wrap !important;
+    }
+
+    .info-chip {
+        font-size: 8px !important;
+        padding: 2px 8px !important;
+        gap: 3px !important;
+    }
+
+    .info-chip i {
+        font-size: 9px !important;
+    }
 }
