@@ -6073,68 +6073,93 @@ html[data-theme="light"] .hero .nm-c {
 
 
 @media (max-width: 600px) {
-    /* Hero - Keep avatar on right, aligned with top */
+    /* Hero - avatar pinned to the top-right corner, text flows below it */
     .hero {
-        display: grid !important;
-        grid-template-columns: 1fr auto !important;
-        grid-template-rows: auto 1fr !important;
+        display: block !important;
+        position: relative !important;
         padding: 16px 14px !important;
-        gap: 8px 12px !important;
-        align-items: start !important;
     }
 
-    /* Left column - all text content */
+    /* Text column - full width, normal block flow (no more grid) */
     .hero > div:first-child {
-        grid-column: 1 !important;
-        grid-row: 1 / span 2 !important;
-        display: flex;
-        flex-direction: column;
-        gap: 4px !important;
+        display: block !important;
+        width: 100% !important;
         min-width: 0 !important;
     }
 
-    /* Avatar column - right side, aligned to top */
+    /* Name + social row - narrowed so they don't run under the avatar */
+    .hero-name,
+    .social-row {
+        max-width: calc(100% - 92px) !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Tags, bio and info row reclaim full width beneath the avatar */
+    .hero-tags,
+    .hero-bio,
+    .info-row {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* Avatar column - pinned to the top-right corner of the hero card */
     .avatar-col {
-        grid-column: 2 !important;
-        grid-row: 1 !important;
+        position: absolute !important;
+        top: 16px !important;
+        right: 14px !important;
         display: flex !important;
         flex-direction: column !important;
         align-items: flex-end !important;
         justify-content: flex-start !important;
         gap: 2px !important;
-        padding-top: 0 !important;
-        margin-top: 0 !important;
-        align-self: start !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: auto !important;
     }
 
-    /* Smaller Avatar Frame */
+    /* Avatar Frame - big enough to keep the stats legible */
     .ava-frame-enhanced {
-        width: 75px !important;
-        padding: 4px !important;
-        border-radius: 10px !important;
+        width: 104px !important;
+        padding: 6px !important;
+        border-radius: 12px !important;
         border: 1.5px solid var(--border-color) !important;
     }
 
     .ava-frame-enhanced .ava-frame-tag {
-        font-size: 4px !important;
-        padding: 1px 5px !important;
-        top: -5px !important;
+        font-size: 5px !important;
+        padding: 2px 7px !important;
+        top: -7px !important;
         letter-spacing: 0.3px !important;
         border-width: 1px !important;
     }
 
     .ava-photo-wrap {
-        border-radius: 6px !important;
+        border-radius: 8px !important;
         border-width: 1px !important;
     }
 
-    /* HIDE the stats section completely on mobile */
+    /* Stats + HP bar - kept visible, just compacted */
     .ava-stats {
-        display: none !important;
+        gap: 3px !important;
+        margin-top: 6px !important;
+        padding-top: 6px !important;
+    }
+
+    .stat-number {
+        font-size: 9px !important;
+    }
+
+    .stat-label {
+        font-size: 5.5px !important;
+    }
+
+    .ava-stat-divider {
+        height: 12px !important;
     }
 
     .ava-hp {
-        display: none !important;
+        margin-top: 6px !important;
+        height: 3px !important;
     }
 
     /* Hide shimmer on mobile */
@@ -6158,17 +6183,20 @@ html[data-theme="light"] .hero .nm-c {
         display: none !important;
     }
 
-    /* Hero Name */
+    /* Hero Name - pushed down so its bottom (together with the social row)
+       lines up with the bottom of the avatar card, which is taller and
+       therefore starts higher up than the name */
     .hero-name {
         font-size: clamp(24px, 7vw, 32px) !important;
         line-height: 1.1 !important;
         margin-bottom: 0 !important;
+        margin-top: 84px !important;
     }
 
     /* Social row */
     .social-row {
         gap: 4px !important;
-        margin-bottom: 2px !important;
+        margin-bottom: 8px !important;
     }
 
     .social-icon {
