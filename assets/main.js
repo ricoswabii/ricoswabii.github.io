@@ -1087,3 +1087,253 @@ document.addEventListener("DOMContentLoaded", function () {
 
   console.log("Scroll progress bar initialized!");
 })();
+
+
+// ============================================================
+// CHAT BOX AI - ricoswabii (Fully Responsive)
+// ============================================================
+
+document.addEventListener('DOMContentLoaded', function() {
+    // ── Get elements ──
+    var chatToggle = document.getElementById('chatToggle');
+    var chatBox = document.getElementById('chatBox');
+    var chatClose = document.getElementById('chatClose');
+    var chatInput = document.getElementById('chatInput');
+    var chatSend = document.getElementById('chatSend');
+    var chatMessages = document.getElementById('chatMessages');
+
+    // ── Check if all elements exist ──
+    if (!chatToggle || !chatBox || !chatClose || !chatInput || !chatSend || !chatMessages) {
+        console.error('❌ Chat elements missing! Check your HTML.');
+        return;
+    }
+
+    console.log('✅ Chat bot ready!');
+
+    // ── Toggle Chat ──
+    chatToggle.addEventListener('click', function() {
+        chatBox.classList.toggle('active');
+        if (chatBox.classList.contains('active')) {
+            setTimeout(function() {
+                chatInput.focus();
+            }, 350);
+        }
+    });
+
+    // ── Close Chat ──
+    chatClose.addEventListener('click', function() {
+        chatBox.classList.remove('active');
+    });
+
+    // ── Close on Escape key ──
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && chatBox.classList.contains('active')) {
+            chatBox.classList.remove('active');
+        }
+    });
+
+    // ── Close when clicking outside (mobile friendly) ──
+    document.addEventListener('click', function(e) {
+        if (chatBox.classList.contains('active')) {
+            var isClickInside = chatBox.contains(e.target) || chatToggle.contains(e.target);
+            if (!isClickInside) {
+                chatBox.classList.remove('active');
+            }
+        }
+    });
+
+    // ── Send Message ──
+    function sendMessage() {
+        var message = chatInput.value.trim();
+        if (!message) return;
+
+        addMessage(message, 'user');
+        chatInput.value = '';
+
+        showTyping(true);
+
+        setTimeout(function() {
+            showTyping(false);
+            var response = getAIResponse(message);
+            addMessage(response, 'bot');
+        }, 600 + Math.random() * 500);
+    }
+
+    // ── Add Message ──
+    function addMessage(text, sender) {
+        var messageDiv = document.createElement('div');
+        messageDiv.className = 'chat-message ' + sender;
+
+        var bubble = document.createElement('div');
+        bubble.className = 'chat-bubble';
+        bubble.innerHTML = text;
+
+        var time = document.createElement('span');
+        time.className = 'chat-time';
+        time.textContent = getCurrentTime();
+
+        messageDiv.appendChild(bubble);
+        messageDiv.appendChild(time);
+        chatMessages.appendChild(messageDiv);
+
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    // ── Typing Indicator ──
+    function showTyping(show) {
+        var typing = document.querySelector('.chat-typing');
+        if (show) {
+            if (!typing) {
+                typing = document.createElement('div');
+                typing.className = 'chat-typing active';
+                typing.innerHTML = '<span></span><span></span><span></span>';
+                chatMessages.appendChild(typing);
+            }
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        } else {
+            if (typing) {
+                typing.remove();
+            }
+        }
+    }
+
+    // ── Get Current Time ──
+    function getCurrentTime() {
+        var now = new Date();
+        return now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    }
+
+    // ── AI Response ──
+    function getAIResponse(message) {
+        var msg = message.toLowerCase();
+
+        // Greetings
+        if (msg.match(/hi|hello|hey|sup|yo|greetings|howdy/i)) {
+            return 'Hey there! 👋 I\'m <strong>ricoswabii</strong>, your AI pal. Ask me about Rico\'s skills, experience, projects, or anything tech-related!';
+        }
+
+        // Skills
+        if (msg.match(/skill|what can|ability|know|expert|good at|talents|strengths|capabilities/i)) {
+            return 'Rico\'s core skills include:<br><br>' +
+                '• 💬 <strong>Communication</strong> — clear with tech and non-tech folks<br>' +
+                '• ⚡ <strong>Fast Learner</strong> — adapts quickly to new challenges<br>' +
+                '• 🖥️ <strong>Hardware & Software</strong> — installation, repair, troubleshooting<br>' +
+                '• 🎧 <strong>IT Support</strong> — AnyDesk, LiveChat, TeamViewer<br>' +
+                '• 🔍 <strong>Vulnerability Detection</strong> — industry-standard tools<br>' +
+                '• 🌐 <strong>Network Security</strong> — homelab monitoring & mitigation<br>' +
+                '• 🛡️ <strong>Incident Response</strong> — managing security incidents<br>' +
+                '• 🐍 <strong>Python & Bash</strong> — scripting for automation<br>' +
+                '• 📱 <strong>Social Media Mgmt</strong> — content & engagement';
+        }
+
+        // Experience
+        if (msg.match(/experience|work|job|career|employed|worked|where did|companies|positions|roles|employment|professional|background|history/i)) {
+            return 'Rico\'s experience:<br><br>' +
+                '• 🟢 <strong>Freelance TechOps Specialist</strong> (Jun 2025 – Present) — Self-Employed, Remote<br>' +
+                '• 🔴 <strong>Jr. Cybersecurity Analyst</strong> (Aug 2023 – Apr 2025) — Bunkerity, France (Remote)<br>' +
+                '• 🔵 <strong>IT Specialist</strong> (Sep 2023 – Jul 2024) — Wingo Inc, China (Remote)<br>' +
+                '• 🟡 <strong>Social Media Manager</strong> (Dec 2022 – Jun 2023) — Echonnect Digitals, Leyte';
+        }
+
+        // Projects
+        if (msg.match(/project|build|made|created|portfolio|developed|working on|github|code|program|application|tool|software|app/i)) {
+            return 'Here are Rico\'s featured projects:<br><br>' +
+                '• 🔐 <strong>CyberOps Lab</strong> — Personal homelab for offensive/defensive security research<br>' +
+                '• 📡 <strong>4SCAN Port Scanner</strong> — Python TCP scanner with threading & CIDR support<br>' +
+                '• ⏳ <strong>Project Unknown</strong> — New project in production, check back soon!';
+        }
+
+        // Certifications
+        if (msg.match(/cert|certification|credential|training|learned|study|course|accredited|diploma|badge|qualified/i)) {
+            return 'Rico\'s certifications:<br><br>' +
+                '• 🎓 <strong>CCNA</strong> — Cisco Certified Network Associate (NetAcad · Cisco)<br>' +
+                '• 🎓 <strong>CCCA</strong> — Cisco Certified CyberOps Associate (NetAcad · Cisco)<br>' +
+                '• 🎓 <strong>BTJA</strong> — Blue Team Junior Analyst (Security Blue Team)<br>' +
+                '• 🎓 <strong>SALP</strong> — SOC Analyst (LetsDefend.io)<br>' +
+                '• 🎓 <strong>ITS</strong> — IT Support Professional (Coursera · Google)<br>' +
+                '• 🎓 <strong>SMM</strong> — Social Media Marketing (DICT PH)';
+        }
+
+        // Education
+        if (msg.match(/education|school|university|college|degree|study|academic|alma mater|graduate|grad|bs|bachelor/i)) {
+            return '🎓 <strong>Eastern Visayas State University</strong><br>' +
+                '• B.S. Information Technology<br>' +
+                '• Tacloban City, Philippines · 2022';
+        }
+
+        // Tech Stack
+        if (msg.match(/tech|stack|tools|language|framework|software|os|operating system|programming|code|dev|development|environment|platform/i)) {
+            return 'Rico\'s tech stack:<br><br>' +
+                '• 💻 <strong>OS:</strong> Windows, Linux, Kali<br>' +
+                '• 🐍 <strong>Languages:</strong> Python, PHP, JavaScript, HTML5, CSS3<br>' +
+                '• ⚛️ <strong>Frameworks:</strong> React<br>' +
+                '• 🗄️ <strong>Database:</strong> MongoDB<br>' +
+                '• 🔒 <strong>Security:</strong> Wireshark, Snort, Splunk, Wazuh, Nmap, VirusTotal, MITRE ATT&CK<br>' +
+                '• ☁️ <strong>DevOps:</strong> Docker, AWS, Git, GitHub<br>' +
+                '• 🎨 <strong>Design:</strong> Figma, Canva, Photoshop, WordPress';
+        }
+
+        // Contact / Hire
+        if (msg.match(/contact|hire|email|reach|call|schedule|work together|collaborate|get in touch|message|phone|number|meeting|calling|availability|open to work|job offer|opportunity|freelance|full-time|part-time|contract/i)) {
+            return '📬 <strong>Let\'s connect!</strong><br><br>' +
+                '• 📧 <strong>Email:</strong> <a href="mailto:fornes.rico77@gmail.com" style="color:var(--cyn);text-decoration:underline;">fornes.rico77@gmail.com</a><br>' +
+                '• 📱 <strong>Phone:</strong> +63 926 064 9319<br>' +
+                '• 💼 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rico-fornes" style="color:var(--cyn);text-decoration:underline;" target="_blank">Rico Fornes</a><br>' +
+                '• 📅 <strong>Calendly:</strong> <a href="https://calendly.com/ricofornes" style="color:var(--cyn);text-decoration:underline;" target="_blank">Schedule a call</a><br><br>' +
+                '⭐ Rico is open for freelance & full-time opportunities! 🚀';
+        }
+
+        // About Rico
+        if (msg.match(/who|about|bio|yourself|what do you do|tell me about|introduce|background|story|passion|interest|hobby|why|motivation|drive/i)) {
+            return '👋 <strong>Rico Fornes</strong> is a tech enthusiast who loves learning, experimenting, and going down random tech rabbit holes. 💻🐧<br><br>' +
+                'Currently building cybersecurity skills through homelabs, hands-on projects, and breaking things just to fix them. Strengthening understanding of systems, networks, and security operations. ⚡🔐<br><br>' +
+                'Nothing too fancy—just a tech enthusiast putting in the extra effort to get better.';
+        }
+
+        // Thank you
+        if (msg.match(/thank|thanks|thx|appreciate|grateful|awesome|cool|nice|great|amazing|wonderful|fantastic|excellent|good job|well done|great work/i)) {
+            return 'You\'re welcome! 😊 I\'m glad I could help. Feel free to ask me anything else about Rico!';
+        }
+
+        // Bye
+        if (msg.match(/bye|goodbye|see you|later|cya|farewell|gotta go|leaving|exit|quit|end|stop|close/i)) {
+            return '👋 Bye! Thanks for chatting with <strong>ricoswabii</strong>! Feel free to come back anytime. Have a great day! 🌟';
+        }
+
+        // Who are you
+        if (msg.match(/who are you|what are you|your name|are you ai|are you real|what is this|whats this|chatbot|bot|assistant/i)) {
+            return '🤖 I\'m <strong>ricoswabii</strong>, a rule-based AI assistant for Rico Fornes\' portfolio website!<br><br>' +
+                'I\'m here to help answer questions about:<br>' +
+                '• Rico\'s skills & expertise<br>' +
+                '• Work experience & career<br>' +
+                '• Projects & portfolio<br>' +
+                '• Certifications & education<br>' +
+                '• Tech stack & tools<br>' +
+                '• Contact & hiring info<br><br>' +
+                'I\'m a custom-built chatbot that knows everything about Rico! 🎯';
+        }
+
+        // Default fallback
+        return '🤔 Hmm, I don\'t have a specific answer for that yet. But you can ask me about:<br><br>' +
+            '• 🎯 <strong>Skills</strong> — what Rico can do<br>' +
+            '• 💼 <strong>Experience</strong> — work history & roles<br>' +
+            '• 📁 <strong>Projects</strong> — what Rico has built<br>' +
+            '• 🎓 <strong>Certifications</strong> — training & credentials<br>' +
+            '• 🏫 <strong>Education</strong> — school & degree<br>' +
+            '• 💻 <strong>Tech Stack</strong> — tools & technologies<br>' +
+            '• 📬 <strong>Contact</strong> — how to reach Rico<br><br>' +
+            'Or just say "hi" to start a conversation! 😊';
+    }
+
+    // ── Event Listeners ──
+    chatSend.addEventListener('click', sendMessage);
+
+    chatInput.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            sendMessage();
+        }
+    });
+
+    console.log('✅ Chat bot loaded with responsive support!');
+});
