@@ -234,8 +234,11 @@ document.addEventListener("DOMContentLoaded", function () {
   var loader = document.getElementById("terminal-loader");
   if (!loader) return;
 
-  var fullText = "r1c0swab11\uD83D\uDC80portfolio:~ $ ";
-  var el = document.getElementById("termText");
+  var promptParts = [
+    { text: "ricoswabii", el: document.getElementById("termUser") },
+    { text: "@portfolio", el: document.getElementById("termHost") },
+    { text: "$ ", el: document.getElementById("termSymbol") },
+  ];
   var reduceMotion = window.matchMedia(
     "(prefers-reduced-motion: reduce)",
   ).matches;
@@ -253,23 +256,38 @@ document.addEventListener("DOMContentLoaded", function () {
     );
   }
 
-  if (reduceMotion) {
-    el.textContent = fullText;
+  function showPrompt() {
+    promptParts.forEach(function (part) {
+      part.el.textContent = part.text;
+    });
     finish();
+  }
+
+  if (reduceMotion) {
+    showPrompt();
     return;
   }
 
-  var i = 0;
-  function type() {
-    if (i < fullText.length) {
-      el.textContent += fullText.charAt(i);
-      i++;
-      setTimeout(type, 55);
-    } else {
+  var partIndex = 0;
+  var characterIndex = 0;
+  function typeNextCharacter() {
+    if (partIndex >= promptParts.length) {
       finish();
+      return;
     }
+
+    var part = promptParts[partIndex];
+    part.el.textContent += part.text.charAt(characterIndex);
+    characterIndex += 1;
+
+    if (characterIndex >= part.text.length) {
+      partIndex += 1;
+      characterIndex = 0;
+    }
+    setTimeout(typeNextCharacter, 90);
   }
-  type();
+
+  typeNextCharacter();
 })();
 
 /* ═══════════════════════════════════════════════════════════════
@@ -704,6 +722,68 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
       html.classList.remove("theme-transitioning");
     }, 700);
+  });
+})();
+
+/* ══ RICOSWABII CHATBOX ══ */
+(function () {
+  var widget = document.getElementById("chat-widget");
+  var toggle = document.getElementById("chat-toggle");
+  var close = document.getElementById("chat-close");
+  var box = document.getElementById("chat-box");
+  var form = document.getElementById("chat-form");
+  var input = document.getElementById("chat-input");
+  var messages = document.getElementById("chat-messages");
+
+  if (!widget || !toggle || !close || !box || !form || !input || !messages) return;
+
+  var replies = [
+    { keys: ["hello", "hi", "hey"], text: "Hey! Welcome to ricoswabii's corner of the web." },
+    { keys: ["project", "work", "portfolio"], text: "You can explore my projects from the Projects page. I build practical web, homelab, and automation projects." },
+    { keys: ["skill", "tech", "stack"], text: "My stack includes HTML, CSS, JavaScript, Linux, networking, homelab tools, and automation." },
+    { keys: ["contact", "email", "hire"], text: "You can reach Rico at fornes.rico77@gmail.com." },
+    { keys: ["about", "who"], text: "I'm ricoswabii — Rico Fornes. Check the Experience and Logs pages to learn more." }
+  ];
+
+  function setOpen(open) {
+    widget.classList.toggle("open", open);
+    toggle.setAttribute("aria-expanded", String(open));
+    box.setAttribute("aria-hidden", String(!open));
+    if (open) window.setTimeout(function () { input.focus(); }, 120);
+  }
+
+  function addMessage(text, type) {
+    var message = document.createElement("div");
+    message.className = "chat-message " + type;
+    message.textContent = text;
+    messages.appendChild(message);
+    messages.scrollTop = messages.scrollHeight;
+  }
+
+  function getReply(text) {
+    var normalized = text.toLowerCase();
+    for (var i = 0; i < replies.length; i++) {
+      for (var j = 0; j < replies[i].keys.length; j++) {
+        if (normalized.indexOf(replies[i].keys[j]) !== -1) return replies[i].text;
+      }
+    }
+    return "Thanks for your message! Try asking about my projects, skills, experience, or contact details.";
+  }
+
+  toggle.addEventListener("click", function () {
+    setOpen(!widget.classList.contains("open"));
+  });
+  close.addEventListener("click", function () { setOpen(false); });
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    var text = input.value.trim();
+    if (!text) return;
+    addMessage(text, "user");
+    input.value = "";
+    window.setTimeout(function () { addMessage(getReply(text), "bot"); }, 350);
+  });
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" && widget.classList.contains("open")) setOpen(false);
   });
 })();
 

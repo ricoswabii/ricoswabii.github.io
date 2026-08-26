@@ -18,25 +18,22 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
     />
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
-      href="https://fonts.googleapis.com/css2?family=Bungee&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Press+Start+2P&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-      rel="stylesheet"
-    />
-
     <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body>
+    <div id="scrollProgress"></div>
     <header class="topnav">
       <div class="topnav-inner">
         <a href="index.html" class="topnav-logo"
-          >R<span class="tn-accent">F</span></a>
+          ><span class="nm-pur">R</span><span class="nm-cyn">F</span></a
+        >
         <nav class="topnav-links">
           <a href="experience.html">Experience</a>
           <a href="projects.html">Projects</a>
@@ -51,64 +48,28 @@
         </button>
       </div>
     </header>
-
-    <div id="terminal-loader">
-      <div class="term-box">
-        <span class="term-text" id="termText"></span
-        ><span class="term-cursor" id="termCursor">_</span>
+    <div id="terminal-loader" role="status" aria-label="Loading portfolio">
+      <div class="linux-prompt" aria-hidden="true">
+        <span class="term-user" id="termUser"></span
+        ><span class="term-host" id="termHost"></span
+        ><span class="term-symbol" id="termSymbol"></span
+        ><span class="term-cursor" id="termCursor"></span>
       </div>
     </div>
-
     <div class="bg-canvas">
-      <div class="bg-image"></div>
-
+      <div class="dots-bg"></div>
       <div class="orb orb1"></div>
       <div class="orb orb2"></div>
       <div class="orb orb3"></div>
       <div class="orb orb4"></div>
-      <div class="orb orb5"></div>
-      <div class="orb orb6"></div>
-      <div class="dots-bg"></div>
     </div>
-
     <div class="page">
-      <!-- ══ HERO ══ -->
-      <div class="hero">
-        <div>
-          <div class="hero-name">
+      <!-- ══ HERO BENTO CARD ══ -->
+      <section class="hero" id="section-hero">
+        <div class="hero-main-col">
+          <h1 class="hero-name">
             Rico<br /><span class="nm-p">For</span><span class="nm-c">nes</span>
-          </div>
-          <div class="social-row">
-            <!--<a href="https://github.com/ricoswabii" class="social-icon" aria-label="GitHub">
-                    <i class="ti ti-brand-github"></i>
-                </a>-->
-            <a
-              href="https://www.linkedin.com/in/rico-fornes"
-              class="social-icon"
-              aria-label="LinkedIn"
-            >
-              <i class="ti ti-brand-linkedin"></i>
-            </a>
-            <a
-              href="mailto:fornes.rico77@gmail.com"
-              class="social-icon"
-              aria-label="Email"
-            >
-              <i class="ti ti-mail" aria-hidden="true"></i>
-            </a>
-            <a
-              href="https://tryhackme.com/p/r1c0swab1"
-              class="social-icon"
-              aria-label="TryHackMe"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="ti ti-terminal-2"></i>
-            </a>
-            <!--<a href="assets/RESUME-RTF-2026.pdf" class="social-icon" aria-label="Download Resume" download>
-          <i class="ti ti-file-download" aria-hidden="true"></i>
-              </a> -->
-          </div>
+          </h1>
           <div class="hero-tags">
             <span class="pill-btn pb-red"
               ><span class="dot"></span>Cybersecurity Enthusiast</span
@@ -116,7 +77,6 @@
             <span class="pill-btn pb-ylw"
               ><span class="dot"></span>IT Specialist</span
             >
-            <span class="pill-btn pb-grn"><span class="dot"></span>SMM</span>
           </div>
           <div class="hero-bio">
             <p>
@@ -124,43 +84,59 @@
               random tech rabbit holes. 💻🐧
             </p>
             <p>
-              Currently building my cybersecurity skills through homelabs,
-              hands-on projects, and plenty of breaking things just to fix them.
-              Along the way, I’m strengthening my understanding of systems,
-              networks, and security operations.
-            </p>
-            <br />
-            <p>
-              Nothing too fancy—just a tech enthusiast putting in the extra
-              effort to get better. ⚡🔐
+              Currently sharpening my Cybersecurity and TechOps skills through
+              homelabs, hands-on projects, and plenty of breaking things just to
+              learn how to fix them. Along the way, I’m building a stronger
+              foundation in systems, networking, infrastructure, automation, and
+              security operations. ⚡🔐
             </p>
           </div>
           <div class="info-row">
             <div class="info-chip">
-              <i
-                class="ti ti-map-pin"
-                style="color: var(--red)"
-                aria-hidden="true"
-              ></i
-              >Alangalang, Leyte 🇵🇭
+              <i class="ti ti-map-pin" style="color: var(--red)"></i>Alangalang,
+              Leyte 🇵🇭
             </div>
             <div class="info-chip">
-              <i
-                class="ti ti-circle-check"
-                style="color: var(--cyn)"
-                aria-hidden="true"
-              ></i
-              >Freelance Active
+              <i class="ti ti-briefcase" style="color: var(--blu)"></i>Freelance
+              Active
             </div>
           </div>
+          <div class="social-row">
+            <a
+              href="https://github.com/ricoswabii"
+              class="social-icon"
+              aria-label="GitHub"
+              target="_blank"
+              rel="noopener"
+              ><i class="ti ti-brand-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/rico-fornes"
+              class="social-icon"
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener"
+              ><i class="ti ti-brand-linkedin"></i
+            ></a>
+            <a
+              href="mailto:fornes.rico77@gmail.com"
+              class="social-icon"
+              aria-label="Email"
+              ><i class="ti ti-mail"></i
+            ></a>
+            <a
+              href="https://tryhackme.com/p/r1c0swab1"
+              class="social-icon"
+              aria-label="TryHackMe"
+              target="_blank"
+              rel="noopener"
+              ><i class="ti ti-cloud-snow"></i
+            ></a>
+          </div>
         </div>
-
         <div class="avatar-col">
           <div class="ava-frame ava-frame-enhanced">
-            <!-- Frame tag -->
             <div class="ava-frame-tag">✦ r1c0swab11 ✦</div>
-
-            <!-- Photo with overlay -->
             <div class="ava-photo-wrap">
               <img
                 class="ava-photo"
@@ -173,185 +149,219 @@
                 <span class="status-badge">● Online</span>
               </div>
             </div>
-
-            <!-- HP Bar -->
             <div class="ava-hp"><div class="ava-hp-fill"></div></div>
-
-            <!-- Stats -->
             <div class="ava-stats">
               <div class="ava-stat">
-                <span class="stat-number">12</span>
-                <span class="stat-label">Projects</span>
+                <span class="stat-number">5+</span
+                ><span class="stat-label">Projects</span>
               </div>
               <div class="ava-stat-divider"></div>
               <div class="ava-stat">
-                <span class="stat-number">4</span>
-                <span class="stat-label">Certs</span>
+                <span class="stat-number">4</span
+                ><span class="stat-label">Certs</span>
               </div>
               <div class="ava-stat-divider"></div>
               <div class="ava-stat">
-                <span class="stat-number">3+</span>
-                <span class="stat-label">Years</span>
+                <span class="stat-number">3+</span
+                ><span class="stat-label">Years</span>
               </div>
             </div>
           </div>
-          <!--
-    <span class="pill-btn pb-grn" style="font-size:10px;">
-        <span class="dot" style="animation:pulse 2s ease-in-out infinite;"></span>Online
-    </span> -->
         </div>
-      </div>
+      </section>
 
-      <div class="section" id="section-techstack">
+      <!-- ══ FEATURED PROJECT ══ -->
+      <section class="section" id="section-featured">
         <div class="sec-bar">
-          <span class="sec-tag st-pur">Tech Stack</span>
+          <span class="sec-tag st-red">FEATURED BUILD</span>
           <div class="sec-line"></div>
-          <span class="sec-count">02</span>
+          <span class="sec-count">Spotlight</span>
         </div>
 
-        <!-- Floating Tech Carousel -->
-        <div class="tech-carousel-wrap">
-          <div class="tech-carousel-track" id="techTrack">
-            <!-- OS & Shell -->
-            <div class="tech-chip">
-              <i class="ti ti-brand-windows"></i> Windows
+        <div class="featured-build-card">
+          <div class="fb-grid">
+            <div class="fb-img-wrap">
+              <img src="assets/img/cyberops1.png" alt="CyberOps Lab" />
             </div>
-            <div class="tech-chip"><i class="ti ti-brand-linux"></i> Linux</div>
-            <div class="tech-chip"><i class="ti ti-terminal"></i> Bash</div>
-            <div class="tech-chip">
-              <i class="ti ti-terminal-2"></i> PowerShell
-            </div>
-
-            <!-- Languages -->
-            <div class="tech-chip">
-              <i class="ti ti-brand-python"></i> Python
-            </div>
-            <div class="tech-chip"><i class="ti ti-brand-php"></i> PHP</div>
-            <div class="tech-chip"><i class="ti ti-brand-html5"></i> HTML5</div>
-            <div class="tech-chip"><i class="ti ti-brand-css3"></i> CSS3</div>
-            <div class="tech-chip">
-              <i class="ti ti-brand-javascript"></i> Javascript
-            </div>
-            <div class="tech-chip"><i class="ti ti-brand-react"></i> React</div>
-            <div class="tech-chip">
-              <i class="ti ti-brand-mongodb"></i> MongoDB
-            </div>
-            <div class="tech-chip">
-              <i class="ti ti-brand-vscode"></i> Vscode
-            </div>
-
-            <!-- Security & Networking -->
-            <div class="tech-chip">
-              <i class="ti ti-brand-minecraft"></i> VirtualBox
-            </div>
-            <div class="tech-chip"><i class="ti ti-broadcast"></i> Cisco</div>
-            <div class="tech-chip"><i class="ti ti-wifi"></i> Wireshark</div>
-            <div class="tech-chip">
-              <i class="ti ti-brand-elastic"></i> Elasticsearch
-            </div>
-            <div class="tech-chip"><i class="ti ti-shield"></i> Snort</div>
-            <div class="tech-chip">
-              <i class="ti ti-brand-letter-s-small"></i> Splunk
-            </div>
-            <div class="tech-chip"><i class="ti ti-shield"></i> Wazuh</div>
-            <div class="tech-chip"><i class="ti ti-scan"></i> Nmap</div>
-            <div class="tech-chip"><i class="ti ti-virus"></i> VirusTotal</div>
-            <div class="tech-chip">
-              <i class="ti ti-user-search"></i> MITRE ATT&amp;CK&reg;
-            </div>
-            <div class="tech-chip">
-              <i class="ti ti-brand-windows"></i> Active Directory
-            </div>
-
-            <!-- Version Control -->
-            <div class="tech-chip">
-              <i class="ti ti-brand-github"></i> GitHub
-            </div>
-            <div class="tech-chip"><i class="ti ti-brand-git"></i> Git</div>
-
-            <!-- Design & Marketing -->
-            <div class="tech-chip">
-              <i class="ti ti-brand-wordpress"></i> WordPress
-            </div>
-            <div class="tech-chip"><i class="ti ti-brand-figma"></i> Figma</div>
-            <div class="tech-chip">
-              <i class="ti ti-brand-palette"></i> Canva
-            </div>
-            <div class="tech-chip">
-              <i class="ti ti-brand-photoshop"></i> Photoshop
-            </div>
-
-            <!-- Duplicate for seamless loop -->
-            <div class="tech-chip">
-              <i class="ti ti-brand-windows"></i> Windows
-            </div>
-            <div class="tech-chip"><i class="ti ti-brand-linux"></i> Linux</div>
-            <div class="tech-chip"><i class="ti ti-terminal"></i> Bash</div>
-            <div class="tech-chip">
-              <i class="ti ti-terminal-2"></i> PowerShell
-            </div>
-            <div class="tech-chip">
-              <i class="ti ti-brand-python"></i> Python
-            </div>
-            <div class="tech-chip"><i class="ti ti-brand-php"></i> PHP</div>
-            <div class="tech-chip"><i class="ti ti-brand-html5"></i> HTML5</div>
-            <div class="tech-chip"><i class="ti ti-brand-css3"></i> CSS3</div>
-            <div class="tech-chip">
-              <i class="ti ti-brand-javascript"></i> Javascript
-            </div>
-            <div class="tech-chip"><i class="ti ti-brand-react"></i> React</div>
-            <div class="tech-chip">
-              <i class="ti ti-brand-mongodb"></i> MongoDB
-            </div>
-            <div class="tech-chip">
-              <i class="ti ti-brand-vscode"></i> Vscode
-            </div>
-            <div class="tech-chip">
-              <i class="ti ti-brand-minecraft"></i> VirtualBox
-            </div>
-            <div class="tech-chip"><i class="ti ti-brand-cisco"></i> Cisco</div>
-            <div class="tech-chip"><i class="ti ti-wifi"></i> Wireshark</div>
-            <div class="tech-chip">
-              <i class="ti ti-brand-elastic"></i> Elasticsearch
-            </div>
-            <div class="tech-chip"><i class="ti ti-shield"></i> Snort</div>
-            <div class="tech-chip">
-              <i class="ti ti-brand-letter-s-small"></i> Splunk
-            </div>
-            <div class="tech-chip"><i class="ti ti-shield"></i> Wazuh</div>
-            <div class="tech-chip"><i class="ti ti-scan"></i> Nmap</div>
-            <div class="tech-chip"><i class="ti ti-virus"></i> VirusTotal</div>
-            <div class="tech-chip">
-              <i class="ti ti-matrix"></i> MITRE ATT&amp;CK&reg;
-            </div>
-            <div class="tech-chip">
-              <i class="ti ti-brand-windows"></i> Active Directory
-            </div>
-            <div class="tech-chip">
-              <i class="ti ti-brand-github"></i> GitHub
-            </div>
-            <div class="tech-chip"><i class="ti ti-brand-git"></i> Git</div>
-            <div class="tech-chip">
-              <i class="ti ti-brand-wordpress"></i> WordPress
-            </div>
-            <div class="tech-chip"><i class="ti ti-brand-figma"></i> Figma</div>
-            <div class="tech-chip">
-              <i class="ti ti-brand-palette"></i> Canva
-            </div>
-            <div class="tech-chip">
-              <i class="ti ti-brand-photoshop"></i> Photoshop
+            <div class="fb-info">
+              <span class="fb-tag">FEATURED BUILD</span>
+              <h2 class="fb-title">
+                CyberOps Lab: Build. Break. Detect. Defend.
+              </h2>
+              <p class="fb-desc">
+                Personal homelab environment built for offensive and defensive
+                security research.
+              </p>
+              <div
+                class="fb-tech-tags"
+                aria-label="Featured lab technology icons"
+              >
+                <span class="pill-btn pb-red" title="SIEM" aria-label="SIEM"
+                  ><i class="ti ti-activity"></i
+                ></span>
+                <span
+                  class="pill-btn pb-pur"
+                  title="Arch Linux"
+                  aria-label="Arch Linux"
+                  ><span
+                    class="iconify"
+                    data-icon="simple-icons:archlinux"
+                  ></span
+                ></span>
+                <span
+                  class="pill-btn pb-cyn"
+                  title="Kali Linux"
+                  aria-label="Kali Linux"
+                  ><span
+                    class="iconify"
+                    data-icon="simple-icons:kalilinux"
+                  ></span
+                ></span>
+                <span
+                  class="pill-btn pb-blu"
+                  title="Windows"
+                  aria-label="Windows"
+                  ><span class="iconify" data-icon="simple-icons:windows"></span
+                ></span>
+                <span class="pill-btn pb-grn" title="Splunk" aria-label="Splunk"
+                  ><span class="iconify" data-icon="simple-icons:splunk"></span
+                ></span>
+                <span class="pill-btn pb-red" title="Wazuh" aria-label="Wazuh"
+                  ><span class="iconify" data-icon="selfhst:wazuh"></span
+                ></span>
+                <span
+                  class="pill-btn pb-blu"
+                  title="Wireshark"
+                  aria-label="Wireshark"
+                  ><span
+                    class="iconify"
+                    data-icon="simple-icons:wireshark"
+                  ></span
+                ></span>
+                <span class="pill-btn pb-pnk" title="Sysmon" aria-label="Sysmon"
+                  ><span
+                    class="iconify"
+                    data-icon="simple-icons:microsoft"
+                  ></span
+                ></span>
+                <span
+                  class="pill-btn pb-cyn"
+                  title="pfSense"
+                  aria-label="pfSense"
+                  ><i class="ti ti-router"></i
+                ></span>
+                <span
+                  class="pill-btn pb-ylw"
+                  title="Elasticsearch"
+                  aria-label="Elasticsearch"
+                  ><i class="ti ti-search"></i
+                ></span>
+              </div>
+              <a href="projects.html" class="fb-cta"
+                >Read case study <i class="ti ti-arrow-right"></i
+              ></a>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <!-- ══ SKILLS ══ -->
+      <!-- ══ 01 / SKILLS & TECH STACK ══ -->
+      <section class="section" id="section-techstack">
+        <div class="sec-bar">
+          <span class="sec-tag st-pur">01 / SKILLS & TECH STACK</span>
+          <div class="sec-line"></div>
+          <span class="sec-count">Tools & Frameworks</span>
+        </div>
+        <div class="tech-marquee-wrapper" style="margin-bottom: 1.75rem">
+          <div class="tech-marquee-row">
+            <div class="tech-marquee-track track-left">
+              <div class="tech-chip">
+                <i class="ti ti-brand-windows"></i> Windows
+              </div>
+              <div class="tech-chip">
+                <i class="ti ti-terminal-2"></i> Linux
+              </div>
+              <div class="tech-chip">
+                <i class="ti ti-prompt"></i> Bash Scripting
+              </div>
+              <div class="tech-chip">
+                <i class="ti ti-brand-powershell"></i> PowerShell
+              </div>
+              <div class="tech-chip">
+                <i class="ti ti-brand-python"></i> Python
+              </div>
+              <div class="tech-chip"><i class="ti ti-brand-php"></i> PHP</div>
+              <div class="tech-chip">
+                <i class="ti ti-brand-html5"></i> HTML5
+              </div>
+              <div class="tech-chip"><i class="ti ti-brand-css3"></i> CSS3</div>
+              <div class="tech-chip">
+                <i class="ti ti-brand-javascript"></i> JavaScript
+              </div>
+              <div class="tech-chip">
+                <i class="ti ti-brand-react"></i> React
+              </div>
+              <div class="tech-chip">
+                <i class="ti ti-brand-mongodb"></i> MongoDB
+              </div>
+              <div class="tech-chip">
+                <i class="ti ti-brand-vscode"></i> VS Code
+              </div>
+              <div class="tech-chip">
+                <i class="ti ti-brand-windows"></i> Windows OS
+              </div>
+              <div class="tech-chip">
+                <i class="ti ti-terminal-2"></i> Linux OS
+              </div>
+              <div class="tech-chip">
+                <i class="ti ti-prompt"></i> Bash Scripting
+              </div>
+              <div class="tech-chip">
+                <i class="ti ti-brand-powershell"></i> PowerShell
+              </div>
+              <div class="tech-chip">
+                <i class="ti ti-brand-python"></i> Python
+              </div>
+            </div>
+          </div>
+          <div class="tech-marquee-row">
+            <div class="tech-marquee-track track-right">
+              <div class="tech-chip"><i class="ti ti-box"></i> VirtualBox</div>
+              <div class="tech-chip">
+                <i class="ti ti-router"></i> Cisco Networking
+              </div>
+              <div class="tech-chip">
+                <i class="ti ti-network"></i> Wireshark
+              </div>
+              <div class="tech-chip">
+                <i class="ti ti-search"></i> Elasticsearch
+              </div>
+              <div class="tech-chip"><i class="ti ti-radar"></i> Snort IDS</div>
+              <div class="tech-chip"><i class="ti ti-activity"></i> Splunk</div>
+              <div class="tech-chip">
+                <i class="ti ti-shield-check"></i> Wazuh SIEM
+              </div>
+              <div class="tech-chip"><i class="ti ti-scan"></i> Nmap</div>
+              <div class="tech-chip"><i class="ti ti-bug"></i> VirusTotal</div>
+              <div class="tech-chip">
+                <i class="ti ti-sword"></i> MITRE ATT&CK®
+              </div>
+              <div class="tech-chip">
+                <i class="ti ti-users"></i> Active Directory
+              </div>
+              <div class="tech-chip"><i class="ti ti-brand-git"></i> Git</div>
+              <div class="tech-chip">
+                <i class="ti ti-brand-github"></i> GitHub
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+          <!-- ══ SKILLS ══ -->
       <div class="section" id="section-skills">
-        <div class="sec-bar">
-          <span class="sec-tag st-cyn">Skills</span>
-          <div class="sec-line"></div>
-          <span class="sec-count">03</span>
-        </div>
+     
         <div class="skills-grid">
           <div class="sk-card sk-c-red">
             <div class="sk-ico ico-red">
@@ -452,629 +462,397 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      <!-- ══ EXPERIENCE ══ -->
-      <div class="section" id="section-experience">
-        <div class="sec-bar">
-          <span class="sec-tag st-ylw">Experience</span>
-          <div class="sec-line"></div>
-          <span class="sec-count">04</span>
-        </div>
-
-        <!-- Experience Header with "View full details" on the right -->
-        <div class="exp-header-row">
-          <h3 class="exp-header-title">
-            <i class="ti ti-briefcase"></i>
-            Career Timeline
-          </h3>
-          <a href="experience.html" class="view-details-link">
-            View full details <i class="ti ti-arrow-right"></i>
-          </a>
-        </div>
-
-        <div class="tl">
-          <!-- Freelance - Remote -->
-          <div class="tl-item" style="--c: var(--grn)">
-            <div class="tl-date">Present<br />Jun 2025</div>
-            <div class="tl-spine">
-              <div
-                class="tl-dot"
-                style="background: var(--grn); color: var(--grn)"
-              ></div>
-              <div class="tl-line"></div>
-            </div>
-            <div class="tl-body">
-              <div class="exp-card" style="border-left: 2px solid #4ade8055">
-                <div class="tl-date-m">Jun 2025 – Present</div>
-                <div class="exp-role">Freelance TechOps Specialist</div>
-
-                <div
-                  class="exp-co-row"
-                  style="
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    flex-wrap: wrap;
-                    gap: 6px;
-                  "
-                >
-                  <span
-                    class="pill-btn pb-grn"
-                    style="font-size: 10px; padding: 3px 10px 3px 7px"
-                  >
-                    <span
-                      class="dot"
-                      style="
-                        width: 7px;
-                        height: 7px;
-                        animation: pulse 2s ease-in-out infinite;
-                      "
-                    ></span
-                    >Self-Employed
-                  </span>
-                  <span
-                    style="
-                      font-size: 10px;
-                      color: var(--muted);
-                      font-family: &quot;JetBrains Mono&quot;, monospace;
-                      letter-spacing: 0.5px;
-                    "
-                  >
-                    <i
-                      class="ti ti-map-pin"
-                      style="font-size: 11px; margin-right: 2px"
-                    ></i>
-                    Remote | WFH
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- BunkerWeb - Remote -->
-          <div class="tl-item" style="--c: var(--red)">
-            <div class="tl-date">Apr 2025<br />Aug 2023</div>
-            <div class="tl-spine">
-              <div
-                class="tl-dot"
-                style="background: var(--red); color: var(--red)"
-              ></div>
-              <div class="tl-line"></div>
-            </div>
-            <div class="tl-body">
-              <div class="exp-card" style="border-left: 2px solid #f8717155">
-                <div class="tl-date-m">Aug 2023 – Apr 2025</div>
-                <div class="exp-role">Jr. Cybersecurity Analyst</div>
-
-                <div
-                  class="exp-co-row"
-                  style="
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    flex-wrap: wrap;
-                    gap: 6px;
-                  "
-                >
-                  <span
-                    class="pill-btn pb-red"
-                    style="font-size: 10px; padding: 3px 10px 3px 7px"
-                  >
-                    <span class="dot" style="width: 7px; height: 7px"></span
-                    >Bunkerity
-                  </span>
-                  <span
-                    style="
-                      font-size: 10px;
-                      color: var(--muted);
-                      font-family: &quot;JetBrains Mono&quot;, monospace;
-                      letter-spacing: 0.5px;
-                    "
-                  >
-                    <i
-                      class="ti ti-map-pin"
-                      style="font-size: 11px; margin-right: 2px"
-                    ></i>
-                    France | Remote
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Wingo Inc - China -->
-          <div class="tl-item" style="--c: var(--blu)">
-            <div class="tl-date">Jul 2024<br />Sep 2023</div>
-            <div class="tl-spine">
-              <div
-                class="tl-dot"
-                style="background: var(--blu); color: var(--blu)"
-              ></div>
-              <div class="tl-line"></div>
-            </div>
-            <div class="tl-body">
-              <div class="exp-card" style="border-left: 2px solid #60a5fa55">
-                <div class="tl-date-m">Sep 2023 – Jul 2024</div>
-                <div class="exp-role">IT Specialist</div>
-
-                <div
-                  class="exp-co-row"
-                  style="
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    flex-wrap: wrap;
-                    gap: 6px;
-                  "
-                >
-                  <span
-                    class="pill-btn pb-blu"
-                    style="font-size: 10px; padding: 3px 10px 3px 7px"
-                  >
-                    <span class="dot" style="width: 7px; height: 7px"></span
-                    >Wingo Inc
-                  </span>
-                  <span
-                    style="
-                      font-size: 10px;
-                      color: var(--muted);
-                      font-family: &quot;JetBrains Mono&quot;, monospace;
-                      letter-spacing: 0.5px;
-                    "
-                  >
-                    <i
-                      class="ti ti-map-pin"
-                      style="font-size: 11px; margin-right: 2px"
-                    ></i>
-                    China | Remote
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Social Media Manager - LEYTE -->
-          <div class="tl-item" style="--c: var(--ylw)">
-            <div class="tl-date">Jun 2023<br />Dec 2022</div>
-            <div class="tl-spine">
-              <div
-                class="tl-dot"
-                style="background: var(--ylw); color: var(--ylw)"
-              ></div>
-              <div class="tl-line"></div>
-            </div>
-            <div class="tl-body">
-              <div class="exp-card" style="border-left: 2px solid #fbbf2455">
-                <div class="tl-date-m">Dec 2022 – Jun 2023</div>
-                <div class="exp-role">Social Media Manager</div>
-
-                <div
-                  class="exp-co-row"
-                  style="
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    flex-wrap: wrap;
-                    gap: 6px;
-                  "
-                >
-                  <span
-                    class="pill-btn pb-ylw"
-                    style="font-size: 10px; padding: 3px 10px 3px 7px"
-                  >
-                    <span class="dot" style="width: 7px; height: 7px"></span
-                    >Echonnect Digitals
-                  </span>
-                  <span
-                    style="
-                      font-size: 10px;
-                      color: var(--muted);
-                      font-family: &quot;JetBrains Mono&quot;, monospace;
-                      letter-spacing: 0.5px;
-                    "
-                  >
-                    <i
-                      class="ti ti-map-pin"
-                      style="font-size: 11px; margin-right: 2px"
-                    ></i>
-                    Leyte, Philippines
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- ══ EDUCATION ══ -->
-      <div class="section" id="section-education">
-        <div class="sec-bar">
-          <span class="sec-tag st-pnk">Education</span>
-          <div class="sec-line"></div>
-          <span class="sec-count">05</span>
-        </div>
-        <div class="glass-card" style="padding: 20px 22px">
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              gap: 14px;
-              margin-bottom: 18px;
-            "
-          >
-            <div
-              style="
-                width: 46px;
-                height: 46px;
-                border-radius: 13px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background: #a78bfa15;
-                border: 1px solid #a78bfa33;
-              "
-            >
-              <i
-                class="ti ti-school"
-                style="font-size: 22px; color: var(--pnk)"
-                aria-hidden="true"
-              ></i>
+          
+          <div class="sk-card sk-c-cyn">
+            <div class="sk-ico ico-cyn">
+              <i class="ti ti-device-laptop" aria-hidden="true"></i>
             </div>
             <div>
-              <div style="font-size: 15px; font-weight: 600; color: var(--txt)">
-                Eastern Visayas State University
-              </div>
-              <div style="font-size: 13px; color: var(--muted2)">
-                B.S. Information Technology
-              </div>
-              <div style="font-size: 12px; color: var(--muted)">
-                Tacloban City, Philippines · 2022
+              <div class="sk-name">QA Testing</div>
+              <div class="sk-desc">
+              Test websites and mobile apps to find software bugs. 
               </div>
             </div>
           </div>
-          <div
-            style="
-              font-family: &quot;JetBrains Mono&quot;, monospace;
-              font-size: 12px;
-              letter-spacing: 3px;
-              color: var(--muted);
-              margin-bottom: 10px;
-            "
-          >
-            TRAINING & CERTIFICATIONS
+        </div>
+      </div>
+      </section>
+
+
+      <!-- ══ 02 / EXPERIENCE ══ -->
+      <section class="section" id="section-experience">
+        <div class="sec-bar">
+          <span class="sec-tag st-grn">02 / EXPERIENCE</span>
+          <div class="sec-line"></div>
+          <a href="experience.html" class="view-details-link"
+            >View Full Details <i class="ti ti-arrow-right"></i
+          ></a>
+        </div>
+        <div class="exp-timeline">
+          <!-- Timeline Item 1: Freelance TechOps Specialist -->
+          <div class="exp-tl-item" style="--tl-color: var(--grn)">
+            <div class="exp-tl-marker">
+              <div class="exp-tl-dot"></div>
+              <div class="exp-tl-pulse"></div>
+            </div>
+            <div class="exp-tl-date">Jun 2025 – Present</div>
+            <div class="exp-tl-content">
+              <div class="exp-tl-card">
+                <div class="exp-tl-header">
+                  <h3 class="exp-tl-role">Freelance TechOps Specialist</h3>
+                  <span class="exp-tl-badge badge-grn">Current</span>
+                </div>
+                <div class="exp-tl-meta">
+                  <span class="exp-tl-company">Self-Employed</span>
+                  <span class="exp-tl-setup"
+                    ><i class="ti ti-home"></i> Remote | WFH</span
+                  >
+                </div>
+              </div>
+            </div>
           </div>
+
+          <!-- Timeline Item 2: Jr. Cybersecurity Analyst -->
+          <div class="exp-tl-item" style="--tl-color: var(--red)">
+            <div class="exp-tl-marker">
+              <div class="exp-tl-dot"></div>
+            </div>
+            <div class="exp-tl-date">Aug 2023 – Apr 2025</div>
+            <div class="exp-tl-content">
+              <div class="exp-tl-card">
+                <div class="exp-tl-header">
+                  <h3 class="exp-tl-role">Jr. Cybersecurity Associate</h3>
+                  <span class="exp-tl-badge badge-red">Fixed-Term</span>
+                </div>
+                <div class="exp-tl-meta">
+                  <span class="exp-tl-company">Bunkerity</span>
+                  <span class="exp-tl-setup"
+                    ><i class="ti ti-map-pin"></i> France | Remote</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: IT Specialist -->
+          <div class="exp-tl-item" style="--tl-color: var(--blu)">
+            <div class="exp-tl-marker">
+              <div class="exp-tl-dot"></div>
+            </div>
+            <div class="exp-tl-date">Sep 2023 – Jul 2024</div>
+            <div class="exp-tl-content">
+              <div class="exp-tl-card">
+                <div class="exp-tl-header">
+                  <h3 class="exp-tl-role">IT Specialist</h3>
+                  <span class="exp-tl-badge badge-blu">Fixed-Term</span>
+                </div>
+                <div class="exp-tl-meta">
+                  <span class="exp-tl-company">Wingo Inc</span>
+                  <span class="exp-tl-setup"
+                    ><i class="ti ti-map-pin"></i> China | Remote</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 4: Social Media Manager -->
+          <div class="exp-tl-item" style="--tl-color: var(--pnk)">
+            <div class="exp-tl-marker">
+              <div class="exp-tl-dot"></div>
+            </div>
+            <div class="exp-tl-date">Dec 2022 – Jun 2023</div>
+            <div class="exp-tl-content">
+              <div class="exp-tl-card">
+                <div class="exp-tl-header">
+                  <h3 class="exp-tl-role">Social Media Manager</h3>
+                  <span class="exp-tl-badge badge-pnk">Freelance</span>
+                </div>
+                <div class="exp-tl-meta">
+                  <span class="exp-tl-company">Echonnect Digitals</span>
+                  <span class="exp-tl-setup"
+                    ><i class="ti ti-building"></i> Leyte Philippines</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ══ 03 / EDUCATION & CERTIFICATIONS ══ -->
+      <section class="section" id="section-education">
+        <div class="sec-bar">
+          <span class="sec-tag st-ylw">03 / EDUCATION</span>
+          <div class="sec-line"></div>
+          <span class="sec-count">Degree & Certs</span>
+        </div>
+        <div class="edu-card">
+          <div class="edu-header">
+            <div class="edu-icon"><i class="ti ti-school"></i></div>
+            <div>
+              <div class="edu-degree">B.S. Information Technology</div>
+              <div class="edu-school">Eastern Visayas State University</div>
+              <div class="edu-meta">
+                Tacloban City, Philippines · Graduated 2022
+              </div>
+            </div>
+          </div>
+          <div class="cert-title">TRAINING & CERTIFICATIONS</div>
           <div class="cert-grid">
-            <div class="cert-row">
-              <span
-                class="pill-btn pb-cyn"
-                style="font-size: 9px; padding: 2px 8px 2px 6px; flex-shrink: 0"
-                ><span class="dot" style="width: 6px; height: 6px"></span
-                >CCNA</span
-              >
+            <div class="cert-item">
+              <span class="pill-btn pb-cyn">CCNA</span>
               <div>
                 <div class="cert-name">Cisco Certified Network Associate</div>
-                <div class="cert-by">NetAcad · Cisco · </div>
+                <div class="cert-issuer">NetAcad · Cisco</div>
               </div>
             </div>
-            <div class="cert-row">
-              <span
-                class="pill-btn pb-cyn"
-                style="font-size: 9px; padding: 2px 8px 2px 6px; flex-shrink: 0"
-                ><span class="dot" style="width: 6px; height: 6px"></span
-                >CCCA</span
-              >
+            <div class="cert-item">
+              <span class="pill-btn pb-cyn">CCCA</span>
               <div>
                 <div class="cert-name">Cisco Certified CyberOps Associate</div>
-                <div class="cert-by">NetAcad · Cisco · </div>
+                <div class="cert-issuer">NetAcad · Cisco</div>
               </div>
             </div>
-            <div class="cert-row">
-              <span
-                class="pill-btn pb-red"
-                style="font-size: 9px; padding: 2px 8px 2px 6px; flex-shrink: 0"
-                ><span class="dot" style="width: 6px; height: 6px"></span
-                >BTJA</span
-              >
+            <div class="cert-item">
+              <span class="pill-btn pb-red">BTJA</span>
               <div>
                 <div class="cert-name">Blue Team Junior Analyst</div>
-                <div class="cert-by">Security Blue Team ·</div>
+                <div class="cert-issuer">Security Blue Team</div>
               </div>
             </div>
-            <div class="cert-row">
-              <span
-                class="pill-btn pb-cyn"
-                style="font-size: 9px; padding: 2px 8px 2px 6px; flex-shrink: 0"
-                ><span class="dot" style="width: 6px; height: 6px"></span
-                >SALP</span
-              >
+            <div class="cert-item">
+              <span class="pill-btn pb-grn">SALP</span>
               <div>
-                <div class="cert-name">SOC Analyst</div>
-                <div class="cert-by">LetsDefend.io ·</div>
+                <div class="cert-name">SOC Analyst Training</div>
+                <div class="cert-issuer">LetsDefend.io</div>
               </div>
             </div>
-            <div class="cert-row">
-              <span
-                class="pill-btn pb-blu"
-                style="font-size: 9px; padding: 2px 8px 2px 6px; flex-shrink: 0"
-                ><span class="dot" style="width: 6px; height: 6px"></span
-                >ITS</span
-              >
+            <div class="cert-item">
+              <span class="pill-btn pb-blu">ITS</span>
               <div>
-                <div class="cert-name">IT Support Professional</div>
-                <div class="cert-by">Coursera · Google ·</div>
+                <div class="cert-name">Google IT Support Professional</div>
+                <div class="cert-issuer">Coursera · Google</div>
               </div>
             </div>
-            <div class="cert-row">
-              <span
-                class="pill-btn pb-pnk"
-                style="font-size: 9px; padding: 2px 8px 2px 6px; flex-shrink: 0"
-                ><span class="dot" style="width: 6px; height: 6px"></span
-                >SMM</span
-              >
+            <div class="cert-item">
+              <span class="pill-btn pb-ylw">SMM</span>
               <div>
                 <div class="cert-name">Social Media Marketing</div>
-                <div class="cert-by">DICT PH ·</div>
+                <div class="cert-issuer">DICT Philippines</div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <!-- PROJECTS-->
-
-      <div class="section" id="section-projects">
+      <!-- ══ 04 / FEATURED PROJECTS (BENTO GRID 2x2) ══ -->
+      <section class="section" id="section-projects">
         <div class="sec-bar">
-          <span class="sec-tag st-tel">Projects</span>
+          <span class="sec-tag st-blu">04 / SELECTED PROJECTS</span>
           <div class="sec-line"></div>
-          <span class="sec-count">06</span>
+          <a href="projects.html" class="view-details-link"
+            >View All Projects <i class="ti ti-arrow-right"></i
+          ></a>
         </div>
-
-        <div class="exp-header-row">
-          <h3 class="exp-header-title" style="color: var(--text-primary)">
-            <i class="ti ti-folder" style="color: var(--teal)"></i>
-            Featured Projects
-          </h3>
-          <a
-            href="projects.html"
-            class="view-details-link"
-            style="color: var(--teal)"
-          >
-            View all projects <i class="ti ti-arrow-right"></i>
+        <div class="proj-grid">
+          <a class="rl-card rl-c-red" href="projects.html">
+            <div class="rl-card-top">
+              <div class="rl-ico ico-red">
+                <i class="ti ti-shield-lock"></i>
+              </div>
+              <div class="rl-badge-row">
+                <span class="pill-btn pb-red"
+                  ><i class="ti ti-shield-lock"></i> Security Ops</span
+                ><span class="pill-btn pb-red"
+                  ><i class="ti ti-server"></i> Homelab</span
+                >
+              </div>
+            </div>
+            <div
+              style="
+                width: 100%;
+                height: 160px;
+                border-radius: 12px;
+                overflow: hidden;
+                margin-bottom: 14px;
+                border: 1px solid var(--b2);
+              "
+            >
+              <img
+                src="assets/img/cyberops1.png"
+                alt="CyberOps Lab"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  display: block;
+                "
+              />
+            </div>
+            <div class="rl-log-id">PROJECT_01</div>
+            <div class="rl-title">CyberOps Lab</div>
+            <div class="rl-writeup">
+              Personal homelab for offensive and defensive security research.
+              Configuring and analyzing network traffic, vulnerabilities, and
+              attack vectors.
+            </div>
+            <div class="rl-footer">
+              <span class="rl-date">Homelab</span
+              ><span class="rl-read"
+                >View Project <i class="ti ti-arrow-right rl-arrow"></i
+              ></span>
+            </div>
+          </a>
+          <a class="rl-card rl-c-grn" href="projects.html">
+            <div class="rl-card-top">
+              <div class="rl-ico ico-grn"><i class="ti ti-radar-2"></i></div>
+              <div class="rl-badge-row">
+                <span class="pill-btn pb-grn"
+                  ><i class="ti ti-brand-python"></i> Python</span
+                ><span class="pill-btn pb-grn"
+                  ><i class="ti ti-network"></i> Networking</span
+                >
+              </div>
+            </div>
+            <div
+              style="
+                width: 100%;
+                height: 160px;
+                border-radius: 12px;
+                overflow: hidden;
+                margin-bottom: 14px;
+                border: 1px solid var(--b2);
+              "
+            >
+              <img
+                src="assets/img/4scan.jpg"
+                alt="4SCAN"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  display: block;
+                "
+              />
+            </div>
+            <div class="rl-log-id">PROJECT_02</div>
+            <div class="rl-title">4SCAN Port Scanner</div>
+            <div class="rl-writeup">
+              Python TCP port scanner — scan open ports on IP addresses and
+              domains. Built from scratch with custom multi-threading and CIDR
+              parsing.
+            </div>
+            <div class="rl-footer">
+              <span class="rl-date">Python</span
+              ><span class="rl-read"
+                >View Project <i class="ti ti-arrow-right rl-arrow"></i
+              ></span>
+            </div>
+          </a>
+          <a class="rl-card rl-c-blu" href="projects.html">
+            <div class="rl-card-top">
+              <div class="rl-ico ico-blu"><i class="ti ti-network"></i></div>
+              <div class="rl-badge-row">
+                <span class="pill-btn pb-blu"
+                  ><i class="ti ti-brand-powershell"></i> PowerShell</span
+                ><span class="pill-btn pb-blu"
+                  ><i class="ti ti-terminal-2"></i> Diagnostics</span
+                >
+              </div>
+            </div>
+            <div
+              style="
+                width: 100%;
+                height: 160px;
+                border-radius: 12px;
+                overflow: hidden;
+                margin-bottom: 14px;
+                border: 1px solid var(--b2);
+              "
+            >
+              <img
+                src="assets/img/network-config.png"
+                alt="Network Toolkit"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  display: block;
+                "
+              />
+            </div>
+            <div class="rl-log-id">PROJECT_03</div>
+            <div class="rl-title">Network Troubleshoot Toolkit</div>
+            <div class="rl-writeup">
+              PowerShell network diagnostic script — automate ping tests, DNS
+              lookups, traceroutes, and adapter config reporting.
+            </div>
+            <div class="rl-footer">
+              <span class="rl-date">PowerShell</span
+              ><span class="rl-read"
+                >View Project <i class="ti ti-arrow-right rl-arrow"></i
+              ></span>
+            </div>
+          </a>
+          <a class="rl-card rl-c-ylw" href="projects.html">
+            <div class="rl-card-top">
+              <div class="rl-ico ico-ylw"><i class="ti ti-activity"></i></div>
+              <div class="rl-badge-row">
+                <span class="pill-btn pb-ylw"
+                  ><i class="ti ti-question-mark"></i> Unidentified</span
+                ><span class="pill-btn pb-ylw"
+                  ><i class="ti ti-clock"></i> Ongoing</span
+                >
+              </div>
+            </div>
+            <div
+              style="
+                width: 100%;
+                height: 160px;
+                border-radius: 12px;
+                overflow: hidden;
+                margin-bottom: 14px;
+                border: 1px solid var(--b2);
+              "
+            >
+              <img
+                src="assets/img/newproj.jpg"
+                alt="Project Unknown"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  display: block;
+                "
+              />
+            </div>
+            <div class="rl-log-id">PROJECT_04</div>
+            <div class="rl-title">Project Unknown</div>
+            <div class="rl-writeup">
+              A fresh piece of work is currently in production behind the
+              scenes; check back soon for the final reveal.
+            </div>
+            <div class="rl-footer">
+              <span class="rl-date">Pending</span
+              ><span class="rl-read"
+                >View Project <i class="ti ti-arrow-right rl-arrow"></i
+              ></span>
+            </div>
           </a>
         </div>
+      </section>
 
-        <div class="carousel-wrap" id="pj-carousel">
-          <div class="carousel-track-outer">
-            <div class="carousel-track" id="pj-track">
-              <!-- PROJECT 01 -->
-              <a class="rl-card rl-c-red" href="projects.html">
-                <div class="rl-card-top">
-                  <div class="rl-ico ico-red">
-                    <i class="ti ti-shield-lock" aria-hidden="true"></i>
-                  </div>
-                  <div class="rl-badge-row">
-                    <span
-                      class="rl-badge"
-                      style="
-                        background: rgba(184, 92, 92, 0.15);
-                        color: var(--red);
-                        border: 1px solid rgba(184, 92, 92, 0.25);
-                      "
-                      >Security Ops</span
-                    >
-                    <span
-                      class="rl-badge"
-                      style="
-                        background: rgba(184, 92, 92, 0.15);
-                        color: var(--red);
-                        border: 1px solid rgba(184, 92, 92, 0.25);
-                      "
-                      >Homelab</span
-                    >
-                  </div>
-                </div>
-
-                <div
-                  style="
-                    width: 100%;
-                    height: 160px;
-                    border-radius: 12px;
-                    overflow: hidden;
-                    margin-bottom: 14px;
-                    border: 1px solid var(--b2);
-                  "
-                >
-                  <img
-                    src="assets/img/cyberops1.png"
-                    alt="CyberOps Lab"
-                    style="
-                      width: 100%;
-                      height: 100%;
-                      object-fit: cover;
-                      display: block;
-                    "
-                  />
-                </div>
-
-                <div class="rl-log-id">PROJECT_01</div>
-                <div class="rl-title">CyberOps Lab</div>
-                <div class="rl-writeup">
-                  Personal homelab for offensive and defensive security
-                  research. Configuring and analyzing network traffic,
-                  vulnerabilities, and attack vectors.
-                </div>
-
-                <div class="rl-footer">
-                  <span class="rl-date">Homelab</span>
-                  <span class="rl-read"
-                    >View Project
-                    <i class="ti ti-arrow-right rl-arrow" aria-hidden="true"></i
-                  ></span>
-                </div>
-              </a>
-
-              <a class="rl-card rl-c-grn" href="projects.html">
-                <div class="rl-card-top">
-                  <div class="rl-ico ico-grn">
-                    <i class="ti ti-radar-2" aria-hidden="true"></i>
-                  </div>
-                  <div class="rl-badge-row">
-                    <span
-                      class="rl-badge"
-                      style="
-                        background: rgba(77, 122, 107, 0.15);
-                        color: var(--grn);
-                        border: 1px solid rgba(77, 122, 107, 0.25);
-                      "
-                      >Python</span
-                    >
-                    <span
-                      class="rl-badge"
-                      style="
-                        background: rgba(77, 122, 107, 0.15);
-                        color: var(--grn);
-                        border: 1px solid rgba(77, 122, 107, 0.25);
-                      "
-                      >Networking</span
-                    >
-                  </div>
-                </div>
-
-                <div
-                  style="
-                    width: 100%;
-                    height: 160px;
-                    border-radius: 12px;
-                    overflow: hidden;
-                    margin-bottom: 14px;
-                    border: 1px solid var(--b2);
-                  "
-                >
-                  <img
-                    src="assets/img/4scan.jpg"
-                    alt="4SCAN"
-                    style="
-                      width: 100%;
-                      height: 100%;
-                      object-fit: cover;
-                      display: block;
-                    "
-                  />
-                </div>
-
-                <div class="rl-log-id">PROJECT_02</div>
-                <div class="rl-title">4SCAN Port Scanner</div>
-                <div class="rl-writeup">
-                  Python TCP port scanner — scan open ports on IP addresses and
-                  domains. Built from scratch with a custom threading model,
-                  timeout handling, and CIDR range parsing.
-                </div>
-
-                <div class="rl-footer">
-                  <span class="rl-date">Python</span>
-                  <span class="rl-read"
-                    >View Project
-                    <i class="ti ti-arrow-right rl-arrow" aria-hidden="true"></i
-                  ></span>
-                </div>
-              </a>
-
-              <!-- PROJECT 03 -->
-              <a class="rl-card rl-c-ylw" href="projects.html">
-                <div class="rl-card-top">
-                  <div class="rl-ico ico-ylw">
-                    <i class="ti ti-activity" aria-hidden="true"></i>
-                  </div>
-                  <div class="rl-badge-row">
-                    <span
-                      class="rl-badge"
-                      style="
-                        background: rgba(184, 146, 63, 0.15);
-                        color: var(--ylw);
-                        border: 1px solid rgba(184, 146, 63, 0.25);
-                      "
-                      >Unidentified</span
-                    >
-                    <span
-                      class="rl-badge"
-                      style="
-                        background: rgba(184, 146, 63, 0.15);
-                        color: var(--ylw);
-                        border: 1px solid rgba(184, 146, 63, 0.25);
-                      "
-                      >Ongoing</span
-                    >
-                  </div>
-                </div>
-
-                <div
-                  style="
-                    width: 100%;
-                    height: 160px;
-                    border-radius: 12px;
-                    overflow: hidden;
-                    margin-bottom: 14px;
-                    border: 1px solid var(--b2);
-                  "
-                >
-                  <img
-                    src="assets/img/newproj.jpg"
-                    alt="SIEM Lab"
-                    style="
-                      width: 100%;
-                      height: 100%;
-                      object-fit: cover;
-                      display: block;
-                    "
-                  />
-                </div>
-
-                <div class="rl-log-id">PROJECT_03</div>
-                <div class="rl-title">Project Unknown</div>
-                <div class="rl-writeup">
-                  A fresh piece of work is currently in production behind the
-                  scenes; check back soon for the final reveal
-                </div>
-
-                <div class="rl-footer">
-                  <span class="rl-date">Pending</span>
-                  <span class="rl-read"
-                    >View Project
-                    <i class="ti ti-arrow-right rl-arrow" aria-hidden="true"></i
-                  ></span>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="carousel-nav">
-            <div class="carousel-dots" id="pj-dots"></div>
-          </div>
-        </div>
-      </div>
-      <br />
-
+      <!-- ══ 05 / RESEARCH LOGS & LABS ══ -->
       <div class="section" id="section-logs">
         <div class="sec-bar">
-          <span class="sec-tag st-cyn">Research Logs</span>
+          <span class="sec-tag st-cyn">05 / RESEARCH LOGS & LABS</span>
           <div class="sec-line"></div>
-          <span class="sec-count">07</span>
         </div>
 
-        <div class="rl-header">
-          <div class="rl-subtitle">
-            // WRITEUPS · DISCOVERIES · SECURITY RESEARCH
-          </div>
-        </div>
-
-        <!-- ============================================================
-         ARCHIVE CONTAINER WITH GRADIENT
-         ============================================================ -->
         <div class="archive-container">
           <!-- Archive Header / Index -->
           <div class="archive-index">
-            <span class="archive-index-label">📁 RESEARCH ARCHIVES</span>
+            <span class="archive-index-label">📁 ARCHIVES</span>
             <a href="logs.html" class="archive-index-link">
               View full details <i class="ti ti-arrow-right"></i>
             </a>
@@ -1085,7 +863,7 @@
             <!-- Log Entry 1 - WRITEUP -->
             <div class="archive-item" data-category="writeup">
               <div class="archive-item-header">
-                <div class="archive-item-id">#001</div>
+                <div class="archive-item-id">LOG_001</div>
                 <div class="archive-item-category">
                   <span class="archive-badge badge-writeup">WRITEUP</span>
                   <span class="archive-date">March 2025</span>
@@ -1109,48 +887,54 @@
                   </div>
                 </div>
                 <a href="logs.html#case-1" class="archive-item-link">
-                  <span class="archive-link-text">View Case</span>
+                  <span class="archive-link-text">Read More</span>
                   <i class="ti ti-arrow-right" aria-hidden="true"></i>
                 </a>
               </div>
             </div>
 
             <!-- Log Entry 2 - DISCOVERY -->
-            <div class="archive-item" data-category="discovery">
+            <div class="archive-item" data-category="research">
               <div class="archive-item-header">
-                <div class="archive-item-id">#002</div>
+                <div class="archive-item-id">LOG_002</div>
                 <div class="archive-item-category">
-                  <span class="archive-badge badge-discovery">DISCOVERY</span>
-                  <span class="archive-date">February 2025</span>
+                  <span class="archive-badge badge-writeup">RESEARCH</span>
+                  <span class="archive-date">August 2026</span>
                 </div>
               </div>
+
               <div class="archive-item-body">
                 <div class="archive-item-icon">
                   <i class="ti ti-file-text" aria-hidden="true"></i>
                 </div>
+
                 <div class="archive-item-content">
-                  <h4 class="archive-item-title">SQL Injection Discovery</h4>
+                  <h4 class="archive-item-title">
+                    Introduction to Security Engineering
+                  </h4>
+
                   <p class="archive-item-excerpt">
-                    Uncovering a blind SQL injection vulnerability in a legacy
-                    internal application hosted on an abandoned subdomain that
-                    had remained publicly..
+                    Exploring foundational security engineering concepts through
+                    hands-on TryHackMe learning modules, focusing on practical
+                    security principles...
                   </p>
+
                   <div class="archive-item-tags">
-                    <span class="archive-tag">Web Security</span>
-                    <span class="archive-tag">SQL Injection</span>
+                    <span class="archive-tag">Security Engineering</span>
+                    <span class="archive-tag">TryHackMe</span>
                   </div>
                 </div>
+
                 <a href="logs.html#case-4" class="archive-item-link">
-                  <span class="archive-link-text">View Case</span>
+                  <span class="archive-link-text">Read More</span>
                   <i class="ti ti-arrow-right" aria-hidden="true"></i>
                 </a>
               </div>
             </div>
-
             <!-- Log Entry 3 - SECURITY RESEARCH -->
             <div class="archive-item" data-category="research">
               <div class="archive-item-header">
-                <div class="archive-item-id">#003</div>
+                <div class="archive-item-id">LOG_003</div>
                 <div class="archive-item-category">
                   <span class="archive-badge badge-research">RESEARCH</span>
                   <span class="archive-date">January 2025</span>
@@ -1173,7 +957,7 @@
                   </div>
                 </div>
                 <a href="logs.html#case-2" class="archive-item-link">
-                  <span class="archive-link-text">View Case</span>
+                  <span class="archive-link-text">Read More</span>
                   <i class="ti ti-arrow-right" aria-hidden="true"></i>
                 </a>
               </div>
@@ -1182,73 +966,101 @@
         </div>
       </div>
 
-      <div class="section" id="section-contact">
-        <div class="sec-bar">
-          <span class="sec-tag st-grn">Get in Touch</span>
-          <div class="sec-line"></div>
-          <span class="sec-count">08</span>
+      <!-- ══ CONTACT BENTO CARD ══ -->
+      <section class="contact-box" id="section-contact">
+        <div class="cta-divider"><h1>Let's Work Together</h1></div>
+        <p class="cta-subtext">
+          Have an open security role, freelance project, or technical question?
+          Feel free to reach out anytime!
+        </p>
+        <div class="cta-group">
+          <a
+            href="mailto:fornes.rico77@gmail.com"
+            class="cta-btn cta-btn-primary"
+            ><i class="ti ti-mail-forward"></i> Send Email</a
+          >
+          <a
+            href="https://www.linkedin.com/in/rico-fornes"
+            target="_blank"
+            rel="noopener"
+            class="cta-btn cta-btn-secondary"
+            ><i class="ti ti-brand-linkedin"></i> Connect on LinkedIn</a
+          >
         </div>
+      </section>
 
-        <div class="contact-box">
-          <div class="cta-divider">
-            <span class="cta-divider-text"><h1>Let's work together</h1></span>
-          </div>
-
-          <div class="cta-section">
-            <p class="cta-subtext">
-              Open for freelance & full-time opportunities.
-            </p>
-
-            <div class="cta-group">
-              <a
-                href="mailto:fornes.rico77@gmail.com"
-                class="cta-btn cta-btn-secondary"
-              >
-                <i class="ti ti-mail" aria-hidden="true"></i> Email Me
-              </a>
-              <a
-                href="https://calendly.com/ricofornes"
-                class="cta-btn cta-btn-primary"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="ti ti-calendar" aria-hidden="true"></i> Schedule a
-                Call
-              </a>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-
-      <div class="ftr">
-        <div class="ftr-txt">© 2026</div>
-        <div style="display: flex; gap: 6px; flex-wrap: wrap">
+      <footer class="ftr">
+        <div class="ftr-txt">© 2026 • Rico Fornes</div>
+        <div
+          style="display: flex; gap: 6px; flex-wrap: wrap; align-items: center"
+        >
           <span
             class="pill-btn pb-blu"
-            style="font-size: 9px; padding: 3px 10px 3px 7px"
-            ><span class="ti ti-mail" style="width: 6px; height: 6px"></span>fornes.rico77@gmail.com</span>
+            style="font-size: 10px; padding: 3px 10px"
+            ><i class="ti ti-mail" style="margin-right: 4px"></i
+            >fornes.rico77@gmail.com</span
+          >
           <span
             class="pill-btn pb-grn"
-            style="font-size: 9px; padding: 3px 10px 3px 7px"
-            ><span class="ti ti-phone" style="width: 6px; height: 6px"></span>+63 926 064 9319</span>
-          <span
-            class="pill-btn pb-ylw"
-            style="font-size: 9px; padding: 3px 10px 3px 7px"
-            ><span class="ti ti-user" style="width: 6px; height: 6px"></span>Rico Fornes</span>
+            style="font-size: 10px; padding: 3px 10px"
+            ><i class="ti ti-phone" style="margin-right: 4px"></i>+63 926 064
+            9319</span
+          >
         </div>
-      </div>
-
-      <!-- Sticky Hire Me -->
-      <a href="mailto:fornes.rico77@gmail.com" class="sticky-hire">
-        <i class="ti ti-mail-forward"></i> Hire Me
-      </a>
+      </footer>
+    </div>
+    <div class="chat-widget" id="chat-widget">
+      <button
+        class="chat-toggle"
+        id="chat-toggle"
+        type="button"
+        aria-label="Open chat with ricoswabii"
+        aria-expanded="false"
+      >
+        <i class="ti ti-message-circle"></i>
+        <span>Chat</span>
+      </button>
+      <section
+        class="chat-box"
+        id="chat-box"
+        aria-label="Chatbox with ricoswabii"
+        aria-hidden="true"
+      >
+        <div class="chat-head">
+          <div class="chat-avatar">RF</div>
+          <div>
+            <div class="chat-name">ricoswabii</div>
+            <div class="chat-status"><span></span> Online</div>
+          </div>
+          <button
+            class="chat-close"
+            id="chat-close"
+            type="button"
+            aria-label="Close chat"
+          >
+            <i class="ti ti-x"></i>
+          </button>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+          <div class="chat-message bot">
+            Yo! I'm ricoswabii. Ask about my homelab, projects, skills, or how
+            to contact me.
+          </div>
+        </div>
+        <form class="chat-form" id="chat-form">
+          <input
+            id="chat-input"
+            type="text"
+            placeholder="Type your message..."
+            autocomplete="off"
+            aria-label="Type your message"
+          />
+          <button type="submit" aria-label="Send message">
+            <i class="ti ti-send"></i>
+          </button>
+        </form>
+      </section>
     </div>
     <script src="assets/main.js"></script>
-
-    <script
-      src="https://assets.calendly.com/assets/external/widget.js"
-      async
-    ></script>
   </body>
 </html>

@@ -9,18 +9,17 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Press+Start+2P&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+<div id="scrollProgress"></div>
 
 <header class="topnav">
   <div class="topnav-inner">
-    <a href="index.html" class="topnav-logo">R<span class="tn-accent">F</span></a>
+   <a href="index.html" class="topnav-logo"><span class="nm-pur">R</span><span class="nm-cyn">F</span></a>
     <nav class="topnav-links">
-      <a href="index.html">Home</a>
-      <a href="experience.html" class="active">Experience</a>
+      <a href="index.html#section-hero">Home</a>
       <a href="projects.html">Projects</a>
       <a href="logs.html">Logs</a>
     </nav>
@@ -37,13 +36,11 @@
 </div>
 
 <div class="page">
-
 <div class="page-head">
   <div class="page-head-tag">// CAREER TIMELINE</div>
   <h1>Experience</h1>
   <p>A full breakdown of my professional roles across IT support, cybersecurity, and social media management — from freelance work to structured team environments.</p>
 </div>
-
 <div class="section">
   <div class="tl">
     <div class="tl-item" style="--c:var(--grn);">
@@ -107,14 +104,41 @@
     </div>
   </div>
 </div>
+<div><a href="index.html" class="back-home"><i class="ti ti-arrow-left"></i> Back to Home</a></div>
+<footer class="ftr">
+  <div class="ftr-txt">© 2026 • Rico Fornes</div>
+  <div style="display: flex; gap: 6px; flex-wrap: wrap; align-items: center;">
+    <span class="pill-btn pb-blu" style="font-size: 10px; padding: 3px 10px;"><i class="ti ti-mail" style="margin-right: 4px;"></i>fornes.rico77@gmail.com</span>
+    <span class="pill-btn pb-grn" style="font-size: 10px; padding: 3px 10px;"><i class="ti ti-phone" style="margin-right: 4px;"></i>+63 926 064 9319</span>
+  </div>
+</footer>
 
-<a href="index.html" class="back-home"><i class="ti ti-arrow-left"></i> Back to Home</a>
 
 </div>
 
-<a href="mailto:fornes.rico77@gmail.com" class="sticky-hire">
-  <i class="ti ti-mail-forward"></i> Hire Me
-</a>
+<div class="chat-widget" id="chat-widget">
+  <button class="chat-toggle" id="chat-toggle" type="button" aria-label="Open chat with ricoswabii" aria-expanded="false">
+    <i class="ti ti-message-circle"></i>
+    <span>Chat</span>
+  </button>
+  <section class="chat-box" id="chat-box" aria-label="Chatbox with ricoswabii" aria-hidden="true">
+    <div class="chat-head">
+      <div class="chat-avatar">RF</div>
+      <div>
+        <div class="chat-name">ricoswabii</div>
+        <div class="chat-status"><span></span> Online</div>
+      </div>
+      <button class="chat-close" id="chat-close" type="button" aria-label="Close chat"><i class="ti ti-x"></i></button>
+    </div>
+    <div class="chat-messages" id="chat-messages">
+      <div class="chat-message bot">Yo! I'm ricoswabii. Ask about my homelab, projects, skills, or how to contact me.</div>
+    </div>
+    <form class="chat-form" id="chat-form">
+      <input id="chat-input" type="text" placeholder="Type your message..." autocomplete="off" aria-label="Type your message" />
+      <button type="submit" aria-label="Send message"><i class="ti ti-send"></i></button>
+    </form>
+  </section>
+</div>
 
 <script src="assets/main.js"></script>
 </body>

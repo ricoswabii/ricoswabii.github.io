@@ -12,6 +12,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
+/* Departure Mono — SIL OFL — pixel monospaced font */
+@font-face {
+  font-family: 'Departure Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://cdn.jsdelivr.net/gh/rektdeckard/departure-mono@main/public/assets/DepartureMono-1.500.woff2') format('woff2'),
+       url('https://cdn.jsdelivr.net/gh/rektdeckard/departure-mono@main/public/assets/DepartureMono-1.500.woff') format('woff');
+}
+
+:root{
+  --font-mono:'Departure Mono','JetBrains Mono',ui-monospace,Menlo,Consolas,monospace;
+}
+
 
 *{
 margin:0;
@@ -209,7 +223,7 @@ background:var(--cyn);
 
 .term{
 
-font-family:'JetBrains Mono',monospace;
+font-family:var(--font-mono);
 
 font-size:12px;
 
@@ -330,7 +344,7 @@ font-weight:600;
 
 .status-sub{
 
-font-family:'JetBrains Mono';
+font-family:var(--font-mono);
 
 font-size:11px;
 
@@ -411,7 +425,7 @@ background:#05060b;
 
 border:1px solid rgba(255,255,255,.08);
 
-font-family:'JetBrains Mono';
+font-family:var(--font-mono);
 
 font-size:13px;
 
@@ -458,7 +472,7 @@ background:rgba(34,211,238,.08);
 
 border:1px solid rgba(34,211,238,.25);
 
-font-family:'JetBrains Mono';
+font-family:var(--font-mono);
 
 color:var(--cyn);
 
@@ -473,7 +487,7 @@ color:var(--cyn);
 
 margin-top:40px;
 
-font-family:'JetBrains Mono';
+font-family:var(--font-mono);
 
 font-size:10px;
 

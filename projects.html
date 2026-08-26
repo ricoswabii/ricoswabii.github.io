@@ -9,19 +9,18 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Press+Start+2P&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+<div id="scrollProgress"></div>
 
 <header class="topnav">
   <div class="topnav-inner">
-    <a href="index.html" class="topnav-logo">R<span class="tn-accent">F</span></a>
+    <a href="index.html" class="topnav-logo"><span class="nm-pur">R</span><span class="nm-cyn">F</span></a>
     <nav class="topnav-links">
-      <a href="index.html">Home</a>
+      <a href="index.html#section-hero">Home</a>
       <a href="experience.html">Experience</a>
-      <a href="projects.html" class="active">Projects</a>
       <a href="logs.html">Logs</a>
     </nav>
     <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark theme"><i class="ti ti-moon" id="theme-icon"></i></button>
@@ -57,9 +56,9 @@
                 <div class="pj-name">4SCAN Port Scanner</div>
                 <div class="pj-desc">Python TCP port scanner — scan open ports on IP addresses and domains.</div>
                 <div class="pj-tags">
-                    <span class="ptag" style="background:#4ade8015;color:var(--grn);border:1px solid #4ade8025;">Python</span>
-                    <span class="ptag" style="background:#4ade8015;color:var(--grn);border:1px solid #4ade8025;">Networking</span>
-                    <span class="ptag" style="background:#4ade8015;color:var(--grn);border:1px solid #4ade8025;">Security</span>
+                    <span class="ptag" class="ptag pb-grn">Python</span>
+                    <span class="ptag" class="ptag pb-grn">Networking</span>
+                    <span class="ptag" class="ptag pb-grn">Security</span>
                 </div>
             </div>
         </div>
@@ -74,8 +73,8 @@
                 <div class="pj-name">Network Troubleshoot Toolkit</div>
                 <div class="pj-desc">Windows bat.exe file toolkit that makes network troubleshooting easier with quick-access shortcuts.</div>
                 <div class="pj-tags">
-                    <span class="ptag" style="background:rgba(70,101,121,0.15);color:var(--blu);border:1px solid rgba(70,101,121,0.25);">GUI/CLI</span>
-                    <span class="ptag" style="background:rgba(70,101,121,0.15);color:var(--blu);border:1px solid rgba(70,101,121,0.25);">Diagnose</span>
+                    <span class="ptag" class="ptag pb-blu">GUI/CLI</span>
+                    <span class="ptag" class="ptag pb-blu">Diagnose</span>
                 </div>
             </div>
         </div>
@@ -90,8 +89,8 @@
                 <div class="pj-name">CyberOps Lab</div>
                 <div class="pj-desc">Personal homelab for offensive and defensive security research. Analyzing network traffic and vulnerabilities.</div>
                 <div class="pj-tags">
-                    <span class="ptag" style="background:rgba(184,92,92,0.15);color:var(--red);border:1px solid rgba(184,92,92,0.25);">Security Ops</span>
-                    <span class="ptag" style="background:rgba(184,92,92,0.15);color:var(--red);border:1px solid rgba(184,92,92,0.25);">Homelab</span>
+                    <span class="ptag" class="ptag pb-red">Security Ops</span>
+                    <span class="ptag" class="ptag pb-red">Homelab</span>
                 </div>
             </div>
         </div>
@@ -106,8 +105,8 @@
                 <div class="pj-name">SIEM Analysis Lab</div>
                 <div class="pj-desc">Elastic SIEM for security event simulation and threat detection. Custom dashboards and alerting pipelines.</div>
                 <div class="pj-tags">
-                    <span class="ptag" style="background:rgba(184,146,63,0.15);color:var(--blu);border:1px solid rgba(184,146,63,0.25);">Elastic SIEM</span>
-                    <span class="ptag" style="background:rgba(184,146,63,0.15);color:var(--blu);border:1px solid rgba(184,146,63,0.25);">Threat Detection</span>
+                    <span class="ptag" class="ptag pb-blu">Elastic SIEM</span>
+                    <span class="ptag" class="ptag pb-blu">Threat Detection</span>
                 </div>
             </div>
         </div>
@@ -122,8 +121,8 @@
                 <div class="pj-name">Do-it App</div>
                 <div class="pj-desc">Python CLI to-do list — add, view and remove tasks. File handling and program logic for productivity.</div>
                 <div class="pj-tags">
-                    <span class="ptag" style="background:rgba(107,91,138,0.15);color:var(--pur);border:1px solid rgba(107,91,138,0.25);">Python</span>
-                    <span class="ptag" style="background:rgba(107,91,138,0.15);color:var(--pur);border:1px solid rgba(107,91,138,0.25);">CLI</span>
+                    <span class="ptag" class="ptag pb-pur">Python</span>
+                    <span class="ptag" class="ptag pb-pur">CLI</span>
                 </div>
             </div>
         </div>
@@ -138,8 +137,40 @@
                 <div class="pj-name">Coming Soon</div>
                 <div class="pj-desc">Project Unknown — Something new is taking shape behind the scenes. Stay tuned.</div>
                 <div class="pj-tags">
-                    <span class="ptag" style="background:#60a5fa15;color:var(--ylw);border:1px solid #60a5fa25;">Pending</span>
-                    <span class="ptag" style="background:#60a5fa15;color:var(--ylw);border:1px solid #60a5fa25;">On Going</span>
+                    <span class="ptag" class="ptag pb-ylw">Pending</span>
+                    <span class="ptag" class="ptag pb-ylw">On Going</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="pj-card" data-project="coming-soon">
+            <div class="pj-banner pj-banner-blu" data-img="assets/img/newproj.jpg">
+                <div class="pj-banner-bg"></div>
+                <div class="pj-banner-img" style="background-image:url('assets/img/newproj.jpg')"></div>
+                <div class="pj-banner-ico ico-ylw"><i class="ti ti-router" aria-hidden="true"></i></div>
+            </div>
+            <div class="pj-body">
+                <div class="pj-name">Coming Soon</div>
+                <div class="pj-desc">Project Unknown — Something new is taking shape behind the scenes. Stay tuned.</div>
+                <div class="pj-tags">
+                    <span class="ptag" class="ptag pb-ylw">Pending</span>
+                    <span class="ptag" class="ptag pb-ylw">On Going</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="pj-card" data-project="coming-soon">
+            <div class="pj-banner pj-banner-blu" data-img="assets/img/newproj.jpg">
+                <div class="pj-banner-bg"></div>
+                <div class="pj-banner-img" style="background-image:url('assets/img/newproj.jpg')"></div>
+                <div class="pj-banner-ico ico-ylw"><i class="ti ti-router" aria-hidden="true"></i></div>
+            </div>
+            <div class="pj-body">
+                <div class="pj-name">Coming Soon</div>
+                <div class="pj-desc">Project Unknown — Something new is taking shape behind the scenes. Stay tuned.</div>
+                <div class="pj-tags">
+                    <span class="ptag" class="ptag pb-ylw">Pending</span>
+                    <span class="ptag" class="ptag pb-ylw">On Going</span>
                 </div>
             </div>
         </div>
@@ -149,59 +180,42 @@
     </div>
 </div>
 
-<div class="project-modal" id="projectModal">
-    <div class="modal-overlay" id="modalOverlay"></div>
-    <div class="modal-content">
-        <!-- Close button -->
-        <button class="modal-close" id="modalClose">
-            <i class="ti ti-x" aria-hidden="true"></i>
-        </button>
-        
-        <!-- Image Slider -->
-        <div class="modal-slider">
-            <div class="slider-container" id="sliderContainer">
-                <!-- Images injected by JavaScript -->
-            </div>
-            
-            <!-- Slider Controls -->
-            <button class="slider-btn slider-prev" id="sliderPrev">
-                <i class="ti ti-chevron-left" aria-hidden="true"></i>
-            </button>
-            <button class="slider-btn slider-next" id="sliderNext">
-                <i class="ti ti-chevron-right" aria-hidden="true"></i>
-            </button>
-            
-            <!-- Dots -->
-            <div class="slider-dots" id="sliderDots"></div>
-        </div>
-        
-        <!-- Project Details -->
-        <div class="modal-details">
-            <h2 class="modal-title" id="modalTitle">Project Title</h2>
-            <div class="modal-tags" id="modalTags"></div>
-            <p class="modal-description" id="modalDescription">Project description goes here.</p>
-            <div class="modal-links">
-                <a href="#" class="modal-btn modal-btn-primary" id="modalLiveLink">
-                    <i class="ti ti-eye" aria-hidden="true"></i> Live Demo
-                </a>
-                <a href="maintenance/coming-soon.html" class="modal-btn modal-btn-secondary" id="modalCodeLink">
-                    <i class="ti ti-brand-github" aria-hidden="true"></i> View Code
-                </a>
-            </div>
-        </div>
-    </div>
-
-    </div>
-
-<a href="index.html" class="back-home"><i class="ti ti-arrow-left"></i> Back to Home</a>
+<div><a href="index.html" class="back-home"><i class="ti ti-arrow-left"></i> Back to Home</a></div>
+<footer class="ftr">
+  <div class="ftr-txt">© 2026 • Rico Fornes</div>
+  <div style="display: flex; gap: 6px; flex-wrap: wrap; align-items: center;">
+    <span class="pill-btn pb-blu" style="font-size: 10px; padding: 3px 10px;"><i class="ti ti-mail" style="margin-right: 4px;"></i>fornes.rico77@gmail.com</span>
+    <span class="pill-btn pb-grn" style="font-size: 10px; padding: 3px 10px;"><i class="ti ti-phone" style="margin-right: 4px;"></i>+63 926 064 9319</span>
+  </div>
+</footer>
 
 </div>
 
 </div>
   </div>
-<a href="mailto:fornes.rico77@gmail.com" class="sticky-hire">
-  <i class="ti ti-mail-forward"></i> Hire Me
-</a>
+<div class="chat-widget" id="chat-widget">
+  <button class="chat-toggle" id="chat-toggle" type="button" aria-label="Open chat with ricoswabii" aria-expanded="false">
+    <i class="ti ti-message-circle"></i>
+    <span>Chat</span>
+  </button>
+  <section class="chat-box" id="chat-box" aria-label="Chatbox with ricoswabii" aria-hidden="true">
+    <div class="chat-head">
+      <div class="chat-avatar">RF</div>
+      <div>
+        <div class="chat-name">ricoswabii</div>
+        <div class="chat-status"><span></span> Online</div>
+      </div>
+      <button class="chat-close" id="chat-close" type="button" aria-label="Close chat"><i class="ti ti-x"></i></button>
+    </div>
+    <div class="chat-messages" id="chat-messages">
+      <div class="chat-message bot">Yo! I'm ricoswabii. Ask about my homelab, projects, skills, or how to contact me.</div>
+    </div>
+    <form class="chat-form" id="chat-form">
+      <input id="chat-input" type="text" placeholder="Type your message..." autocomplete="off" aria-label="Type your message" />
+      <button type="submit" aria-label="Send message"><i class="ti ti-send"></i></button>
+    </form>
+  </section>
+</div>
 
 <script src="assets/main.js"></script>
 </body>

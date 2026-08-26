@@ -9,20 +9,19 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Press+Start+2P&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+<div id="scrollProgress"></div>
 
 <header class="topnav">
   <div class="topnav-inner">
-    <a href="index.html" class="topnav-logo">R<span class="tn-accent">F</span></a>
+   <a href="index.html" class="topnav-logo"><span class="nm-pur">R</span><span class="nm-cyn">F</span></a>
     <nav class="topnav-links">
-      <a href="index.html">Home</a>
+      <a href="index.html#section-hero">Home</a>
+       <a href="projects.html">Projects</a>
       <a href="experience.html">Experience</a>
-      <a href="projects.html">Projects</a>
-      <a href="logs.html" class="active">Logs</a>
     </nav>
     <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark theme"><i class="ti ti-moon" id="theme-icon"></i></button>
   </div>
@@ -200,53 +199,77 @@
   </div>
 
   <!-- CASE 4 -->
-  <div class="log-full rl-c-grn" id="case-4">
-    <div class="rl-card-top">
-      <div class="rl-ico ico-grn"><i class="ti ti-flag" aria-hidden="true"></i></div>
-      <div class="rl-badge-row">
-        <span class="rl-badge" style="background:#4ade8018;color:var(--grn);border:1px solid #4ade8033;">CTF</span>
-        <span class="rl-badge" style="background:#4ade8018;color:var(--grn);border:1px solid #4ade8033;">Forensics</span>
-      </div>
-    </div>
-    <div class="rl-log-id">LOG-004 · 2023–2025</div>
-    <div class="rl-title">CTF Challenge Writeups</div>
-    <div class="rl-writeup">Collection of documented solutions from Capture the Flag competitions. Covers digital forensics (memory dumps, steganography, file carving) and web exploitation (SQLi, XSS, IDOR, SSRF) across multiple platforms.</div>
-
-    <div class="detail-block">
-      <h2><i class="ti ti-tool"></i>Tools &amp; Techniques</h2>
-      <div class="tool-chips">
-        <span class="tc tc-grn">Volatility</span>
-        <span class="tc tc-grn">Burp Suite</span>
-        <span class="tc tc-grn">Steghide / zsteg</span>
-        <span class="tc tc-grn">Binwalk</span>
-      </div>
+  <<div class="log-full rl-c-grn" id="case-4">
+  <div class="rl-card-top">
+    <div class="rl-ico ico-grn">
+      <i class="ti ti-book-2" aria-hidden="true"></i>
     </div>
 
-    <div class="detail-block">
-      <h2><i class="ti ti-search"></i>Findings</h2>
-      <ul class="rl-discoveries">
-        <li>Volatile memory analysis using Volatility framework</li>
-        <li>Hidden flag extraction via LSB steganography</li>
-        <li>Blind SQLi exploitation with time-based techniques</li>
-        <li>Solved IDOR chain leading to account takeover</li>
-      </ul>
-    </div>
-
-    <div class="detail-block">
-      <h2><i class="ti ti-checklist"></i>Recommendations</h2>
-      <ul class="log-recs">
-        <li>Approach each challenge by exhausting simple analysis (metadata, plain sight) before advanced tooling.</li>
-        <li>Keep a personal cheat-sheet of common stego/forensics one-liners to speed up future rounds.</li>
-        <li>Document failed attempts too — they often reveal the working technique faster on the next challenge.</li>
-      </ul>
-    </div>
-
-    <a class="log-cta" href="maintenance/coming-soon.html" target="_blank" rel="noopener">Read a full CTF writeup <i class="ti ti-arrow-up-right"></i></a>
-
-    <div class="rl-footer" style="margin-top:18px;">
-      <span class="rl-date">2023 – 2025 · Multi-platform</span>
+    <div class="rl-badge-row">
+      <span class="rl-badge" style="background:#4ade8018;color:var(--grn);border:1px solid #4ade8033;">
+        SECURITY RESEARCH
+      </span>
+      <span class="rl-badge" style="background:#4ade8018;color:var(--grn);border:1px solid #4ade8033;">
+        LEARNING
+      </span>
     </div>
   </div>
+
+  <div class="rl-log-id">LOG-004 · 2023–2025</div>
+
+  <div class="rl-title">Security Research &amp; Learning Archive</div>
+
+  <div class="rl-writeup">
+    A collection of hands-on security research, learning exercises, CTF
+    challenges, and technical writeups documenting practical cybersecurity
+    experience across web security, digital forensics, vulnerability analysis,
+    and defensive security.
+  </div>
+
+  <div class="detail-block">
+    <h2><i class="ti ti-tool"></i>Tools &amp; Techniques</h2>
+
+    <div class="tool-chips">
+        <span class="tc tc-grn">Burp Suite</span>
+        <span class="tc tc-grn">Wireshark</span>
+        <span class="tc tc-grn">Sysmon</span>
+        <span class="tc tc-grn">Windows Event Logs</span>
+        <span class="tc tc-grn">MITRE ATT&amp;CK</span>
+        <span class="tc tc-grn">Splunk</span>
+    </div>
+  </div>
+
+  <div class="detail-block">
+    <h2><i class="ti ti-search"></i>Research Areas</h2>
+
+    <ul class="rl-discoveries">
+      <li>Web application security and common vulnerabilities</li>
+      <li>Digital forensics and memory analysis</li>
+      <li>Capture the Flag challenges and practical security labs</li>
+      <li>Security engineering fundamentals and defensive techniques</li>
+      <li>SOC and SIEM-oriented investigation techniques</li>
+    </ul>
+  </div>
+
+  <div class="detail-block">
+    <h2><i class="ti ti-checklist"></i>Focus</h2>
+
+    <ul class="log-recs">
+      <li>Build practical cybersecurity skills through hands-on environments.</li>
+      <li>Document techniques, findings, and lessons learned from each exercise.</li>
+      <li>Connect offensive security concepts with defensive and SOC practices.</li>
+    </ul>
+  </div>
+
+  <a class="log-cta" href="maintenance/coming-soon.html" target="_blank" rel="noopener">
+    Explore the research archive
+    <i class="ti ti-arrow-up-right"></i>
+  </a>
+
+  <div class="rl-footer" style="margin-top:18px;">
+    <span class="rl-date">2025 – 2026 · Security Research &amp; Learning</span>
+  </div>
+</div>
 
   <!-- CASE 5 -->
   <div class="log-full rl-c-pur" id="case-5">
@@ -297,14 +320,41 @@
   </div>
 
 </div>
+<div><a href="index.html" class="back-home"><i class="ti ti-arrow-left"></i> Back to Home</a></div>
+<footer class="ftr">
+  <div class="ftr-txt">© 2026 • Rico Fornes</div>
+  <div style="display: flex; gap: 6px; flex-wrap: wrap; align-items: center;">
+    <span class="pill-btn pb-blu" style="font-size: 10px; padding: 3px 10px;"><i class="ti ti-mail" style="margin-right: 4px;"></i>fornes.rico77@gmail.com</span>
+    <span class="pill-btn pb-grn" style="font-size: 10px; padding: 3px 10px;"><i class="ti ti-phone" style="margin-right: 4px;"></i>+63 926 064 9319</span>
+  </div>
+</footer>
 
-<a href="index.html" class="back-home"><i class="ti ti-arrow-left"></i> Back to Home</a>
 
 </div>
 
-<a href="mailto:fornes.rico77@gmail.com" class="sticky-hire">
-  <i class="ti ti-mail-forward"></i> Hire Me
-</a>
+<div class="chat-widget" id="chat-widget">
+  <button class="chat-toggle" id="chat-toggle" type="button" aria-label="Open chat with ricoswabii" aria-expanded="false">
+    <i class="ti ti-message-circle"></i>
+    <span>Chat</span>
+  </button>
+  <section class="chat-box" id="chat-box" aria-label="Chatbox with ricoswabii" aria-hidden="true">
+    <div class="chat-head">
+      <div class="chat-avatar">RF</div>
+      <div>
+        <div class="chat-name">ricoswabii</div>
+        <div class="chat-status"><span></span> Online</div>
+      </div>
+      <button class="chat-close" id="chat-close" type="button" aria-label="Close chat"><i class="ti ti-x"></i></button>
+    </div>
+    <div class="chat-messages" id="chat-messages">
+      <div class="chat-message bot">Yo! I'm ricoswabii. Ask about my homelab, projects, skills, or how to contact me.</div>
+    </div>
+    <form class="chat-form" id="chat-form">
+      <input id="chat-input" type="text" placeholder="Type your message..." autocomplete="off" aria-label="Type your message" />
+      <button type="submit" aria-label="Send message"><i class="ti ti-send"></i></button>
+    </form>
+  </section>
+</div>
 
 <script src="assets/main.js"></script>
 </body>
