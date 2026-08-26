@@ -180,6 +180,44 @@
     </div>
 </div>
 
+<!-- Project details modal -->
+<div class="project-modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+  <div class="modal-overlay" id="modalOverlay"></div>
+  <div class="modal-panel">
+    <button class="modal-close" id="modalClose" type="button" aria-label="Close project details">
+      <i class="ti ti-x"></i>
+    </button>
+
+    <div class="modal-gallery">
+      <div class="slider-viewport" aria-label="Project screenshots">
+        <div class="slider-container" id="sliderContainer"></div>
+        <button class="slider-control slider-prev" id="sliderPrev" type="button" aria-label="Previous image">
+          <i class="ti ti-chevron-left"></i>
+        </button>
+        <button class="slider-control slider-next" id="sliderNext" type="button" aria-label="Next image">
+          <i class="ti ti-chevron-right"></i>
+        </button>
+      </div>
+      <div class="slider-dots" id="sliderDots" aria-label="Choose project image"></div>
+    </div>
+
+    <div class="modal-content">
+      <div class="modal-kicker">// PROJECT DETAILS</div>
+      <h2 id="modalTitle"></h2>
+      <div class="modal-tags" id="modalTags"></div>
+      <p class="modal-description" id="modalDescription"></p>
+      <div class="modal-actions">
+        <a class="modal-button modal-demo" id="modalLiveLink" href="#" target="_blank" rel="noopener">
+          <i class="ti ti-external-link"></i> Demo
+        </a>
+        <a class="modal-button modal-code" id="modalCodeLink" href="#" target="_blank" rel="noopener">
+          <i class="ti ti-brand-github"></i> Code
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div><a href="index.html" class="back-home"><i class="ti ti-arrow-left"></i> Back to Home</a></div>
 <footer class="ftr">
   <div class="ftr-txt">© 2026 • Rico Fornes</div>

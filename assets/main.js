@@ -924,7 +924,7 @@ document.addEventListener("DOMContentLoaded", function () {
       tags: ["Python", "Networking", "Security"],
       images: ["assets/img/4scan.jpg"],
       liveLink: "#",
-      codeLink: "#",
+      codeLink: "https://github.com/ricoswabii/4scan",
     },
     {
       id: "network-toolkit",
@@ -965,7 +965,7 @@ document.addEventListener("DOMContentLoaded", function () {
       description:
         "VLAN segmentation, firewall rules, and traffic monitoring modeled after enterprise environments to enforce strict access control.",
       tags: ["pfSense", "Wireshark", "Networking"],
-      images: ["assets/img/proj_vlan.svg", "assets/img/network_seg_2.jpg"],
+      images: ["assets/img/proj_vlan.svg"],
       liveLink: "#",
       codeLink: "#",
     },
@@ -1005,6 +1005,22 @@ document.addEventListener("DOMContentLoaded", function () {
   const modalLiveLink = document.getElementById("modalLiveLink");
   const modalCodeLink = document.getElementById("modalCodeLink");
 
+  // This shared script also runs on pages without the project modal.
+  if (
+    !modal ||
+    !overlay ||
+    !closeBtn ||
+    !sliderContainer ||
+    !prevBtn ||
+    !nextBtn ||
+    !dotsContainer ||
+    !modalTitle ||
+    !modalTags ||
+    !modalDescription ||
+    !modalLiveLink ||
+    !modalCodeLink
+  ) return;
+
   let currentProject = null;
   let currentSlide = 0;
 
@@ -1037,11 +1053,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Show modal
     modal.classList.add("active");
+    modal.setAttribute("aria-hidden", "false");
+    closeBtn.focus();
     document.body.style.overflow = "hidden";
   }
 
   function closeModal() {
     modal.classList.remove("active");
+    modal.setAttribute("aria-hidden", "true");
     document.body.style.overflow = "";
   }
 
