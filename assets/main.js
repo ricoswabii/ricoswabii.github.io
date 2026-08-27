@@ -787,6 +787,30 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 })();
 
+/* ══ EXPERIENCE ACTIVITY LOG ══ */
+(function () {
+  var entries = document.querySelectorAll(".activity-entry");
+  if (!entries.length) return;
+  entries.forEach(function (entry) {
+    var button = entry.querySelector(".activity-toggle");
+    var details = entry.querySelector(".activity-details");
+    if (!button || !details) return;
+    button.addEventListener("click", function () {
+      var open = button.getAttribute("aria-expanded") !== "true";
+      entries.forEach(function (other) {
+        var b = other.querySelector(".activity-toggle"), d = other.querySelector(".activity-details");
+        if (!b || !d) return;
+        var active = other === entry && open;
+        b.setAttribute("aria-expanded", String(active));
+        b.querySelector("span").textContent = active ? "View less" : "View details";
+        other.classList.toggle("is-open", active);
+        if (active) { d.hidden = false; requestAnimationFrame(function () { d.classList.add("is-visible"); }); }
+        else { d.classList.remove("is-visible"); d.hidden = true; }
+      });
+    });
+  });
+})();
+
 /* ══ SCROLL-TO ANCHOR ON LOAD (for logs.html#case-N etc) ══ */
 (function () {
   if (!window.location.hash) return;
@@ -924,7 +948,7 @@ document.addEventListener("DOMContentLoaded", function () {
       tags: ["Python", "Networking", "Security"],
       images: ["assets/img/4scan.jpg"],
       liveLink: "#",
-      codeLink: "#",
+      codeLink: "https://github.com/ricoswabii/4scan",
     },
     {
       id: "network-toolkit",
@@ -965,7 +989,7 @@ document.addEventListener("DOMContentLoaded", function () {
       description:
         "VLAN segmentation, firewall rules, and traffic monitoring modeled after enterprise environments to enforce strict access control.",
       tags: ["pfSense", "Wireshark", "Networking"],
-      images: ["assets/img/proj_vlan.svg", "assets/img/network_seg_2.jpg"],
+      images: ["assets/img/proj_vlan.svg"],
       liveLink: "#",
       codeLink: "#",
     },
@@ -1005,6 +1029,22 @@ document.addEventListener("DOMContentLoaded", function () {
   const modalLiveLink = document.getElementById("modalLiveLink");
   const modalCodeLink = document.getElementById("modalCodeLink");
 
+  // This shared script also runs on pages without the project modal.
+  if (
+    !modal ||
+    !overlay ||
+    !closeBtn ||
+    !sliderContainer ||
+    !prevBtn ||
+    !nextBtn ||
+    !dotsContainer ||
+    !modalTitle ||
+    !modalTags ||
+    !modalDescription ||
+    !modalLiveLink ||
+    !modalCodeLink
+  ) return;
+
   let currentProject = null;
   let currentSlide = 0;
 
@@ -1037,11 +1077,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Show modal
     modal.classList.add("active");
+    modal.setAttribute("aria-hidden", "false");
+    closeBtn.focus();
     document.body.style.overflow = "hidden";
   }
 
   function closeModal() {
     modal.classList.remove("active");
+    modal.setAttribute("aria-hidden", "true");
     document.body.style.overflow = "";
   }
 
