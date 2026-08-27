@@ -787,6 +787,30 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 })();
 
+/* ══ EXPERIENCE ACTIVITY LOG ══ */
+(function () {
+  var entries = document.querySelectorAll(".activity-entry");
+  if (!entries.length) return;
+  entries.forEach(function (entry) {
+    var button = entry.querySelector(".activity-toggle");
+    var details = entry.querySelector(".activity-details");
+    if (!button || !details) return;
+    button.addEventListener("click", function () {
+      var open = button.getAttribute("aria-expanded") !== "true";
+      entries.forEach(function (other) {
+        var b = other.querySelector(".activity-toggle"), d = other.querySelector(".activity-details");
+        if (!b || !d) return;
+        var active = other === entry && open;
+        b.setAttribute("aria-expanded", String(active));
+        b.querySelector("span").textContent = active ? "View less" : "View details";
+        other.classList.toggle("is-open", active);
+        if (active) { d.hidden = false; requestAnimationFrame(function () { d.classList.add("is-visible"); }); }
+        else { d.classList.remove("is-visible"); d.hidden = true; }
+      });
+    });
+  });
+})();
+
 /* ══ SCROLL-TO ANCHOR ON LOAD (for logs.html#case-N etc) ══ */
 (function () {
   if (!window.location.hash) return;
